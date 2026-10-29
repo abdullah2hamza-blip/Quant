@@ -184,9 +184,9 @@ def test_metadata_needs_explicit_kaggle_owner_and_preserves_mixed_rights(tmp_pat
     assert kernel["is_private"] and not kernel["enable_gpu"] and not kernel["enable_internet"]
     assert kernel["dataset_sources"] == [data["id"]]
     assert (tmp_path / "prepared/dataset" / helper.ARCHIVE_NAME).read_bytes() == archive.read_bytes()
-    assert helper.ARCHIVE_NAME == "quant-research-release-v5.zip"
+    assert helper.ARCHIVE_NAME == "quant-research-release-v6.zip"
     assert helper.AI_DISCLOSURE in data["description"]
-    assert helper.REPORT_TITLE in data["description"] and "v1.0.1" in data["description"]
+    assert helper.REPORT_TITLE in data["description"] and "v1.0.2" in data["description"]
     assert (tmp_path / "prepared/dataset" / Path(helper.MANUSCRIPT_PATH).name).read_bytes() == files[helper.MANUSCRIPT_PATH]
     assert any(r["path"] == Path(helper.MANUSCRIPT_PATH).name for r in data["resources"])
     assert result["status"] == "prepared locally; not uploaded"

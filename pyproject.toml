@@ -1,6 +1,6 @@
 [project]
 name = "quant"
-version = "1.0.1"
+version = "1.0.2"
 description = "Reproducible research for adaptive Bitcoin trend following"
 readme = "README.md"
 authors = [{name = "Abdullah Hamza", email = "abdullah2hamza@gmail.com"}]

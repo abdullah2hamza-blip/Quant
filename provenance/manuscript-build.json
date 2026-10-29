@@ -1,7 +1,7 @@
 {
   "kind": "public_manuscript_build_receipt",
-  "originating_report_sha256": "664f00b14978daac6b0e2be04bcededed536d00ef4e3f2ce29339f9bae10617c",
-  "pdf_sha256": "8007c06a91d871f9605868d7ca941d93b119762fed00fde58dd1cb59cebe694f",
+  "originating_report_sha256": "670e22a9f051e72ebf85a430eb6f4ef93086417a03f8d407b9766d39a35e6635",
+  "pdf_sha256": "fded58732f98af9d2a68de8e589c0c20067332be3482486ddac98c0ee5a9d590",
   "pages": 35,
   "scientific_registries": {
     "results/publication-v1/registry.json": "dd8f573a1c8af69f14ea777a5d6516cdae7f6110fb39c2040a565fb91c5c0c8a",
@@ -9,7 +9,7 @@
     "results/bot-extension-v1/registry.json": "36e058d341ad1ba31192b86dec45e43fa7884e0c0ecab09172ae3eef8cf6c828"
   },
   "executed_source_guard": {
-    "pyproject.toml": "f54e2a14cb8c432cf2369cce96a852a4e022ec79d696644ea53182a6b1a57b61",
+    "pyproject.toml": "de7c727a4ee22201c9fb67d800d887a06d73023d38fde3e5495c17b7bc45c196",
     "scripts/audit_bitstamp_data.py": "4676424ca492e14a95723ed3367bd8b5d39a7a1f5678f351ec0b16a78acd20d5",
     "scripts/audit_bot_extension.py": "0958b392181e088b9d9cec14fda3ce49eb640ae9a31540d4e846fed250d669db",
     "scripts/audit_publication_data.py": "cf3e425299bb542383ccfccb58c3961424bc7ad6df6b533d0f2fd55e49f97463",
@@ -21,7 +21,7 @@
     "scripts/collect_publication_results.py": "85fa37ab43c69098f7ae9b495cb22435f263f8b4d09ea08a79d59e68b8144b5f",
     "scripts/kaggle_review.py": "a4c86a9b826604507852d228d5ddf4106cc8e9dbac2fdd0cda645ae2a027210e",
     "scripts/market_interval_diagnostics.py": "df16789b8fe0e502c026e56f9c466d59c51fdd83616c6d07367e2c41428557eb",
-    "scripts/package_public_release.py": "14a7398e6f38211128b5341dcde598cd565ccf221df20aa6f86be4e85e15c006",
+    "scripts/package_public_release.py": "409eb12d008a29c37fb7aa74211ce0da3f32f287c3f43a5c6fd3fc67b1547416",
     "scripts/package_replication.py": "449abccdd1a54f5625146acc6d3a03e40233bc374282b46f3b95e9148041f87e",
     "scripts/package_submission.py": "f966d24977b2d4884b6559f79bfa471d2fb3c34ef58bf786baa088146b8680ea",
     "scripts/reproduce_bot_extension.py": "3cfd874b953a45254c76dc14377a2eb262c8da13211e9f48a933a97749f0447f",
@@ -44,12 +44,12 @@
     "src/quant/publication.py": "327ddf07481c9af63b4dea432aca675cff4387dd33fcba997db4b2fb63bd770a",
     "src/quant/stats.py": "3882f56f4c8090875f33d5b7725524a701ba6f13a6bbad43590ab60523445497",
     "src/quant/venues.py": "60b92c1930ecb80e9eee163b8305abd3c4577852c16fbb594691d87f617b01a4",
-    "uv.lock": "06916bb7de2e07b12c797cc8df1c146bc39262380f9d04df877a6d119c703fbc"
+    "uv.lock": "7695abc4c696f5fe823edc97c73d832008bd351cee5d2bc18a6d53461b1c5b90"
   },
   "source_inventory_scope": "Executed source and compiled paper inputs are included; historical local working-document snapshots are excluded.",
   "compiler": {
     "version": "Tectonic 0.17.0",
     "compiler_binary_sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d"
   },
-  "qa_sha256": "cecac38cca44f8a37b56a4afcc8a5a61df87103bd0004fcb146da2e018db7fa0"
+  "qa_sha256": "da1b6b72ae8596c10796b30bb2d1a7078a93cafa5b00ddb5db4ca655beef2d9c"
 }

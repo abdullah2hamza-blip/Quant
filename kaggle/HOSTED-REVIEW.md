@@ -1,11 +1,23 @@
-# Separate public Kaggle wrapper
+# Separately licensed hosted wrapper
 
-Notebook: https://www.kaggle.com/code/abdullah2hamza/quant-bitcoin-synthetic-evidence-release-audit
-Dataset: https://www.kaggle.com/datasets/abdullah2hamza/quant-cost-aware-bitcoin-research (Version 2).
-Source release: v1.0.1 at 7f847ff354e6cadb1c46fe9e0cb4d122842f4ed2.
+Canonical notebook: https://www.kaggle.com/code/abdullah2hamza/quant-bitcoin-synthetic-evidence-release-audit
+Companion dataset: https://www.kaggle.com/datasets/abdullah2hamza/quant-cost-aware-bitcoin-research
+Source release: v1.0.2. Resolve the exact source commit from the annotated tag
+and GitHub release-manifest.json; the final hosted versions and checks are in
+publication-verification.json. Earlier versions remain immutable.
 
-The separately authorized hosted wrapper uses Apache-2.0, including its original text/code and synthetic displays. The embedded viewer retains its original MIT notice, reproduced in the notebook. Repository code remains MIT, original paper CC BY 4.0, and provider-derived material retains the exceptions in THIRD_PARTY.md. No third-party market files or plots are redistributed in notebook outputs. APACHE-2.0.txt accompanies this wrapper.
+The author explicitly authorized Apache-2.0 for this wrapper's original code,
+text and synthetic displays. The embedded viewer retains its MIT notice, which
+is reproduced in the notebook. Repository code remains MIT, paper CC BY 4.0 and
+provider-derived material retains the THIRD_PARTY.md component exceptions.
+No third-party market file or plot is redistributed as notebook output.
 
-Attach Dataset Version 2, keep Internet off and accelerator None, then Save & Run All. It uses exact canonical ZIP bytes named .zip.bin to prevent recursive Kaggle ZIP expansion, verifies the full 414-file release in temporary scratch, publishes only five synthetic/integrity files, then removes scratch. Use the notebook Output tab for downloads and the linked GitHub Release for manuscript/source under their own licenses. This is a saved-record review, not a fresh full experimental reproduction. Actual final hosted version and runtime are recorded in publication-verification.json.
-
-The dataset's transport-provenance.json records the earlier transport/private-audit wrapper at creation; this separate notebook asset and final verification record identify the public wrapper. Earlier full-output audit versions remain private.
+Attach companion Dataset Version 3 for the v6 archive, keep Internet off and
+accelerator None, then Save & Run All. The .zip.bin preserves canonical ZIP bytes
+through Kaggle ingestion; compare the printed digest with release SHA256SUMS.
+The unchanged viewer verifies the complete inventory in temporary scratch, while
+the wrapper publishes only five synthetic/integrity files and removes scratch.
+Use the Output tab for downloads and the separately licensed release/dataset for
+manuscript and full source. This is a saved-record review, not a fresh full
+experimental reproduction. The new exact disclosure sentence supplements the
+existing fuller AI declaration without changing scientific results or authors.

@@ -2,10 +2,10 @@
 
 The existing repository is `abdullah2hamza-blip/Quant`; do not substitute a new
 repository. The earlier private v1.0.0 tag is retained. The proposed corrected
-release tag is v1.0.1; verify that it is unused before creation. Hosting is not
+release tag is v1.0.2; verify that it is unused before creation. Hosting is not
 journal acceptance or human peer review.
 
-Use the generated `output/release-v5/github` tree as the explicit public file
+Use the generated `output/release-v6/github` tree as the explicit public file
 set. `PUBLICATION-RELEASE.json` inventories its bytes and scientific registry
 anchors. The release builder rejects unsafe paths, raw vendor candle CSVs,
 private-key/token patterns and files exceeding GitHub's 100 MiB regular-file

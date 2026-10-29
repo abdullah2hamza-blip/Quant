@@ -26,7 +26,8 @@ new general theorem or universal superiority is claimed.
 
 The manuscript is accompanied by source and results replication material,
 frozen protocols, exact accounting checks and documented recorded-host
-reproduction. OpenAI Codex was used for literature research, experimental
+reproduction. Artificial intelligence (AI) tools were used for manuscript editing and code preparation.
+OpenAI Codex was used for literature research, experimental
 design, code preparation and testing, statistical analysis, interpretation,
 figure generation, manuscript drafting and revision, and reproducibility and
 release checks. Exact model versions were not consistently recorded. The human

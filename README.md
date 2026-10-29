@@ -6,23 +6,22 @@ separate operational simulation bot. The statistical constructions use
 established methods; no new general theorem or demonstrated adaptive trading
 edge is claimed.
 
-The current manuscript is [the technical report](output/pdf/cost-aware-bitcoin-research-v5.pdf).
+The current manuscript is [the technical report](output/pdf/cost-aware-bitcoin-research-v6.pdf).
 The [research overview](docs/publication/README.md),
 [reproduction guide](docs/publication/REPRODUCE.md),
 [GitHub release guide](docs/GITHUB.md), and [Kaggle guide](docs/KAGGLE.md)
 explain the scientific and platform scopes.
 
-The public technical report is released as **[v1.0.1](https://github.com/abdullah2hamza-blip/Quant/releases/tag/v1.0.1)**,
-source commit `7f847ff354e6cadb1c46fe9e0cb4d122842f4ed2`.
-The [Kaggle dataset](https://www.kaggle.com/datasets/abdullah2hamza/quant-cost-aware-bitcoin-research)
-is Version 2. The [public notebook](https://www.kaggle.com/code/abdullah2hamza/quant-bitcoin-synthetic-evidence-release-audit?scriptVersionId=363526570)
-is tested Version 2 (script 363526570): all three cells passed in a fresh offline
-CPU session. Anonymous requests verify public metadata/source and the manuscript
-PDF hash. The release's `publication-verification.json` records final artifact
-checks; [platform status](docs/publication/STATUS.md) distinguishes the immutable
-tagged research bundle from later hosting documentation and the separate wrapper.
-GitHub/Kaggle hosting does not constitute journal acceptance or independent
-human peer review.
+This disclosure-only update is prepared as **[v1.0.2](https://github.com/abdullah2hamza-blip/Quant/releases/tag/v1.0.2)**.
+It adds the requested explicit manuscript-editing/code-preparation sentence while
+preserving the broader AI disclosure, human authorship and accepted science.
+The immutable source commit is resolved by the release tag and manifest.
+The existing [Kaggle dataset](https://www.kaggle.com/datasets/abdullah2hamza/quant-cost-aware-bitcoin-research)
+and [public notebook](https://www.kaggle.com/code/abdullah2hamza/quant-bitcoin-synthetic-evidence-release-audit)
+will receive new versions. Current hosting and fresh execution evidence are
+recorded in the release's publication-verification.json after actual completion.
+The prior v1.0.1 release is preserved. Hosting is not journal acceptance or
+independent human peer review.
 
 ## What is included
 
@@ -72,13 +71,13 @@ restoration and `--full` archived-source replay are documented in the
 The [hosted wrapper](kaggle/hosted_review.ipynb) verifies the full released
 inventory and saved primary-path identity in temporary scratch. It publishes
 only two synthetic tables, one synthetic figure, attribution and an integrity
-receipt. It does not perform a fresh frozen experiment. Attach Dataset Version 2,
+receipt. It does not perform a fresh frozen experiment. Attach Dataset Version 3,
 keep Internet off and accelerator None, and use Kaggle's Output tab for downloads.
 
 Kaggle recursively expands nested ZIPs: the dataset therefore supplies the exact
-canonical research ZIP as `.zip.bin`, preserving SHA-256
-`95333cb8f4d81daefc82c9d08e97eeeb191808091a528d67128023123cfba429`.
-The final hosted runtime was Python 3.13.15 / NumPy 2.1.3 / Matplotlib 3.10.0;
+canonical research ZIP as `.zip.bin`; compare its observed digest with the
+release SHA256SUMS.
+The prior hosted runtime was Python 3.13.15 / NumPy 2.1.3 / Matplotlib 3.10.0; the new receipt reports the observed environment.
 this differs from the recorded scientific runtime. See [Kaggle instructions](docs/KAGGLE.md)
 and [wrapper provenance and rights](kaggle/HOSTED-REVIEW.md).
 
@@ -107,6 +106,8 @@ see [THIRD_PARTY.md](THIRD_PARTY.md). A mixed Kaggle dataset must retain those
 component rights rather than relabeling every file as MIT or CC0.
 
 ## AI assistance and responsibility
+
+Artificial intelligence (AI) tools were used for manuscript editing and code preparation.
 
 OpenAI Codex was used for literature research, experimental design, code
 preparation and testing, statistical analysis, interpretation, figure generation,
