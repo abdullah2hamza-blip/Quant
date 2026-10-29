@@ -6,6 +6,13 @@ Source release: v1.0.2. Resolve the exact source commit from the annotated tag
 and GitHub release-manifest.json; the final hosted versions and checks are in
 publication-verification.json. Earlier versions remain immutable.
 
+The current public notebook is Version 3 (script 363616953), using Dataset
+Version 3. Its fresh Save & Run All succeeded in 31.9 seconds, Internet off and
+accelerator None, with 417 payload files verified and exactly five published
+synthetic/integrity files. Every anonymously served source cell matches the
+tagged wrapper. The release's hosted-review-summary.json preserves the observed
+Python 3.13.15 / NumPy 2.1.3 / Matplotlib 3.10.0 environment and saved-record scope.
+
 The author explicitly authorized Apache-2.0 for this wrapper's original code,
 text and synthetic displays. The embedded viewer retains its MIT notice, which
 is reproduced in the notebook. Repository code remains MIT, paper CC BY 4.0 and

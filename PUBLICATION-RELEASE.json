@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "profile": "research-release-v6",
-  "created_at": "2026-10-29T20:26:41.992541+00:00",
+  "created_at": "2026-10-29T20:52:31.964809+00:00",
   "files": {
     ".gitattributes": {
       "bytes": 384,
@@ -36,8 +36,8 @@
       "sha256": "bd397130ba9d419c2b01f8ec10ba3b04b6f031e1de22fd6287a8296f8da96de2"
     },
     "README.md": {
-      "bytes": 6367,
-      "sha256": "d11e32c818834d2d1c0bdc9404d26539c53b78490ab686866cb5e4d615c97700"
+      "bytes": 6614,
+      "sha256": "660283687146d99fefd9e39d68ab7b055556430529063a1f5fff3d98b197c2d1"
     },
     "THIRD_PARTY.md": {
       "bytes": 2031,
@@ -272,8 +272,8 @@
       "sha256": "d4fa80869be0eb6346d76a1e03b38e83d45eaa73d2b319a5b716e1593fe2ac8e"
     },
     "docs/KAGGLE.md": {
-      "bytes": 5730,
-      "sha256": "986cffe0401bdfce1c1cc6597e4c6da7ed5da9f8347be800547d53620b8bb31b"
+      "bytes": 6187,
+      "sha256": "3cb17d8c6c13f3abfa51b150a6c1528d0971aabfb80abd8dee2da778fd4815bd"
     },
     "docs/publication/CLAIM-EVIDENCE.md": {
       "bytes": 24524,
@@ -304,8 +304,8 @@
       "sha256": "5f71dc25772d231feace4a5cf494c8a46595a10cd3f26bbdd5033be83c4e2923"
     },
     "docs/publication/STATUS.md": {
-      "bytes": 1780,
-      "sha256": "2438237154c512e9497f97fc8505fabf0673fbdea1913bb15ac17b92b0f04958"
+      "bytes": 2686,
+      "sha256": "298056d780f1d15cf58aa4ef4c852d4b2894f8893529c3a9463afadf5924ae27"
     },
     "docs/publication/SUBMIT.md": {
       "bytes": 6016,
@@ -352,8 +352,8 @@
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
     "kaggle/HOSTED-REVIEW.md": {
-      "bytes": 1567,
-      "sha256": "80dab861acc19282eee63b1342d1d82647e9ccb1fcd0ffee1752c3220516e549"
+      "bytes": 2041,
+      "sha256": "7e1ab88d5e0c819687220285e784272f3d23741c572af01e5f8a3748d02780a2"
     },
     "kaggle/README.md": {
       "bytes": 632,

@@ -12,14 +12,18 @@ The [research overview](docs/publication/README.md),
 [GitHub release guide](docs/GITHUB.md), and [Kaggle guide](docs/KAGGLE.md)
 explain the scientific and platform scopes.
 
-This disclosure-only update is prepared as **[v1.0.2](https://github.com/abdullah2hamza-blip/Quant/releases/tag/v1.0.2)**.
+This disclosure-only update is published as **[v1.0.2](https://github.com/abdullah2hamza-blip/Quant/releases/tag/v1.0.2)**.
 It adds the requested explicit manuscript-editing/code-preparation sentence while
 preserving the broader AI disclosure, human authorship and accepted science.
-The immutable source commit is resolved by the release tag and manifest.
+The immutable source commit is `17f7c5450a6e2705b89f2ed5c31a36d9bd27ebeb`.
 The existing [Kaggle dataset](https://www.kaggle.com/datasets/abdullah2hamza/quant-cost-aware-bitcoin-research)
 and [public notebook](https://www.kaggle.com/code/abdullah2hamza/quant-bitcoin-synthetic-evidence-release-audit)
-will receive new versions. Current hosting and fresh execution evidence are
-recorded in the release's publication-verification.json after actual completion.
+are public at Dataset Version 3 and Notebook Version 3 (script `363616953`).
+A fresh Kaggle Save & Run All completed successfully in 31.9 seconds, verifying
+all 417 payload files with Internet off and no accelerator. Anonymous PDF/bundle
+downloads match the prepared bytes; every public notebook cell matches the tag.
+Current hosting and execution evidence are recorded in the release's
+publication-verification.json and hosted-review-summary.json.
 The prior v1.0.1 release is preserved. Hosting is not journal acceptance or
 independent human peer review.
 
@@ -77,7 +81,7 @@ keep Internet off and accelerator None, and use Kaggle's Output tab for download
 Kaggle recursively expands nested ZIPs: the dataset therefore supplies the exact
 canonical research ZIP as `.zip.bin`; compare its observed digest with the
 release SHA256SUMS.
-The prior hosted runtime was Python 3.13.15 / NumPy 2.1.3 / Matplotlib 3.10.0; the new receipt reports the observed environment.
+The verified hosted runtime is Python 3.13.15 / NumPy 2.1.3 / Matplotlib 3.10.0;
 this differs from the recorded scientific runtime. See [Kaggle instructions](docs/KAGGLE.md)
 and [wrapper provenance and rights](kaggle/HOSTED-REVIEW.md).
 

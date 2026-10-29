@@ -6,12 +6,25 @@ manuscript editing and code preparation and retains the fuller disclosure.
 No scientific algorithms, accepted results, source capsules, author list or
 licenses change. The previous v1.0.1 tag/release remains immutable.
 
-The corresponding PDF/source/research bundle, existing Kaggle dataset new
-version and existing Apache notebook new version require their actual build,
-execution and anonymous-access checks. The final publication-verification.json
-records the released commit/tag, live versions, successful checks and exclusions.
-Preparation is not a successful hosted execution. No journal submission, DOI,
-peer review or human-author review attestation is created by this update.
+The GitHub release is published at source commit
+17f7c5450a6e2705b89f2ed5c31a36d9bd27ebeb. The existing Kaggle dataset and public
+Apache notebook are both Version 3; notebook script 363616953 completed a fresh
+Save & Run All successfully in 31.9 seconds, Internet off, accelerator None.
+All 417 inventoried payload files verified. Anonymous dataset PDF/bundle
+downloads match the release bytes, and every public notebook cell matches the
+tagged wrapper. The release publication-verification.json records live versions,
+public checks, evidence and exclusions without treating saved records as new
+experiments. The release manifest binds the clean tag; later main-branch
+documentation records the completed hosting checks and has its own inventory.
+
+At the released source, Windows and Ubuntu CI passed 375 research tests and
+50 bot checks, plus smoke/integrity workflows. The exact notebook also passed
+all three cells locally with networking blocked. The saved-results paper build
+and standalone source compilation succeeded; all 35 compiled page rasters match.
+Only declaration page 19 changed from the previously reviewed paper and received
+fresh visual inspection; the other 34 pages are raster-identical. Full numerical
+experiments were not rerun for this update. No journal submission, DOI, peer
+review or human-author review attestation is created by this update.
 
 The published notebook remains a saved-record review of the real implementation,
 not a fresh full numerical reproduction. Its Apache output scope contains only

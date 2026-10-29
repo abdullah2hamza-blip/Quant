@@ -8,6 +8,13 @@ revision v6. The final source commit, public dataset/notebook versions and actua
 execution outcome are recorded in the release manifest and publication receipt.
 Prior v1.0.1 assets remain available as immutable historical versions.
 
+Verified hosted release: Dataset Version 3 and Notebook Version 3, script
+`363616953`. Fresh Save & Run All succeeded in 31.9 seconds with Internet off and
+no accelerator. All 417 payload files verified; the public source's seven cells
+match the tagged wrapper. Anonymous PDF and full research-bundle downloads match
+the prepared bytes. See the GitHub Release publication-verification.json and
+hosted-review-summary.json for evidence and exact hashes.
+
 ## Run the real saved-results implementation
 
 Copy/edit the public notebook or import `kaggle/hosted_review.ipynb`. Attach the
@@ -46,8 +53,8 @@ This is an executable saved-record review, not a fresh full experiment. It does
 not generate new Monte Carlo worlds, fetch candles, audit raw inputs, rerun the
 full frozen study or place orders. Historical path identity does not establish
 future equality or profitability. The locked scientific environment is Python
-3.13.7 / NumPy 2.5.4. Kaggle's prior reviewed run used Python 3.13.15 / NumPy 2.1.3 /
-Matplotlib 3.10.0; the new run records its actual versions and container. Matching
+3.13.7 / NumPy 2.5.4. Kaggle's verified Version 3 run used Python 3.13.15 / NumPy 2.1.3 /
+Matplotlib 3.10.0; the receipt records its actual versions and container. Matching
 key versions alone would not prove exact replay. See
 [full reproduction instructions](publication/REPRODUCE.md) for archived-source
 replay and separately restored permitted inputs.
