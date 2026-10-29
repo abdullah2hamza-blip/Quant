@@ -1,0 +1,29 @@
+{
+  "source_sha256": "8dfb0cefee3db2762e8276de5baabfdfc92fc0119892cebeb84719e1bcd7e11a",
+  "records": 19,
+  "keys": [
+    "choe2024",
+    "arnold2026",
+    "waudby2024",
+    "howard2021",
+    "xu2024",
+    "tian2021",
+    "jiao2026",
+    "liu2026",
+    "stephan2026",
+    "wasserman2020",
+    "ramdas2022",
+    "bental1998",
+    "le2023",
+    "bysik2026",
+    "choefiltration2026",
+    "kunsch1989",
+    "li2026",
+    "white2000",
+    "hansen2011"
+  ],
+  "output_sha256": {
+    "references.tex": "4153fd627fbd23ba48a37b4370e398ed2f2f0562d884233b007ef9c802fd4678",
+    "references.bib": "db84e7c9552c8f18ff2d5a548374552cc998e0d4d462cc4084a60315c2db7da2"
+  }
+}

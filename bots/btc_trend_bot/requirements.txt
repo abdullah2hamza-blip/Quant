@@ -1,0 +1,2 @@
+# Paper numerical runtime. Python3.13.7 is the recorded interpreter.
+numpy==2.5.4

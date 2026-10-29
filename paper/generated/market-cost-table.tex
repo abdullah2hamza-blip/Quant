@@ -1,0 +1,44 @@
+\begingroup\small\begin{longtable}{lrrrr}
+\caption{All market cost sensitivities. Differences are annualized mean log returns in percent; intervals use 30-day blocks.}\\
+\toprule Case & Cost (bps) & Difference (\%) & Interval (\%) & Identity\\\midrule\endfirsthead
+\toprule Case & Cost (bps) & Difference (\%) & Interval (\%) & Identity\\\midrule\endhead
+M01 & 25 & 0.00 & historical identity & yes\\
+M01 & 0 & 0.00 & historical identity & yes\\
+M01 & 10 & 0.00 & historical identity & yes\\
+M01 & 50 & 0.00 & historical identity & yes\\
+M01 & 100 & 0.00 & historical identity & yes\\
+M02 & 25 & 0.00 & historical identity & yes\\
+M02 & 0 & 0.00 & historical identity & yes\\
+M02 & 10 & 0.00 & historical identity & yes\\
+M02 & 50 & 0.00 & historical identity & yes\\
+M02 & 100 & 0.00 & historical identity & yes\\
+M03 & 25 & -9.65 & [-32.18, 2.61] & no\\
+M03 & 0 & -9.77 & [-32.33, 2.47] & no\\
+M03 & 10 & -9.73 & [-32.27, 2.53] & no\\
+M03 & 50 & -9.53 & [-32.00, 2.75] & no\\
+M03 & 100 & -9.29 & [-31.67, 3.03] & no\\
+M04 & 25 & -6.68 & [-22.42, 5.04] & no\\
+M04 & 0 & -6.62 & [-21.15, 4.19] & no\\
+M04 & 10 & -6.65 & [-21.73, 4.61] & no\\
+M04 & 50 & -6.74 & [-24.02, 5.91] & no\\
+M04 & 100 & -6.85 & [-27.36, 7.95] & no\\
+M05 & 25 & 0.00 & historical identity & yes\\
+M05 & 0 & 0.00 & historical identity & yes\\
+M05 & 10 & 0.00 & historical identity & yes\\
+M05 & 50 & 0.00 & historical identity & yes\\
+M05 & 100 & 0.00 & historical identity & yes\\
+M06 & 25 & 0.00 & historical identity & yes\\
+M06 & 0 & 0.00 & historical identity & yes\\
+M06 & 10 & 0.00 & historical identity & yes\\
+M06 & 50 & 0.00 & historical identity & yes\\
+M06 & 100 & 0.00 & historical identity & yes\\
+\bottomrule\end{longtable}\endgroup
+\noindent Numerical identity is defined by maximum absolute per-bar paired log difference at most $10^{-12}$. The full CSV preserves raw floating-point values. Identity rows have no economically interpretable break-even sign bracket.
+\begin{longtable}{lp{0.8\textwidth}}\toprule Case & Market specification key\\\midrule
+M01 & \texttt{binance\_primary\_4h}\\
+M02 & \texttt{binance\_matched\_4h}\\
+M03 & \texttt{binance\_matched\_1h}\\
+M04 & \texttt{binance\_matched\_1d}\\
+M05 & \texttt{bitstamp\_primary\_4h}\\
+M06 & \texttt{bitstamp\_matched\_4h}\\
+\bottomrule\end{longtable}

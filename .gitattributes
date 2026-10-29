@@ -1,0 +1,11 @@
+# Every public file is hash-inventoried; preserve its bytes on every platform.
+* -text
+*.png binary
+*.zip binary
+# Preserve hashed research bytes across checkouts; CRLF conversion would
+# invalidate frozen JSON/documents and registered output digests.
+results/** -text
+docs/publication/** -text
+paper/generated/** -text
+paper/references.* -text
+paper/bibliography-manifest.json -text

@@ -1,0 +1,1016 @@
+{
+  "case": {
+    "id": "effect05_search30",
+    "effect": 0.05,
+    "overlap": 0.5,
+    "hypotheses": 30
+  },
+  "worlds": 4000,
+  "calendar_steps": 800,
+  "matured_trials_by_hypothesis": [
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800,
+    800
+  ],
+  "candidate_pool": 30,
+  "tested_hypotheses": 30,
+  "seed": 13371109425659595795,
+  "cost_envelope_any_failure": {
+    "estimate": 0.0,
+    "independent_worlds": 4000,
+    "standard_error": 0.0,
+    "confidence_interval": [
+      0.0,
+      0.0009594432897014865
+    ],
+    "method": "Wilson 95% Monte Carlo interval across independent worlds"
+  },
+  "pathwise_event_inclusion_violations": 0,
+  "methods": {
+    "oracle_linear": {
+      "null_family_rejection": {
+        "estimate": 0.00325,
+        "independent_worlds": 4000,
+        "standard_error": 0.0008999218716088636,
+        "confidence_interval": [
+          0.0019003484269795885,
+          0.0055528584813388385
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.994,
+        "independent_worlds": 4000,
+        "standard_error": 0.0012210651088291734,
+        "confidence_interval": [
+          0.991087436526638,
+          0.9959646335031369
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.87225,
+        "independent_worlds": 4000,
+        "standard_error": 0.005278018982061357,
+        "confidence_interval": [
+          0.8615469174123581,
+          0.8822387770584591
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 300.88525,
+        "standard_error": 2.2170752978481487,
+        "confidence_interval": [
+          296.5398622652042,
+          305.2306377347958
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": 267.0,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 25.010906401702698,
+        "standard_error": 0.14697543768024915,
+        "confidence_interval": [
+          24.722839837237398,
+          25.298972966167998
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 30.0020539017027,
+        "standard_error": 0.16414168911122984,
+        "confidence_interval": [
+          29.680342102683117,
+          30.32376570072228
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "conditional bounded-game guarantee; cost-envelope error included; not a market guarantee"
+    },
+    "joint_linear": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.81675,
+        "independent_worlds": 4000,
+        "standard_error": 0.006116973056586076,
+        "confidence_interval": [
+          0.8044589492662875,
+          0.8284332434096866
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.423,
+        "independent_worlds": 4000,
+        "standard_error": 0.007811385920564929,
+        "confidence_interval": [
+          0.40777101004927485,
+          0.4383767442173393
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 530.5645,
+        "standard_error": 3.1871297485270325,
+        "confidence_interval": [
+          524.3178404788308,
+          536.8111595211691
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": 474.0,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 13.48647573860969,
+        "standard_error": 0.1749973770924626,
+        "confidence_interval": [
+          13.143487182119488,
+          13.829464295099891
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 16.18083073860969,
+        "standard_error": 0.2044427602879472,
+        "confidence_interval": [
+          15.780130291545357,
+          16.58153118567402
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "conditional bounded-game guarantee; cost-envelope error included; not a market guarantee"
+    },
+    "separate_linear": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.02225,
+        "independent_worlds": 4000,
+        "standard_error": 0.0023321094260347216,
+        "confidence_interval": [
+          0.018116780021385052,
+          0.027299968041924715
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.003,
+        "independent_worlds": 4000,
+        "standard_error": 0.000864725389936019,
+        "confidence_interval": [
+          0.0017169926319577002,
+          0.005236693998005578
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 796.758,
+        "standard_error": 0.4764671964021362,
+        "confidence_interval": [
+          795.824141455237,
+          797.691858544763
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": 711.0,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.15766160802718895,
+        "standard_error": 0.025240787866898148,
+        "confidence_interval": [
+          0.10819057286665301,
+          0.2071326431877249
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 0.19008160802718896,
+        "standard_error": 0.02973084125152267,
+        "confidence_interval": [
+          0.13181022994412678,
+          0.24835298611025114
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "conditional bounded-game guarantee; cost-envelope error included; not a market guarantee"
+    },
+    "plugin_linear": {
+      "null_family_rejection": {
+        "estimate": 0.0045,
+        "independent_worlds": 4000,
+        "standard_error": 0.0010582709955394224,
+        "confidence_interval": [
+          0.002848416801019775,
+          0.007102391499074397
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.9925,
+        "independent_worlds": 4000,
+        "standard_error": 0.0013641618305758258,
+        "confidence_interval": [
+          0.9893135956566655,
+          0.9947413527029786
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.86725,
+        "independent_worlds": 4000,
+        "standard_error": 0.005364872726822139,
+        "confidence_interval": [
+          0.8563818277074379,
+          0.8774134611962764
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 301.7575,
+        "standard_error": 2.2622512280010256,
+        "confidence_interval": [
+          297.32356906913645,
+          306.19143093086353
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": 266.0,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 24.966741200132898,
+        "standard_error": 0.1494528102493563,
+        "confidence_interval": [
+          24.67381907465586,
+          25.259663325609935
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 29.949166200132904,
+        "standard_error": 0.16722735819278828,
+        "confidence_interval": [
+          29.62140660084526,
+          30.27692579942055
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "none: deliberately unguaranteed comparator"
+    },
+    "symmetric_upper_linear": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.81675,
+        "independent_worlds": 4000,
+        "standard_error": 0.006116973056586076,
+        "confidence_interval": [
+          0.8044589492662875,
+          0.8284332434096866
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.423,
+        "independent_worlds": 4000,
+        "standard_error": 0.007811385920564929,
+        "confidence_interval": [
+          0.40777101004927485,
+          0.4383767442173393
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 530.5645,
+        "standard_error": 3.1871297485270325,
+        "confidence_interval": [
+          524.3178404788308,
+          536.8111595211691
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": 474.0,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 13.48647573860969,
+        "standard_error": 0.1749973770924626,
+        "confidence_interval": [
+          13.143487182119488,
+          13.829464295099891
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 16.18083073860969,
+        "standard_error": 0.2044427602879472,
+        "confidence_interval": [
+          15.780130291545357,
+          16.58153118567402
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "none: deliberately unguaranteed comparator"
+    },
+    "joint_hoeffding": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 800.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": null,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "conditional bounded-game guarantee; cost-envelope error included; not a market guarantee"
+    },
+    "separate_hoeffding": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 800.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": null,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "conditional bounded-game guarantee; cost-envelope error included; not a market guarantee"
+    },
+    "fixed_horizon_hoeffding": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 800.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": null,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "conditional bounded-game guarantee; cost-envelope error included; not a market guarantee"
+    },
+    "naive_peek_hoeffding": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "any_alternative_power": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_power": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_alt_detection_time": {
+        "estimate": 800.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "median_first_alt_detection_among_detected": null,
+      "nondetection_censoring": "Horizon-censored; restricted time uses horizon for nondetections; conditional median excludes them",
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "net_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "none: deliberately unguaranteed comparator"
+    }
+  },
+  "paired_method_comparisons": {
+    "first_stream_joint_minus_separate_rejection_rate": {
+      "estimate": 0.42,
+      "independent_worlds": 4000,
+      "standard_error": 0.007803845206050669,
+      "confidence_interval": [
+        0.40478864646394375,
+        0.4353648644624085
+      ],
+      "method": "Wilson 95% Monte Carlo interval across independent worlds"
+    },
+    "joint_minus_separate_materiality_utility": {
+      "estimate": 13.328814130582499,
+      "standard_error": 0.17045363517616308,
+      "confidence_interval": [
+        12.99473114460329,
+        13.662897116561709
+      ],
+      "sample_degenerate": false,
+      "independent_worlds": 4000,
+      "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+      "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+    }
+  },
+  "trace": [
+    {
+      "calendar_step": 40,
+      "mean_joint_minus_separate_proxy": 0.0474552150302691,
+      "cost_interval_width": 0.12665076563641123,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.0,
+        "joint_linear": 0.0,
+        "separate_linear": 0.0,
+        "plugin_linear": 0.0,
+        "symmetric_upper_linear": 0.0,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 80,
+      "mean_joint_minus_separate_proxy": 0.039181083864362566,
+      "cost_interval_width": 0.10471676010518556,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.0,
+        "joint_linear": 0.0,
+        "separate_linear": 0.0,
+        "plugin_linear": 0.0,
+        "symmetric_upper_linear": 0.0,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 120,
+      "mean_joint_minus_separate_proxy": 0.03437260047074663,
+      "cost_interval_width": 0.09158089781055521,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.005,
+        "joint_linear": 0.00075,
+        "separate_linear": 0.0,
+        "plugin_linear": 0.0065,
+        "symmetric_upper_linear": 0.00075,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 160,
+      "mean_joint_minus_separate_proxy": 0.03092679786329594,
+      "cost_interval_width": 0.0826284550333525,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.02375,
+        "joint_linear": 0.002,
+        "separate_linear": 0.0,
+        "plugin_linear": 0.0245,
+        "symmetric_upper_linear": 0.002,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 200,
+      "mean_joint_minus_separate_proxy": 0.028471864315371048,
+      "cost_interval_width": 0.0760060446219195,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.0675,
+        "joint_linear": 0.00625,
+        "separate_linear": 0.0,
+        "plugin_linear": 0.07075,
+        "symmetric_upper_linear": 0.00625,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 240,
+      "mean_joint_minus_separate_proxy": 0.026526619313504814,
+      "cost_interval_width": 0.07084155244626734,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.112,
+        "joint_linear": 0.014,
+        "separate_linear": 0.0,
+        "plugin_linear": 0.1145,
+        "symmetric_upper_linear": 0.014,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 280,
+      "mean_joint_minus_separate_proxy": 0.02499926019606726,
+      "cost_interval_width": 0.0666624717737869,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.1755,
+        "joint_linear": 0.0265,
+        "separate_linear": 0.0,
+        "plugin_linear": 0.177,
+        "symmetric_upper_linear": 0.0265,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 320,
+      "mean_joint_minus_separate_proxy": 0.02374572266359963,
+      "cost_interval_width": 0.06318712789675263,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.2345,
+        "joint_linear": 0.04075,
+        "separate_linear": 0.00025,
+        "plugin_linear": 0.23975,
+        "symmetric_upper_linear": 0.04075,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 360,
+      "mean_joint_minus_separate_proxy": 0.02255897375751359,
+      "cost_interval_width": 0.060235569593841576,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.31775,
+        "joint_linear": 0.05875,
+        "separate_linear": 0.00025,
+        "plugin_linear": 0.3185,
+        "symmetric_upper_linear": 0.05875,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 400,
+      "mean_joint_minus_separate_proxy": 0.021620225051894745,
+      "cost_interval_width": 0.057686622557835424,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.38175,
+        "joint_linear": 0.0725,
+        "separate_linear": 0.00025,
+        "plugin_linear": 0.38025,
+        "symmetric_upper_linear": 0.0725,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 440,
+      "mean_joint_minus_separate_proxy": 0.02081581833283786,
+      "cost_interval_width": 0.055455242153485934,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.45225,
+        "joint_linear": 0.0985,
+        "separate_linear": 0.00025,
+        "plugin_linear": 0.458,
+        "symmetric_upper_linear": 0.0985,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 480,
+      "mean_joint_minus_separate_proxy": 0.020032830759376074,
+      "cost_interval_width": 0.053479709705679127,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.5065,
+        "joint_linear": 0.11975,
+        "separate_linear": 0.00025,
+        "plugin_linear": 0.511,
+        "symmetric_upper_linear": 0.11975,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 520,
+      "mean_joint_minus_separate_proxy": 0.019387571083358604,
+      "cost_interval_width": 0.051713979950276365,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.57525,
+        "joint_linear": 0.151,
+        "separate_linear": 0.0005,
+        "plugin_linear": 0.5775,
+        "symmetric_upper_linear": 0.151,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 560,
+      "mean_joint_minus_separate_proxy": 0.01877540965151854,
+      "cost_interval_width": 0.05012289425439595,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.62375,
+        "joint_linear": 0.17575,
+        "separate_linear": 0.0005,
+        "plugin_linear": 0.631,
+        "symmetric_upper_linear": 0.17575,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 600,
+      "mean_joint_minus_separate_proxy": 0.01828446736594744,
+      "cost_interval_width": 0.04867907049405291,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.68325,
+        "joint_linear": 0.21475,
+        "separate_linear": 0.0005,
+        "plugin_linear": 0.6895,
+        "symmetric_upper_linear": 0.21475,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 640,
+      "mean_joint_minus_separate_proxy": 0.01775083390037073,
+      "cost_interval_width": 0.04736081616961241,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.722,
+        "joint_linear": 0.246,
+        "separate_linear": 0.00075,
+        "plugin_linear": 0.72475,
+        "symmetric_upper_linear": 0.246,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 680,
+      "mean_joint_minus_separate_proxy": 0.017305931426366904,
+      "cost_interval_width": 0.04615068882660599,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.77075,
+        "joint_linear": 0.2985,
+        "separate_linear": 0.00125,
+        "plugin_linear": 0.771,
+        "symmetric_upper_linear": 0.2985,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 720,
+      "mean_joint_minus_separate_proxy": 0.016886803704284987,
+      "cost_interval_width": 0.04503447884334953,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.80675,
+        "joint_linear": 0.335,
+        "separate_linear": 0.0015,
+        "plugin_linear": 0.80525,
+        "symmetric_upper_linear": 0.335,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 760,
+      "mean_joint_minus_separate_proxy": 0.01650897835144286,
+      "cost_interval_width": 0.04400047535032747,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.844,
+        "joint_linear": 0.38525,
+        "separate_linear": 0.002,
+        "plugin_linear": 0.8415,
+        "symmetric_upper_linear": 0.38525,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    },
+    {
+      "calendar_step": 800,
+      "mean_joint_minus_separate_proxy": 0.016128837707226708,
+      "cost_interval_width": 0.043038926503606974,
+      "first_stream_rejection_rate": {
+        "oracle_linear": 0.87225,
+        "joint_linear": 0.423,
+        "separate_linear": 0.003,
+        "plugin_linear": 0.86725,
+        "symmetric_upper_linear": 0.423,
+        "joint_hoeffding": 0.0,
+        "separate_hoeffding": 0.0,
+        "fixed_horizon_hoeffding": 0.0,
+        "naive_peek_hoeffding": 0.0
+      }
+    }
+  ],
+  "runtime_seconds": 392.76944069999445,
+  "largest_mixture_state_bytes": 33600000,
+  "utility_convention": "First crossing activates one candidate on subsequent matured trials; lowest index resolves simultaneous crossings; additive synthetic utility, not funded or compounded P&L",
+  "detection_time_convention": "Calendar steps from study origin, not elapsed time since each adaptive birth; horizon-censored",
+  "filtration": "birth, calibration and turnover precede current outcome draws; previous common shock is publicly observed at maturity; delayed trials do not overlap; no intermediate feedback",
+  "null_interpretation": "Oracle-history conditional null; prefix-weak case uses nonpositive sums at every prefix and fixed mixture components",
+  "kind": "substantive",
+  "code_sha256": "52ea1c7423d3fbcbbd385dc59c01b9c893fec7a39edc8e7f7688f447bc3e49d8",
+  "spec_sha256": "ee88dff71cc989114b79a616ab1a3e95abc7be2ded867093060531bd7814d625"
+}

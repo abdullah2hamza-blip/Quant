@@ -1,0 +1,3864 @@
+{
+  "case": {
+    "id": "bitstamp_primary_4h",
+    "data": "data/btc-bitstamp-4h-through-2026-10-20.csv",
+    "independent_audit": "docs/publication/data-audit-bitstamp-4h-v1.json",
+    "interval": "4h",
+    "symbol": "BTCUSD",
+    "provider": "bitstamp-public-ohlc",
+    "start": "2025-01-01",
+    "end": "2026-10-20",
+    "role": "venue_robustness"
+  },
+  "created_at": "2026-10-22T04:03:56.225852+00:00",
+  "effective_settings": {
+    "source": "C:\\Users\\Abdul\\Documents\\Quant\\configs\\research\\btc-trend.toml",
+    "sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+    "symbol": "BTCUSD",
+    "interval": "4h",
+    "fast": 50,
+    "slow": 200,
+    "warmup": 2000,
+    "initial_equity": 1.0,
+    "vol_target": 0.2,
+    "vol_window": 180,
+    "annualization": 2190,
+    "max_weight": 1.0,
+    "band": 0.1,
+    "base_cost": 25.0,
+    "costs": [
+      10.0,
+      25.0,
+      50.0,
+      100.0
+    ],
+    "pairs": [
+      [
+        25,
+        100
+      ],
+      [
+        50,
+        200
+      ],
+      [
+        100,
+        400
+      ]
+    ],
+    "selection_interval": 180,
+    "trailing": 4380,
+    "min_history": 6380,
+    "initial_pair": [
+      50,
+      200
+    ],
+    "dev_start": "2017-09-01",
+    "dev_end": "2022-12-31",
+    "selection_start": "2023-01-01",
+    "selection_end": "2024-12-31",
+    "reserved_start": "2025-01-01",
+    "reserved_end": "2026-10-20"
+  },
+  "score_start": "2025-01-01T00:00:00+00:00",
+  "score_end": "2026-10-20T23:59:59.999000+00:00",
+  "scored_bars": 3948,
+  "audit": {
+    "bars": 20021,
+    "interval": "4h",
+    "first_open": "2017-09-01T00:00:00+00:00",
+    "last_close": "2026-10-20T23:59:59.999000+00:00",
+    "gaps": [
+      {
+        "after": "2020-04-25T16:00:00+00:00",
+        "before": "2020-04-26T00:00:00+00:00",
+        "missing_bars": 1
+      }
+    ],
+    "missing_bars": 1,
+    "zero_volume_bars": 0,
+    "large_close_return_bars": 3,
+    "gap_policy": "carry_and_freeze",
+    "as_of": "2026-10-22T04:03:41.052000+00:00"
+  },
+  "provenance": {
+    "schema_version": 1,
+    "provider": "bitstamp-public-ohlc",
+    "symbol": "BTCUSD",
+    "instrument": "spot",
+    "retrieved_at": "2026-10-22T03:43:35.435073+00:00",
+    "requested_start": "2017-09-01",
+    "requested_end": "2026-10-20",
+    "sources": [
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1504224000&exclude_current_candle=true",
+        "sha256": "fb17785d6efbb06b92350ccb5a61cb735e25cd87cef91bf3f91f491bf3986978",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1504224000-1000.json",
+        "requested_start_seconds": 1504224000,
+        "requested_end_exclusive_seconds": 1518624000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1518624000&exclude_current_candle=true",
+        "sha256": "37f52f02f4fa44926ac2ada32bf0e04cb1908308af49360fd4bd6c35d825290a",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1518624000-1000.json",
+        "requested_start_seconds": 1518624000,
+        "requested_end_exclusive_seconds": 1533024000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1533024000&exclude_current_candle=true",
+        "sha256": "40b400d0ff6f8e2b0f97434ad8f6d8509e091be0084789f89c3fd9ef6aaab553",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1533024000-1000.json",
+        "requested_start_seconds": 1533024000,
+        "requested_end_exclusive_seconds": 1547424000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1547424000&exclude_current_candle=true",
+        "sha256": "4319ff85a1a90617a29f8e906e24b3ff471d6aaa428911b5df703dfbcb266f51",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1547424000-1000.json",
+        "requested_start_seconds": 1547424000,
+        "requested_end_exclusive_seconds": 1561824000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1561824000&exclude_current_candle=true",
+        "sha256": "ddc0de8a537dce6e5b0eec925f0fbf6424d2493c4e14347d9ed120248ba13b10",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1561824000-1000.json",
+        "requested_start_seconds": 1561824000,
+        "requested_end_exclusive_seconds": 1576224000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1576224000&exclude_current_candle=true",
+        "sha256": "b530e90e79fa66bdd96d34bd35130f7f2962f47df9280c1e06798ce1ab57fd7c",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1576224000-1000.json",
+        "requested_start_seconds": 1576224000,
+        "requested_end_exclusive_seconds": 1590624000,
+        "nominal_candles": 1000,
+        "retained_rows": 999
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1590624000&exclude_current_candle=true",
+        "sha256": "c40b3833c89bd0510995268d7b6b4dc9470227ff5e74986b86f6b01dbfc2de44",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1590624000-1000.json",
+        "requested_start_seconds": 1590624000,
+        "requested_end_exclusive_seconds": 1605024000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1605024000&exclude_current_candle=true",
+        "sha256": "be1acccb3129ba135df4e9d043e2d9acdb0e4fe13977c82422b50fc515e2773a",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1605024000-1000.json",
+        "requested_start_seconds": 1605024000,
+        "requested_end_exclusive_seconds": 1619424000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1619424000&exclude_current_candle=true",
+        "sha256": "603ca798feb979a365a337cec6578a601d450b287a6973b784120fc42e366e46",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1619424000-1000.json",
+        "requested_start_seconds": 1619424000,
+        "requested_end_exclusive_seconds": 1633824000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1633824000&exclude_current_candle=true",
+        "sha256": "54f2aa70887295d3d5efa28f7154bdef22b6ae843ec08f5b6777b952982e3e87",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1633824000-1000.json",
+        "requested_start_seconds": 1633824000,
+        "requested_end_exclusive_seconds": 1648224000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1648224000&exclude_current_candle=true",
+        "sha256": "9a28446bf1ec10f375b8c110d52895f9bc135d9d31bcd993804776ad5edee3e5",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1648224000-1000.json",
+        "requested_start_seconds": 1648224000,
+        "requested_end_exclusive_seconds": 1662624000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1662624000&exclude_current_candle=true",
+        "sha256": "1fcb9cbea3b4fa7099b3574d917eaea3c40cf3bd1b12c940ff32a09bc280e4ce",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1662624000-1000.json",
+        "requested_start_seconds": 1662624000,
+        "requested_end_exclusive_seconds": 1677024000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1677024000&exclude_current_candle=true",
+        "sha256": "91a461ae40cfec2fe3b006111defc708e4dcbe158e50ef256bd33c9ec7113971",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1677024000-1000.json",
+        "requested_start_seconds": 1677024000,
+        "requested_end_exclusive_seconds": 1691424000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1691424000&exclude_current_candle=true",
+        "sha256": "c735f1d5616171d53b046f6fef34f985221951684590435d39a8f4a19c07c481",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1691424000-1000.json",
+        "requested_start_seconds": 1691424000,
+        "requested_end_exclusive_seconds": 1705824000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1705824000&exclude_current_candle=true",
+        "sha256": "4db7502a8296205a0463d14a957c5dd5a6a708fed636419110c6b808ef12c635",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1705824000-1000.json",
+        "requested_start_seconds": 1705824000,
+        "requested_end_exclusive_seconds": 1720224000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1720224000&exclude_current_candle=true",
+        "sha256": "6fe0c240cb569d8410065702f48c2ed0d535515ea3f6272a423ecb4babaf8615",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1720224000-1000.json",
+        "requested_start_seconds": 1720224000,
+        "requested_end_exclusive_seconds": 1734624000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1734624000&exclude_current_candle=true",
+        "sha256": "8136a72ad447e00f051690b586a87fd6cbbf0db82cc5761f46215981a05e0bce",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1734624000-1000.json",
+        "requested_start_seconds": 1734624000,
+        "requested_end_exclusive_seconds": 1749024000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1749024000&exclude_current_candle=true",
+        "sha256": "b6d614689f72f4ffa7dbca4cd488322ee8a21a686fa29478430e41497c201d2c",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1749024000-1000.json",
+        "requested_start_seconds": 1749024000,
+        "requested_end_exclusive_seconds": 1763424000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1763424000&exclude_current_candle=true",
+        "sha256": "8afaeaeecdec27c7cf44278cb80b48704d8120d89e8392be2cd060a64c2d1899",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1763424000-1000.json",
+        "requested_start_seconds": 1763424000,
+        "requested_end_exclusive_seconds": 1777824000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1777824000&exclude_current_candle=true",
+        "sha256": "e514acb571abd6d348271b13687a5b4265440e67a0e67bcb6240e3ae37fba870",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1777824000-1000.json",
+        "requested_start_seconds": 1777824000,
+        "requested_end_exclusive_seconds": 1792224000,
+        "nominal_candles": 1000,
+        "retained_rows": 1000
+      },
+      {
+        "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=22&start=1792224000&exclude_current_candle=true",
+        "sha256": "79b52ac1569f0261b7435b6c432e87dc701a140731432b8606025c1b192b3151",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1792224000-22.json",
+        "requested_start_seconds": 1792224000,
+        "requested_end_exclusive_seconds": 1792540800,
+        "nominal_candles": 22,
+        "retained_rows": 22
+      }
+    ],
+    "quarantined_rows": [
+      {
+        "source_file": "BTCUSD-4h-1576224000-1000.json",
+        "row_number": 808,
+        "raw_open_time": "1587844800",
+        "reason": "Invalid Bitstamp prices or nonpositive volume",
+        "row_sha256": "f400c025f5580fda586a10b346359be71d196fd041220f6b8ab3d713760ce2d2"
+      }
+    ],
+    "quarantine_enabled": true,
+    "audit": {
+      "bars": 20021,
+      "interval": "4h",
+      "first_open": "2017-09-01T00:00:00+00:00",
+      "last_close": "2026-10-20T23:59:59.999000+00:00",
+      "gaps": [
+        {
+          "after": "2020-04-25T16:00:00+00:00",
+          "before": "2020-04-26T00:00:00+00:00",
+          "missing_bars": 1
+        }
+      ],
+      "missing_bars": 1,
+      "zero_volume_bars": 0,
+      "large_close_return_bars": 3,
+      "gap_policy": "carry_and_freeze",
+      "as_of": "2026-10-22T03:43:35.432000+00:00"
+    },
+    "ordering": "explicit ascending timestamp normalization; duplicates are errors",
+    "close_timestamp": "nominal inclusive period end inferred from documented step; API provides opening timestamp only",
+    "integrity_limit": "local SHA-256 snapshots; no independently published vendor checksum",
+    "revision_policy": "immutable local response snapshot; no historical point-in-time revision guarantee",
+    "comparison_limit": "BTC/USD at a different venue is a robustness check, not an independent Bitcoin history or USDT-equivalent market",
+    "interval": "4h",
+    "csv_sha256": "d415dbdaf84731c4b9f7a7aab5cdc314fb830368c3d2f833ffbb34069505893a",
+    "local_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\btc-bitstamp-4h-through-2026-10-20.csv"
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "scenarios": {
+    "25": {
+      "metrics": {
+        "fixed": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.019779434465919676,
+          "cagr": 0.010924011947736744,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 4.96108490200002e-06,
+          "annualized_mean_log_return": 0.010864775935380043,
+          "annualized_volatility": 0.13403607962624906,
+          "descriptive_sharpe": 0.14804547071129945,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.20331802121167453,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2678217996360991,
+          "turnover": 13.46106905891914,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.03316674386959917,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": 0.01832410393324624,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "adaptive": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0197794344659199,
+          "cagr": 0.010924011947736866,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 4.961084901999683e-06,
+          "annualized_mean_log_return": 0.010864775935379305,
+          "annualized_volatility": 0.13403607962624917,
+          "descriptive_sharpe": 0.14804547071129381,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.2033180212116743,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2678217996360991,
+          "turnover": 13.46106905891914,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.033166743869599176,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": 0.01832410393324646,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "ensemble": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.01244242348318203,
+          "cagr": -0.0069211877605681775,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.17134715629805e-06,
+          "annualized_mean_log_return": -0.00694525027229273,
+          "annualized_volatility": 0.12179531665008803,
+          "descriptive_sharpe": 0.0038490539790384383,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.1907618194711299,
+          "time_in_market": 0.6504559270516718,
+          "mean_exposure": 0.2559506952964423,
+          "turnover": 14.207707309345992,
+          "trade_count": 86,
+          "costs_in_start_nav_units": 0.03476459025935017,
+          "ending_exposure": 0.4134019439356647,
+          "estimated_exit_adjusted_return": -0.01346306903788319,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11174617962968914,
+          "cagr": -0.06361824779711575,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.00146259073718e-05,
+          "annualized_mean_log_return": -0.06573203073714425,
+          "annualized_volatility": 0.42963019564392435,
+          "descriptive_sharpe": 0.061716876600110424,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5356229229923255,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.11396681418061494,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "volatility_target": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.047015720587120335,
+          "cagr": -0.026359517664244582,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.2197789097807137e-05,
+          "annualized_mean_log_return": -0.02671315812419763,
+          "annualized_volatility": 0.20982998713656734,
+          "descriptive_sharpe": -0.022481981984952847,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.3565444121404022,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.5088373070357838,
+          "turnover": 2.185576456560683,
+          "trade_count": 20,
+          "costs_in_start_nav_units": 0.005156057906291331,
+          "ending_exposure": 0.5623036839844461,
+          "estimated_exit_adjusted_return": -0.04835538701485309,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "slow_resize": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.04218171412210214,
+          "cagr": 0.02318327582717552,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.046512610930741e-05,
+          "annualized_mean_log_return": 0.022918626179383228,
+          "annualized_volatility": 0.1324326758817965,
+          "descriptive_sharpe": 0.2392196973333955,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.18775134247294312,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2625594282982699,
+          "turnover": 12.679327062592726,
+          "trade_count": 27,
+          "costs_in_start_nav_units": 0.03148565504781153,
+          "ending_exposure": 0.5426261415189109,
+          "estimated_exit_adjusted_return": 0.040767926516363184,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_25_100": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.02980033339166499,
+          "cagr": -0.016641862339735428,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -7.662965248979326e-06,
+          "annualized_mean_log_return": -0.016781893895264726,
+          "annualized_volatility": 0.1305513133311002,
+          "descriptive_sharpe": -0.06348181192500722,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.2140612924789287,
+          "time_in_market": 0.47087132725430597,
+          "mean_exposure": 0.24285490175040816,
+          "turnover": 24.183189854545383,
+          "trade_count": 55,
+          "costs_in_start_nav_units": 0.057516355178707276,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.02980033339166499,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_100_400": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.03400569344445359,
+          "cagr": -0.01900854781342123,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -8.76325699641027e-06,
+          "annualized_mean_log_return": -0.01919153282213849,
+          "annualized_volatility": 0.1377949320205809,
+          "descriptive_sharpe": -0.07037853690955342,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.20439790135096214,
+          "time_in_market": 0.48024316109422494,
+          "mean_exposure": 0.26661389276559155,
+          "turnover": 6.621964824159045,
+          "trade_count": 17,
+          "costs_in_start_nav_units": 0.01621792635713174,
+          "ending_exposure": 0.6045013454913497,
+          "estimated_exit_adjusted_return": -0.03546555558957809,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "attribution": {
+        "fixed": {
+          "between_candles": 0.009003494544703545,
+          "execution_cost": -0.03367561897215624,
+          "within_candle_holdings": 0.044258487620544476,
+          "total_log_return": 0.01958636319309608,
+          "maximum_absolute_identity_residual": 2.9913137938875067e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "adaptive": {
+          "between_candles": 0.009003494544703545,
+          "execution_cost": -0.03367561897215714,
+          "within_candle_holdings": 0.044258487620551214,
+          "total_log_return": 0.019586363193094748,
+          "maximum_absolute_identity_residual": 2.7224316551111016e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "ensemble": {
+          "between_candles": 0.009315655453207776,
+          "execution_cost": -0.035527246701776836,
+          "within_candle_holdings": 0.0136911126755076,
+          "total_log_return": -0.012520478573064701,
+          "maximum_absolute_identity_residual": 3.2189962501094627e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "cash": {
+          "between_candles": 0.0,
+          "execution_cost": 0.0,
+          "within_candle_holdings": 0.0,
+          "total_log_return": 0.0,
+          "maximum_absolute_identity_residual": 0.0,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "buy_hold": {
+          "between_candles": 0.032780014836039775,
+          "execution_cost": 0.0,
+          "within_candle_holdings": -0.1512777579183464,
+          "total_log_return": -0.11849774308230387,
+          "maximum_absolute_identity_residual": 2.8102520310824275e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "volatility_target": {
+          "between_candles": 0.015636387988804453,
+          "execution_cost": -0.005464699707975451,
+          "within_candle_holdings": -0.05832855963897453,
+          "total_log_return": -0.048156871358142575,
+          "maximum_absolute_identity_residual": 2.9989032090949053e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "slow_resize": {
+          "between_candles": 0.009162607458554874,
+          "execution_cost": -0.03171999955297043,
+          "within_candle_holdings": 0.06387370997396796,
+          "total_log_return": 0.04131631787954566,
+          "maximum_absolute_identity_residual": 3.204901621867151e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_25_100": {
+          "between_candles": 0.007968016206364375,
+          "execution_cost": -0.0604971973863111,
+          "within_candle_holdings": 0.02227579437697442,
+          "total_log_return": -0.030253386802970378,
+          "maximum_absolute_identity_residual": 3.0569080253228798e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_100_400": {
+          "between_candles": 0.011823641700845273,
+          "execution_cost": -0.016566339741797952,
+          "within_candle_holdings": -0.029854640580871616,
+          "total_log_return": -0.03459733862182775,
+          "maximum_absolute_identity_residual": 2.942524696125659e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        }
+      },
+      "initial_state": {
+        "fixed": {
+          "nav": 6.1995539731482925,
+          "cash": 6.1995539731482925,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "adaptive": {
+          "nav": 5.889053805743766,
+          "cash": 5.889053805743766,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "ensemble": {
+          "nav": 4.623065466402003,
+          "cash": 4.063972790080161,
+          "coins": 5.987220915623538e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 11.474214179261308,
+          "cash": 0.0,
+          "coins": 0.0001228752549154679,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "volatility_target": {
+          "nav": 4.408328524349539,
+          "cash": 2.5861667174514253,
+          "coins": 1.9513196548528214e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "slow_resize": {
+          "nav": 6.20612023483033,
+          "cash": 6.20612023483033,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_25_100": {
+          "nav": 5.774905919029607,
+          "cash": 5.774905919029607,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_100_400": {
+          "nav": 1.7269199888745357,
+          "cash": 1.023779607589458,
+          "coins": 7.529801365214313e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "adaptive_minus_fixed": {
+        "cumulative_log_difference": -2.220446049250313e-16,
+        "annualized_mean_log_difference": -1.2317063951008577e-16,
+        "materiality_annual_log": 0.02,
+        "point_estimate_exceeds_materiality": false,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 180,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -3.3745380687694728e-19,
+              3.9369610802310515e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -7.390238370605146e-16,
+              8.621944765706003e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 90,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -4.499384091692631e-19,
+              5.061807103154209e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -9.853651160806862e-16,
+              1.1085357555907717e-15
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 360,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -2.2496920458463153e-19,
+              3.3745380687694728e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -4.926825580403431e-16,
+              7.390238370605146e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+      }
+    },
+    "0": {
+      "metrics": {
+        "fixed": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.05470592306926059,
+          "cagr": 0.029985804906089108,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.3490876941553838e-05,
+          "annualized_mean_log_return": 0.029545020502002903,
+          "annualized_volatility": 0.13391840183909068,
+          "descriptive_sharpe": 0.2875487874447554,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.18550479800373387,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2678217996360991,
+          "turnover": 13.47059831228545,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": 0.05470592306926059,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "adaptive": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.05470592306926059,
+          "cagr": 0.029985804906089108,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.3490876941554126e-05,
+          "annualized_mean_log_return": 0.029545020502003534,
+          "annualized_volatility": 0.13391840183909082,
+          "descriptive_sharpe": 0.28754878744476026,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.18550479800373398,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2678217996360991,
+          "turnover": 13.47059831228545,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": 0.05470592306926059,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "ensemble": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.023273465170303043,
+          "cagr": 0.012843896323025808,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 5.827448867455257e-06,
+          "annualized_mean_log_return": 0.012762113019727014,
+          "annualized_volatility": 0.12172343251164972,
+          "descriptive_sharpe": 0.16568174109333092,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.17516162632612464,
+          "time_in_market": 0.6504559270516718,
+          "mean_exposure": 0.2559506952964423,
+          "turnover": 14.211055432762906,
+          "trade_count": 86,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.41340194393566465,
+          "estimated_exit_adjusted_return": 0.023273465170303043,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11174617962968925,
+          "cagr": -0.06361824779711582,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.0014625907371885e-05,
+          "annualized_mean_log_return": -0.06573203073714443,
+          "annualized_volatility": 0.4296301956439243,
+          "descriptive_sharpe": 0.06171687660011001,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5356229229923255,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.11174617962968925,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "volatility_target": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.04179369226079377,
+          "cagr": -0.02340361378881173,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.081361997218044e-05,
+          "annualized_mean_log_return": -0.023681827739075165,
+          "annualized_volatility": 0.2098151775378304,
+          "descriptive_sharpe": -0.008051214161795526,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.3548594401223857,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.5088373070357838,
+          "turnover": 2.1860955587179074,
+          "trade_count": 20,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.5623036839844461,
+          "estimated_exit_adjusted_return": -0.04179369226079377,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "slow_resize": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0757696053953143,
+          "cagr": 0.04134595785995559,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.8499573817761333e-05,
+          "annualized_mean_log_return": 0.04051406666089732,
+          "annualized_volatility": 0.13233651729704432,
+          "descriptive_sharpe": 0.3722588074483513,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.17122676006291648,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2625594282982699,
+          "turnover": 12.688309076594823,
+          "trade_count": 27,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.5426261415189108,
+          "estimated_exit_adjusted_return": 0.0757696053953143,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_25_100": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.03070580030399417,
+          "cagr": 0.016918098991582035,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 7.660539661432611e-06,
+          "annualized_mean_log_return": 0.01677658185853742,
+          "annualized_volatility": 0.13028662231878949,
+          "descriptive_sharpe": 0.19369769574697918,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.18755147739361022,
+          "time_in_market": 0.47087132725430597,
+          "mean_exposure": 0.24285490175040816,
+          "turnover": 24.19884035486064,
+          "trade_count": 55,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.03070580030399417,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_100_400": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.01786941306182044,
+          "cagr": -0.009952144228809336,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -4.56712231003692e-06,
+          "annualized_mean_log_return": -0.010001997858980856,
+          "annualized_volatility": 0.13788975663350853,
+          "descriptive_sharpe": -0.0035929601267165015,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.1959458065530838,
+          "time_in_market": 0.48024316109422494,
+          "mean_exposure": 0.2666138927655915,
+          "turnover": 6.626776170951619,
+          "trade_count": 17,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.6045013454913498,
+          "estimated_exit_adjusted_return": -0.01786941306182044,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "attribution": {
+        "fixed": {
+          "between_candles": 0.00900349454469755,
+          "execution_cost": -1.1102230246251565e-16,
+          "within_candle_holdings": 0.0442584876205572,
+          "total_log_return": 0.05326198216525455,
+          "maximum_absolute_identity_residual": 2.96637714392034e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "adaptive": {
+          "between_candles": 0.009003494544694443,
+          "execution_cost": 4.440892098500625e-16,
+          "within_candle_holdings": 0.04425848762055777,
+          "total_log_return": 0.05326198216525569,
+          "maximum_absolute_identity_residual": 2.933851078745775e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "ensemble": {
+          "between_candles": 0.00931565545321044,
+          "execution_cost": 2.2204460492503082e-16,
+          "within_candle_holdings": 0.013691112675507398,
+          "total_log_return": 0.023006768128713356,
+          "maximum_absolute_identity_residual": 2.981555974335137e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "cash": {
+          "between_candles": 0.0,
+          "execution_cost": 0.0,
+          "within_candle_holdings": 0.0,
+          "total_log_return": 0.0,
+          "maximum_absolute_identity_residual": 0.0,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "buy_hold": {
+          "between_candles": 0.03278001483604178,
+          "execution_cost": 0.0,
+          "within_candle_holdings": -0.15127775791834547,
+          "total_log_return": -0.11849774308230421,
+          "maximum_absolute_identity_residual": 3.2116778854451855e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "volatility_target": {
+          "between_candles": 0.015636387988807895,
+          "execution_cost": 9.992007221626407e-16,
+          "within_candle_holdings": -0.05832855963897012,
+          "total_log_return": -0.04269217165016838,
+          "maximum_absolute_identity_residual": 3.0531133177191805e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "slow_resize": {
+          "between_candles": 0.009162607458548102,
+          "execution_cost": 0.0,
+          "within_candle_holdings": 0.06387370997396905,
+          "total_log_return": 0.07303631743252174,
+          "maximum_absolute_identity_residual": 2.8275992658421956e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_25_100": {
+          "between_candles": 0.007968016206355937,
+          "execution_cost": 3.330669073875469e-16,
+          "within_candle_holdings": 0.022275794376974183,
+          "total_log_return": 0.030243810583335952,
+          "maximum_absolute_identity_residual": 2.931682674400804e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_100_400": {
+          "between_candles": 0.011823641700844715,
+          "execution_cost": 1.1102230246251563e-16,
+          "within_candle_holdings": -0.029854640580868425,
+          "total_log_return": -0.01803099888002576,
+          "maximum_absolute_identity_residual": 3.0227556568895864e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        }
+      },
+      "initial_state": {
+        "fixed": {
+          "nav": 6.628540391413111,
+          "cash": 6.628540391413111,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "adaptive": {
+          "nav": 6.3878848433390125,
+          "cash": 6.3878848433390125,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "ensemble": {
+          "nav": 4.990720459694588,
+          "cash": 4.387165247495439,
+          "coins": 6.463362056512024e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 11.50289971470946,
+          "cash": 0.0,
+          "coins": 0.00012318244305275657,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "volatility_target": {
+          "nav": 4.5220357180037105,
+          "cash": 2.6528735788250595,
+          "coins": 2.0016514485587545e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "slow_resize": {
+          "nav": 6.602909476153506,
+          "cash": 6.602909476153506,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_25_100": {
+          "nav": 6.591691007049696,
+          "cash": 6.591691007049696,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_100_400": {
+          "nav": 1.81256759354536,
+          "cash": 1.0745545547009447,
+          "coins": 7.903246258279685e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "adaptive_minus_fixed": {
+        "cumulative_log_difference": -2.220446049250313e-16,
+        "annualized_mean_log_difference": -1.2317063951008577e-16,
+        "materiality_annual_log": 0.02,
+        "point_estimate_exceeds_materiality": false,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 180,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -3.3745380687694728e-19,
+              3.3745380687694728e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -7.390238370605146e-16,
+              7.390238370605146e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 90,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -4.499384091692631e-19,
+              4.499384091692631e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -9.853651160806862e-16,
+              9.853651160806862e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 360,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -2.812115057307894e-19,
+              2.812115057307894e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -6.158531975504288e-16,
+              6.158531975504288e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+      }
+    },
+    "10": {
+      "metrics": {
+        "fixed": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.04059381570685261,
+          "cagr": 0.022318214139902946,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.0078907509965942e-05,
+          "annualized_mean_log_return": 0.022072807446825413,
+          "annualized_volatility": 0.1339428565826108,
+          "descriptive_sharpe": 0.23173351438332743,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.19267741123809712,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.26782179963609903,
+          "turnover": 13.46678301409466,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.013398563342958853,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": 0.03999980178543905,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "adaptive": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.040593815706852165,
+          "cagr": 0.02231821413990271,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.0078907509965271e-05,
+          "annualized_mean_log_return": 0.022072807446823946,
+          "annualized_volatility": 0.1339428565826109,
+          "descriptive_sharpe": 0.2317335143833162,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.19267741123809734,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2678217996360991,
+          "turnover": 13.466783014094661,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.01339856334295885,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": 0.03999980178543883,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "ensemble": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.008834574594436928,
+          "cagr": 0.004891039289984394,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 2.227907313417342e-06,
+          "annualized_mean_log_return": 0.004879117016383979,
+          "annualized_volatility": 0.12174363717699237,
+          "descriptive_sharpe": 0.10092367014977498,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.18055653107187974,
+          "time_in_market": 0.6504559270516718,
+          "mean_exposure": 0.2559506952964423,
+          "turnover": 14.209713418448098,
+          "trade_count": 86,
+          "costs_in_start_nav_units": 0.014051923889592277,
+          "ending_exposure": 0.41340194393566476,
+          "estimated_exit_adjusted_return": 0.008417520420190172,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11174617962968914,
+          "cagr": -0.06361824779711575,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.001462590737046e-05,
+          "annualized_mean_log_return": -0.0657320307371413,
+          "annualized_volatility": 0.4296301956439243,
+          "descriptive_sharpe": 0.061716876600117314,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5356229229923255,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.11263443345005952,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "volatility_target": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.04388605133659229,
+          "cagr": -0.024587120126017728,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.1367320129462749e-05,
+          "annualized_mean_log_return": -0.02489443108352342,
+          "annualized_volatility": 0.20982061328422932,
+          "descriptive_sharpe": -0.013824628828734269,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.35553382032811676,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.5088373070357838,
+          "turnover": 2.185886837178473,
+          "trade_count": 20,
+          "costs_in_start_nav_units": 0.002065744605408838,
+          "ending_exposure": 0.5623036839844462,
+          "estimated_exit_adjusted_return": -0.04442367773223466,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "slow_resize": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0622062726554935,
+          "cagr": 0.034042408016812485,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.528574831101224e-05,
+          "annualized_mean_log_return": 0.033475788801116804,
+          "annualized_volatility": 0.13235333420652876,
+          "descriptive_sharpe": 0.3190495671184975,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.17787658648101312,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2625594282982699,
+          "turnover": 12.684713005843879,
+          "trade_count": 27,
+          "costs_in_start_nav_units": 0.012712717395068199,
+          "ending_exposure": 0.5426261415189109,
+          "estimated_exit_adjusted_return": 0.061629891764265254,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_25_100": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.006063266661166411,
+          "cagr": 0.003358835041108751,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.53114463660315e-06,
+          "annualized_mean_log_return": 0.0033532067541608987,
+          "annualized_volatility": 0.13035309957676977,
+          "descriptive_sharpe": 0.09068810922624777,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.19678817141217786,
+          "time_in_market": 0.47087132725430597,
+          "mean_exposure": 0.24285490175040816,
+          "turnover": 24.19257428493629,
+          "trade_count": 55,
+          "costs_in_start_nav_units": 0.023420334546527796,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.006063266661166411,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_100_400": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.02435616019970277,
+          "cagr": -0.013584773644303442,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -6.245612311375156e-06,
+          "annualized_mean_log_return": -0.013677890961911592,
+          "annualized_volatility": 0.13784073287230658,
+          "descriptive_sharpe": -0.03031026969143094,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.1993373240342733,
+          "time_in_market": 0.48024316109422494,
+          "mean_exposure": 0.2666138927655915,
+          "turnover": 6.6248496156873715,
+          "trade_count": 17,
+          "costs_in_start_nav_units": 0.006518891503475266,
+          "ending_exposure": 0.6045013454913497,
+          "estimated_exit_adjusted_return": -0.024945938213582375,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "attribution": {
+        "fixed": {
+          "between_candles": 0.009003494544698107,
+          "execution_cost": -0.013470455315909163,
+          "within_candle_holdings": 0.04425848762055354,
+          "total_log_return": 0.03979152684934554,
+          "maximum_absolute_identity_residual": 3.122502256758253e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "adaptive": {
+          "between_candles": 0.009003494544703323,
+          "execution_cost": -0.013470455315909275,
+          "within_candle_holdings": 0.04425848762054947,
+          "total_log_return": 0.03979152684934289,
+          "maximum_absolute_identity_residual": 3.0747973611688906e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "ensemble": {
+          "between_candles": 0.009315655453211218,
+          "execution_cost": -0.014210990055340513,
+          "within_candle_holdings": 0.013691112675504727,
+          "total_log_return": 0.008795778073371667,
+          "maximum_absolute_identity_residual": 2.951198313505543e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "cash": {
+          "between_candles": 0.0,
+          "execution_cost": 0.0,
+          "within_candle_holdings": 0.0,
+          "total_log_return": 0.0,
+          "maximum_absolute_identity_residual": 0.0,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "buy_hold": {
+          "between_candles": 0.03278001483605,
+          "execution_cost": 0.0,
+          "within_candle_holdings": -0.151277757918348,
+          "total_log_return": -0.11849774308229857,
+          "maximum_absolute_identity_residual": 2.896988204881268e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "volatility_target": {
+          "between_candles": 0.01563638798879535,
+          "execution_cost": -0.0021860082209522085,
+          "within_candle_holdings": -0.05832855963896536,
+          "total_log_return": -0.04487817987111893,
+          "maximum_absolute_identity_residual": 3.0964814046186007e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "slow_resize": {
+          "between_candles": 0.009162607458552212,
+          "execution_cost": -0.012688183100643605,
+          "within_candle_holdings": 0.06387370997396588,
+          "total_log_return": 0.06034813433187632,
+          "maximum_absolute_identity_residual": 3.0140820395097023e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_25_100": {
+          "between_candles": 0.007968016206364042,
+          "execution_cost": -0.02419885155802292,
+          "within_candle_holdings": 0.02227579437697269,
+          "total_log_return": 0.006044959025309236,
+          "maximum_absolute_identity_residual": 2.5587171270657905e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_100_400": {
+          "between_candles": 0.011823641700850375,
+          "execution_cost": -0.006626678525279714,
+          "within_candle_holdings": -0.02985464058088108,
+          "total_log_return": -0.024657677405309116,
+          "maximum_absolute_identity_residual": 2.905661822261152e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        }
+      },
+      "initial_state": {
+        "fixed": {
+          "nav": 6.453498348906145,
+          "cash": 6.453498348906145,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "adaptive": {
+          "nav": 6.183476795833137,
+          "cash": 6.183476795833137,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "ensemble": {
+          "nav": 4.840276934794402,
+          "cash": 4.2549156836332305,
+          "coins": 6.268526265098594e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 11.491408306403061,
+          "cash": 0.0,
+          "coins": 0.0001230593836690875,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "volatility_target": {
+          "nav": 4.476207154354645,
+          "cash": 2.6259880358435947,
+          "coins": 1.981365715200148e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "slow_resize": {
+          "nav": 6.441241119036415,
+          "cash": 6.441241119036415,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_25_100": {
+          "nav": 6.251962489037799,
+          "cash": 6.251962489037799,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_100_400": {
+          "nav": 1.7778104808718145,
+          "cash": 1.0539493017632824,
+          "coins": 7.751696588262411e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "adaptive_minus_fixed": {
+        "cumulative_log_difference": -2.220446049250313e-16,
+        "annualized_mean_log_difference": -1.2317063951008577e-16,
+        "materiality_annual_log": 0.02,
+        "point_estimate_exceeds_materiality": false,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 180,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -5.061807103154209e-19,
+              2.2496920458463153e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -1.1085357555907717e-15,
+              4.926825580403431e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 90,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -5.624230114615788e-19,
+              3.3745380687694728e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -1.2317063951008576e-15,
+              7.390238370605146e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 360,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -5.624230114615788e-20,
+            "mean_difference_ci": [
+              -3.9369610802310515e-19,
+              2.2496920458463153e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -1.2317063951008577e-16,
+            "annualized_mean_difference_ci": [
+              -8.621944765706003e-16,
+              4.926825580403431e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+      }
+    },
+    "50": {
+      "metrics": {
+        "fixed": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.013988848837835799,
+          "cagr": -0.007784104162714054,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.5682915269395173e-06,
+          "annualized_mean_log_return": -0.007814558443997543,
+          "annualized_volatility": 0.13434139521743113,
+          "descriptive_sharpe": 0.00897072665233942,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.22146359430902463,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.26782179963609903,
+          "turnover": 13.451569710071503,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.06525396312965244,
+          "ending_exposure": 0.5708412950828412,
+          "estimated_exit_adjusted_return": -0.016803128250313493,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "adaptive": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.013988848837835466,
+          "cagr": -0.0077841041627138684,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.5682915269384555e-06,
+          "annualized_mean_log_return": -0.007814558443995218,
+          "annualized_volatility": 0.13434139521743121,
+          "descriptive_sharpe": 0.008970726652356837,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.22146359430902451,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2678217996360991,
+          "turnover": 13.451569710071505,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.06525396312965248,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": -0.01680312825031327,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "ensemble": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.04691105970778975,
+          "cagr": -0.02630020415526909,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.2169972907319193e-05,
+          "annualized_mean_log_return": -0.026652240667029033,
+          "annualized_volatility": 0.12193830262051979,
+          "descriptive_sharpe": -0.157624985201171,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.2100086404728736,
+          "time_in_market": 0.6504559270516718,
+          "mean_exposure": 0.2559506952964423,
+          "turnover": 14.204382201811033,
+          "trade_count": 86,
+          "costs_in_start_nav_units": 0.06833445831166234,
+          "ending_exposure": 0.4134019439356647,
+          "estimated_exit_adjusted_return": -0.048881103811091786,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11174617962968914,
+          "cagr": -0.06361824779711575,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.0014625907370693e-05,
+          "annualized_mean_log_return": -0.06573203073714182,
+          "annualized_volatility": 0.42963019564392435,
+          "descriptive_sharpe": 0.061716876600116294,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5356229229923255,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.11618744873154063,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "volatility_target": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.0522083100055204,
+          "cagr": -0.029305918076816057,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.3581696343823423e-05,
+          "annualized_mean_log_return": -0.029743914992973297,
+          "annualized_volatility": 0.20984886146886733,
+          "descriptive_sharpe": -0.036903169496158926,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.35822613383525015,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.5088373070357838,
+          "turnover": 2.185066353056735,
+          "trade_count": 20,
+          "costs_in_start_nav_units": 0.010284554021993677,
+          "ending_exposure": 0.5623036839844461,
+          "estimated_exit_adjusted_return": -0.05487304380018909,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "slow_resize": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.009643976166648471,
+          "cagr": 0.005338188507370823,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 2.4310460653355633e-06,
+          "annualized_mean_log_return": 0.005323990883084884,
+          "annualized_volatility": 0.13270845721305452,
+          "descriptive_sharpe": 0.10641686347767959,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.20468385589713478,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2625594282982699,
+          "turnover": 12.670372194062448,
+          "trade_count": 27,
+          "costs_in_start_nav_units": 0.06200061419490852,
+          "ending_exposure": 0.5426261415189109,
+          "estimated_exit_adjusted_return": 0.0069046800911729544,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_25_100": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.08675487711871188,
+          "cagr": -0.04909448494921307,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -2.298656375867967e-05,
+          "annualized_mean_log_return": -0.050340574631508476,
+          "annualized_volatility": 0.1311420912655416,
+          "descriptive_sharpe": -0.3184961360524391,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.24257991827926362,
+          "time_in_market": 0.47087132725430597,
+          "mean_exposure": 0.24285490175040816,
+          "turnover": 24.167588158982667,
+          "trade_count": 55,
+          "costs_in_start_nav_units": 0.1116930586558073,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.08675487711871188,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_100_400": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.04987577614545324,
+          "cagr": -0.027981495224483264,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.2959103592704018e-05,
+          "annualized_mean_log_return": -0.0283804368680218,
+          "annualized_volatility": 0.13779240524226155,
+          "descriptive_sharpe": -0.13706717567976184,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.2127615236240058,
+          "time_in_market": 0.48024316109422494,
+          "mean_exposure": 0.26661389276559155,
+          "turnover": 6.617170242843296,
+          "trade_count": 17,
+          "costs_in_start_nav_units": 0.03217386968892138,
+          "ending_exposure": 0.6045013454913496,
+          "estimated_exit_adjusted_return": -0.05274753300397328,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "attribution": {
+        "fixed": {
+          "between_candles": 0.009003494544704876,
+          "execution_cost": -0.06734959711361235,
+          "within_candle_holdings": 0.04425848762055291,
+          "total_log_return": -0.014087614948357214,
+          "maximum_absolute_identity_residual": 2.645453300864631e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "adaptive": {
+          "between_candles": 0.009003494544695664,
+          "execution_cost": -0.06734959711361269,
+          "within_candle_holdings": 0.04425848762055876,
+          "total_log_return": -0.014087614948353023,
+          "maximum_absolute_identity_residual": 2.914335439641036e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "ensemble": {
+          "between_candles": 0.009315655453218767,
+          "execution_cost": -0.07105382116680822,
+          "within_candle_holdings": 0.013691112675497441,
+          "total_log_return": -0.04804705303809617,
+          "maximum_absolute_identity_residual": 2.916503843986007e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "cash": {
+          "between_candles": 0.0,
+          "execution_cost": 0.0,
+          "within_candle_holdings": 0.0,
+          "total_log_return": 0.0,
+          "maximum_absolute_identity_residual": 0.0,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "buy_hold": {
+          "between_candles": 0.032780014836039,
+          "execution_cost": 0.0,
+          "within_candle_holdings": -0.15127775791834097,
+          "total_log_return": -0.11849774308229949,
+          "maximum_absolute_identity_residual": 2.8449465006019636e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "volatility_target": {
+          "between_candles": 0.015636387988806785,
+          "execution_cost": -0.010928365515251542,
+          "within_candle_holdings": -0.05832855963897202,
+          "total_log_return": -0.05362053716541487,
+          "maximum_absolute_identity_residual": 2.896988204881268e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "slow_resize": {
+          "between_candles": 0.009162607458553875,
+          "execution_cost": -0.0634385475665736,
+          "within_candle_holdings": 0.0638737099739673,
+          "total_log_return": 0.009597769865944804,
+          "maximum_absolute_identity_residual": 2.837763661209247e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_25_100": {
+          "between_candles": 0.007968016206358269,
+          "execution_cost": -0.12099476430260131,
+          "within_candle_holdings": 0.02227579437697727,
+          "total_log_return": -0.09075095371926734,
+          "maximum_absolute_identity_residual": 2.7094212290412756e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_100_400": {
+          "between_candles": 0.011823641700847489,
+          "execution_cost": -0.03313154210396667,
+          "within_candle_holdings": -0.02985464058087471,
+          "total_log_return": -0.05116254098399546,
+          "maximum_absolute_identity_residual": 2.806999424564971e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        }
+      },
+      "initial_state": {
+        "fixed": {
+          "nav": 5.798298687693063,
+          "cash": 5.798298687693063,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "adaptive": {
+          "nav": 5.429146451875587,
+          "cash": 5.429146451875587,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "ensemble": {
+          "nav": 4.282473976471799,
+          "cash": 3.7645708980523467,
+          "coins": 5.546129067149123e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 11.445671357919865,
+          "cash": 0.0,
+          "coins": 0.00012256959507736976,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "volatility_target": {
+          "nav": 4.297463132232389,
+          "cash": 2.5211270123507536,
+          "coins": 1.902245767213497e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "slow_resize": {
+          "nav": 5.83314368793645,
+          "cash": 5.83314368793645,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_25_100": {
+          "nav": 5.059299933740846,
+          "cash": 5.059299933740846,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_100_400": {
+          "nav": 1.6453176498211484,
+          "cash": 0.975402837853354,
+          "coins": 7.173994838005528e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "adaptive_minus_fixed": {
+        "cumulative_log_difference": 4.440892098500626e-16,
+        "annualized_mean_log_difference": 2.4634127902017154e-16,
+        "materiality_annual_log": 0.02,
+        "point_estimate_exceeds_materiality": false,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 180,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 1.1248460229231577e-19,
+            "mean_difference_ci": [
+              -3.3745380687694728e-19,
+              5.061807103154209e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 2.4634127902017154e-16,
+            "annualized_mean_difference_ci": [
+              -7.390238370605146e-16,
+              1.1085357555907717e-15
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 90,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 1.1248460229231577e-19,
+            "mean_difference_ci": [
+              -3.9369610802310515e-19,
+              6.186653126077366e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 2.4634127902017154e-16,
+            "annualized_mean_difference_ci": [
+              -8.621944765706003e-16,
+              1.3548770346109432e-15
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 360,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 1.1248460229231577e-19,
+            "mean_difference_ci": [
+              -3.3745380687694728e-19,
+              4.513444666978966e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 2.4634127902017154e-16,
+            "annualized_mean_difference_ci": [
+              -7.390238370605146e-16,
+              9.884443820683934e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+      }
+    },
+    "100": {
+      "metrics": {
+        "fixed": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.07820398833900011,
+          "cagr": -0.04416585740108989,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -2.062596894400219e-05,
+          "annualized_mean_log_return": -0.0451708719873648,
+          "annualized_volatility": 0.13550599215372824,
+          "descriptive_sharpe": -0.265618578028367,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.2577326752142557,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2678217996360991,
+          "turnover": 13.432660210200531,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.12633066057329392,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": -0.08346598062998767,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "adaptive": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.07820398833900011,
+          "cagr": -0.04416585740108989,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -2.0625968944000596e-05,
+          "annualized_mean_log_return": -0.045170871987361305,
+          "annualized_volatility": 0.13550599215372822,
+          "descriptive_sharpe": -0.26561857802834116,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.25773267521425547,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2678217996360991,
+          "turnover": 13.432660210200531,
+          "trade_count": 31,
+          "costs_in_start_nav_units": 0.1263306605732939,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": -0.08346598062998778,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "ensemble": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11227995859995987,
+          "cagr": -0.0639304258783465,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.0166883077820286e-05,
+          "annualized_mean_log_return": -0.06606547394042643,
+          "annualized_volatility": 0.12243609965906596,
+          "descriptive_sharpe": -0.47838704635984586,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.24714345804866067,
+          "time_in_market": 0.6504559270516718,
+          "mean_exposure": 0.2559506952964423,
+          "turnover": 14.197800845971623,
+          "trade_count": 86,
+          "costs_in_start_nav_units": 0.13205472809804183,
+          "ending_exposure": 0.4134019439356647,
+          "estimated_exit_adjusted_return": -0.11594981050781406,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11174617962968914,
+          "cagr": -0.06361824779711575,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.0014625907371238e-05,
+          "annualized_mean_log_return": -0.06573203073714301,
+          "annualized_volatility": 0.4296301956439243,
+          "descriptive_sharpe": 0.06171687660011344,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5356229229923255,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.12062871783339224,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "volatility_target": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.06250610567762538,
+          "cagr": -0.0351704797280547,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.6348792776488997e-05,
+          "annualized_mean_log_return": -0.03580385618051091,
+          "annualized_volatility": 0.20989878426326758,
+          "descriptive_sharpe": -0.06571418105141551,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.36157991071793494,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.5088373070357838,
+          "turnover": 2.184073090575796,
+          "trade_count": 20,
+          "costs_in_start_nav_units": 0.02045972966966855,
+          "ending_exposure": 0.5623036839844461,
+          "estimated_exit_adjusted_return": -0.0677776683825293,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "slow_resize": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.05241206593286307,
+          "cagr": -0.029421680469933313,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.3636154997084535e-05,
+          "annualized_mean_log_return": -0.02986317944361513,
+          "annualized_volatility": 0.1337906339984131,
+          "descriptive_sharpe": -0.15636129937047363,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.23873629691763243,
+          "time_in_market": 0.48429584599797365,
+          "mean_exposure": 0.2625594282982699,
+          "turnover": 12.652543415371069,
+          "trade_count": 27,
+          "costs_in_start_nav_units": 0.1202382027520067,
+          "ending_exposure": 0.5426261415189109,
+          "estimated_exit_adjusted_return": -0.05755392577699037,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_25_100": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.1908316242969743,
+          "cagr": -0.11082315601152096,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -5.3634309876552595e-05,
+          "annualized_mean_log_return": -0.11745913862965018,
+          "annualized_volatility": 0.1332769117314852,
+          "descriptive_sharpe": -0.8148491325817161,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.29817442446116027,
+          "time_in_market": 0.47087132725430597,
+          "mean_exposure": 0.24285490175040816,
+          "turnover": 24.13653036054153,
+          "trade_count": 55,
+          "costs_in_start_nav_units": 0.21079918226862382,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.1908316242969743,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_100_400": {
+          "bars": 3948,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.08083526440139255,
+          "cagr": -0.04568031599711708,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -2.1350029740323638e-05,
+          "annualized_mean_log_return": -0.04675656513130877,
+          "annualized_volatility": 0.13806245907233633,
+          "descriptive_sharpe": -0.2696245256122636,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.22922723665817757,
+          "time_in_market": 0.48024316109422494,
+          "mean_exposure": 0.2666138927655915,
+          "turnover": 6.6076310854251235,
+          "trade_count": 17,
+          "costs_in_start_nav_units": 0.06331721664541082,
+          "ending_exposure": 0.6045013454913497,
+          "estimated_exit_adjusted_return": -0.08639162759536823,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "attribution": {
+        "fixed": {
+          "between_candles": 0.009003494544696329,
+          "execution_cost": -0.134693307556176,
+          "within_candle_holdings": 0.04425848762055732,
+          "total_log_return": -0.08143132539092066,
+          "maximum_absolute_identity_residual": 2.931682674400804e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "adaptive": {
+          "between_candles": 0.009003494544699437,
+          "execution_cost": -0.1346933075561749,
+          "within_candle_holdings": 0.04425848762055873,
+          "total_log_return": -0.08143132539091436,
+          "maximum_absolute_identity_residual": 2.883977778811442e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "ensemble": {
+          "between_candles": 0.009315655453211995,
+          "execution_cost": -0.14210562251995118,
+          "within_candle_holdings": 0.013691112675503686,
+          "total_log_return": -0.1190988543912345,
+          "maximum_absolute_identity_residual": 3.0878077872387166e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "cash": {
+          "between_candles": 0.0,
+          "execution_cost": 0.0,
+          "within_candle_holdings": 0.0,
+          "total_log_return": 0.0,
+          "maximum_absolute_identity_residual": 0.0,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "buy_hold": {
+          "between_candles": 0.03278001483604866,
+          "execution_cost": 0.0,
+          "within_candle_holdings": -0.15127775791834744,
+          "total_log_return": -0.11849774308230165,
+          "maximum_absolute_identity_residual": 2.96637714392034e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "volatility_target": {
+          "between_candles": 0.01563638798879746,
+          "execution_cost": -0.021852862231416133,
+          "within_candle_holdings": -0.0583285596389585,
+          "total_log_return": -0.06454503388157856,
+          "maximum_absolute_identity_residual": 2.977219165645195e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "slow_resize": {
+          "between_candles": 0.009162607458561203,
+          "execution_cost": -0.12687185736101037,
+          "within_candle_holdings": 0.06387370997395667,
+          "total_log_return": -0.053835539928489745,
+          "maximum_absolute_identity_residual": 2.985892783025079e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_25_100": {
+          "between_candles": 0.00796801620635727,
+          "execution_cost": -0.2419920659759651,
+          "within_candle_holdings": 0.02227579437697509,
+          "total_log_return": -0.21174825539262965,
+          "maximum_absolute_identity_residual": 2.933851078745775e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        },
+        "candidate_100_400": {
+          "between_candles": 0.011823641700846824,
+          "execution_cost": -0.06625891853476848,
+          "within_candle_holdings": -0.02985464058087338,
+          "total_log_return": -0.08428991741479773,
+          "maximum_absolute_identity_residual": 2.8796409701215e-16,
+          "interpretation": "accounting identity; holdings differ across strategies and cost paths; not a causal decomposition"
+        }
+      },
+      "initial_state": {
+        "fixed": {
+          "nav": 5.071929591860834,
+          "cash": 5.071929591860834,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "adaptive": {
+          "nav": 4.6141934103710325,
+          "cash": 4.6141934103710325,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "ensemble": {
+          "nav": 3.6746615145624144,
+          "cash": 3.2302645325848887,
+          "coins": 4.758965763672756e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 11.38900961852422,
+          "cash": 0.0,
+          "coins": 0.00012196281490371938,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "volatility_target": {
+          "nav": 4.083972660108305,
+          "cash": 2.3958818201082437,
+          "coins": 1.8077455156831272e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "slow_resize": {
+          "nav": 5.15300118084845,
+          "cash": 5.15300118084845,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_25_100": {
+          "nav": 3.8830495799677758,
+          "cash": 3.8830495799677758,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "candidate_100_400": {
+          "nav": 1.4934923857958475,
+          "cash": 0.8853954198911076,
+          "coins": 6.5119988638453205e-06,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "adaptive_minus_fixed": {
+        "cumulative_log_difference": 0.0,
+        "annualized_mean_log_difference": 0.0,
+        "materiality_annual_log": 0.02,
+        "point_estimate_exceeds_materiality": false,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 180,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0,
+            "mean_difference_ci": [
+              -3.9369610802310515e-19,
+              3.9369610802310515e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 0.0,
+            "annualized_mean_difference_ci": [
+              -8.621944765706003e-16,
+              8.621944765706003e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 90,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0,
+            "mean_difference_ci": [
+              -4.499384091692631e-19,
+              4.499384091692631e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 0.0,
+            "annualized_mean_difference_ci": [
+              -9.853651160806862e-16,
+              9.853651160806862e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 3948,
+            "block_length": 360,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0,
+            "mean_difference_ci": [
+              -3.3745380687694728e-19,
+              2.812115057307894e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 0.0,
+            "annualized_mean_difference_ci": [
+              -7.390238370605146e-16,
+              6.158531975504288e-16
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+      }
+    }
+  },
+  "base_cost_adaptive_minus_controls": {
+    "ensemble": {
+      "cumulative_log_difference": 0.03210684176616119,
+      "annualized_mean_log_difference": 0.017810026207673,
+      "materiality_annual_log": 0.02,
+      "point_estimate_exceeds_materiality": false,
+      "bootstrap_by_block_days": {
+        "30": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 180,
+          "effective_block_count": 21.933333333333334,
+          "blocks_per_draw": 22,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 8.132432058298174e-06,
+          "mean_difference_ci": [
+            -1.5101347696514765e-05,
+            3.3659845522649566e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.017810026207673,
+          "annualized_mean_difference_ci": [
+            -0.033071951455367336,
+            0.07371506169460255
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "15": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 90,
+          "effective_block_count": 43.86666666666667,
+          "blocks_per_draw": 44,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 8.132432058298174e-06,
+          "mean_difference_ci": [
+            -1.4574820872377362e-05,
+            3.235919583846646e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.017810026207673,
+          "annualized_mean_difference_ci": [
+            -0.03191885771050642,
+            0.07086663888624155
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "60": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 360,
+          "effective_block_count": 10.966666666666667,
+          "blocks_per_draw": 11,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 8.132432058298174e-06,
+          "mean_difference_ci": [
+            -1.4387434049371079e-05,
+            3.159538441154877e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.017810026207673,
+          "annualized_mean_difference_ci": [
+            -0.031508480568122665,
+            0.0691938918612918
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        }
+      },
+      "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+    },
+    "cash": {
+      "cumulative_log_difference": 0.0195863631930977,
+      "annualized_mean_log_difference": 0.010864775935380943,
+      "materiality_annual_log": 0.02,
+      "point_estimate_exceeds_materiality": false,
+      "bootstrap_by_block_days": {
+        "30": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 180,
+          "effective_block_count": 21.933333333333334,
+          "blocks_per_draw": 22,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 4.961084902000431e-06,
+          "mean_difference_ci": [
+            -7.083872297039482e-05,
+            9.127516724540372e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.010864775935380943,
+          "annualized_mean_difference_ci": [
+            -0.15513680330516463,
+            0.19989261626743415
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "15": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 90,
+          "effective_block_count": 43.86666666666667,
+          "blocks_per_draw": 44,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 4.961084902000431e-06,
+          "mean_difference_ci": [
+            -7.74415557138758e-05,
+            9.334632204999734e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.010864775935380943,
+          "annualized_mean_difference_ci": [
+            -0.169597007013388,
+            0.2044284452894942
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "60": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 360,
+          "effective_block_count": 10.966666666666667,
+          "blocks_per_draw": 11,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 4.961084902000431e-06,
+          "mean_difference_ci": [
+            -6.945014967014858e-05,
+            9.00490673848722e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.010864775935380943,
+          "annualized_mean_difference_ci": [
+            -0.1520958277776254,
+            0.19720745757287012
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        }
+      },
+      "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+    },
+    "buy_hold": {
+      "cumulative_log_difference": 0.13808410627539836,
+      "annualized_mean_log_difference": 0.0765968066725234,
+      "materiality_annual_log": 0.02,
+      "point_estimate_exceeds_materiality": true,
+      "bootstrap_by_block_days": {
+        "30": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 180,
+          "effective_block_count": 21.933333333333334,
+          "blocks_per_draw": 22,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 3.4975710809371415e-05,
+          "mean_difference_ci": [
+            -0.00018244597474866668,
+            0.00030116487740059416
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.0765968066725234,
+          "annualized_mean_difference_ci": [
+            -0.39955668469958,
+            0.6595510815073012
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "15": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 90,
+          "effective_block_count": 43.86666666666667,
+          "blocks_per_draw": 44,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 3.4975710809371415e-05,
+          "mean_difference_ci": [
+            -0.00018080216707761217,
+            0.0002963389070388559
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.0765968066725234,
+          "annualized_mean_difference_ci": [
+            -0.39595674589997065,
+            0.6489822064150944
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "60": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 360,
+          "effective_block_count": 10.966666666666667,
+          "blocks_per_draw": 11,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 3.4975710809371415e-05,
+          "mean_difference_ci": [
+            -0.00017722562616976958,
+            0.0003031029577006087
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.0765968066725234,
+          "annualized_mean_difference_ci": [
+            -0.3881241213117954,
+            0.663795477364333
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        }
+      },
+      "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+    },
+    "volatility_target": {
+      "cumulative_log_difference": 0.06774323455123654,
+      "annualized_mean_log_difference": 0.0375779340595765,
+      "materiality_annual_log": 0.02,
+      "point_estimate_exceeds_materiality": true,
+      "bootstrap_by_block_days": {
+        "30": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 180,
+          "effective_block_count": 21.933333333333334,
+          "blocks_per_draw": 22,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.715887399980662e-05,
+          "mean_difference_ci": [
+            -8.699424592882606e-05,
+            0.00014634248449173697
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.0375779340595765,
+          "annualized_mean_difference_ci": [
+            -0.19051739858412908,
+            0.320490041036904
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "15": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 90,
+          "effective_block_count": 43.86666666666667,
+          "blocks_per_draw": 44,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.715887399980662e-05,
+          "mean_difference_ci": [
+            -8.393234261607717e-05,
+            0.0001445525103757671
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.0375779340595765,
+          "annualized_mean_difference_ci": [
+            -0.183811830329209,
+            0.31656999772292993
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "60": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 360,
+          "effective_block_count": 10.966666666666667,
+          "blocks_per_draw": 11,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.715887399980662e-05,
+          "mean_difference_ci": [
+            -8.517160830083982e-05,
+            0.00014471194699073505
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.0375779340595765,
+          "annualized_mean_difference_ci": [
+            -0.1865258221788392,
+            0.31691916390970976
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        }
+      },
+      "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+    },
+    "slow_resize": {
+      "cumulative_log_difference": -0.021729954686449338,
+      "annualized_mean_log_difference": -0.012053850244003054,
+      "materiality_annual_log": 0.02,
+      "point_estimate_exceeds_materiality": false,
+      "bootstrap_by_block_days": {
+        "30": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 180,
+          "effective_block_count": 21.933333333333334,
+          "blocks_per_draw": 22,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": -5.50404120730733e-06,
+          "mean_difference_ci": [
+            -1.2353587800543943e-05,
+            -1.7016356492457497e-07
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": -0.012053850244003054,
+          "annualized_mean_difference_ci": [
+            -0.027054357283191235,
+            -0.0003726582071848192
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "15": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 90,
+          "effective_block_count": 43.86666666666667,
+          "blocks_per_draw": 44,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": -5.50404120730733e-06,
+          "mean_difference_ci": [
+            -1.2648098718763385e-05,
+            1.3578315887523473e-07
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": -0.012053850244003054,
+          "annualized_mean_difference_ci": [
+            -0.027699336194091814,
+            0.00029736511793676404
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "60": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 360,
+          "effective_block_count": 10.966666666666667,
+          "blocks_per_draw": 11,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": -5.50404120730733e-06,
+          "mean_difference_ci": [
+            -1.1815888103250779e-05,
+            -3.9711608789951087e-07
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": -0.012053850244003054,
+          "annualized_mean_difference_ci": [
+            -0.025876794946119205,
+            -0.0008696842324999288
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        }
+      },
+      "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+    },
+    "candidate_25_100": {
+      "cumulative_log_difference": 0.04983974999607321,
+      "annualized_mean_log_difference": 0.027646669830648514,
+      "materiality_annual_log": 0.02,
+      "point_estimate_exceeds_materiality": true,
+      "bootstrap_by_block_days": {
+        "30": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 180,
+          "effective_block_count": 21.933333333333334,
+          "blocks_per_draw": 22,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.2624050150981056e-05,
+          "mean_difference_ci": [
+            -4.305277699740742e-05,
+            6.465171044636827e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.027646669830648514,
+          "annualized_mean_difference_ci": [
+            -0.09428558162432225,
+            0.1415872458775465
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "15": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 90,
+          "effective_block_count": 43.86666666666667,
+          "blocks_per_draw": 44,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.2624050150981056e-05,
+          "mean_difference_ci": [
+            -4.0384328811935665e-05,
+            6.154209033734133e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.027646669830648514,
+          "annualized_mean_difference_ci": [
+            -0.0884416800981391,
+            0.13477717783877752
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "60": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 360,
+          "effective_block_count": 10.966666666666667,
+          "blocks_per_draw": 11,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.2624050150981056e-05,
+          "mean_difference_ci": [
+            -4.367529574932763e-05,
+            4.961287033398729e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.027646669830648514,
+          "annualized_mean_difference_ci": [
+            -0.09564889769102751,
+            0.10865218603143217
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        }
+      },
+      "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+    },
+    "candidate_100_400": {
+      "cumulative_log_difference": 0.0541837018149236,
+      "annualized_mean_log_difference": 0.03005630875751841,
+      "materiality_annual_log": 0.02,
+      "point_estimate_exceeds_materiality": true,
+      "bootstrap_by_block_days": {
+        "30": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 180,
+          "effective_block_count": 21.933333333333334,
+          "blocks_per_draw": 22,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.3724341898410233e-05,
+          "mean_difference_ci": [
+            -3.0542308180913955e-05,
+            7.380554294856504e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.03005630875751841,
+          "annualized_mean_difference_ci": [
+            -0.06688765491620156,
+            0.16163413905735743
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "15": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 90,
+          "effective_block_count": 43.86666666666667,
+          "blocks_per_draw": 44,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.3724341898410233e-05,
+          "mean_difference_ci": [
+            -3.4334234736700435e-05,
+            7.635134775142396e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.03005630875751841,
+          "annualized_mean_difference_ci": [
+            -0.07519197407337395,
+            0.16720945157561848
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        },
+        "60": {
+          "available": true,
+          "method": "non-circular moving-block percentile bootstrap",
+          "observations": 3948,
+          "block_length": 360,
+          "effective_block_count": 10.966666666666667,
+          "blocks_per_draw": 11,
+          "draws": 5000,
+          "seed": 3630870165,
+          "confidence_level": 0.95,
+          "mean_difference": 1.3724341898410233e-05,
+          "mean_difference_ci": [
+            -2.6152232272690474e-05,
+            7.359416999135484e-05
+          ],
+          "annualization": 2190.0,
+          "annualized_mean_difference": 0.03005630875751841,
+          "annualized_mean_difference_ci": [
+            -0.05727338867719214,
+            0.1611712322810671
+          ],
+          "caveats": [
+            "Inputs must be paired over identical observation intervals.",
+            "Approximate inference assumes an adequately stable weakly dependent process.",
+            "Block length is prespecified; check sensitivity without selecting the best interval.",
+            "Effective block count is a heuristic, not a proven independent sample size.",
+            "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+            "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+          ]
+        }
+      },
+      "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+    }
+  },
+  "base_cost_calendar_subperiods": {
+    "2025": {
+      "start": "2025-01-01T00:00:00+00:00",
+      "end": "2025-12-31T23:59:59.999000+00:00",
+      "adaptive_minus_fixed": {
+        "cumulative_log_difference": 0.0,
+        "annualized_mean_log_difference": 0.0,
+        "materiality_annual_log": 0.02,
+        "point_estimate_exceeds_materiality": false,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 2190,
+            "block_length": 180,
+            "effective_block_count": 12.166666666666666,
+            "blocks_per_draw": 13,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0,
+            "mean_difference_ci": [
+              -4.055609222375001e-19,
+              6.083413833562502e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 0.0,
+            "annualized_mean_difference_ci": [
+              -8.881784197001252e-16,
+              1.3322676295501878e-15
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 2190,
+            "block_length": 90,
+            "effective_block_count": 24.333333333333332,
+            "blocks_per_draw": 25,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0,
+            "mean_difference_ci": [
+              -6.083413833562502e-19,
+              7.097316139156252e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 0.0,
+            "annualized_mean_difference_ci": [
+              -1.3322676295501878e-15,
+              1.5543122344752192e-15
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 2190,
+            "block_length": 360,
+            "effective_block_count": 6.083333333333333,
+            "blocks_per_draw": 7,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0,
+            "mean_difference_ci": [
+              -3.041706916781251e-19,
+              5.069511527968751e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": 0.0,
+            "annualized_mean_difference_ci": [
+              -6.661338147750939e-16,
+              1.1102230246251565e-15
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+      },
+      "metrics": {
+        "fixed": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": -0.0070252215242289084,
+          "cagr": -0.007025221524228909,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.219184739268805e-06,
+          "annualized_mean_log_return": -0.007050014578998683,
+          "annualized_volatility": 0.13645936683219856,
+          "descriptive_sharpe": 0.016599829202343187,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.13641997433531328,
+          "time_in_market": 0.4694063926940639,
+          "mean_exposure": 0.26263397469988387,
+          "turnover": 6.890442995013995,
+          "trade_count": 16,
+          "costs_in_start_nav_units": 0.017741289339841163,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.0070252215242289084,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "adaptive": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": -0.007025221524228797,
+          "cagr": -0.007025221524228797,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.219184739269185e-06,
+          "annualized_mean_log_return": -0.007050014578999515,
+          "annualized_volatility": 0.13645936683219867,
+          "descriptive_sharpe": 0.016599829202337477,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.13641997433531317,
+          "time_in_market": 0.4694063926940639,
+          "mean_exposure": 0.26263397469988387,
+          "turnover": 6.890442995013995,
+          "trade_count": 16,
+          "costs_in_start_nav_units": 0.017741289339841163,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.007025221524228797,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "ensemble": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": -0.05351659071697035,
+          "cagr": -0.05351659071697034,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -2.511499405371563e-05,
+          "annualized_mean_log_return": -0.05500183697763723,
+          "annualized_volatility": 0.12848904113700746,
+          "descriptive_sharpe": -0.3637810122175299,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.14803842380434273,
+          "time_in_market": 0.6589041095890411,
+          "mean_exposure": 0.26508953350033393,
+          "turnover": 8.195902471051415,
+          "trade_count": 49,
+          "costs_in_start_nav_units": 0.020782230672958663,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.05351659071697035,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": -0.06302138550668768,
+          "cagr": -0.06302138550668768,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -2.9723662275699064e-05,
+          "annualized_mean_log_return": -0.06509482038378095,
+          "annualized_volatility": 0.44350414882697065,
+          "descriptive_sharpe": 0.07490872731358886,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.34484902096731773,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.06536383204292084,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "volatility_target": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": -0.018856176329856256,
+          "cagr": -0.018856176329856252,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -8.692338318288e-06,
+          "annualized_mean_log_return": -0.01903622091705072,
+          "annualized_volatility": 0.21248682228739116,
+          "descriptive_sharpe": 0.0166311946899838,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.20231355387970984,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.5119410006796937,
+          "turnover": 0.8507409623659885,
+          "trade_count": 8,
+          "costs_in_start_nav_units": 0.0022535525824130525,
+          "ending_exposure": 0.4125323701554454,
+          "estimated_exit_adjusted_return": -0.019868060297461243,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "slow_resize": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": -0.001313085375009404,
+          "cagr": -0.001313085375009404,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -5.999763593726586e-07,
+          "annualized_mean_log_return": -0.0013139482270261222,
+          "annualized_volatility": 0.13248700472447583,
+          "descriptive_sharpe": 0.0563520528979075,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.13247707840304324,
+          "time_in_market": 0.4694063926940639,
+          "mean_exposure": 0.25199314644105664,
+          "turnover": 6.591824543328302,
+          "trade_count": 14,
+          "costs_in_start_nav_units": 0.01697739270161138,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.001313085375009404,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_25_100": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": -0.09203534557233395,
+          "cagr": -0.09203534557233396,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -4.408667944305455e-05,
+          "annualized_mean_log_return": -0.09654982798028947,
+          "annualized_volatility": 0.12475231029355452,
+          "descriptive_sharpe": -0.7115014555985034,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.15381236890271222,
+          "time_in_market": 0.4328767123287671,
+          "mean_exposure": 0.22668050430859446,
+          "turnover": 13.4692522777735,
+          "trade_count": 30,
+          "costs_in_start_nav_units": 0.03323802106311948,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.09203534557233395,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_100_400": {
+          "bars": 2190,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2025-12-31T23:59:59.999000+00:00",
+          "total_return": -0.07126727406167555,
+          "cagr": -0.07126727406167555,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.375994629315449e-05,
+          "annualized_mean_log_return": -0.07393428238200833,
+          "annualized_volatility": 0.15713370729873008,
+          "descriptive_sharpe": -0.39189548886331804,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.18608753866719818,
+          "time_in_market": 0.582648401826484,
+          "mean_exposure": 0.32342166245317244,
+          "turnover": 4.678245354191855,
+          "trade_count": 11,
+          "costs_in_start_nav_units": 0.011744319845799633,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": -0.07126727406167555,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      }
+    },
+    "2026": {
+      "start": "2026-01-01T00:00:00+00:00",
+      "end": "2026-10-20T23:59:59.999000+00:00",
+      "adaptive_minus_fixed": {
+        "cumulative_log_difference": -2.220446049250313e-16,
+        "annualized_mean_log_difference": -2.7660846688613113e-16,
+        "materiality_annual_log": 0.02,
+        "point_estimate_exceeds_materiality": false,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 1758,
+            "block_length": 180,
+            "effective_block_count": 9.766666666666667,
+            "blocks_per_draw": 10,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -1.2630523602106445e-19,
+            "mean_difference_ci": [
+              -5.052209440842578e-19,
+              5.052209440842578e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -2.7660846688613113e-16,
+            "annualized_mean_difference_ci": [
+              -1.1064338675445245e-15,
+              1.1064338675445245e-15
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 1758,
+            "block_length": 90,
+            "effective_block_count": 19.533333333333335,
+            "blocks_per_draw": 20,
+            "draws": 5000,
+            "seed": 3630870165,
+            "confidence_level": 0.95,
+            "mean_difference": -1.2630523602106445e-19,
+            "mean_difference_ci": [
+              -7.578314161263867e-19,
+              6.315261801053223e-19
+            ],
+            "annualization": 2190.0,
+            "annualized_mean_difference": -2.7660846688613113e-16,
+            "annualized_mean_difference_ci": [
+              -1.6596508013167869e-15,
+              1.3830423344306557e-15
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": false,
+            "reason": "Missing intervals or fewer than five physical-duration bootstrap blocks",
+            "block_length": 360
+          }
+        },
+        "inference_status": "approximate retrospective paired intervals; no sequential, multiplicity or selection-adjusted guarantee"
+      },
+      "metrics": {
+        "fixed": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.026994296905802795,
+          "cagr": 0.03373849280915493,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.5151523192317874e-05,
+          "annualized_mean_log_return": 0.033181835791176145,
+          "annualized_volatility": 0.13099177636164255,
+          "descriptive_sharpe": 0.31865536599980576,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.10025093142808872,
+          "time_in_market": 0.502844141069397,
+          "mean_exposure": 0.27428444844742517,
+          "turnover": 6.570626063905145,
+          "trade_count": 15,
+          "costs_in_start_nav_units": 0.015534588454941704,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": 0.02552867001958181,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "adaptive": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.026994296905802573,
+          "cagr": 0.033738492809154655,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.5151523192317538e-05,
+          "annualized_mean_log_return": 0.03318183579117541,
+          "annualized_volatility": 0.13099177636164266,
+          "descriptive_sharpe": 0.31865536599980016,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.10025093142808883,
+          "time_in_market": 0.502844141069397,
+          "mean_exposure": 0.27428444844742517,
+          "turnover": 6.570626063905145,
+          "trade_count": 15,
+          "costs_in_start_nav_units": 0.015534588454941704,
+          "ending_exposure": 0.5708412950828413,
+          "estimated_exit_adjusted_return": 0.02552867001958181,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "ensemble": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.04339660561499148,
+          "cagr": 0.05434578285477982,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 2.4164595224443977e-05,
+          "annualized_mean_log_return": 0.052920463541532306,
+          "annualized_volatility": 0.11292669318669174,
+          "descriptive_sharpe": 0.5249487265246746,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.06808192643572175,
+          "time_in_market": 0.6399317406143344,
+          "mean_exposure": 0.2445661357591711,
+          "turnover": 6.011804838294577,
+          "trade_count": 37,
+          "costs_in_start_nav_units": 0.014772957929588305,
+          "ending_exposure": 0.4134019439356647,
+          "estimated_exit_adjusted_return": 0.04231825015234869,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.05200203437871442,
+          "cagr": -0.06436124751793963,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.037708913454104e-05,
+          "annualized_mean_log_return": -0.06652582520464488,
+          "annualized_volatility": 0.4118189012324941,
+          "descriptive_sharpe": 0.04409808482516236,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.4009283628737097,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.05437202929276774,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "volatility_target": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.028700730288377385,
+          "cagr": -0.03562646809570757,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -1.656464757741291e-05,
+          "annualized_mean_log_return": -0.036276578194534274,
+          "annualized_volatility": 0.20653254622742134,
+          "descriptive_sharpe": -0.07260996914803945,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.25391931431500936,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.5049709309947356,
+          "turnover": 1.3348354941946947,
+          "trade_count": 12,
+          "costs_in_start_nav_units": 0.002958287311049811,
+          "ending_exposure": 0.5623036839844461,
+          "estimated_exit_adjusted_return": -0.03006614318240286,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "slow_resize": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.04355198697425999,
+          "cagr": 0.05454138145936459,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 2.4249298126605147e-05,
+          "annualized_mean_log_return": 0.05310596289726527,
+          "annualized_volatility": 0.1323998286712885,
+          "descriptive_sharpe": 0.4671111596311559,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.0900605053834791,
+          "time_in_market": 0.502844141069397,
+          "mean_exposure": 0.2757222026255151,
+          "turnover": 6.087502519264424,
+          "trade_count": 13,
+          "costs_in_start_nav_units": 0.01452733798124113,
+          "ending_exposure": 0.5426261415189109,
+          "estimated_exit_adjusted_return": 0.042136340503844405,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_25_100": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.06854343049278566,
+          "cagr": 0.08609393797271622,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 3.771128622145566e-05,
+          "annualized_mean_log_return": 0.0825877168249879,
+          "annualized_volatility": 0.1374394136471887,
+          "descriptive_sharpe": 0.6691044138306487,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.11026114450478075,
+          "time_in_market": 0.518202502844141,
+          "mean_exposure": 0.2630038951506198,
+          "turnover": 10.713937576771883,
+          "trade_count": 25,
+          "costs_in_start_nav_units": 0.026739294307542846,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.06854343049278566,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "candidate_100_400": {
+          "bars": 1758,
+          "start": "2026-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.04012088685641557,
+          "cagr": 0.05022387945932996,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 2.2375963458578297e-05,
+          "annualized_mean_log_return": 0.049003359974286474,
+          "annualized_volatility": 0.1090362144435626,
+          "descriptive_sharpe": 0.5038104619832695,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.06546726365527711,
+          "time_in_market": 0.35267349260523323,
+          "mean_exposure": 0.1958465346223593,
+          "turnover": 1.9437194699671896,
+          "trade_count": 6,
+          "costs_in_start_nav_units": 0.004816893371354281,
+          "ending_exposure": 0.6045013454913497,
+          "estimated_exit_adjusted_return": 0.0385490006674698,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      }
+    }
+  },
+  "cost_break_even": {
+    "sign_change_brackets_bps": [
+      [
+        25.0,
+        50.0
+      ]
+    ],
+    "evaluated_costs_and_cumulative_log_difference": [
+      [
+        0.0,
+        -2.220446049250313e-16
+      ],
+      [
+        10.0,
+        -2.220446049250313e-16
+      ],
+      [
+        25.0,
+        -2.220446049250313e-16
+      ],
+      [
+        50.0,
+        4.440892098500626e-16
+      ],
+      [
+        100.0,
+        0.0
+      ]
+    ],
+    "limit": "Grid brackets only; full cost paths are nonlinear, differences need not be monotone, no unique interpolated break-even is asserted"
+  },
+  "selection_changes_in_window": 0,
+  "feature_pause_bars_in_window": 0,
+  "selection_policy": "base-cost shadow-book choices frozen at all sensitivity costs; histories are continuous and inherited",
+  "limitations": [
+    "Retrospective prices and researcher prior knowledge; not prospective confirmation",
+    "Paired bootstrap assumes sufficiently stable weak dependence and has no optional-stopping or research-selection guarantee",
+    "Costs are assumed all-in notional haircuts; no measured spread, latency, capacity or actual fills",
+    "The nonlinear self-financing cost paths are not the bounded affine-cost synthetic model",
+    "Cross-venue Bitcoin observations are dependent; USD and USDT involve different quote risks",
+    "No original bot code beyond this repository was provided"
+  ]
+}

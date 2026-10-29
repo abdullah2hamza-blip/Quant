@@ -1,0 +1,328 @@
+{
+  "run_id": "72ceb77d-56ff-4040-8ec9-f58e89590711",
+  "created_at": "2026-10-22T04:02:33.649274+00:00",
+  "kind": "publication_market",
+  "status": "completed",
+  "retrospective_access_number": 1,
+  "spec": {
+    "schema_version": 1,
+    "study_id": "btc-market-v1",
+    "config": "configs/research/btc-trend.toml",
+    "materiality_annual_log": 0.02,
+    "base_cost_bps": 25,
+    "costs_bps": [
+      25,
+      0,
+      10,
+      50,
+      100
+    ],
+    "bootstrap": {
+      "draws": 5000,
+      "block_days": [
+        30,
+        15,
+        60
+      ],
+      "seed": 20261022,
+      "confidence": 0.95
+    },
+    "cases": [
+      {
+        "id": "binance_primary_4h",
+        "data": "data/btc-4h-through-2026-10-20.csv",
+        "independent_audit": "docs/publication/data-audit-v1.json",
+        "interval": "4h",
+        "symbol": "BTCUSDT",
+        "provider": "binance-public-data",
+        "start": "2025-01-01",
+        "end": "2026-10-20",
+        "role": "primary"
+      },
+      {
+        "id": "binance_matched_4h",
+        "data": "data/btc-4h-through-2026-10-20.csv",
+        "independent_audit": "docs/publication/data-audit-v1.json",
+        "interval": "4h",
+        "symbol": "BTCUSDT",
+        "provider": "binance-public-data",
+        "start": "2026-02-20",
+        "end": "2026-10-20",
+        "role": "timeframe_robustness"
+      },
+      {
+        "id": "binance_matched_1h",
+        "data": "data/btc-1h-through-2026-10-20.csv",
+        "independent_audit": "docs/publication/data-audit-1h-v1.json",
+        "interval": "1h",
+        "symbol": "BTCUSDT",
+        "provider": "binance-public-data",
+        "start": "2026-02-20",
+        "end": "2026-10-20",
+        "role": "timeframe_robustness"
+      },
+      {
+        "id": "binance_matched_1d",
+        "data": "data/btc-1d-through-2026-10-20.csv",
+        "independent_audit": "docs/publication/data-audit-1d-v1.json",
+        "interval": "1d",
+        "symbol": "BTCUSDT",
+        "provider": "binance-public-data",
+        "start": "2026-02-20",
+        "end": "2026-10-20",
+        "role": "timeframe_robustness"
+      },
+      {
+        "id": "bitstamp_primary_4h",
+        "data": "data/btc-bitstamp-4h-through-2026-10-20.csv",
+        "independent_audit": "docs/publication/data-audit-bitstamp-4h-v1.json",
+        "interval": "4h",
+        "symbol": "BTCUSD",
+        "provider": "bitstamp-public-ohlc",
+        "start": "2025-01-01",
+        "end": "2026-10-20",
+        "role": "venue_robustness"
+      },
+      {
+        "id": "bitstamp_matched_4h",
+        "data": "data/btc-bitstamp-4h-through-2026-10-20.csv",
+        "independent_audit": "docs/publication/data-audit-bitstamp-4h-v1.json",
+        "interval": "4h",
+        "symbol": "BTCUSD",
+        "provider": "bitstamp-public-ohlc",
+        "start": "2026-02-20",
+        "end": "2026-10-20",
+        "role": "venue_robustness"
+      }
+    ]
+  },
+  "freeze": {
+    "kind": "publication_market_freeze",
+    "created_at": "2026-10-22T04:02:22.764547+00:00",
+    "spec_sha256": "62ecbff1622c3e399c9d0d4bd0e5d660e9ffa4f145572029e6d0685cdd917e39",
+    "code_sha256": "64adfb24513a7f50754b7352fb305a1f6999f77604284d84fb4fcb5ff8893e87",
+    "config_sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+    "runtime": {
+      "python": "3.13.7",
+      "numpy": "2.5.4"
+    },
+    "inputs": [
+      {
+        "kind": "csv",
+        "path": "data/btc-1d-through-2026-10-20.csv",
+        "sha256": "56ab80047fbac8705dd99677dd74e3a946af33de79072b9ef49e042e249dda25"
+      },
+      {
+        "kind": "manifest",
+        "path": "data/btc-1d-through-2026-10-20.manifest.json",
+        "sha256": "a78fdee98158fa0b271eb3d749fec217e4fb84caf415d89d52dc291fd244498f"
+      },
+      {
+        "kind": "csv",
+        "path": "data/btc-1h-through-2026-10-20.csv",
+        "sha256": "a040641dc5e6b52a92abaa19a2fb91b68ff0b09114827b02e508d0747e002356"
+      },
+      {
+        "kind": "manifest",
+        "path": "data/btc-1h-through-2026-10-20.manifest.json",
+        "sha256": "4a46bb879e5ff006363d75f16e96b0bcc23cabb7e55ac564ad643e57e323dbce"
+      },
+      {
+        "kind": "csv",
+        "path": "data/btc-4h-through-2026-10-20.csv",
+        "sha256": "5eea975ec9aa32b88579a99d05ac9e722fd3fe9aa7024ae78350618a8333c78d"
+      },
+      {
+        "kind": "manifest",
+        "path": "data/btc-4h-through-2026-10-20.manifest.json",
+        "sha256": "ebc379f88f04f08bd50e865fc191823a18e82fb5658c807988f01a1d8c438dc5"
+      },
+      {
+        "kind": "csv",
+        "path": "data/btc-bitstamp-4h-through-2026-10-20.csv",
+        "sha256": "d415dbdaf84731c4b9f7a7aab5cdc314fb830368c3d2f833ffbb34069505893a"
+      },
+      {
+        "kind": "manifest",
+        "path": "data/btc-bitstamp-4h-through-2026-10-20.manifest.json",
+        "sha256": "c2e09f6175693a7dd2f29d076701a40bae8e229118f2b9837d3fe3473559d66f"
+      },
+      {
+        "kind": "independent_audit",
+        "path": "docs/publication/data-audit-1d-v1.json",
+        "sha256": "4d3010c83d81ede6d77e36cef06d54fcbc997e2c3ed2828d602864c1e73cbdc1"
+      },
+      {
+        "kind": "independent_audit",
+        "path": "docs/publication/data-audit-1h-v1.json",
+        "sha256": "d67cea600893fdfc6eb280c6364a247c342820e2bd18098059282a2bc0a6d3f1"
+      },
+      {
+        "kind": "independent_audit",
+        "path": "docs/publication/data-audit-bitstamp-4h-v1.json",
+        "sha256": "cc024360f6ad3b1ecb04ddaf5acdf1e99b6532e2a62433381e9e6543978eed07"
+      },
+      {
+        "kind": "independent_audit",
+        "path": "docs/publication/data-audit-v1.json",
+        "sha256": "b49d42eeb4d97becf7bf72ca4636f7414e7b0297b01040e4a5eee225d70a3dd2"
+      }
+    ],
+    "documents": [
+      {
+        "path": "docs/publication/data-audit-1d-v1.json",
+        "sha256": "4d3010c83d81ede6d77e36cef06d54fcbc997e2c3ed2828d602864c1e73cbdc1"
+      },
+      {
+        "path": "docs/publication/data-audit-1h-v1.json",
+        "sha256": "d67cea600893fdfc6eb280c6364a247c342820e2bd18098059282a2bc0a6d3f1"
+      },
+      {
+        "path": "docs/publication/data-audit-bitstamp-4h-v1.json",
+        "sha256": "cc024360f6ad3b1ecb04ddaf5acdf1e99b6532e2a62433381e9e6543978eed07"
+      },
+      {
+        "path": "docs/publication/data-audit-v1.json",
+        "sha256": "b49d42eeb4d97becf7bf72ca4636f7414e7b0297b01040e4a5eee225d70a3dd2"
+      },
+      {
+        "path": "docs/publication/market-protocol-v1.md",
+        "sha256": "d9c45ee60c14a25dc5b7a16b87ace4d7602f28c31d7a10fdae82152df6a918f3"
+      },
+      {
+        "path": "docs/publication/reviews/market-study-01.md",
+        "sha256": "2f672f3e78e2121738ff0bdae3c77e525099138216bcf96b3a2b4453c96bd507"
+      }
+    ],
+    "coverage": [
+      {
+        "case_id": "binance_primary_4h",
+        "score_start": "2025-01-01T00:00:00+00:00",
+        "score_end": "2026-10-20T23:59:59.999000+00:00",
+        "scored_bars": 3948,
+        "history_gaps": 36,
+        "score_regular_grid": true,
+        "feature_pause_bars_in_score_window": 0
+      },
+      {
+        "case_id": "binance_matched_4h",
+        "score_start": "2026-02-20T00:00:00+00:00",
+        "score_end": "2026-10-20T23:59:59.999000+00:00",
+        "scored_bars": 1458,
+        "history_gaps": 36,
+        "score_regular_grid": true,
+        "feature_pause_bars_in_score_window": 0
+      },
+      {
+        "case_id": "binance_matched_1h",
+        "score_start": "2026-02-20T00:00:00+00:00",
+        "score_end": "2026-10-20T23:59:59.999000+00:00",
+        "scored_bars": 5832,
+        "history_gaps": 184,
+        "score_regular_grid": true,
+        "feature_pause_bars_in_score_window": 0
+      },
+      {
+        "case_id": "binance_matched_1d",
+        "score_start": "2026-02-20T00:00:00+00:00",
+        "score_end": "2026-10-20T23:59:59.999000+00:00",
+        "scored_bars": 243,
+        "history_gaps": 0,
+        "score_regular_grid": true,
+        "feature_pause_bars_in_score_window": 0
+      },
+      {
+        "case_id": "bitstamp_primary_4h",
+        "score_start": "2025-01-01T00:00:00+00:00",
+        "score_end": "2026-10-20T23:59:59.999000+00:00",
+        "scored_bars": 3948,
+        "history_gaps": 1,
+        "score_regular_grid": true,
+        "feature_pause_bars_in_score_window": 0
+      },
+      {
+        "case_id": "bitstamp_matched_4h",
+        "score_start": "2026-02-20T00:00:00+00:00",
+        "score_end": "2026-10-20T23:59:59.999000+00:00",
+        "scored_bars": 1458,
+        "history_gaps": 1,
+        "score_regular_grid": true,
+        "feature_pause_bars_in_score_window": 0
+      }
+    ],
+    "source_snapshot": "market-freeze-v1.sources.zip",
+    "source_snapshot_sha256": "e41275dffcc7f5617758adc12cb80edd76f5cda6b36c7ac460ee963a92a78271",
+    "status": "retrospective; data acquisition and feature coverage inspected; no claim of prospective secrecy",
+    "gate": "Separate prespecified publication study; no matching hourly selection-phase backtest is claimed or required",
+    "freeze_sha256": "cec28f8c29101303d86f60f09e6d474429410f0b89a81cc930735f311a5ffed5"
+  },
+  "cases": [
+    {
+      "case_id": "binance_primary_4h",
+      "elapsed_seconds": 15.016406800001278,
+      "sha256": {
+        "report.json": "bd4c8f03777c9524738290b21d713a5f9315d723dc24b65998b45271ee7aa539",
+        "selections.json": "b637c6dac29b43260dae91d7f41e5e760b63e98d11091bdb130ef8af4da71607",
+        "base-cost-trades.json": "56fd1f13b19628e1cefb8625b55429ee954b39170f9564c509f962b10057a61e",
+        "paths.npz": "9b90f51009e9dec8381d69528e4eaf61fc450e3d7f56594e7f39693b52974fbe"
+      },
+      "scored_bars": 3948
+    },
+    {
+      "case_id": "binance_matched_4h",
+      "elapsed_seconds": 10.96850610000547,
+      "sha256": {
+        "report.json": "94f8b037d2559fef3b811a1dbb83b6a150528a808bfad524a29fe46fd7464368",
+        "selections.json": "b637c6dac29b43260dae91d7f41e5e760b63e98d11091bdb130ef8af4da71607",
+        "base-cost-trades.json": "c9be3f3a74cb21647f1a91f35db3a9fe8e2b7294e415145bcc17ff818ce29f8f",
+        "paths.npz": "380305929934ff5d5aaf3d0d56ffc510d0439f9edead51bead931c830c8714b7"
+      },
+      "scored_bars": 1458
+    },
+    {
+      "case_id": "binance_matched_1h",
+      "elapsed_seconds": 36.49496139999246,
+      "sha256": {
+        "report.json": "4bcadb6f25e247ffcc8eedf80c3d10340573be945a1c015e2e922f4aaf8c3683",
+        "selections.json": "ded2788bb994b100aca656a1f71954e98bdea5b52dbd11fb7be2bb8f688dc85a",
+        "base-cost-trades.json": "2f797e805e1468810b1f019c011ded709aeb39a990fb47f81f4c3ee56201d807",
+        "paths.npz": "6b68f57aba8fee634d5f53ae205f8fc2d2220ed2d63e7d3c2415054978b362cb"
+      },
+      "scored_bars": 5832
+    },
+    {
+      "case_id": "binance_matched_1d",
+      "elapsed_seconds": 4.450970100006089,
+      "sha256": {
+        "report.json": "f84f1fb62aebf1827d44ca9b53b68a8ed8a49ee14a3c34857f146c0c99555141",
+        "selections.json": "24eb958d7325b0cfa741ebee0f61903e76e7454d4c768d74ce5509b9a70e1251",
+        "base-cost-trades.json": "23aaad712b3cb4bfd6ec59ec3a1083fa5f48df349ed7e0a2f90130f284218b44",
+        "paths.npz": "f1ab8be5452acfc493b61b526ae8b9779e391bf8fe34a8e382525448871ba19f"
+      },
+      "scored_bars": 243
+    },
+    {
+      "case_id": "bitstamp_primary_4h",
+      "elapsed_seconds": 15.727866999994149,
+      "sha256": {
+        "report.json": "f11beea7fd4008559413697478f078a7093fd5fb897a933e0586e40869137112",
+        "selections.json": "639ba2e0333d9bde896b77e2cad7a3653728c7de527e764446d129d9d5fafe36",
+        "base-cost-trades.json": "23091ce23480b290c8947a87afa27884a17a921c8d07840ec26dd4001250d0ec",
+        "paths.npz": "33b5a974c5f6f2762cc8f42757a5d4e350e0fef5db81a02d6fd111f7aa613921"
+      },
+      "scored_bars": 3948
+    },
+    {
+      "case_id": "bitstamp_matched_4h",
+      "elapsed_seconds": 11.195588100003079,
+      "sha256": {
+        "report.json": "b5bc814342824dc6c7ec58e586026120791a420860fd3ee281d8b1a7974020bd",
+        "selections.json": "639ba2e0333d9bde896b77e2cad7a3653728c7de527e764446d129d9d5fafe36",
+        "base-cost-trades.json": "16aba8e682c2e746aeac012075adb0c3f6e1f61ee47eeb4d5ab0ef80676c9ecd",
+        "paths.npz": "58185c6c7c928889a04841460520a30bc57d42c8148d4877207a5421c85a7ab6"
+      },
+      "scored_bars": 1458
+    }
+  ],
+  "finished_at": "2026-10-22T04:04:08.135446+00:00"
+}

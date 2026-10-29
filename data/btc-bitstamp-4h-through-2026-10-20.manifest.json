@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "provider": "bitstamp-public-ohlc",
+  "symbol": "BTCUSD",
+  "instrument": "spot",
+  "retrieved_at": "2026-10-22T03:43:35.435073+00:00",
+  "requested_start": "2017-09-01",
+  "requested_end": "2026-10-20",
+  "sources": [
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1504224000&exclude_current_candle=true",
+      "sha256": "fb17785d6efbb06b92350ccb5a61cb735e25cd87cef91bf3f91f491bf3986978",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1504224000-1000.json",
+      "requested_start_seconds": 1504224000,
+      "requested_end_exclusive_seconds": 1518624000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1518624000&exclude_current_candle=true",
+      "sha256": "37f52f02f4fa44926ac2ada32bf0e04cb1908308af49360fd4bd6c35d825290a",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1518624000-1000.json",
+      "requested_start_seconds": 1518624000,
+      "requested_end_exclusive_seconds": 1533024000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1533024000&exclude_current_candle=true",
+      "sha256": "40b400d0ff6f8e2b0f97434ad8f6d8509e091be0084789f89c3fd9ef6aaab553",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1533024000-1000.json",
+      "requested_start_seconds": 1533024000,
+      "requested_end_exclusive_seconds": 1547424000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1547424000&exclude_current_candle=true",
+      "sha256": "4319ff85a1a90617a29f8e906e24b3ff471d6aaa428911b5df703dfbcb266f51",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1547424000-1000.json",
+      "requested_start_seconds": 1547424000,
+      "requested_end_exclusive_seconds": 1561824000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1561824000&exclude_current_candle=true",
+      "sha256": "ddc0de8a537dce6e5b0eec925f0fbf6424d2493c4e14347d9ed120248ba13b10",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1561824000-1000.json",
+      "requested_start_seconds": 1561824000,
+      "requested_end_exclusive_seconds": 1576224000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1576224000&exclude_current_candle=true",
+      "sha256": "b530e90e79fa66bdd96d34bd35130f7f2962f47df9280c1e06798ce1ab57fd7c",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1576224000-1000.json",
+      "requested_start_seconds": 1576224000,
+      "requested_end_exclusive_seconds": 1590624000,
+      "nominal_candles": 1000,
+      "retained_rows": 999
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1590624000&exclude_current_candle=true",
+      "sha256": "c40b3833c89bd0510995268d7b6b4dc9470227ff5e74986b86f6b01dbfc2de44",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1590624000-1000.json",
+      "requested_start_seconds": 1590624000,
+      "requested_end_exclusive_seconds": 1605024000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1605024000&exclude_current_candle=true",
+      "sha256": "be1acccb3129ba135df4e9d043e2d9acdb0e4fe13977c82422b50fc515e2773a",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1605024000-1000.json",
+      "requested_start_seconds": 1605024000,
+      "requested_end_exclusive_seconds": 1619424000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1619424000&exclude_current_candle=true",
+      "sha256": "603ca798feb979a365a337cec6578a601d450b287a6973b784120fc42e366e46",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1619424000-1000.json",
+      "requested_start_seconds": 1619424000,
+      "requested_end_exclusive_seconds": 1633824000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1633824000&exclude_current_candle=true",
+      "sha256": "54f2aa70887295d3d5efa28f7154bdef22b6ae843ec08f5b6777b952982e3e87",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1633824000-1000.json",
+      "requested_start_seconds": 1633824000,
+      "requested_end_exclusive_seconds": 1648224000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1648224000&exclude_current_candle=true",
+      "sha256": "9a28446bf1ec10f375b8c110d52895f9bc135d9d31bcd993804776ad5edee3e5",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1648224000-1000.json",
+      "requested_start_seconds": 1648224000,
+      "requested_end_exclusive_seconds": 1662624000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1662624000&exclude_current_candle=true",
+      "sha256": "1fcb9cbea3b4fa7099b3574d917eaea3c40cf3bd1b12c940ff32a09bc280e4ce",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1662624000-1000.json",
+      "requested_start_seconds": 1662624000,
+      "requested_end_exclusive_seconds": 1677024000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1677024000&exclude_current_candle=true",
+      "sha256": "91a461ae40cfec2fe3b006111defc708e4dcbe158e50ef256bd33c9ec7113971",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1677024000-1000.json",
+      "requested_start_seconds": 1677024000,
+      "requested_end_exclusive_seconds": 1691424000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1691424000&exclude_current_candle=true",
+      "sha256": "c735f1d5616171d53b046f6fef34f985221951684590435d39a8f4a19c07c481",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1691424000-1000.json",
+      "requested_start_seconds": 1691424000,
+      "requested_end_exclusive_seconds": 1705824000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1705824000&exclude_current_candle=true",
+      "sha256": "4db7502a8296205a0463d14a957c5dd5a6a708fed636419110c6b808ef12c635",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1705824000-1000.json",
+      "requested_start_seconds": 1705824000,
+      "requested_end_exclusive_seconds": 1720224000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1720224000&exclude_current_candle=true",
+      "sha256": "6fe0c240cb569d8410065702f48c2ed0d535515ea3f6272a423ecb4babaf8615",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1720224000-1000.json",
+      "requested_start_seconds": 1720224000,
+      "requested_end_exclusive_seconds": 1734624000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1734624000&exclude_current_candle=true",
+      "sha256": "8136a72ad447e00f051690b586a87fd6cbbf0db82cc5761f46215981a05e0bce",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1734624000-1000.json",
+      "requested_start_seconds": 1734624000,
+      "requested_end_exclusive_seconds": 1749024000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1749024000&exclude_current_candle=true",
+      "sha256": "b6d614689f72f4ffa7dbca4cd488322ee8a21a686fa29478430e41497c201d2c",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1749024000-1000.json",
+      "requested_start_seconds": 1749024000,
+      "requested_end_exclusive_seconds": 1763424000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1763424000&exclude_current_candle=true",
+      "sha256": "8afaeaeecdec27c7cf44278cb80b48704d8120d89e8392be2cd060a64c2d1899",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1763424000-1000.json",
+      "requested_start_seconds": 1763424000,
+      "requested_end_exclusive_seconds": 1777824000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=1000&start=1777824000&exclude_current_candle=true",
+      "sha256": "e514acb571abd6d348271b13687a5b4265440e67a0e67bcb6240e3ae37fba870",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1777824000-1000.json",
+      "requested_start_seconds": 1777824000,
+      "requested_end_exclusive_seconds": 1792224000,
+      "nominal_candles": 1000,
+      "retained_rows": 1000
+    },
+    {
+      "url": "https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=14400&limit=22&start=1792224000&exclude_current_candle=true",
+      "sha256": "79b52ac1569f0261b7435b6c432e87dc701a140731432b8606025c1b192b3151",
+      "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\bitstamp\\BTCUSD-4h-1792224000-22.json",
+      "requested_start_seconds": 1792224000,
+      "requested_end_exclusive_seconds": 1792540800,
+      "nominal_candles": 22,
+      "retained_rows": 22
+    }
+  ],
+  "quarantined_rows": [
+    {
+      "source_file": "BTCUSD-4h-1576224000-1000.json",
+      "row_number": 808,
+      "raw_open_time": "1587844800",
+      "reason": "Invalid Bitstamp prices or nonpositive volume",
+      "row_sha256": "f400c025f5580fda586a10b346359be71d196fd041220f6b8ab3d713760ce2d2"
+    }
+  ],
+  "quarantine_enabled": true,
+  "audit": {
+    "bars": 20021,
+    "interval": "4h",
+    "first_open": "2017-09-01T00:00:00+00:00",
+    "last_close": "2026-10-20T23:59:59.999000+00:00",
+    "gaps": [
+      {
+        "after": "2020-04-25T16:00:00+00:00",
+        "before": "2020-04-26T00:00:00+00:00",
+        "missing_bars": 1
+      }
+    ],
+    "missing_bars": 1,
+    "zero_volume_bars": 0,
+    "large_close_return_bars": 3,
+    "gap_policy": "carry_and_freeze",
+    "as_of": "2026-10-22T03:43:35.432000+00:00"
+  },
+  "ordering": "explicit ascending timestamp normalization; duplicates are errors",
+  "close_timestamp": "nominal inclusive period end inferred from documented step; API provides opening timestamp only",
+  "integrity_limit": "local SHA-256 snapshots; no independently published vendor checksum",
+  "revision_policy": "immutable local response snapshot; no historical point-in-time revision guarantee",
+  "comparison_limit": "BTC/USD at a different venue is a robustness check, not an independent Bitcoin history or USDT-equivalent market",
+  "interval": "4h",
+  "csv_sha256": "d415dbdaf84731c4b9f7a7aab5cdc314fb830368c3d2f833ffbb34069505893a"
+}

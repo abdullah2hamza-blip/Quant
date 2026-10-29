@@ -1,0 +1,25 @@
+{
+  "kind": "followup_v2_freeze",
+  "created_at": "2026-10-22T05:12:40.294256+00:00",
+  "spec_sha256": "e683706368446fe27d019c6b0984a35ded9938f80e689699937dc70b81d24211",
+  "code_sha256": "3ec31c9f0dd38bca8735d12b87e51c4087802adc31bb4b6645aa505af6281c29",
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "source_snapshot": "followup-freeze-v2.sources.zip",
+  "source_snapshot_sha256": "d6a37ffc045b07461dacc30ff454de072a5e7600aa69a7b9f7f58b6fa1efa13e",
+  "documents": [
+    {
+      "path": "docs/publication/followup-protocol-v2.md",
+      "sha256": "f0ea1c6150cc5d51e468331797955d3410cbcde4a19a3e16385f4812bbbf6c28"
+    },
+    {
+      "path": "docs/publication/reviews/followup-methods-01.md",
+      "sha256": "a635e0dd9e0c8b22b66de83be21a9880eb30bb1e6961d8a5f71cea506c216dbf"
+    }
+  ],
+  "cases": 25,
+  "scope": "Separately specified after all v1 outcomes; established-method diagnostics only",
+  "freeze_sha256": "f7035695fcf5a7d43ca6d29d4ce45a7d242935faf3b82974503f37b772ef8230"
+}

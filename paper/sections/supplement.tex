@@ -1,0 +1,115 @@
+\section{Accounting identities}
+
+Let cash $C$, coin holdings $Q$, execution price $P$, pre-trade wealth
+$V=C+QP$, desired post-fee risky fraction $w$, and one-sided cost fraction $f$
+be given. Signed traded notional $z$ solves
+\[
+ QP+z=w(V-f|z|),\qquad
+ z=\frac{wV-QP}{1+\operatorname{sign}(wV-QP)fw}.
+\]
+Cash becomes $C-z-f|z|$ and coins become $Q+z/P$. The buy and sell
+denominators differ. With $0\leq w\leq1$ and $0\leq f<1$, the target
+is unlevered and solvent. Exact full exits and full investments set the relevant
+residual coin/cash balance to zero to avoid floating-point phantom transitions.
+
+For close-to-close interval $i$, define $V^-_i$ from previous cash/coins marked
+at the current open, $V^+_i$ from current post-trade cash/coins marked there, and
+$V_i$ at the close. Then
+\[
+ \log\frac{V_i}{V_{i-1}}=
+ \log\frac{V^-_i}{V_{i-1}}+
+ \log\frac{V^+_i}{V^-_i}+
+ \log\frac{V_i}{V^+_i},\qquad
+ V^-_i-V^+_i=f|z_i|.
+\]
+The first term includes an unobserved outage interval if observations are
+missing; the identity does not infer the path within it. Score-window returns
+include the position inherited at the preceding close, not a flat-book restart.
+
+\section{Exact invalidity examples}
+\label{app:counterexamples}
+
+These examples diagnose assumptions rather than estimate market frequencies.
+Their exact calculations are saved separately from Monte Carlo experiments.
+
+\paragraph{A smaller history can hide relevant cost information.}
+Draw one persistent latent $Y=1/19$ with probability $0.95$ and $Y=-1$ with
+probability $0.05$. Let every observable lower proxy equal $1/19$, while each
+latent utility equals $Y$. The observable history never reveals $Y$, and the
+latent unconditional/observable-history mean is zero. A simultaneous domination
+event has probability $0.95$, yet the positive proxy crosses any fixed betting
+threshold with probability one. After one matured latent label, the richer
+oracle history knows $Y$, and the conditional null fails on the positive branch.
+This is why high-probability coverage and a null in an insufficient history do
+not establish Proposition~\ref{prop:composition}.
+
+\paragraph{Pointwise coverage is insufficient.}
+Let $D_i=0$. Independently at each of 800 steps, a purported lower proxy is one
+with probability $0.01$ and zero otherwise. Every pointwise domination claim
+has 99\% coverage, but simultaneous failure probability is
+$1-0.99^{800}$. With fixed $\lambda=0.8$, six failures suffice to cross 20,
+so false rejection is at least
+$\Prob\{\operatorname{Binomial}(800,0.01)\geq6\}$. A one-percent global error
+budget cannot be assigned to that sequence of pointwise intervals.
+
+\paragraph{Reusing a screened label creates evidence from selection.}
+The maximum of ten independent fair signs has mean $1-2^{1-10}$, although
+every unscreened sign has mean zero. Repeatedly selecting that observed maximum
+and pretending it is a new null trial yields an expected linear factor
+$1+0.8(1-2^{1-10})>1$. Six all-positive selected batches cross 20 with
+probability $(1-2^{-10})^6$. Candidate birth must not recycle prescreen outcomes.
+
+\paragraph{Upper costs on both sides can be optimistic.}
+If $q^A=0$, $q^R=1$, $G=-\theta$, and $m=0$, then the true difference is
+zero. The symmetric-upper expression is $u-\theta>0$ whenever $u>\theta$.
+The correct paired lower expression uses $\ell$, giving $\ell-\theta\leq0$
+on coverage. Reference costs belong to the same contrast as strategy costs.
+
+\paragraph{Labels must not choose their own bets.}
+For a fair increment $D\in\{-1/2,1/2\}$, a bet $\lambda=1/2$ chosen only when the
+current increment is already known positive has expected factor $1.125$, not one.
+Related delayed-label constructions can hide the same anticipation error.
+Issued bets and intervals are frozen before labels mature in the implementation.
+
+\section{Temporal coherence: a reviewed scope boundary}
+
+For one fixed interval $[\ell,u]$, independently minimizing each period's
+affine utility can be more pessimistic than retaining the same nuisance
+coefficient throughout history. In cumulative linear utility the excess cost is
+\[
+ \frac{u-\ell}{2}
+ \left(\sum_i|d_i|-\left|\sum_i d_i\right|\right)
+ =(u-\ell)\min\left(\sum_i d_i^+,\sum_i d_i^-\right).
+\]
+The gain vanishes for one-sign turnover contrasts at a static interval.
+Whole-path profiling and comparison at the true nuisance parameter are
+established principles \citep{wasserman2020,ramdas2022}. The separately
+specified follow-up in Sections~\ref{sec:followup-methods} and
+\ref{sec:followup-design} distinguishes sign changes, interval contraction and
+the underlying evidence form. It does not replace the frozen v1 experiment.
+
+\clearpage
+\section{All registered synthetic results}
+\input{generated/simulation-full-table}
+
+\clearpage
+\section{Complete follow-up results}
+\input{generated/followup/case-key}
+The aGRAPA rows in F25 are an assumption diagnostic without a prefix-weak
+null guarantee. Other rows retain the scope in
+Section~\ref{sec:followup-methods}; empirical null frequencies alone do not
+extend it.
+\input{generated/followup/full-table}
+The machine-readable companion files \texttt{method-results.csv},
+\texttt{paired-results.csv} and \texttt{calibration-compute.csv} retain all
+endpoints and uncertainty intervals. The display trace binds these files to
+the 25 completed case reports, their arrays and the exact frozen source.
+
+\clearpage
+\section{Complete market cost sensitivity}
+\input{generated/market-cost-table}
+
+\clearpage
+\section{Simple-control comparisons}
+\input{generated/market-control-table}
+\input{sections/bot-extension}

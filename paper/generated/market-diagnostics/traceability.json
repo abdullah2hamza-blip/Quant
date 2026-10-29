@@ -1,0 +1,9 @@
+{
+  "input_registry_sha256": "dd8f573a1c8af69f14ea777a5d6516cdae7f6110fb39c2040a565fb91c5c0c8a",
+  "source_sha256": "df16789b8fe0e502c026e56f9c466d59c51fdd83616c6d07367e2c41428557eb",
+  "output_sha256": {
+    "diagnostics.csv": "912faac2bff4c23d62cac449029ea5238d54f9a3d3bdcea15fbfbb5b256480d0",
+    "diagnostics.json": "44e9aac04f5b6d4a37775dbbe0fde2af0afff6303edfe138dbedc5c0716c020a",
+    "edge-table.tex": "1a190fb75df7fe3a3badf4ff80534ed55fc775aa2f6a58286de0afecd4d7cf61"
+  }
+}

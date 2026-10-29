@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-10-22T13:08:07.221549+00:00",
+  "original_folder": "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot",
+  "original_archive": "output\\bot-migration\\original-btc-trend-bot-v2.zip",
+  "original_archive_sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+  "original_files": {
+    "mr_bot.py": "7cd22443ca4cc12ca0a49f9e5454fb0444a1570b777e205d4ec61762d31fabc3",
+    "README.md": "308bb3bbf193aaf8f5f2d812a5d9f78d97dbb17954af7dc7db91bc46f657bd17",
+    "requirements.txt": "c5a9173819ad1add24e57846b87df6478897b33055fb90a1c96fd8198b92283c",
+    "research\\checks.py": "1684ba7e36d8224b532adf86a03abc0058ff6ab4ce986c3800bcc150d45d8871",
+    "research\\EXPERIMENT_LEDGER.md": "9bc1d7dcbbcf12a7e85bc02c6c173cc484fbfef89bcceacbf4d5e682f85917c4",
+    "research\\forward_log.md": "8c2cebbd7681de4eefdc5b02230efce600fb8e4decaa4dbd8162067abeff2a1c",
+    "research\\get_data.py": "f56f0cfc8db71f15c38f423abb1d435b26408cb7066437cb79bbabc33e861a8a",
+    "research\\lab.py": "2e4c0ce60c3ffe9c96dfbfffa111776697335bd69be8e7107eb063a16286d3e2",
+    "research\\ml.py": "3ff02e37ba8e35c5f386eb51c868534a5e64cd4e2ad97824c78271d49ab7a7cb",
+    "research\\PREREGISTRATION.md": "59af522523e4b84f6a0933638d9eb462676d3ed8540b6ffb7654ba8b1c11aae3",
+    "research\\RESULTS.md": "6930bca210244f0f1a011b8c849417183f24b8a851a8a1a46edbdd70c8297d5d",
+    "research\\run_all.py": "6b6e50390cc6bdaa0d95dc18c0252d102a8242eec5a286e8bd6bccb88815dd70",
+    "research\\strategies.py": "c247ec0db16cf0ec51d617391a302dea2676670815c7bffe539bbf7b92450117",
+    "trend_bot.py": "deb11586daa14ad21e45594b26af2ba205a81d0844a40d4fb2596b73e5ee3f8d"
+  },
+  "paper_modules": {
+    "paper_engine/config.py": "32a3bd499679047e32e20198db74466e608d5cd4a8a2ac408a9cd21892f41ec8",
+    "paper_engine/data.py": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
+    "paper_engine/engine.py": "dab857df55fd6940befb052d119b503c319d9bcf5e9874e1eeee23ba39e87203",
+    "paper_engine/stats.py": "3882f56f4c8090875f33d5b7725524a701ba6f13a6bbad43590ab60523445497"
+  },
+  "paper_config_sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+  "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+  "scope": "Working migration copy. Original bot source archived before edits; research artifacts unchanged. Further implementation and verification required.",
+  "original_archive_in_bot": "legacy/original-v2.zip"
+}

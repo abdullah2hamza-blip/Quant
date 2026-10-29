@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "source": {
+    "verified_modules": 4,
+    "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+    "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "original_archive_sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+  "observations_compared": 3188,
+  "maximum_absolute_target_difference": 8.326672684688674e-15,
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "scope": "Exact supplied target_weight function, on identical daily closes after full150-bar continuous warmup. Separate diagnostic runtime; delivery runtime remains locked. Execution rules intentionally corrected."
+}

@@ -1,0 +1,125 @@
+\section{Experimental design}
+
+\subsection{Paired cost-geometry experiment (v1)}
+
+The locally registered v1 specification fixes 24 cases, 4,000 independent worlds
+per case, 800 calendar steps, deterministic case-specific seeds, $B=1$,
+$\theta=0.08$, calibration support $[0,0.2]$, and materiality $m=0.01$ in
+synthetic units. The fixed grid is
+$\lambda\in\{0.05,0.1,0.2,0.4,0.8\}$ with equal weights. Default families
+have ten streams; search-size cases have thirty. Five candidates are introduced
+adaptively in the birth cases. All cases, including invalid-model stress cases,
+are retained. Separate 128-world, 60-step smoke tests are implementation checks
+and are excluded from substantive estimates.
+
+At issue time $t$, let the previously matured public common sign be $S_{t-1}$.
+With fresh common and candidate-specific independent Rademacher signs $S,I_j$,
+\begin{align}
+ \sigma_t&=0.2+0.1\{1+\sin(2\pi t/80)\}
+                  +0.15\ind\{S_{t-1}>0\},\\
+ \epsilon_{j,t}&=\sigma_t(0.6S+0.4I_j),\\
+ q^A_t&=0.7+0.1\ind\{S_{t-1}>0\},\qquad q^R_t=\rho q^A_t.
+\end{align}
+The fresh common sign is publicly observed at maturity. The reference-more-
+turnover cases exchange the two coefficients. Generate latent materiality-
+adjusted utility $D_{j,t}=\epsilon_{j,t}+a_j$ and observed
+$G_{j,t}=D_{j,t}+(q^A_t-q^R_t)\theta+m$. Even-indexed candidates receive the
+case's positive effect and odd-indexed candidates remain null. Because $D$
+already subtracts materiality, zero effect means zero advantage beyond the
+hurdle, not zero unadjusted net utility. The weak-prefix
+case uses alternating conditional effects $-0.07,+0.07$, starting negative.
+Thus the assumed bound holds by construction while volatility, dependence and
+conditional means need not be constant.
+
+Default initial calibration is 32 independent scaled Bernoulli observations,
+represented by their sufficient sum; zero- and 512-sample cases vary this
+budget. Add one calibration observation after each maturity. An observation
+from the current trial cannot enter its issue-time interval. One declared
+violation shifts the true coefficient to 0.18 halfway through the horizon,
+outside the stationary-mean calibration assumption.
+
+Adaptive births choose the highest cumulative past plugin utility among unused
+pool candidates, with deterministic index tie-breaking. Only future post-birth
+trials enter their evidence. Delayed trials issue at $0,d+1,2(d+1),\ldots$ and
+mature at issue plus $d+1$. There is no intermediate feedback, so delay reduces
+both matured outcomes and new calibration samples over a fixed calendar
+horizon. This does not establish a general overlapping-label theorem.
+
+Comparators are the known-cost oracle, joint and separate linear mixtures,
+plugin and symmetric-upper linear mixtures, joint and separate Hoeffding
+mixtures, a fixed-horizon Hoeffding boundary evaluated only at the horizon, and
+the same fixed-time boundary incorrectly peeked at repeatedly. Oracle tests use
+the same 0.04 test budget for matched comparison. Plugin and symmetric-upper
+comparators have no asserted guarantee.
+
+Primary summaries are true-null family-wise rejection and true-alternative
+power with world-level Wilson intervals. Detection times use calendar time from
+origin; nonrejections are horizon-censored, and detection-conditional medians
+are labeled. Paper allocation activates the lowest-index first discovered
+candidate on the following trial and accumulates additive utility. It has no
+funding, compounding, market orders or realized execution-cost shocks. Normal
+Monte Carlo intervals are unavailable for degenerate samples rather than
+reported as falsely certain $[0,0]$. Runtime and stored world arrays accompany
+every case.
+
+\input{sections/followup-design}
+
+\subsection{Audited retrospective Bitcoin application}
+
+The separate market protocol fixes Binance BTC/USDT spot four-hour evaluation
+from 1 January 2025 through 20 October 2026. A second, common window from
+20 February through 20 October 2026 compares native one-hour, four-hour and
+daily candles. Its start is determined by coverage and the strict selector
+history requirement before new-period P\&L was evaluated. Bitstamp BTC/USD
+four-hour candles repeat both windows. These six cases are predetermined, not
+ranked to choose a final strategy.
+
+Binance raw archives retain vendor checksums and immutable local hashes. The
+importer normalizes the documented microsecond spot timestamp change beginning
+in 2025. Independent standard-library reconciliation checks every retained
+OHLCV observation, excluded-row hash and source boundary. The secondary
+Bitstamp snapshots have local response hashes but no independently published
+vendor checksum; close timestamps are nominal interval endpoints inferred from
+its opening timestamps. No source certifies point-in-time availability against
+later historical revisions.
+
+The reference is an EMA 50/200 long/cash rule. The adaptive family is EMA
+25/100, 50/200 and 100/400. At four-hour resolution, risk targets 20\% annual
+volatility using 180 prior log returns, capped at unit unlevered weight. Features
+require 2,000 bars of continuous warm-up. A 4,380-return trailing window of
+continuous net shadow-book returns is ranked every 180 bars; ties retain the
+incumbent and then prefer the reference. Clock durations are preserved under
+timeframe conversion with upward integer rounding.
+
+Orders use the previous completed close's target and the next observed open.
+The absolute weight rebalancing band is 0.10. A missing interval cancels crossing
+orders and resets features while spot holdings are carried. The incumbent can
+resume after feature warm-up; a new selection waits for full selector history.
+Cash earns zero. Fees apply to traded notional and exact post-fee target weights
+are solved, not approximated. Books inherit pre-window positions and terminal
+holdings are marked, with a separately labeled estimated liquidation sensitivity.
+
+All nine reported policies are fixed, adaptive, cash, buy-and-hold, volatility-
+targeted BTC, slow reference resizing, equal target-weight ensemble, and the
+two additional fixed constituents. The ensemble includes the reference. Slow
+resizing delays adjustment of existing nonzero exposure but still executes
+entry/exit transitions. Assumed all-in costs are 0, 10, 25, 50 and 100 basis
+points per traded side, with 25 as the base. Base-cost selection choices are
+frozen across cost sensitivity; portfolio accounting is rerun rather than
+subtracting a linear ex-post fee estimate.
+
+The primary endpoint is adaptive-minus-fixed mean net log return, scaled by
+2,190 bars/year, with materiality 0.02 annual log units. A non-circular paired
+moving-block percentile bootstrap uses 5,000 draws and a primary 30-day block,
+with 15- and 60-day sensitivity \citep{kunsch1989}. Fewer than five blocks or
+missing scored intervals makes that interval unavailable. Those are approximate
+retrospective summaries requiring adequate process stability and weak dependence.
+The five-block criterion is a reporting heuristic, not a theorem guaranteeing
+coverage. Secondary controls, costs, years and venues have unadjusted exploratory
+intervals. None establishes a research-selection-adjusted or sequential claim.
+
+Every bar's log return is decomposed exactly into prior-close to pre-trade-open
+price movement, pre/post-trade fee drag, and post-trade-open to close holdings
+return. Their sum and fees are checked against wealth. Differences in those
+components are accounting descriptions, not causal selection alpha. The data
+cannot identify unmeasured latency, capacity, spread or actual fill quality.

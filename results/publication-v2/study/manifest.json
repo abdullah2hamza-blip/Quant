@@ -1,0 +1,437 @@
+{
+  "run_id": "545c451d-dbf7-4fbe-93a5-3dee8723a61b",
+  "kind": "substantive",
+  "created_at": "2026-10-22T05:12:55.239471+00:00",
+  "spec": {
+    "schema_version": 2,
+    "study_id": "variance-and-coherence-v2",
+    "worlds": 4000,
+    "steps": 800,
+    "hypotheses": 10,
+    "seed": 20261023,
+    "alpha": 0.05,
+    "delta": 0.01,
+    "bound": 1,
+    "true_cost": 0.08,
+    "cost_cap": 0.2,
+    "initial_calibration": 32,
+    "materiality": 0.01,
+    "linear_grid": [
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.8
+    ],
+    "eb_grid": [
+      0.025,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "methods": [
+      "oracle_linear",
+      "joint_linear",
+      "separate_linear",
+      "oracle_agrapa",
+      "joint_agrapa",
+      "separate_agrapa",
+      "oracle_eb",
+      "joint_local_eb",
+      "separate_local_eb",
+      "joint_coherent_eb"
+    ],
+    "cases": [
+      {
+        "id": "vhigh_static_initial_positive_e0",
+        "effect": 0,
+        "turnover_pattern": "positive",
+        "cost_information": "static_initial",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_static_initial_positive_e2",
+        "effect": 0.02,
+        "turnover_pattern": "positive",
+        "cost_information": "static_initial",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_static_initial_positive_e5",
+        "effect": 0.05,
+        "turnover_pattern": "positive",
+        "cost_information": "static_initial",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_static_initial_alternating_e0",
+        "effect": 0,
+        "turnover_pattern": "alternating",
+        "cost_information": "static_initial",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_static_initial_alternating_e2",
+        "effect": 0.02,
+        "turnover_pattern": "alternating",
+        "cost_information": "static_initial",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_static_initial_alternating_e5",
+        "effect": 0.05,
+        "turnover_pattern": "alternating",
+        "cost_information": "static_initial",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_contracting_positive_e0",
+        "effect": 0,
+        "turnover_pattern": "positive",
+        "cost_information": "contracting",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_contracting_positive_e2",
+        "effect": 0.02,
+        "turnover_pattern": "positive",
+        "cost_information": "contracting",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_contracting_positive_e5",
+        "effect": 0.05,
+        "turnover_pattern": "positive",
+        "cost_information": "contracting",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_contracting_alternating_e0",
+        "effect": 0,
+        "turnover_pattern": "alternating",
+        "cost_information": "contracting",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_contracting_alternating_e2",
+        "effect": 0.02,
+        "turnover_pattern": "alternating",
+        "cost_information": "contracting",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vhigh_contracting_alternating_e5",
+        "effect": 0.05,
+        "turnover_pattern": "alternating",
+        "cost_information": "contracting",
+        "volatility_scale": 1,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_static_initial_positive_e0",
+        "effect": 0,
+        "turnover_pattern": "positive",
+        "cost_information": "static_initial",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_static_initial_positive_e2",
+        "effect": 0.02,
+        "turnover_pattern": "positive",
+        "cost_information": "static_initial",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_static_initial_positive_e5",
+        "effect": 0.05,
+        "turnover_pattern": "positive",
+        "cost_information": "static_initial",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_static_initial_alternating_e0",
+        "effect": 0,
+        "turnover_pattern": "alternating",
+        "cost_information": "static_initial",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_static_initial_alternating_e2",
+        "effect": 0.02,
+        "turnover_pattern": "alternating",
+        "cost_information": "static_initial",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_static_initial_alternating_e5",
+        "effect": 0.05,
+        "turnover_pattern": "alternating",
+        "cost_information": "static_initial",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_contracting_positive_e0",
+        "effect": 0,
+        "turnover_pattern": "positive",
+        "cost_information": "contracting",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_contracting_positive_e2",
+        "effect": 0.02,
+        "turnover_pattern": "positive",
+        "cost_information": "contracting",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_contracting_positive_e5",
+        "effect": 0.05,
+        "turnover_pattern": "positive",
+        "cost_information": "contracting",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_contracting_alternating_e0",
+        "effect": 0,
+        "turnover_pattern": "alternating",
+        "cost_information": "contracting",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_contracting_alternating_e2",
+        "effect": 0.02,
+        "turnover_pattern": "alternating",
+        "cost_information": "contracting",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "vlow_contracting_alternating_e5",
+        "effect": 0.05,
+        "turnover_pattern": "alternating",
+        "cost_information": "contracting",
+        "volatility_scale": 0.4,
+        "prefix_weak": false
+      },
+      {
+        "id": "prefix_weak_diagnostic",
+        "effect": 0,
+        "turnover_pattern": "positive",
+        "cost_information": "contracting",
+        "volatility_scale": 1,
+        "prefix_weak": true
+      }
+    ]
+  },
+  "spec_sha256": "e683706368446fe27d019c6b0984a35ded9938f80e689699937dc70b81d24211",
+  "code_sha256": "3ec31c9f0dd38bca8735d12b87e51c4087802adc31bb4b6645aa505af6281c29",
+  "freeze": {
+    "source_file": "followup-freeze-v2.json",
+    "file_sha256": "71b49a1139c86cdfbaa03288ee9f50eb7586ae9a292244afcfb7108d70a3ed22",
+    "payload": {
+      "kind": "followup_v2_freeze",
+      "created_at": "2026-10-22T05:12:40.294256+00:00",
+      "spec_sha256": "e683706368446fe27d019c6b0984a35ded9938f80e689699937dc70b81d24211",
+      "code_sha256": "3ec31c9f0dd38bca8735d12b87e51c4087802adc31bb4b6645aa505af6281c29",
+      "runtime": {
+        "python": "3.13.7",
+        "numpy": "2.5.4"
+      },
+      "source_snapshot": "followup-freeze-v2.sources.zip",
+      "source_snapshot_sha256": "d6a37ffc045b07461dacc30ff454de072a5e7600aa69a7b9f7f58b6fa1efa13e",
+      "documents": [
+        {
+          "path": "docs/publication/followup-protocol-v2.md",
+          "sha256": "f0ea1c6150cc5d51e468331797955d3410cbcde4a19a3e16385f4812bbbf6c28"
+        },
+        {
+          "path": "docs/publication/reviews/followup-methods-01.md",
+          "sha256": "a635e0dd9e0c8b22b66de83be21a9880eb30bb1e6961d8a5f71cea506c216dbf"
+        }
+      ],
+      "cases": 25,
+      "scope": "Separately specified after all v1 outcomes; established-method diagnostics only",
+      "freeze_sha256": "f7035695fcf5a7d43ca6d29d4ce45a7d242935faf3b82974503f37b772ef8230"
+    }
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "cases": [
+    {
+      "case_id": "vhigh_static_initial_positive_e0",
+      "attempt_id": "6a127ae0-52c9-453b-953d-ddc7aa3b7c15",
+      "report_sha256": "ffe2e8facfa3e5b0d7c4c261d81d45068ed3780369a3ee93f522cd006e039b57",
+      "arrays_sha256": "2cbcef92dd86549f72f0ed93233f3ff483fc37dfd3eb3126fd99ba1637805575"
+    },
+    {
+      "case_id": "vhigh_static_initial_positive_e2",
+      "attempt_id": "caa4f8ba-8728-4a8c-b44b-8173a42d606d",
+      "report_sha256": "1c4d430c7c321477ea526f549af922513a962215ededb07c09ebb6f1a36e0336",
+      "arrays_sha256": "bab391f66ef654cabc29f8bc06ad6db069a4a2fd880b82514e18f8cbefc26580"
+    },
+    {
+      "case_id": "vhigh_static_initial_positive_e5",
+      "attempt_id": "b7b91cfa-605d-4d79-952b-a5fd6e455723",
+      "report_sha256": "85e537eee115d74abe4220333315b857d656a205109c9211240f5cd043f08878",
+      "arrays_sha256": "774cfb80ed952f9d051352efbbb15bd55d7384eec364328b88bd88cca6fe294c"
+    },
+    {
+      "case_id": "vhigh_static_initial_alternating_e0",
+      "attempt_id": "7f33037f-ed3a-47c8-8034-2eb03b80f119",
+      "report_sha256": "1289a7f307ee3f9371c8873af09a7464dad166b9667f37820bade9a8332a7717",
+      "arrays_sha256": "aa0c7e67f011a3bebd973bd65a59363c5ad6a45247c6e66a50b89a2f4c71ce24"
+    },
+    {
+      "case_id": "vhigh_static_initial_alternating_e2",
+      "attempt_id": "6f16b5a7-636f-4151-839d-749e3e0499b1",
+      "report_sha256": "5e47efae5d1ceef2088d96faa192053ceef1f733355c460959a6e011964fa0c6",
+      "arrays_sha256": "6bb14666287ce03b4f6e1acf8bf28b3047ea9124efbe62e7d1aa38e2f8038138"
+    },
+    {
+      "case_id": "vhigh_static_initial_alternating_e5",
+      "attempt_id": "7ddbda21-542a-4b90-a097-192ae16b71d2",
+      "report_sha256": "bc053a35894a60a3b160b5d4aedd3e90bddff60c1174d52fb06de021fcd4e345",
+      "arrays_sha256": "6d342fd8c5272404c4df490452ab050b67d3cbff27b91fff6a09c8541b321138"
+    },
+    {
+      "case_id": "vhigh_contracting_positive_e0",
+      "attempt_id": "98d59c9c-8c93-4b53-94a7-636768157b57",
+      "report_sha256": "c0096f4afe7c26c7e5985d1334340b9bfe375d919b52210fd2115bcbaf737553",
+      "arrays_sha256": "3c1a96ce16a826851eac6d57a3df0beea5b79b3248fb2a973064744673910109"
+    },
+    {
+      "case_id": "vhigh_contracting_positive_e2",
+      "attempt_id": "80d7a3de-23c9-4639-b503-7d60d5f1b8b6",
+      "report_sha256": "08b75b5daf78944f6f3b899cb2cbd38232d81e114d664350f8afb5728936b8ce",
+      "arrays_sha256": "6049b9d0c35f004d663e848fcbae2a395d01a81e272eae59540c61df80e2ccc2"
+    },
+    {
+      "case_id": "vhigh_contracting_positive_e5",
+      "attempt_id": "48afe572-fe9f-494a-8e21-35223c9681dd",
+      "report_sha256": "dd820cfd2c15b2fac280b793c1d446964732b7c575488f35b1b0e7b6e145bd4a",
+      "arrays_sha256": "043b22d90c6777eae830a2765f1997cf1dcf9701fdc1726013151621a9118551"
+    },
+    {
+      "case_id": "vhigh_contracting_alternating_e0",
+      "attempt_id": "75fd9802-951e-4d64-9a27-6efa79e6bdc6",
+      "report_sha256": "db85059e98e9168fed3f4747fdc1df65ad003ac8095d60aebe6296f4f3f62fa3",
+      "arrays_sha256": "bf3868f1b98de02c77d59fd5d71888d178cd070800f7a73da72245f05f5461ef"
+    },
+    {
+      "case_id": "vhigh_contracting_alternating_e2",
+      "attempt_id": "76ab1920-b706-4c31-90e0-585bd58e5614",
+      "report_sha256": "b043b905dfe45604aa4493ae93a069848a0cfcc31d9563143f61018f76ee8983",
+      "arrays_sha256": "bc678d42855dfdbaa8b3a61196c9eabce86effe886b4f82737a57c0eb22b7090"
+    },
+    {
+      "case_id": "vhigh_contracting_alternating_e5",
+      "attempt_id": "7a56eb31-3461-4f9c-8995-8f868dcdb31b",
+      "report_sha256": "d72b4988e8a72edbec7e0d9da45c90a37eb9998cb73c23eb42f98f97482072b7",
+      "arrays_sha256": "6c45a175ad47e5d64e1f07086fe5e816c2b519e50507c4cfba2ed736f0513df6"
+    },
+    {
+      "case_id": "vlow_static_initial_positive_e0",
+      "attempt_id": "2a250b5c-59ec-47b1-a5a2-ca8c70ab8dce",
+      "report_sha256": "293428f580f1c578401d38427c8e442530850f640b52178e2be5134d5c2736d1",
+      "arrays_sha256": "3377a6c2bf37c46c356a46e8437ced77f93074dcb125cbe207a225fb0ae6c958"
+    },
+    {
+      "case_id": "vlow_static_initial_positive_e2",
+      "attempt_id": "74498e40-ab32-4ca1-b12f-f5efc23f7490",
+      "report_sha256": "22aa448cd052cf1c1e7ab70e11ca0277977350e458f0aef7a4b4c66a0f78f62d",
+      "arrays_sha256": "6d8ca91d8598fce6a33a53b4a49a2527a925c47ec245c72ca08bf6c80f1d44b2"
+    },
+    {
+      "case_id": "vlow_static_initial_positive_e5",
+      "attempt_id": "05068808-9971-4dfb-b91c-4ed81d957d7b",
+      "report_sha256": "e4dc87dbffb86e89fbae4f2b6b22194a5287a8958f732717d9d8abee4bf87407",
+      "arrays_sha256": "e900f89c9a34e16d6ef04df8d51726dbefe354231a8cb7c63e26e2f35e1d78d7"
+    },
+    {
+      "case_id": "vlow_static_initial_alternating_e0",
+      "attempt_id": "d146b2ed-9f2b-4cc6-b0bd-3ec520c4c060",
+      "report_sha256": "1c32b431da2494d120b7e219b2d44ffdc97d8313abcf0e0002f1d807f6f4a202",
+      "arrays_sha256": "48eb30519b96c50ce92a9eee48aa2e6f30e487fe2792f4009804d285b4c2a241"
+    },
+    {
+      "case_id": "vlow_static_initial_alternating_e2",
+      "attempt_id": "76033f7c-4f53-447d-be36-f7cab4ae4f17",
+      "report_sha256": "2e41d510320bf522e90ba9392d2a41280c5b1f68eb92227f446de3db433592c7",
+      "arrays_sha256": "8ae5884f159d2a8843dbf9b61406d6ae1da5d68f89eb459274b6822d4bc97839"
+    },
+    {
+      "case_id": "vlow_static_initial_alternating_e5",
+      "attempt_id": "de656e23-2acb-429b-937c-23240674aa6c",
+      "report_sha256": "8a767c5e9f31c93ec19b3919b0fe4bc528303a2ee746815de1a6a539b4bde02a",
+      "arrays_sha256": "b50ece3ca1e8e62099d46270d7f83a34b7956865a7fef4432512507043d7a4be"
+    },
+    {
+      "case_id": "vlow_contracting_positive_e0",
+      "attempt_id": "f566ab84-ccd5-4558-8a3c-9ec44223b189",
+      "report_sha256": "fc04376a9f08c07676fcfcadc1ca534df29341c452919e86e71259ca3e613eac",
+      "arrays_sha256": "cd53e0356ecbc89f9a94141c8a5f22fa4a526657833df882e263f6617ba3d05c"
+    },
+    {
+      "case_id": "vlow_contracting_positive_e2",
+      "attempt_id": "a28f194a-a198-4041-8eb4-6d443336640d",
+      "report_sha256": "a33b21c3d9e700f987290faa5761eef72fd76830bc969a5298153283bf56e15d",
+      "arrays_sha256": "7580c04f2dbd6e0716d5f4b5faaaa3f6aeac7321297f10a7dc3a0e2454498140"
+    },
+    {
+      "case_id": "vlow_contracting_positive_e5",
+      "attempt_id": "9d4f56e8-b2d2-4a9f-8764-86ae24bdb376",
+      "report_sha256": "4cfef89fdd0c66d995be7170f13d13e501c5f416aa267db11358724d8e9c0bc2",
+      "arrays_sha256": "e866fc9a34962de0cf725829e27cd1b3dc35a074f6cafb68e6694a0d94695f3a"
+    },
+    {
+      "case_id": "vlow_contracting_alternating_e0",
+      "attempt_id": "071b95c6-49cf-4ce8-a04c-e37fabcc3a6b",
+      "report_sha256": "76fc87c9f72c1e75e80484a346ba94502a6623d8528e0d1c61b5e90e133349ad",
+      "arrays_sha256": "851bf10dc472674391a97a93c4f692e52c3f7238291ca1e53da2b2ca1014310f"
+    },
+    {
+      "case_id": "vlow_contracting_alternating_e2",
+      "attempt_id": "ad4a99bc-6c98-4050-ae53-85119549e6e6",
+      "report_sha256": "9b984cdd1d39f287c5aae85eca9e5e4c1320045a9639c909b39578e42b2d954f",
+      "arrays_sha256": "d46bc01f0b1ba4387d46a2210c99465db7e8f188daa088a9e32ae8c1ea200715"
+    },
+    {
+      "case_id": "vlow_contracting_alternating_e5",
+      "attempt_id": "8784f531-73a9-4a00-90da-69dd069a6fe1",
+      "report_sha256": "eed18a39ab83aaf3a0d167114af5579bc476424c3115ab8c38fbe31d204dff24",
+      "arrays_sha256": "43aaee14016665eba9b54db7e4b6e3574706126d0777a513a4ec7bed00d19c06"
+    },
+    {
+      "case_id": "prefix_weak_diagnostic",
+      "attempt_id": "ddc1b075-dc09-4adc-8a45-7e06393651dc",
+      "report_sha256": "b4ef38bdd2b78fb5a459ef2df6cdb472a632ab1bab4521f3e3c054dd02200f14",
+      "arrays_sha256": "0dbebe2f3c337cbae996c455fe531fa469ec3301fa80e20eeed6e2fcd4eea32c"
+    }
+  ],
+  "completed_at": "2026-10-22T05:55:49.561147+00:00"
+}

@@ -1,10 +1,24 @@
 [project]
 name = "quant"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "Reproducible research for adaptive Bitcoin trend following"
 readme = "README.md"
+authors = [{name = "Abdullah Hamza", email = "abdullah2hamza@gmail.com"}]
+license = "MIT"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = ["numpy>=2.1", "matplotlib>=3.9"]
+
+[project.urls]
+Repository = "https://github.com/abdullah2hamza-blip/Quant"
+
+[dependency-groups]
+dev = [
+    "pypdf==6.10.0",
+    "pytest>=8.3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [project.scripts]
 quant = "quant:main"

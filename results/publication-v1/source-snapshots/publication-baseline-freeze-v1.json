@@ -1,0 +1,37 @@
+{
+  "kind": "publication_simulation_freeze",
+  "created_at": "2026-10-22T03:26:27.888108+00:00",
+  "code_sha256": "52ea1c7423d3fbcbbd385dc59c01b9c893fec7a39edc8e7f7688f447bc3e49d8",
+  "spec_sha256": "ee88dff71cc989114b79a616ab1a3e95abc7be2ded867093060531bd7814d625",
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "source_snapshot": "publication-baseline-freeze-v1.sources.zip",
+  "source_snapshot_sha256": "409d87a5724a4da9168323f58d0bda689ab78c5c8c931bb8c212df4d8baed013",
+  "documents": [
+    {
+      "path": "docs/publication/protocol-v1.md",
+      "sha256": "affc383b95d43841a2f4a4a94639013e8e5c360a43b438692f8c555b30a95644"
+    },
+    {
+      "path": "docs/publication/reviews/mathematical-design-01.md",
+      "sha256": "0203a5299c29827eed66124d10d1627f158b7bf729dafcede0ee78f1cab2c388"
+    },
+    {
+      "path": "docs/publication/reviews/cost-primitives-01.md",
+      "sha256": "138361c23501e4246a94e68126df5e14652cfeb459808f1a365ceb7c1ee97b4d"
+    },
+    {
+      "path": "docs/publication/reviews/simulation-runner-01.md",
+      "sha256": "5026ad652fb058dec525233384a6f756c92fde1c532377ab3d1e6c043b73ab94"
+    },
+    {
+      "path": "docs/publication/protocol-v1-addendum-01.md",
+      "sha256": "1b86400c14899f48e042d69f905c9d188b4abb2c121fd6170887c45343b27aa1"
+    }
+  ],
+  "scope": "Known-truth synthetic study; this does not freeze or authorize a market backtest",
+  "review_limit": "Pins reviewed documents; file existence and hashes do not certify scientific correctness",
+  "freeze_sha256": "f701360eaf311fac2b0c5484b19fbca25f3081b4a1f1e899cccf631ee60ff716"
+}

@@ -1,0 +1,36 @@
+{
+  "recorded_at_ms": 1792705174594,
+  "source": {
+    "verified_modules": 4,
+    "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+    "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "policies": {
+    "fixed": {
+      "cli_exit_code": 0,
+      "online_sim_cycle": {
+        "decision_time_ms": 1792699199999,
+        "observed_at_ms": 1792705176312,
+        "policy": "fixed",
+        "execution_model": "current observable paper/testnet price; not a historical next-open fill",
+        "status": "stale_skipped",
+        "delay_ms": 5976312
+      }
+    },
+    "legacy_daily": {
+      "cli_exit_code": 0,
+      "online_sim_cycle": {
+        "decision_time_ms": 1792627199999,
+        "observed_at_ms": 1792705177621,
+        "policy": "legacy_daily",
+        "execution_model": "current observable paper/testnet price; not a historical next-open fill",
+        "status": "stale_skipped",
+        "delay_ms": 77977621
+      }
+    }
+  },
+  "public_bid_ask_midpoint": 81468.005,
+  "scope": "Actual unauthenticated public-data requests and local simulation only; no broker account or order used. Late cycles skip by design."
+}

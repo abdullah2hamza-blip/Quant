@@ -1,0 +1,722 @@
+{
+  "case": {
+    "id": "vlow_static_initial_positive_e5",
+    "effect": 0.05,
+    "turnover_pattern": "positive",
+    "cost_information": "static_initial",
+    "volatility_scale": 0.4,
+    "prefix_weak": false
+  },
+  "kind": "substantive",
+  "worlds": 4000,
+  "steps": 800,
+  "hypotheses": 10,
+  "methods": {
+    "oracle_linear": {
+      "null_family_rejection": {
+        "estimate": 0.0005,
+        "independent_worlds": 4000,
+        "standard_error": 0.000353464991194319,
+        "confidence_interval": [
+          0.00013712874495346754,
+          0.0018213551014583176
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 1.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.9990405567102987,
+          1.0
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 201.459,
+        "standard_error": 0.5405980635523764,
+        "confidence_interval": [
+          200.39944726532525,
+          202.51855273467476
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 29.961193038286847,
+        "standard_error": 0.05055362411743306,
+        "confidence_interval": [
+          29.862109755728703,
+          30.06027632084499
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "prefix-weak null: alpha_test + global simultaneous-coverage failure; oracle needs no cost coverage allocation (same test thresholds retained)"
+    },
+    "joint_linear": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 0.45975,
+        "independent_worlds": 4000,
+        "standard_error": 0.00788003707954474,
+        "confidence_interval": [
+          0.44435139129850354,
+          0.4752258438863175
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 685.89325,
+        "standard_error": 2.4579987597810433,
+        "confidence_interval": [
+          681.075660956785,
+          690.710839043215
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 5.703485445157115,
+        "standard_error": 0.12402243527071971,
+        "confidence_interval": [
+          5.4604059387515544,
+          5.946564951562676
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "prefix-weak null: alpha_test + global simultaneous-coverage failure"
+    },
+    "separate_linear": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 800.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "prefix-weak null: alpha_test + global simultaneous-coverage failure"
+    },
+    "oracle_agrapa": {
+      "null_family_rejection": {
+        "estimate": 0.00425,
+        "independent_worlds": 4000,
+        "standard_error": 0.0010285836742822629,
+        "confidence_interval": [
+          0.002655247608755385,
+          0.006796040412983639
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 1.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.9990405567102987,
+          1.0
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 161.563,
+        "standard_error": 0.5039048648090179,
+        "confidence_interval": [
+          160.5753646133398,
+          162.5506353866602
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 31.967587223530785,
+        "standard_error": 0.05068814327068596,
+        "confidence_interval": [
+          31.868240288277033,
+          32.066934158784534
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "strong conditional null only: alpha_test + global simultaneous-coverage failure; oracle needs no cost coverage allocation (same test thresholds retained)"
+    },
+    "joint_agrapa": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 0.537,
+        "independent_worlds": 4000,
+        "standard_error": 0.007884018645335639,
+        "confidence_interval": [
+          0.5215194818294581,
+          0.552409519367104
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 631.79825,
+        "standard_error": 3.0374567770838388,
+        "confidence_interval": [
+          625.8449441123187,
+          637.7515558876814
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 8.387101880640955,
+        "standard_error": 0.1527998322504135,
+        "confidence_interval": [
+          8.087619712586383,
+          8.686584048695527
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "strong conditional null only: alpha_test + global simultaneous-coverage failure"
+    },
+    "separate_agrapa": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 800.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "strong conditional null only: alpha_test + global simultaneous-coverage failure"
+    },
+    "oracle_eb": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 1.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.9990405567102987,
+          1.0
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 407.927,
+        "standard_error": 0.8023019786004623,
+        "confidence_interval": [
+          406.3545170172179,
+          409.4994829827821
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 19.60651262853782,
+        "standard_error": 0.05282426609287929,
+        "confidence_interval": [
+          19.50297896948602,
+          19.710046287589623
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "prefix-weak null: alpha_test + global simultaneous-coverage failure; oracle needs no cost coverage allocation (same test thresholds retained)"
+    },
+    "joint_local_eb": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 0.032,
+        "independent_worlds": 4000,
+        "standard_error": 0.002782804340948174,
+        "confidence_interval": [
+          0.026978979805530705,
+          0.037919059113629895
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 796.8705,
+        "standard_error": 0.3414371498084491,
+        "confidence_interval": [
+          796.2012954833914,
+          797.5397045166086
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.15500215496016706,
+        "standard_error": 0.016999299307878166,
+        "confidence_interval": [
+          0.12168414055430918,
+          0.18832016936602494
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "prefix-weak null: alpha_test + global simultaneous-coverage failure"
+    },
+    "separate_local_eb": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 800.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "prefix-weak null: alpha_test + global simultaneous-coverage failure"
+    },
+    "joint_coherent_eb": {
+      "null_family_rejection": {
+        "estimate": 0.0,
+        "independent_worlds": 4000,
+        "standard_error": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0009594432897014865
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "first_stream_rejection": {
+        "estimate": 0.032,
+        "independent_worlds": 4000,
+        "standard_error": 0.002782804340948174,
+        "confidence_interval": [
+          0.026978979805530705,
+          0.037919059113629895
+        ],
+        "method": "Wilson 95% Monte Carlo interval across independent worlds"
+      },
+      "restricted_first_stream_detection_time": {
+        "estimate": 796.8705,
+        "standard_error": 0.3414371498084491,
+        "confidence_interval": [
+          796.2012954833914,
+          797.5397045166086
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "materiality_adjusted_paper_utility": {
+        "estimate": 0.15500215496016706,
+        "standard_error": 0.016999299307878166,
+        "confidence_interval": [
+          0.12168414055430918,
+          0.18832016936602494
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "guarantee": "prefix-weak null: alpha_test + global simultaneous-coverage failure"
+    }
+  },
+  "paired": {
+    "joint_agrapa_minus_joint_linear": {
+      "first_stream_rejection_difference": {
+        "estimate": 0.07725,
+        "standard_error": 0.004221974140305735,
+        "confidence_interval": [
+          0.0689750827413413,
+          0.0855249172586587
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "utility_difference": {
+        "estimate": 2.6836164354838394,
+        "standard_error": 0.05349483287715698,
+        "confidence_interval": [
+          2.5787684896856224,
+          2.7884643812820564
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      }
+    },
+    "joint_coherent_eb_minus_joint_local_eb": {
+      "first_stream_rejection_difference": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "utility_difference": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      }
+    },
+    "joint_local_eb_minus_separate_local_eb": {
+      "first_stream_rejection_difference": {
+        "estimate": 0.032,
+        "standard_error": 0.00278315225672636,
+        "confidence_interval": [
+          0.02654512181332496,
+          0.03745487818667504
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "utility_difference": {
+        "estimate": 0.15500215496016706,
+        "standard_error": 0.016999299307878166,
+        "confidence_interval": [
+          0.12168414055430918,
+          0.18832016936602494
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      }
+    },
+    "joint_linear_minus_separate_linear": {
+      "first_stream_rejection_difference": {
+        "estimate": 0.45975,
+        "standard_error": 0.007881022268906537,
+        "confidence_interval": [
+          0.44430348019158505,
+          0.47519651980841493
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "utility_difference": {
+        "estimate": 5.703485445157115,
+        "standard_error": 0.12402243527071971,
+        "confidence_interval": [
+          5.4604059387515544,
+          5.946564951562676
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      }
+    },
+    "joint_agrapa_minus_separate_agrapa": {
+      "first_stream_rejection_difference": {
+        "estimate": 0.537,
+        "standard_error": 0.007885004332486498,
+        "confidence_interval": [
+          0.5215456754903842,
+          0.5524543245096158
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "utility_difference": {
+        "estimate": 8.387101880640955,
+        "standard_error": 0.1527998322504135,
+        "confidence_interval": [
+          8.087619712586383,
+          8.686584048695527
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      }
+    },
+    "oracle_eb_minus_oracle_linear": {
+      "first_stream_rejection_difference": {
+        "estimate": 0.0,
+        "standard_error": 0.0,
+        "confidence_interval": null,
+        "sample_degenerate": true,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      },
+      "utility_difference": {
+        "estimate": -10.354680409749024,
+        "standard_error": 0.004167236980641058,
+        "confidence_interval": [
+          -10.362848044146125,
+          -10.346512775351924
+        ],
+        "sample_degenerate": false,
+        "independent_worlds": 4000,
+        "method": "normal 95% Monte Carlo interval across independent worlds; unavailable for a degenerate sample",
+        "caveat": "A zero empirical standard error does not establish zero Monte Carlo uncertainty; normal intervals are approximate."
+      }
+    }
+  },
+  "cost_coverage_failure": {
+    "estimate": 0.0,
+    "independent_worlds": 4000,
+    "standard_error": 0.0,
+    "confidence_interval": [
+      0.0,
+      0.0009594432897014865
+    ],
+    "method": "Wilson 95% Monte Carlo interval across independent worlds"
+  },
+  "cost_conflict": {
+    "estimate": 0.0,
+    "independent_worlds": 4000,
+    "standard_error": 0.0,
+    "confidence_interval": [
+      0.0,
+      0.0009594432897014865
+    ],
+    "method": "Wilson 95% Monte Carlo interval across independent worlds"
+  },
+  "cost_conflict_after_final_unused_calibration": {
+    "estimate": 0.0,
+    "independent_worlds": 4000,
+    "standard_error": 0.0,
+    "confidence_interval": [
+      0.0,
+      0.0009594432897014865
+    ],
+    "method": "Wilson 95% Monte Carlo interval across independent worlds"
+  },
+  "trace": [
+    {
+      "label": 1,
+      "world": 0,
+      "cost_interval": [
+        0.0,
+        0.1329390179429979
+      ],
+      "calibration_n": 32,
+      "first_stream_log_evidence": [
+        0.00802769168722902,
+        0.0014944445363510553,
+        -0.015102344929511975,
+        0.0025966258472659787,
+        0.00048232294586487496,
+        -0.004846848451388796,
+        0.0040040054863375125,
+        0.000746890633888877,
+        -0.007582643439403258,
+        0.000746890633888877
+      ],
+      "first_stream_center": 0.0
+    },
+    {
+      "label": 400,
+      "world": 0,
+      "cost_interval": [
+        0.0,
+        0.1329390179429979
+      ],
+      "calibration_n": 32,
+      "first_stream_log_evidence": [
+        11.557663833060486,
+        4.9896289812452,
+        -1.6006448723964009,
+        13.088006579396101,
+        6.265621083767754,
+        -0.1893550434348216,
+        4.862289514649447,
+        1.8147399560881181,
+        -1.0559954616423979,
+        1.8147399560880806
+      ],
+      "first_stream_center": 0.06157540980188054
+    },
+    {
+      "label": 800,
+      "world": 0,
+      "cost_interval": [
+        0.0,
+        0.1329390179429979
+      ],
+      "calibration_n": 32,
+      "first_stream_log_evidence": [
+        24.722531972643328,
+        11.453090315062234,
+        -2.4352717470203,
+        26.255146058286286,
+        12.798698604454469,
+        -0.1893550434348216,
+        11.254662965028547,
+        4.433208110293913,
+        -1.6098677427738135,
+        4.4332081102940055
+      ],
+      "first_stream_center": 0.061315724640628295
+    }
+  ],
+  "runtime_seconds": 107.97929079999449,
+  "algorithm_state_bytes": 24220080,
+  "memory_limit": "Named persistent state arrays, not process peak memory or transient NumPy allocations",
+  "maximum_support_utility_observed": 0.38200000000000006,
+  "utility_convention": "Additive materiality-adjusted latent utility; first discovered lowest-index stream active only on subsequent labels; no funded compounding",
+  "coupling": "Same underlying innovations by world index across cases; independent worlds, dependent streams and paired factorial cells",
+  "arrays_sha256": "e900f89c9a34e16d6ef04df8d51726dbefe354231a8cb7c63e26e2f35e1d78d7"
+}

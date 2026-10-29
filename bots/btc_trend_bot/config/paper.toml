@@ -1,0 +1,59 @@
+# Research specification, assessed 2026-10-21.
+# Executed by the research CLI; edits define a new protocol fingerprint.
+schema_version = 1
+project = "adaptive-bitcoin-trend-evidence"
+mode = "research"
+
+[market]
+data_venue = "binance"
+symbol = "BTCUSDT"
+instrument = "spot"
+timeframe = "4h"
+timezone = "UTC"
+completed_candles_only = true
+
+[reference]
+signal = "ema_cross"
+fast_bars = 50
+slow_bars = 200
+position_mode = "long_flat"
+warmup_bars = 2000
+initial_equity = 1.0
+cash_rate_annual = 0.0
+
+[risk]
+annual_volatility_target = 0.20
+volatility_lookback_bars = 180
+volatility_estimator = "sample_std_log_returns"
+annualization_bars = 2190
+maximum_exposure = 1.0
+rebalance_weight_band = 0.10
+
+[execution]
+fill_assumption = "next_bar_open"
+cost_model = "assumed_all_in_bps_per_side"
+base_cost_bps_per_side = 25.0
+sensitivity_cost_bps_per_side = [10.0, 25.0, 50.0, 100.0]
+charge_on = "traded_notional"
+
+[adaptive]
+candidate_ema_pairs = [[25, 100], [50, 200], [100, 400]]
+selection_interval_bars = 180
+trailing_selection_bars = 4380
+minimum_history_before_scoring_bars = 6380
+score = "net_mean_log_return"
+initial_pair = [50, 200]
+tie_break = "retain_incumbent_then_reference"
+charge_portfolio_turnover_on_switch = true
+
+[evaluation]
+development_start = "2017-09-01"
+development_end = "2022-12-31"
+selection_start = "2023-01-01"
+selection_end = "2024-12-31"
+retrospective_evaluation_start = "2025-01-01"
+retrospective_evaluation_end = "2026-10-20"
+requires_shared_warmup_and_selection_history = true
+robustness_timeframes = ["1h", "1d"]
+sequential_guarantee_status = "research_question_unproven"
+prospective_start = "after_protocol_freeze"

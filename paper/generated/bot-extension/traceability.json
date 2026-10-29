@@ -1,0 +1,33 @@
+{
+  "kind": "bot_extension_display_trace",
+  "registry_sha256": "36e058d341ad1ba31192b86dec45e43fa7884e0c0ecab09172ae3eef8cf6c828",
+  "freeze_file_sha256": "f3529185acded3cbaceb3bb5ce21f5dcce23e6f06310fb3ff9eff967853d36ed",
+  "source_snapshot_sha256": "39deba48da8e66818c05334584075225a58d015b7099c977eaecf27fb5620691",
+  "generator_sha256": "e10a0e5f235ac0bab998993077bade4cc1f905d2c28315d1679d733ba2d720e2",
+  "counts": {
+    "metrics_rows": 40,
+    "paired_rows": 30
+  },
+  "macros": {
+    "BotDeliveredReturn": 11.87839981792942,
+    "BotDeliveredDrawdown": 25.16628506306685,
+    "BotDeliveredHighCostReturn": -8.442664193957095,
+    "BotSmaTwentyReturn": 7.492962409316828,
+    "BotEmaTwentyReturn": -2.491531594428742,
+    "BotTwentyContrast": 5.4076663637888025,
+    "BotTwentyContrastLower": -6.379665229516404,
+    "BotTwentyContrastUpper": 15.218435533628877,
+    "BotSmaFortyReturn": 12.248454212620153,
+    "BotEmaFortyReturn": 3.5831313842974444,
+    "BotFortyContrast": 4.456564768675633,
+    "BotFortyContrastLower": -12.672677243468256,
+    "BotFortyContrastUpper": 17.738231887115198
+  },
+  "scope": "Post-outcome exploratory matched settings; no fresh holdout, causal alpha, multiplicity-adjusted/sequential inference or future-profitability claim",
+  "output_sha256": {
+    "metrics.csv": "8dfa9e36f5d0d00bd6b0a8bc19f85b0337a1f19d6e5b2f064876cb4361dc330f",
+    "paired.csv": "8de6661ec29295aa5f4bde8e11191d727d128dd6fa1f63c82f43f05912688a31",
+    "numbers.tex": "7e8937e98682bbe386070ab96279188ebcfc29dafdd091025ae41afcb8925282",
+    "table.tex": "40eef329f4ba236c629e550ee6c78f7627945ab0264bb47a5a7088d2871b0ad5"
+  }
+}

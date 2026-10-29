@@ -1,0 +1,192 @@
+\section{Statistical setup and established-method construction}
+\label{sec:methods}
+% The baseline construction and the separately specified follow-up are both
+% established-method diagnostics; their guarantees are kept distinct.
+\subsection{Information, utility and null hypotheses}
+
+For a candidate born at a predictable research time, index its subsequent
+non-overlapping trials by $i$. Candidate choice, turnover coefficients $q^A_i,
+q^R_i\geq0$, materiality $m_i$, cost interval and betting components are fixed
+before the affected outcome is observed. The outcome matures after its issue
+time. No intermediate label is available in the delayed experiment.
+
+Let $G_i$ denote the observed gross utility difference and $\theta$ a fixed
+unknown common mean-cost coefficient under each generating law. Define
+\begin{equation}
+ d_i=q^A_i-q^R_i,\qquad
+ D_i=G_i-d_i\theta-m_i. \label{eq:latent}
+\end{equation}
+The synthetic model assumes a known $B>0$ with $|D_i|\leq B$ almost surely.
+These are bounded experimental utilities, not empirical bounds inferred from
+the largest historical return. A common expected cost need not mean equal
+realized slippage on every trade.
+
+Write $\mathcal B_i$ for the pretrial oracle information, including actual
+researcher information, calibration, policy choices, and all previously matured
+latent utilities relevant to the process. Put
+$\mu_i=\E[D_i\mid\mathcal B_i]$. The strong null is $\mu_i\leq0$ at every
+post-birth trial. The prefix-weak null is
+\begin{equation}
+ \sum_{i=1}^n\mu_i\leq0\quad\text{almost surely for every }n. \label{eq:weak}
+\end{equation}
+The latter permits temporary positive conditional means after an initial
+negative period. All prefixes begin at the candidate's declared birth. A null
+defined only using a smaller observable history is not interchangeable with
+this oracle null. Information timing matters for delayed evidence as well
+\citep{choefiltration2026}.
+
+\begin{table}[tbp]
+\centering\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.21\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.19\textwidth}>{\raggedright\arraybackslash}p{0.23\textwidth}}
+\toprule
+Evidence family & Cost treatment & Supported null & Scope of inference\\
+\midrule
+Fixed linear / Hoeffding mixtures
+ & Oracle, local joint, local separate
+ & Prefix-weak; hence strong
+ & Bounded synthetic model; fixed component grids and weights\\
+Fixed empirical-Bernstein mixtures
+ & Oracle, local joint, local separate, coherent joint profile
+ & Prefix-weak; hence strong
+ & Predictable common centers; robust minima over full utility intervals\\
+One-sided aGRAPA specialization
+ & Oracle, local joint, local separate
+ & Strong conditional only
+ & Predictable adaptive stakes; no prefix-weak guarantee asserted\\
+Historical market comparison
+ & Assumed cost scenarios with exact cash/coin books
+ & No sequential null tested
+ & Approximate paired moving-block intervals; retrospective and unadjusted\\
+\bottomrule
+\end{tabular}
+\caption{Distinct guarantees and applications. Synthetic cost-based guarantees
+require the bounded support, oracle information, predictability, fixed shared
+coefficient and simultaneous calibration assumptions in the text. The family
+bound is $0.04+0.01=0.05$ separately within a comparator; pooling discoveries
+across comparators has no inherited 5\% guarantee. Oracle thresholds are kept
+matched for comparison. Market intervals do not inherit synthetic guarantees.}
+\label{tab:methodscope}
+\end{table}
+
+\subsection{One simultaneous cost envelope}
+
+Calibration observations $C_k\in[0,c]$ obey
+$\E[C_k\mid\text{full prior calibration/game information}]=\theta$.
+At $k\geq1$, let $\bar C_k$ be their average and set
+\begin{align}
+ \delta_k&=\frac{6\delta}{\pi^2k^2},&
+ r_k&=c\sqrt{\frac{\log(2/\delta_k)}{2k}},\\
+ [\ell_k,u_k]&=[\max(0,\bar C_k-r_k),\min(c,\bar C_k+r_k)].
+\end{align}
+At $k=0$ use $[0,c]$. Conditional bounded-difference Hoeffding concentration
+and a union bound imply
+\begin{equation}
+ \Prob(\mathcal G^c)\leq\delta,\quad
+ \mathcal G=\{\theta\in[\ell_k,u_k]\text{ for all }k\}. \label{eq:coverage}
+\end{equation}
+This deliberately transparent spending envelope can be conservative. One
+global shared envelope is charged once. Unrelated cost parameters cannot
+silently reuse its error allowance. Bounds concern the fixed mean coefficient,
+not next-trade realized costs or a permanently nonstationary slippage process.
+
+At issue time use the latest available interval $[\ell_i,u_i]$ to form
+\begin{align}
+ L^J_i&=G_i-\max(d_i\ell_i,d_i u_i)-m_i,\label{eq:joint}\\
+ L^S_i&=G_i-q^A_i u_i+q^R_i\ell_i-m_i.\label{eq:separate}
+\end{align}
+Both are at most $D_i$ on $\mathcal G$. Their exact width penalty is
+\begin{equation}
+ L^J_i-L^S_i=\min(q^A_i,q^R_i)(u_i-\ell_i). \label{eq:width}
+\end{equation}
+This is an elementary identity, not a new robust-optimization result. When
+turnovers match, the common coefficient cancels in the paired contrast, whereas
+the separate envelope still pays its uncertainty width. Charging $u_i$ to both
+sides gives $G_i-d_i u_i-m_i$, which is optimistic when $d_i<0$.
+
+Define $Z_i=\clip(L_i,-B,B)$. On $\mathcal G$, $Z_i\leq D_i$: clipping below
+$-B$ is safe because $D_i\geq-B$, and the upper endpoint cannot exceed $D_i$
+on that event. This does not justify clipping financial returns while retaining
+an unmodified economic estimand.
+
+\subsection{Fixed mixtures and error composition}
+
+For fixed components $\lambda_k\in[0,1)$ and nonnegative fixed weights summing
+to one, the linear proxy mixture is
+\begin{equation}
+ W_n=\sum_k\pi_k\prod_{i=1}^n(1+\lambda_k Z_i/B).\label{eq:wealth}
+\end{equation}
+The matched Hoeffding mixture replaces each product by
+$\exp\{\lambda_k\sum_{i=1}^nZ_i/B-n\lambda_k^2/2\}$.
+Components and weights are fixed at birth; independently refitting stakes
+does not inherit the weak-null argument below.
+
+\begin{proposition}[Standard domination and cost-error composition]
+\label{prop:composition}
+Under the stated boundedness, oracle-filtration, calibration and prefix-weak
+null assumptions, let stream $j$ receive a predictable error allowance $\alpha_j$
+at its birth, with $\sum_j\alpha_j\leq\alpha_{\rm test}$ pathwise. Reject it
+when its proxy mixture reaches $1/\alpha_j$. Then
+\[
+ \Prob(\text{at least one true-null rejection})
+ \leq\alpha_{\rm test}+\delta.
+\]
+The result also holds for the strong null, a subset of the prefix-weak null.
+\end{proposition}
+
+\begin{proof}
+For a fixed component at the true coefficient, define
+\[
+ M_{k,n}=\prod_{i=1}^n(1+\lambda_kD_i/B),\qquad
+ N_{k,n}=\prod_{i=1}^n
+ \frac{1+\lambda_kD_i/B}{1+\lambda_k\mu_i/B}.
+\]
+The denominator is positive and predictable. The ratio product is a nonnegative
+martingale starting at one in the oracle history. By $1+x\leq e^x$ and
+\eqref{eq:weak},
+$\prod_i(1+\lambda_k\mu_i/B)\leq
+\exp\{\lambda_k\sum_i\mu_i/B\}\leq1$, hence $M_{k,n}\leq N_{k,n}$.
+Their fixed mixture is therefore dominated by a test martingale. For the
+Hoeffding form, the centered conditional Hoeffding exponential is a test
+supermartingale; its conditional-mean compensator is also at most one under
+\eqref{eq:weak}.
+
+On the single event $\mathcal G$, the monotonicity of every factor in $Z_i$
+gives proxy wealth at most the corresponding latent wealth, simultaneously
+over all evaluated times and streams. Thus a proxy crossing on $\mathcal G$
+implies a latent crossing. Conditional Ville bounds at predictable births and
+a union bound give total latent true-null crossing probability at most
+$\E\sum_j\alpha_j\leq\alpha_{\rm test}$. Adding
+$\Prob(\mathcal G^c)\leq\delta$ proves the assertion. We do not condition the
+data-generating law on $\mathcal G$, and do not assert that the proxy process
+itself is a supermartingale.
+\end{proof}
+
+This proposition collects established bounded-betting, compensator and
+coverage-union arguments for the implemented diagnostic; it is not claimed as
+a new general theorem. Under the strong null, predictable changing stakes also
+admit the usual latent supermartingale argument, but that is not the registered
+fixed-mixture comparison. The registered family budget is $0.05=0.04+0.01$.
+Fixed families use $\alpha_j=0.04/H$; sequential births use
+$\alpha_j=0.04/[j(j+1)]$. Candidate dependence does not require an additional
+independence assumption. Past prescreen labels are never reused as post-birth
+evidence.
+
+For identical component grids, weights and streams, \eqref{eq:width} implies
+pathwise joint wealth at least separate wealth. Consequently a joint-only
+first-stream rejection is a binary paired event whose Monte Carlo uncertainty
+is computed across worlds. The difference is called a rejection-rate difference
+under a null and a power difference under an alternative. This dominance claim
+does not compare different betting rules or guarantee higher investment returns.
+
+\input{sections/followup-methods}
+
+\subsection{The market application is a different experiment}
+
+Actual self-financing books contain nonlinear cost/wealth interactions,
+band-triggered trades and different inherited positions. They are not assumed
+to obey \eqref{eq:latent} with a known bounded latent difference. Their costs
+are scenario assumptions, without calibration observations satisfying
+\eqref{eq:coverage}. We therefore report paired historical log differences
+and approximate dependent-data intervals, without marketing them as sequential
+discoveries. This restriction is part of the research design, not a correction
+chosen after seeing its profitability.

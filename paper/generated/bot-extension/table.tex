@@ -1,0 +1,64 @@
+\begin{longtable}{rlrrrrr}
+\caption{Post-outcome matched daily settings. Returns, realized annual volatility, exposure and drawdown are percent; turnover is unscaled. No strategy is selected.}\label{tab:botextensionmetrics}\\
+\toprule Cost & Book & Return & Vol. & Exposure & Turnover & Drawdown \\
+\midrule\endfirsthead
+\toprule Cost & Book & Return & Vol. & Exposure & Turnover & Drawdown \\
+\midrule\endhead
+0 & sma\_20 & 11.76 & 13.47 & 27.46 & 15.58 & -15.23 \\
+0 & ema\_20 & 1.30 & 14.41 & 27.78 & 15.25 & -20.58 \\
+0 & sma\_40 & 21.11 & 22.18 & 45.99 & 30.41 & -21.31 \\
+0 & ema\_40 & 9.56 & 23.87 & 46.36 & 22.44 & -28.08 \\
+0 & cash & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+0 & buy\_hold & -11.27 & 43.11 & 100.00 & 0.00 & -52.97 \\
+0 & volatility\_20 & -4.59 & 21.82 & 52.35 & 3.96 & -35.61 \\
+0 & volatility\_40 & -11.24 & 37.25 & 89.16 & 2.10 & -50.55 \\
+10 & sma\_20 & 10.04 & 13.48 & 27.46 & 15.58 & -16.13 \\
+10 & ema\_20 & -0.24 & 14.40 & 27.78 & 15.24 & -21.22 \\
+10 & sma\_40 & 17.49 & 22.17 & 45.99 & 30.41 & -22.81 \\
+10 & ema\_40 & 7.13 & 23.85 & 46.36 & 22.43 & -28.76 \\
+10 & cash & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+10 & buy\_hold & -11.27 & 43.11 & 100.00 & 0.00 & -52.97 \\
+10 & volatility\_20 & -4.96 & 21.82 & 52.35 & 3.95 & -35.71 \\
+10 & volatility\_40 & -11.43 & 37.25 & 89.16 & 2.10 & -50.61 \\
+25 & sma\_20 & 7.49 & 13.48 & 27.46 & 15.58 & -17.46 \\
+25 & ema\_20 & -2.49 & 14.39 & 27.78 & 15.23 & -22.44 \\
+25 & sma\_40 & 12.25 & 22.17 & 45.99 & 30.40 & -25.00 \\
+25 & ema\_40 & 3.58 & 23.83 & 46.36 & 22.42 & -29.78 \\
+25 & cash & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+25 & buy\_hold & -11.27 & 43.11 & 100.00 & 0.00 & -52.97 \\
+25 & volatility\_20 & -5.53 & 21.82 & 52.35 & 3.95 & -35.85 \\
+25 & volatility\_40 & -11.71 & 37.24 & 89.16 & 2.10 & -50.70 \\
+50 & sma\_20 & 3.39 & 13.50 & 27.46 & 15.57 & -19.72 \\
+50 & ema\_20 & -6.14 & 14.40 & 27.78 & 15.22 & -24.44 \\
+50 & sma\_40 & 4.03 & 22.18 & 45.99 & 30.38 & -28.62 \\
+50 & ema\_40 & -2.07 & 23.82 & 46.36 & 22.39 & -31.47 \\
+50 & cash & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+50 & buy\_hold & -11.27 & 43.11 & 100.00 & 0.00 & -52.97 \\
+50 & volatility\_20 & -6.46 & 21.82 & 52.35 & 3.95 & -36.09 \\
+50 & volatility\_40 & -12.17 & 37.24 & 89.16 & 2.10 & -50.84 \\
+100 & sma\_20 & -4.36 & 13.56 & 27.46 & 15.56 & -24.11 \\
+100 & ema\_20 & -13.03 & 14.48 & 27.78 & 15.20 & -28.27 \\
+100 & sma\_40 & -10.64 & 22.24 & 45.99 & 30.36 & -35.38 \\
+100 & ema\_40 & -12.46 & 23.89 & 46.36 & 22.34 & -36.37 \\
+100 & cash & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+100 & buy\_hold & -11.27 & 43.11 & 100.00 & 0.00 & -52.97 \\
+100 & volatility\_20 & -8.29 & 21.82 & 52.35 & 3.95 & -36.56 \\
+100 & volatility\_40 & -13.09 & 37.22 & 89.16 & 2.10 & -51.13 \\
+\bottomrule\end{longtable}
+\begin{longtable}{rlrr}
+\caption{SMA-minus-EMA annual mean-log differences in percent, at matched target settings. Approximate unadjusted 95\% 30-day block intervals; all 15/30/60-day intervals are in paired.csv.}\label{tab:botextensionpaired}\\
+\toprule Cost & Contrast & Difference & Interval \\
+\midrule\endfirsthead
+\toprule Cost & Contrast & Difference & Interval \\
+\midrule\endhead
+0 & sma\_20\_minus\_ema\_20 & 5.45 & [-5.88, 14.95] \\
+0 & sma\_40\_minus\_ema\_40 & 5.56 & [-10.87, 18.41] \\
+10 & sma\_20\_minus\_ema\_20 & 5.44 & [-6.07, 15.03] \\
+10 & sma\_40\_minus\_ema\_40 & 5.12 & [-11.67, 18.14] \\
+25 & sma\_20\_minus\_ema\_20 & 5.41 & [-6.38, 15.22] \\
+25 & sma\_40\_minus\_ema\_40 & 4.46 & [-12.67, 17.74] \\
+50 & sma\_20\_minus\_ema\_20 & 5.36 & [-6.84, 15.42] \\
+50 & sma\_40\_minus\_ema\_40 & 3.35 & [-14.50, 17.23] \\
+100 & sma\_20\_minus\_ema\_20 & 5.27 & [-7.92, 16.06] \\
+100 & sma\_40\_minus\_ema\_40 & 1.14 & [-18.13, 16.39] \\
+\bottomrule\end{longtable}

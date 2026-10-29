@@ -1,0 +1,378 @@
+{
+  "run_id": "cbb1387c-1a1b-4fa6-8456-9a2a217e0249",
+  "created_at": "2026-10-22T03:26:47.594615+00:00",
+  "kind": "substantive",
+  "code_sha256": "52ea1c7423d3fbcbbd385dc59c01b9c893fec7a39edc8e7f7688f447bc3e49d8",
+  "spec_sha256": "ee88dff71cc989114b79a616ab1a3e95abc7be2ded867093060531bd7814d625",
+  "spec": {
+    "schema_version": 1,
+    "protocol_id": "paired-cost-study-v1",
+    "status": "design_registered_before_publication_runs",
+    "alpha_family": 0.05,
+    "delta_cost_envelope": 0.01,
+    "worlds": 4000,
+    "calendar_steps": 800,
+    "hypotheses": 10,
+    "seed": 20261021,
+    "normalized_utility_bound": 1.0,
+    "true_common_cost": 0.08,
+    "cost_support_upper": 0.2,
+    "calibration_initial": 32,
+    "calibration_per_trial": 1,
+    "betting_grid": [
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.8
+    ],
+    "simulation_materiality": 0.01,
+    "methods": [
+      "oracle_linear",
+      "joint_linear",
+      "separate_linear",
+      "plugin_linear",
+      "symmetric_upper_linear",
+      "joint_hoeffding",
+      "separate_hoeffding",
+      "fixed_horizon_hoeffding",
+      "naive_peek_hoeffding"
+    ],
+    "cases": [
+      {
+        "id": "null_no_overlap",
+        "effect": 0.0,
+        "overlap": 0.0
+      },
+      {
+        "id": "null_half_overlap",
+        "effect": 0.0,
+        "overlap": 0.5
+      },
+      {
+        "id": "null_equal_turnover",
+        "effect": 0.0,
+        "overlap": 1.0
+      },
+      {
+        "id": "effect02_no_overlap",
+        "effect": 0.02,
+        "overlap": 0.0
+      },
+      {
+        "id": "effect02_half_overlap",
+        "effect": 0.02,
+        "overlap": 0.5
+      },
+      {
+        "id": "effect02_equal_turnover",
+        "effect": 0.02,
+        "overlap": 1.0
+      },
+      {
+        "id": "effect05_no_overlap",
+        "effect": 0.05,
+        "overlap": 0.0
+      },
+      {
+        "id": "effect05_half_overlap",
+        "effect": 0.05,
+        "overlap": 0.5
+      },
+      {
+        "id": "effect05_equal_turnover",
+        "effect": 0.05,
+        "overlap": 1.0
+      },
+      {
+        "id": "weak005_equal_turnover",
+        "effect": 0.005,
+        "overlap": 1.0
+      },
+      {
+        "id": "null_search30",
+        "effect": 0.0,
+        "overlap": 0.5,
+        "hypotheses": 30
+      },
+      {
+        "id": "effect05_search30",
+        "effect": 0.05,
+        "overlap": 0.5,
+        "hypotheses": 30
+      },
+      {
+        "id": "null_delay4",
+        "effect": 0.0,
+        "overlap": 0.5,
+        "label_delay": 4
+      },
+      {
+        "id": "effect05_delay4",
+        "effect": 0.05,
+        "overlap": 0.5,
+        "label_delay": 4
+      },
+      {
+        "id": "null_births",
+        "effect": 0.0,
+        "overlap": 0.5,
+        "adaptive_births": 5
+      },
+      {
+        "id": "effect05_births",
+        "effect": 0.05,
+        "overlap": 0.5,
+        "adaptive_births": 5
+      },
+      {
+        "id": "null_no_calibration",
+        "effect": 0.0,
+        "overlap": 0.5,
+        "calibration_initial": 0
+      },
+      {
+        "id": "effect05_no_calibration",
+        "effect": 0.05,
+        "overlap": 0.5,
+        "calibration_initial": 0
+      },
+      {
+        "id": "null_calibration512",
+        "effect": 0.0,
+        "overlap": 0.5,
+        "calibration_initial": 512
+      },
+      {
+        "id": "effect05_calibration512",
+        "effect": 0.05,
+        "overlap": 0.5,
+        "calibration_initial": 512
+      },
+      {
+        "id": "weak_prefix_null",
+        "effect": 0.0,
+        "overlap": 0.5,
+        "oscillating_prefix_null": true
+      },
+      {
+        "id": "violated_cost_stationarity",
+        "effect": 0.0,
+        "overlap": 0.0,
+        "cost_shift": 0.18,
+        "assumption_violation": true
+      },
+      {
+        "id": "reference_more_turnover",
+        "effect": 0.0,
+        "overlap": 0.5,
+        "reference_more_turnover": true
+      },
+      {
+        "id": "effect05_reference_more_turnover",
+        "effect": 0.05,
+        "overlap": 0.5,
+        "reference_more_turnover": true
+      }
+    ],
+    "primary_comparison": "joint versus separate cost-envelope power and detection delay using identical fixed mixture components; valid-method null FWER including envelope error",
+    "monte_carlo_unit": "independent world; hypotheses within a world are dependent",
+    "stopping": "fixed 4000-world budget per case; no stopping based on significance; incomplete/failed cases retained and disclosed",
+    "scope_limits": [
+      "Cost coefficient is a fixed unknown conditional-mean parameter under each law, not a guaranteed bound on individual market slippage",
+      "Strong-null and prefix-average-null results have different interpretations",
+      "No new robust-optimization or betting theorem is claimed",
+      "Synthetic utility units are not basis points or Bitcoin returns"
+    ]
+  },
+  "freeze": {
+    "kind": "publication_simulation_freeze",
+    "created_at": "2026-10-22T03:26:27.888108+00:00",
+    "code_sha256": "52ea1c7423d3fbcbbd385dc59c01b9c893fec7a39edc8e7f7688f447bc3e49d8",
+    "spec_sha256": "ee88dff71cc989114b79a616ab1a3e95abc7be2ded867093060531bd7814d625",
+    "runtime": {
+      "python": "3.13.7",
+      "numpy": "2.5.4"
+    },
+    "source_snapshot": "publication-baseline-freeze-v1.sources.zip",
+    "source_snapshot_sha256": "409d87a5724a4da9168323f58d0bda689ab78c5c8c931bb8c212df4d8baed013",
+    "documents": [
+      {
+        "path": "docs/publication/protocol-v1.md",
+        "sha256": "affc383b95d43841a2f4a4a94639013e8e5c360a43b438692f8c555b30a95644"
+      },
+      {
+        "path": "docs/publication/reviews/mathematical-design-01.md",
+        "sha256": "0203a5299c29827eed66124d10d1627f158b7bf729dafcede0ee78f1cab2c388"
+      },
+      {
+        "path": "docs/publication/reviews/cost-primitives-01.md",
+        "sha256": "138361c23501e4246a94e68126df5e14652cfeb459808f1a365ceb7c1ee97b4d"
+      },
+      {
+        "path": "docs/publication/reviews/simulation-runner-01.md",
+        "sha256": "5026ad652fb058dec525233384a6f756c92fde1c532377ab3d1e6c043b73ab94"
+      },
+      {
+        "path": "docs/publication/protocol-v1-addendum-01.md",
+        "sha256": "1b86400c14899f48e042d69f905c9d188b4abb2c121fd6170887c45343b27aa1"
+      }
+    ],
+    "scope": "Known-truth synthetic study; this does not freeze or authorize a market backtest",
+    "review_limit": "Pins reviewed documents; file existence and hashes do not certify scientific correctness",
+    "freeze_sha256": "f701360eaf311fac2b0c5484b19fbca25f3081b4a1f1e899cccf631ee60ff716"
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "case_ids": [
+    "null_no_overlap",
+    "null_half_overlap",
+    "null_equal_turnover",
+    "effect02_no_overlap",
+    "effect02_half_overlap",
+    "effect02_equal_turnover",
+    "effect05_no_overlap",
+    "effect05_half_overlap",
+    "effect05_equal_turnover",
+    "weak005_equal_turnover",
+    "null_search30",
+    "effect05_search30",
+    "null_delay4",
+    "effect05_delay4",
+    "null_births",
+    "effect05_births",
+    "null_no_calibration",
+    "effect05_no_calibration",
+    "null_calibration512",
+    "effect05_calibration512",
+    "weak_prefix_null",
+    "violated_cost_stationarity",
+    "reference_more_turnover",
+    "effect05_reference_more_turnover"
+  ],
+  "completed": [
+    {
+      "id": "null_no_overlap",
+      "json_sha256": "6b7cafa8f574b1c0b8059012cda3f3e9f5bbff61d5696f0b2c2a47562491c469",
+      "worlds_sha256": "55a737f7352bb10ac2d1d3a0c213440444444cac1dcd1617e279ca99fbf1c242"
+    },
+    {
+      "id": "null_half_overlap",
+      "json_sha256": "e2d22a487d047ac24025192444f44c08ff66318f9ba72d4c0e9aa43c3e86a318",
+      "worlds_sha256": "66f4bc7ed9319bf5acb8f1c6a3acdb4119991ddd6ffc67f6933d3f3c47b3edba"
+    },
+    {
+      "id": "null_equal_turnover",
+      "json_sha256": "41696bd2b1cc5db12b124a0417dbd39ec7eb0c54c5abd69f18118c2ae7762579",
+      "worlds_sha256": "54720f1094b398ec2034eb72a1fdfcda3ad8479a1aa5a94c362ad4a6c9701171"
+    },
+    {
+      "id": "effect02_no_overlap",
+      "json_sha256": "89d37aaef9a1bdf661d93064a5120c05a966aef565339fbb54dd5ea01b37c6a5",
+      "worlds_sha256": "09b15224dd4060c6a18e2825516ecd5230ac0f1f7097d3229f833f0b93d8d810"
+    },
+    {
+      "id": "effect02_half_overlap",
+      "json_sha256": "34af0538224754da795ca8ec8ec23c42083e15db72da9c8816c837191ba5c9b1",
+      "worlds_sha256": "1b0149a9e90b5eb7ea72add14908b54f8c3ee9d749012a3a6d8a061c61a8ced6"
+    },
+    {
+      "id": "effect02_equal_turnover",
+      "json_sha256": "ef126b051e5c9c2e74470e06bafa8d3cecd521cf1497f7953324aa9950f4de9f",
+      "worlds_sha256": "66d75303ab770d0b422fcc33256d4a3f0474976bcc09e46d8f881077f495b924"
+    },
+    {
+      "id": "effect05_no_overlap",
+      "json_sha256": "f95c4795940d8c97125aa1fa0b783d35371129e65dc64be4e85960a2237eca95",
+      "worlds_sha256": "cd4d0897858ef2afee0366e6e480961846f93bad490baf0dfccccd0827e6b560"
+    },
+    {
+      "id": "effect05_half_overlap",
+      "json_sha256": "8135240db8e5110a0bab8a07447fad08590ae379d870d25b063987e7b34033b1",
+      "worlds_sha256": "4a32201cb48909055a37f2a0c0fc74c4b277fde450f603b03bd6e2a5b7982d07"
+    },
+    {
+      "id": "effect05_equal_turnover",
+      "json_sha256": "302ca2cad56de89bbaac7151cb408b7d574aaf88f9b05c4b57961deda33cf199",
+      "worlds_sha256": "52e8f35320dcd0faf79aa158e05cdf8f349bfef2acc570bbb5cc991cc4008f95"
+    },
+    {
+      "id": "weak005_equal_turnover",
+      "json_sha256": "a965d768f1d58f6b81008e23109f6730e2b54604e7670d2bfef0bf040996d48e",
+      "worlds_sha256": "c7a1bc1163a2c6bbca826e6cd44bbad65bf0d8e2de40308aa8956385b2ea1a83"
+    },
+    {
+      "id": "null_search30",
+      "json_sha256": "3f40058ad0aa26ded041c91fe61e7ea7e82d99fe39a24a15f9012609e3d67c55",
+      "worlds_sha256": "6cdc1df39a908bb89008a9d8bf84ab0e82e3c8b549c1c5be81aa91ebc6f587c1"
+    },
+    {
+      "id": "effect05_search30",
+      "json_sha256": "c2a8549778dd168926142dca0e9252d811460b4d46eb2b3b093cb8f76a304b14",
+      "worlds_sha256": "848e4b149dd6f119976254160964eb6a92251b4dcb1550c964670507a8c6d052"
+    },
+    {
+      "id": "null_delay4",
+      "json_sha256": "3204e8198d5d0fdb6b1f730701051c4d5eaf0dbe8d4ede38fb426cc2d0803439",
+      "worlds_sha256": "449c06f612453001e6e7fd4781232274990d73f2110f3b339bb4bb2026f1762b"
+    },
+    {
+      "id": "effect05_delay4",
+      "json_sha256": "d22980de45e93e6dbab70e3643ef06e6d12774f8e8bf3c8b94b29bd72cdc12c4",
+      "worlds_sha256": "71c91c7737209d1f683267e5ea422bb7d05c3e2db4b51bad277089feeac581d8"
+    },
+    {
+      "id": "null_births",
+      "json_sha256": "2aa705de810163abed23e256ed6cd9cbe672d230d7ceb95d75e2df9d0302ced2",
+      "worlds_sha256": "0a2208fb42adb84b6bb35494353a80f6c4e2e4aad7ea4fa1857f4615b47ef346"
+    },
+    {
+      "id": "effect05_births",
+      "json_sha256": "dbe75abcb34151ce918d161b0060257a1a639c689f490bfba83835922dee2b44",
+      "worlds_sha256": "65f86c0edf22a703ee5497f7abbe894e48ca823ab2b430ff66eca1394315c615"
+    },
+    {
+      "id": "null_no_calibration",
+      "json_sha256": "d498cb3db1da08f392e612a3ab6df978ada18eb795fbf65438fe87386a95674d",
+      "worlds_sha256": "b39a1af6ded72816dba5ab72c8e14404b60f31d9b205412a2075bc3e1ec6bb7f"
+    },
+    {
+      "id": "effect05_no_calibration",
+      "json_sha256": "61fcd7e97e4ca7551f12af60cb9d39ec8cbbd1ff629189ffe97e866001e18c2b",
+      "worlds_sha256": "bfd48a2062854b335e795c493e0f4b5a026e96668e962d043afc47342302c374"
+    },
+    {
+      "id": "null_calibration512",
+      "json_sha256": "ed88f41834aec70f4d8e49db9c6d10f4bdb4e896d5366cdbfbd6af472181e1b4",
+      "worlds_sha256": "d4ae9e3564ba630805d95f7ca9bbc9ac2ec79f8665d85406493609815600b7d2"
+    },
+    {
+      "id": "effect05_calibration512",
+      "json_sha256": "59a40476b486593ad51471cdc5cde91457f1ffadb5d50fbede053da3109bb9b3",
+      "worlds_sha256": "fad76b15e009a91fd90845640a9557c3c16160a657526b04f978ac5db493b0f8"
+    },
+    {
+      "id": "weak_prefix_null",
+      "json_sha256": "8f611a779939e52858aaaf8947bc53011f98b98806fab283e6c3a9f9ca42e05a",
+      "worlds_sha256": "3ab8ec9ebe0f95e980871c9651e369b111181fa7cb1a8e5ce869c26c5e9881e5"
+    },
+    {
+      "id": "violated_cost_stationarity",
+      "json_sha256": "64a9d854190fece51e023d66ceee1e9537b9994b61554660eec37af9d63b9f2c",
+      "worlds_sha256": "4b33e0b1634e3771ea8093847066928664f8de4646d958e39e817e1cbfbf0a7f"
+    },
+    {
+      "id": "reference_more_turnover",
+      "json_sha256": "59847032213dabafdba1cfbd5c718733245bfbdbfd9ac6ab393d8e5f7d5d5a99",
+      "worlds_sha256": "5bb8ff99f38cc0a9a7f6077d203b27f43a20c571d1657d935d38c118d3340ed5"
+    },
+    {
+      "id": "effect05_reference_more_turnover",
+      "json_sha256": "709fb4cd20c883b681400e0ec4b63c56bf644bfea0cb21ecd89f2805f45fa5bd",
+      "worlds_sha256": "46ba9ce23484c7c764180ff604e372e0bd169be591e1eb22f863c746bfb88ffc"
+    }
+  ]
+}

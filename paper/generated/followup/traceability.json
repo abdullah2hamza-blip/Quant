@@ -1,0 +1,141 @@
+{
+  "input_registry_sha256": "e869065cd00ffedbd9e5d10684ff6238d950713bbecec140a27723e222490c5a",
+  "input_manifest_sha256": "59c559adeea988d93b251be38af4c312512bc898b003bd3c26da58352eeea970",
+  "source_freeze_seal": "f7035695fcf5a7d43ca6d29d4ce45a7d242935faf3b82974503f37b772ef8230",
+  "generator_sha256": "7f7fbd1533ca574054d185de5871ca0c2595e96bd5b9f5d8dcee2e74fc540fda",
+  "helper_sources_sha256": {
+    "scripts/collect_followup_results.py": "28a21ce051a8fca79b199b360d5e6739656a909e5e6fc2451174a0f20aea80cd",
+    "scripts/build_publication_artifacts.py": "498a25b074cfa492adfafe9187f9985fda9ffad03bf0df8d1c731fd75d5265c0",
+    "src/quant/followup.py": "cc4e0d259b15bee981a10ae356bb898674b86c17821baf3333659967aa87ae3e",
+    "src/quant/publication.py": "327ddf07481c9af63b4dea432aca675cff4387dd33fcba997db4b2fb63bd770a",
+    "src/quant/data.py": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
+    "src/quant/ledger.py": "363ae0cc244c298d9672a29aaf40f896e668e5925da766323bd18d8d205c007d",
+    "uv.lock": "1b0f89bb018c8945a393d0f752609326d2427b5e459276e54af2bc58d24b60f4"
+  },
+  "display_runtime": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "cases": 25,
+  "method_rows": 250,
+  "paired_rows": 150,
+  "calibration_rows": 25,
+  "numeric_macro_values": {
+    "FollowupSupportedMaxNullRate": 1.15,
+    "FollowupCoherentGainMin": 0.0,
+    "FollowupCoherentGainMax": 99.3,
+    "FollowupAgraGainMin": -1.225,
+    "FollowupAgraGainMax": 12.9,
+    "FollowupJointSeparateGainMin": 0.0,
+    "FollowupJointSeparateGainMax": 98.9,
+    "FollowupStaticAltCoherent": 33.5,
+    "FollowupStaticAltLocal": 0.0,
+    "FollowupContractAltCoherent": 35.325,
+    "FollowupContractAltLocal": 4.6
+  },
+  "numeric_macro_sources": {
+    "FollowupSupportedMaxNullRate": {
+      "case": "vhigh_static_initial_positive_e0",
+      "method": "oracle_agrapa",
+      "key": "null_family_rejection.estimate",
+      "scale": 100
+    },
+    "FollowupCoherentGainMin": {
+      "case": "vhigh_static_initial_positive_e5",
+      "key": "paired.joint_coherent_eb_minus_joint_local_eb.first_stream_rejection_difference.estimate",
+      "scale": 100
+    },
+    "FollowupCoherentGainMax": {
+      "case": "vlow_static_initial_alternating_e5",
+      "key": "paired.joint_coherent_eb_minus_joint_local_eb.first_stream_rejection_difference.estimate",
+      "scale": 100
+    },
+    "FollowupAgraGainMin": {
+      "case": "vhigh_contracting_positive_e5",
+      "key": "paired.joint_agrapa_minus_joint_linear.first_stream_rejection_difference.estimate",
+      "scale": 100
+    },
+    "FollowupAgraGainMax": {
+      "case": "vlow_static_initial_alternating_e5",
+      "key": "paired.joint_agrapa_minus_joint_linear.first_stream_rejection_difference.estimate",
+      "scale": 100
+    },
+    "FollowupJointSeparateGainMin": {
+      "case": "vhigh_static_initial_alternating_e5",
+      "key": "paired.joint_local_eb_minus_separate_local_eb.first_stream_rejection_difference.estimate",
+      "scale": 100
+    },
+    "FollowupJointSeparateGainMax": {
+      "case": "vlow_contracting_alternating_e5",
+      "key": "paired.joint_local_eb_minus_separate_local_eb.first_stream_rejection_difference.estimate",
+      "scale": 100
+    },
+    "FollowupStaticAltCoherent": {
+      "case": "vhigh_static_initial_alternating_e5",
+      "method": "joint_coherent_eb",
+      "key": "first_stream_rejection.estimate",
+      "scale": 100
+    },
+    "FollowupStaticAltLocal": {
+      "case": "vhigh_static_initial_alternating_e5",
+      "method": "joint_local_eb",
+      "key": "first_stream_rejection.estimate",
+      "scale": 100
+    },
+    "FollowupContractAltCoherent": {
+      "case": "vhigh_contracting_alternating_e5",
+      "method": "joint_coherent_eb",
+      "key": "first_stream_rejection.estimate",
+      "scale": 100
+    },
+    "FollowupContractAltLocal": {
+      "case": "vhigh_contracting_alternating_e5",
+      "method": "joint_local_eb",
+      "key": "first_stream_rejection.estimate",
+      "scale": 100
+    }
+  },
+  "case_codes": {
+    "vhigh_static_initial_positive_e0": "F01",
+    "vhigh_static_initial_positive_e2": "F02",
+    "vhigh_static_initial_positive_e5": "F03",
+    "vhigh_static_initial_alternating_e0": "F04",
+    "vhigh_static_initial_alternating_e2": "F05",
+    "vhigh_static_initial_alternating_e5": "F06",
+    "vhigh_contracting_positive_e0": "F07",
+    "vhigh_contracting_positive_e2": "F08",
+    "vhigh_contracting_positive_e5": "F09",
+    "vhigh_contracting_alternating_e0": "F10",
+    "vhigh_contracting_alternating_e2": "F11",
+    "vhigh_contracting_alternating_e5": "F12",
+    "vlow_static_initial_positive_e0": "F13",
+    "vlow_static_initial_positive_e2": "F14",
+    "vlow_static_initial_positive_e5": "F15",
+    "vlow_static_initial_alternating_e0": "F16",
+    "vlow_static_initial_alternating_e2": "F17",
+    "vlow_static_initial_alternating_e5": "F18",
+    "vlow_contracting_positive_e0": "F19",
+    "vlow_contracting_positive_e2": "F20",
+    "vlow_contracting_positive_e5": "F21",
+    "vlow_contracting_alternating_e0": "F22",
+    "vlow_contracting_alternating_e2": "F23",
+    "vlow_contracting_alternating_e5": "F24",
+    "prefix_weak_diagnostic": "F25"
+  },
+  "output_sha256": {
+    "calibration-compute.csv": "7a1c10eb35ef671216e12e9e2d2cf36b0709fb886169f684ee22f1adc9f28e84",
+    "case-key.tex": "ff0b5857d211851dd41c8e76ec6a61a3c056c9ebabe82937e5b5ce4a6a9294ce",
+    "full-table.tex": "effee37ad4b8585ca968643e36271a704dd42b5c2398989114381fa86081917c",
+    "method-results.csv": "ec0d3b057fbf4b614ee0ea66fd7d18957c2e1a43e10063e2c1c3979c086feab7",
+    "numbers.tex": "6ad5c5da8482d05e4b1a0ace5ca68b971671f81b6a73664a209386e60fa92ad5",
+    "paired-power.png": "0d8985d8bcdac52077b91942274c1ccc6c33822a4653b0b2f374a656a16f2d39",
+    "paired-power.svg": "1986955014707b32e3b584d27e4275a252d1643ca786c0ca42c5664adb7ba48c",
+    "paired-results.csv": "b55db2555072293e58490666f9ad595c87e55435780ce1581211bff7e73458d6",
+    "power.png": "0c9484307eaacc71c80a2a89c39e819a9ded6dcafda76d71a91d1508d53be2e9",
+    "power.svg": "4cd224a80689ef0f4fb693a8ccf910e83cff76178f946dd4591b659131528b76",
+    "primary-paired-table.tex": "a4ac6e4af273f281ef49bd220cb3f145dfd78918ef91f93f4409cbb6bdb6277b"
+  },
+  "limits": "No refitting; paired factorial cells are dependent; intervals are unadjusted Monte Carlo summaries. Runtime excludes serialization and is not a controlled benchmark."
+}

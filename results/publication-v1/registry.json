@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-22T04:14:16.092948+00:00",
+  "simulation_run_id": "cbb1387c-1a1b-4fa6-8456-9a2a217e0249",
+  "market_run_id": "72ceb77d-56ff-4040-8ec9-f58e89590711",
+  "simulation": "simulation",
+  "market": "market",
+  "source_freezes": {
+    "simulation": "source-snapshots/publication-baseline-freeze-v1.json",
+    "market": "source-snapshots/market-freeze-v1.json"
+  },
+  "simulation_manifest_sha256": "98f32063cccc167bc777ed9ec6785cbced6f0cb27239f6aca13ab3950947b7d9",
+  "market_manifest_sha256": "07a57b87d6f794123486b4450ff5fc37f58afd876aa61164230ca2050f7fd91c",
+  "status": "completed substantive artifacts preserved; collection does not certify scientific interpretation or publication readiness",
+  "ledger_json_sha256": "2633d30e7e8ea2306716042babda7fe7d683cabe16d08ed9f69697e33f2a71cc",
+  "ledger_sqlite_sha256": "a399c73ceaf258c815d522f427d5b6598d38e52eae74437bda940711c22e9dd8"
+}

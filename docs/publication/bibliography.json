@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-22",
+  "dating_policy": "Use journal issue year when verified; otherwise cite the inspected preprint version and explain first-posted/version differences. Do not infer peer review from an arXiv listing.",
+  "records": [
+    {
+      "key": "choe2024",
+      "authors": [
+        "Yo Joong Choe",
+        "Aaditya Ramdas"
+      ],
+      "title": "Comparing Sequential Forecasters",
+      "year": 2024,
+      "venue": "Operations Research",
+      "volume": "72",
+      "issue": "4",
+      "pages": "1368--1387",
+      "doi": "10.1287/opre.2021.0792",
+      "url": "https://pubsonline.informs.org/doi/10.1287/opre.2021.0792",
+      "note": "Issue July-August 2024; first published online 17 October 2023. Full-text comparison used arXiv:2110.00115v4.",
+      "verification": "Publisher metadata inspected; Crossref request rate-limited; full-text passages inspected.",
+      "entry_type": "article"
+    },
+    {
+      "key": "arnold2026",
+      "authors": [
+        "Sebastian Arnold",
+        "Georgios Gavrilopoulos",
+        "Benedikt Schulz",
+        "Johanna Ziegel"
+      ],
+      "title": "Sequential model confidence sets",
+      "year": 2026,
+      "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+      "doi": "10.1093/jrsssb/qkag066",
+      "url": "https://doi.org/10.1093/jrsssb/qkag066",
+      "note": "Advance online publication, 13 May 2026; no volume/pages asserted. Full text inspected as arXiv:2404.18678v3.",
+      "verification": "Crossref raw record data/bibliography/arnold2026.crossref.json; arXiv full text.",
+      "entry_type": "article"
+    },
+    {
+      "key": "waudby2024",
+      "authors": [
+        "Ian Waudby-Smith",
+        "Aaditya Ramdas"
+      ],
+      "title": "Estimating means of bounded random variables by betting",
+      "year": 2024,
+      "venue": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+      "volume": "86",
+      "issue": "1",
+      "pages": "1--27",
+      "doi": "10.1093/jrsssb/qkad009",
+      "url": "https://doi.org/10.1093/jrsssb/qkad009",
+      "note": "Issue 2024; online publication 16 February 2023.",
+      "verification": "Crossref raw record data/bibliography/waudby2024.crossref.json; arXiv full-text review.",
+      "entry_type": "article"
+    },
+    {
+      "key": "howard2021",
+      "authors": [
+        "Steven R. Howard",
+        "Aaditya Ramdas",
+        "Jon McAuliffe",
+        "Jasjeet Sekhon"
+      ],
+      "title": "Time-uniform, nonparametric, nonasymptotic confidence sequences",
+      "year": 2021,
+      "venue": "The Annals of Statistics",
+      "volume": "49",
+      "issue": "2",
+      "pages": "1055--1080",
+      "doi": "10.1214/20-AOS1991",
+      "url": "https://doi.org/10.1214/20-AOS1991",
+      "verification": "Crossref raw record data/bibliography/howard2021.crossref.json; independent mathematical review; parent inspected arXiv:1810.08240v5 Sections 2, 4.1 Theorem 4 and Section 6 running-intersection discussion on 2026-10-22.",
+      "entry_type": "article"
+    },
+    {
+      "key": "xu2024",
+      "authors": [
+        "Ziyu Xu",
+        "Aaditya Ramdas"
+      ],
+      "title": "Online multiple testing with e-values",
+      "year": 2024,
+      "venue": "Proceedings of the 27th International Conference on Artificial Intelligence and Statistics, PMLR",
+      "volume": "238",
+      "pages": "3997--4005",
+      "url": "https://proceedings.mlr.press/v238/xu24a.html",
+      "verification": "Official proceedings metadata and full-paper setup inspected.",
+      "entry_type": "inproceedings"
+    },
+    {
+      "key": "tian2021",
+      "authors": [
+        "Jinjin Tian",
+        "Aaditya Ramdas"
+      ],
+      "title": "Online control of the familywise error rate",
+      "year": 2021,
+      "venue": "Statistical Methods in Medical Research",
+      "volume": "30",
+      "issue": "4",
+      "pages": "976--993",
+      "doi": "10.1177/0962280220983381",
+      "url": "https://doi.org/10.1177/0962280220983381",
+      "verification": "Crossref raw record data/bibliography/tian2021.crossref.json; independent mathematical review; parent inspected arXiv:1910.04900v2 Section 2 alpha spending and Section 3 dependence/efficiency discussion on 2026-10-22.",
+      "entry_type": "article"
+    },
+    {
+      "key": "jiao2026",
+      "authors": [
+        "Zhanyi Jiao",
+        "Qiuqi Wang",
+        "Yimiao Zhao"
+      ],
+      "title": "Comparative e-backtests for general risk measures",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "eprint": "2511.05840v2",
+      "url": "https://arxiv.org/abs/2511.05840v2",
+      "note": "Version 2 submitted 5 March 2026; first submitted 8 November 2025. Version-history dates take precedence over inconsistent internal manuscript date displays.",
+      "verification": "arXiv author list, version history and Sections 1 and 4/Theorem 3 inspected; no journal publication asserted.",
+      "entry_type": "misc"
+    },
+    {
+      "key": "liu2026",
+      "authors": [
+        "Xiaoquan Liu"
+      ],
+      "title": "Anytime-Valid Tests of Factor Alphas",
+      "year": 2026,
+      "venue": "SSRN working paper",
+      "doi": "10.2139/ssrn.7357270",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7357270",
+      "note": "Posted 27 August; revised 29 August 2026. Full text inaccessible; comparison limited to indexed primary abstract.",
+      "verification": "Indexed primary SSRN abstract and metadata; direct full text/PDF returned 403; Crossref rate-limited.",
+      "entry_type": "misc",
+      "print_note": "Working paper; only indexed abstract inspected."
+    },
+    {
+      "key": "stephan2026",
+      "authors": [
+        "Rany Stephan"
+      ],
+      "title": "Sequential Tradeability Testing for Alpha Signals",
+      "year": 2026,
+      "venue": "SSRN working paper",
+      "doi": "10.2139/ssrn.6922558",
+      "url": "https://ssrn.com/abstract=6922558",
+      "note": "Posted 17 June 2026. Full text inaccessible; comparison limited to indexed primary abstract.",
+      "verification": "Crossref raw record data/bibliography/stephan2026.crossref.json; indexed primary abstract; direct PDF returned 403.",
+      "entry_type": "misc",
+      "print_note": "Working paper; only indexed abstract inspected."
+    },
+    {
+      "key": "wasserman2020",
+      "authors": [
+        "Larry Wasserman",
+        "Aaditya Ramdas",
+        "Sivaraman Balakrishnan"
+      ],
+      "title": "Universal inference",
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences",
+      "volume": "117",
+      "issue": "29",
+      "pages": "16880--16890",
+      "doi": "10.1073/pnas.1922664117",
+      "url": "https://doi.org/10.1073/pnas.1922664117",
+      "verification": "Crossref raw record data/bibliography/wasserman2020.crossref.json; independent full-text Section 7 review.",
+      "entry_type": "article"
+    },
+    {
+      "key": "ramdas2022",
+      "authors": [
+        "Aaditya Ramdas",
+        "Johannes Ruf",
+        "Martin Larsson",
+        "Wouter M. Koolen"
+      ],
+      "title": "Testing exchangeability: Fork-convexity, supermartingales and e-processes",
+      "year": 2022,
+      "venue": "International Journal of Approximate Reasoning",
+      "volume": "141",
+      "pages": "83--109",
+      "doi": "10.1016/j.ijar.2021.06.017",
+      "url": "https://doi.org/10.1016/j.ijar.2021.06.017",
+      "verification": "Crossref raw record data/bibliography/ramdas2022.crossref.json; publisher and arXiv:2102.00630v4 full-text sections inspected.",
+      "entry_type": "article"
+    },
+    {
+      "key": "bental1998",
+      "authors": [
+        "A. Ben-Tal",
+        "A. Nemirovski"
+      ],
+      "title": "Robust Convex Optimization",
+      "year": 1998,
+      "venue": "Mathematics of Operations Research",
+      "volume": "23",
+      "issue": "4",
+      "pages": "769--805",
+      "doi": "10.1287/moor.23.4.769",
+      "url": "https://doi.org/10.1287/moor.23.4.769",
+      "verification": "Crossref raw record data/bibliography/bental1998.crossref.json; independent author-PDF foundation review.",
+      "entry_type": "article"
+    },
+    {
+      "key": "le2023",
+      "authors": [
+        "Trinh Le",
+        "Ummul Ruthbah"
+      ],
+      "title": "Trend-following Strategies for Crypto Investors",
+      "year": 2023,
+      "venue": "Monash Centre for Financial Studies author manuscript",
+      "url": "https://www.monash.edu/__data/assets/pdf_file/0011/3744821/Trend-following-Strategies-for-Crypto-Investors.pdf",
+      "note": "Inspected author PDF dated August 2023. Related SSRN DOI 10.2139/ssrn.4551518 has 2024 Crossref year; this entry cites the 2023 author version, not a 2023 journal publication.",
+      "verification": "Author-hosted PDF pp. 1, 5-9; Crossref raw record data/bibliography/le2023.crossref.json for dating distinction.",
+      "entry_type": "misc"
+    },
+    {
+      "key": "bysik2026",
+      "authors": [
+        "Andrei Bysik",
+        "Robert Ślepaczuk"
+      ],
+      "title": "Machine Learning-Based Bitcoin Trading Under Transaction Costs: Evidence From Walk-Forward Forecasting",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "eprint": "2606.00060v1",
+      "url": "https://arxiv.org/abs/2606.00060v1",
+      "note": "Pinned v1; no journal publication asserted. The served submission/internal date display and identifier month are inconsistent, so no more specific publication date is inferred.",
+      "verification": "arXiv author list and full-text Sections 3.2, 4.1, 4.8 and Appendix A.1 inspected.",
+      "entry_type": "misc"
+    },
+    {
+      "key": "choefiltration2026",
+      "authors": [
+        "Yo Joong Choe",
+        "Aaditya Ramdas"
+      ],
+      "title": "Combining Evidence Across Filtrations",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "eprint": "2402.09698v5",
+      "url": "https://arxiv.org/abs/2402.09698v5",
+      "note": "Version 5 revised 15 March 2026; first submitted February 2024. arXiv reports JRSS B acceptance; no publisher DOI or issue metadata asserted here.",
+      "verification": "arXiv version history and latest v5 full-text delay/filtration discussion; earlier v3 inspection also retained in research register.",
+      "entry_type": "misc"
+    },
+    {
+      "key": "kunsch1989",
+      "authors": [
+        "Hans R. Künsch"
+      ],
+      "title": "The Jackknife and the Bootstrap for General Stationary Observations",
+      "year": 1989,
+      "venue": "The Annals of Statistics",
+      "volume": "17",
+      "issue": "3",
+      "pages": "1217--1241",
+      "doi": "10.1214/aos/1176347265",
+      "url": "https://doi.org/10.1214/aos/1176347265",
+      "verification": "Crossref raw record data/bibliography/kunsch1989.crossref.json; author publication list confirms metadata and diacritic. Parent direct publisher full/PDF endpoints exposed only an inaccessible iframe on 2026-10-22; no claim to have verified a finite-sample coverage theorem from this source.",
+      "entry_type": "article"
+    },
+    {
+      "key": "li2026",
+      "authors": [
+        "Jing Li",
+        "Haibin Zhu"
+      ],
+      "title": "Sequential Confidence Sets for Coverage-Constrained Conformal Model Selection",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "eprint": "2609.28522v1",
+      "url": "https://arxiv.org/abs/2609.28522v1",
+      "note": "Version 1 submitted 22 September 2026; no journal publication asserted.",
+      "verification": "Primary author/version metadata and full-text constrained-argmin/confidence-sequence sections inspected; CC-SMCS is the method name, not the paper title.",
+      "entry_type": "misc"
+    },
+    {
+      "key": "white2000",
+      "authors": [
+        "Halbert White"
+      ],
+      "title": "A Reality Check for Data Snooping",
+      "year": 2000,
+      "venue": "Econometrica",
+      "volume": "68",
+      "issue": "5",
+      "pages": "1097--1126",
+      "doi": "10.1111/1468-0262.00152",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/1468-0262.00152",
+      "verification": "Publisher abstract, issue and citation metadata inspected2026-10-23. Issue year2000; electronic issue posting2003 is not the publication year.",
+      "entry_type": "article"
+    },
+    {
+      "key": "hansen2011",
+      "authors": [
+        "Peter R. Hansen",
+        "Asger Lunde",
+        "James M. Nason"
+      ],
+      "title": "The Model Confidence Set",
+      "year": 2011,
+      "venue": "Econometrica",
+      "volume": "79",
+      "issue": "2",
+      "pages": "453--497",
+      "doi": "10.3982/ECTA5771",
+      "url": "https://doi.org/10.3982/ECTA5771",
+      "verification": "Author-institution Aarhus record and primary publisher metadata inspected2026-10-23.",
+      "entry_type": "article"
+    }
+  ],
+  "current_version_review": "2026-10-23: Choe v6, Arnold v4, filtration v5 and comparative e-backtests v2 checked; theorem-specific derivations retain explicitly inspected earlier versions."
+}

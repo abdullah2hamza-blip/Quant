@@ -1,0 +1,160 @@
+{
+  "kind": "publication_market_freeze",
+  "created_at": "2026-10-22T04:02:22.764547+00:00",
+  "spec_sha256": "62ecbff1622c3e399c9d0d4bd0e5d660e9ffa4f145572029e6d0685cdd917e39",
+  "code_sha256": "64adfb24513a7f50754b7352fb305a1f6999f77604284d84fb4fcb5ff8893e87",
+  "config_sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "inputs": [
+    {
+      "kind": "csv",
+      "path": "data/btc-1d-through-2026-10-20.csv",
+      "sha256": "56ab80047fbac8705dd99677dd74e3a946af33de79072b9ef49e042e249dda25"
+    },
+    {
+      "kind": "manifest",
+      "path": "data/btc-1d-through-2026-10-20.manifest.json",
+      "sha256": "a78fdee98158fa0b271eb3d749fec217e4fb84caf415d89d52dc291fd244498f"
+    },
+    {
+      "kind": "csv",
+      "path": "data/btc-1h-through-2026-10-20.csv",
+      "sha256": "a040641dc5e6b52a92abaa19a2fb91b68ff0b09114827b02e508d0747e002356"
+    },
+    {
+      "kind": "manifest",
+      "path": "data/btc-1h-through-2026-10-20.manifest.json",
+      "sha256": "4a46bb879e5ff006363d75f16e96b0bcc23cabb7e55ac564ad643e57e323dbce"
+    },
+    {
+      "kind": "csv",
+      "path": "data/btc-4h-through-2026-10-20.csv",
+      "sha256": "5eea975ec9aa32b88579a99d05ac9e722fd3fe9aa7024ae78350618a8333c78d"
+    },
+    {
+      "kind": "manifest",
+      "path": "data/btc-4h-through-2026-10-20.manifest.json",
+      "sha256": "ebc379f88f04f08bd50e865fc191823a18e82fb5658c807988f01a1d8c438dc5"
+    },
+    {
+      "kind": "csv",
+      "path": "data/btc-bitstamp-4h-through-2026-10-20.csv",
+      "sha256": "d415dbdaf84731c4b9f7a7aab5cdc314fb830368c3d2f833ffbb34069505893a"
+    },
+    {
+      "kind": "manifest",
+      "path": "data/btc-bitstamp-4h-through-2026-10-20.manifest.json",
+      "sha256": "c2e09f6175693a7dd2f29d076701a40bae8e229118f2b9837d3fe3473559d66f"
+    },
+    {
+      "kind": "independent_audit",
+      "path": "docs/publication/data-audit-1d-v1.json",
+      "sha256": "4d3010c83d81ede6d77e36cef06d54fcbc997e2c3ed2828d602864c1e73cbdc1"
+    },
+    {
+      "kind": "independent_audit",
+      "path": "docs/publication/data-audit-1h-v1.json",
+      "sha256": "d67cea600893fdfc6eb280c6364a247c342820e2bd18098059282a2bc0a6d3f1"
+    },
+    {
+      "kind": "independent_audit",
+      "path": "docs/publication/data-audit-bitstamp-4h-v1.json",
+      "sha256": "cc024360f6ad3b1ecb04ddaf5acdf1e99b6532e2a62433381e9e6543978eed07"
+    },
+    {
+      "kind": "independent_audit",
+      "path": "docs/publication/data-audit-v1.json",
+      "sha256": "b49d42eeb4d97becf7bf72ca4636f7414e7b0297b01040e4a5eee225d70a3dd2"
+    }
+  ],
+  "documents": [
+    {
+      "path": "docs/publication/data-audit-1d-v1.json",
+      "sha256": "4d3010c83d81ede6d77e36cef06d54fcbc997e2c3ed2828d602864c1e73cbdc1"
+    },
+    {
+      "path": "docs/publication/data-audit-1h-v1.json",
+      "sha256": "d67cea600893fdfc6eb280c6364a247c342820e2bd18098059282a2bc0a6d3f1"
+    },
+    {
+      "path": "docs/publication/data-audit-bitstamp-4h-v1.json",
+      "sha256": "cc024360f6ad3b1ecb04ddaf5acdf1e99b6532e2a62433381e9e6543978eed07"
+    },
+    {
+      "path": "docs/publication/data-audit-v1.json",
+      "sha256": "b49d42eeb4d97becf7bf72ca4636f7414e7b0297b01040e4a5eee225d70a3dd2"
+    },
+    {
+      "path": "docs/publication/market-protocol-v1.md",
+      "sha256": "d9c45ee60c14a25dc5b7a16b87ace4d7602f28c31d7a10fdae82152df6a918f3"
+    },
+    {
+      "path": "docs/publication/reviews/market-study-01.md",
+      "sha256": "2f672f3e78e2121738ff0bdae3c77e525099138216bcf96b3a2b4453c96bd507"
+    }
+  ],
+  "coverage": [
+    {
+      "case_id": "binance_primary_4h",
+      "score_start": "2025-01-01T00:00:00+00:00",
+      "score_end": "2026-10-20T23:59:59.999000+00:00",
+      "scored_bars": 3948,
+      "history_gaps": 36,
+      "score_regular_grid": true,
+      "feature_pause_bars_in_score_window": 0
+    },
+    {
+      "case_id": "binance_matched_4h",
+      "score_start": "2026-02-20T00:00:00+00:00",
+      "score_end": "2026-10-20T23:59:59.999000+00:00",
+      "scored_bars": 1458,
+      "history_gaps": 36,
+      "score_regular_grid": true,
+      "feature_pause_bars_in_score_window": 0
+    },
+    {
+      "case_id": "binance_matched_1h",
+      "score_start": "2026-02-20T00:00:00+00:00",
+      "score_end": "2026-10-20T23:59:59.999000+00:00",
+      "scored_bars": 5832,
+      "history_gaps": 184,
+      "score_regular_grid": true,
+      "feature_pause_bars_in_score_window": 0
+    },
+    {
+      "case_id": "binance_matched_1d",
+      "score_start": "2026-02-20T00:00:00+00:00",
+      "score_end": "2026-10-20T23:59:59.999000+00:00",
+      "scored_bars": 243,
+      "history_gaps": 0,
+      "score_regular_grid": true,
+      "feature_pause_bars_in_score_window": 0
+    },
+    {
+      "case_id": "bitstamp_primary_4h",
+      "score_start": "2025-01-01T00:00:00+00:00",
+      "score_end": "2026-10-20T23:59:59.999000+00:00",
+      "scored_bars": 3948,
+      "history_gaps": 1,
+      "score_regular_grid": true,
+      "feature_pause_bars_in_score_window": 0
+    },
+    {
+      "case_id": "bitstamp_matched_4h",
+      "score_start": "2026-02-20T00:00:00+00:00",
+      "score_end": "2026-10-20T23:59:59.999000+00:00",
+      "scored_bars": 1458,
+      "history_gaps": 1,
+      "score_regular_grid": true,
+      "feature_pause_bars_in_score_window": 0
+    }
+  ],
+  "source_snapshot": "market-freeze-v1.sources.zip",
+  "source_snapshot_sha256": "e41275dffcc7f5617758adc12cb80edd76f5cda6b36c7ac460ee963a92a78271",
+  "status": "retrospective; data acquisition and feature coverage inspected; no claim of prospective secrecy",
+  "gate": "Separate prespecified publication study; no matching hourly selection-phase backtest is claimed or required",
+  "freeze_sha256": "cec28f8c29101303d86f60f09e6d474429410f0b89a81cc930735f311a5ffed5"
+}

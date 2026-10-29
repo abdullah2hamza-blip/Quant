@@ -8,3 +8,55 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Reproducible local inputs and generated research artifacts
+data/*
+!data/btc-1d-through-2026-10-20.manifest.json
+!data/btc-1h-through-2026-10-20.manifest.json
+!data/btc-4h-through-2026-10-20.manifest.json
+!data/btc-bitstamp-4h-through-2026-10-20.manifest.json
+runs/
+.pytest_cache/
+*.sqlite-wal
+*.sqlite-shm
+# Local rendering/TeX intermediates; final manuscript PDF is retained.
+tmp/
+paper/generated/plot-cache/
+**/plot-cache/
+bots/btc_trend_bot/validation/installation.json
+output/pdf/*.log
+*.aux
+*.out
+*.xdv
+*.synctex.gz
+# Generated distributions, superseded PDFs and local audit work stay private.
+output/*
+!output/pdf/
+output/pdf/*
+!output/pdf/cost-aware-bitcoin-research-v4.pdf
+# Current public documentation is selected explicitly; historical work remains local.
+docs/*
+!docs/publication/
+!docs/GITHUB.md
+!docs/KAGGLE.md
+docs/publication/*
+!docs/publication/README.md
+!docs/publication/STATUS.md
+!docs/publication/REPRODUCE.md
+!docs/publication/SUBMIT.md
+!docs/publication/COVER-LETTER.md
+!docs/publication/bibliography.json
+!docs/publication/literature-comparison.md
+!docs/publication/protocol-v1.md
+!docs/publication/protocol-v1-addendum-01.md
+!docs/publication/market-protocol-v1.md
+!docs/publication/followup-protocol-v2.md
+!docs/publication/bot-extension-protocol-2026-10-23.md
+!docs/publication/reporting-note-01.md
+!docs/publication/reporting-note-02.md
+!docs/publication/RELEASE-REVIEW-2026-10-28.md
+!docs/publication/CLAIM-EVIDENCE.md
+!docs/publication/DATASET-CARD.md
+!docs/publication/RELEASE-NOTES.md
+.env
+.env.*

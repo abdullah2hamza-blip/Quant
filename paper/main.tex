@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm,booktabs,longtable,graphicx,xcolor,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+\hypersetup{pdftitle={Cost Uncertainty in Sequential Strategy Validation: A Diagnostic Study with Adaptive Bitcoin Trend Following},
+pdfauthor={Abdullah Hamza},pdfsubject={Paired-cost sequential validation and a retrospective Bitcoin trend diagnostic},
+pdfkeywords={sequential inference, execution costs, Bitcoin, trend following, reproducibility}}
+\usepackage{enumitem}
+\setlist{nosep}
+\newtheorem{proposition}{Proposition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{remark}{Remark}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\ind}{\mathbf{1}}
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\clip}{clip}
+\title{Cost Uncertainty in Sequential Strategy Validation:\\A Diagnostic Study with Adaptive Bitcoin Trend Following}
+\author{Abdullah Hamza\\Independent Researcher\\
+\small\href{mailto:abdullah2hamza@gmail.com}{abdullah2hamza@gmail.com}}
+\date{October 2026}
+\input{generated/numbers}
+\input{generated/followup/numbers}
+\input{generated/bot-extension/numbers}
+\begin{document}
+\maketitle
+\begin{abstract}
+Sequential strategy comparisons can lose evidence through two distinct forms
+of cost pessimism: bounding the two portfolios separately, and allowing one
+stationary cost coefficient to vary adversarially across periods. We quantify
+these effects using established bounded-betting and empirical-Bernstein methods.
+Two separately specified synthetic experiments contain 24 and 25 cases, with
+4,000 independent worlds within each case. Matched comparisons distinguish cost
+geometry, evidence form, volatility adaptation and whole-history nuisance
+profiling. At effect 0.05, under high volatility, alternating turnover contrasts
+and fixed cost information, coherent empirical-Bernstein power is
+\FollowupStaticAltCoherent\% versus \FollowupStaticAltLocal\% for local bounds.
+Adaptive betting does not uniformly improve power, and a symmetric upper-cost
+shortcut can be anti-conservative when the reference trades more. These findings
+are conditional on a bounded utility model and simultaneous calibration coverage;
+they do not validate a market execution-cost model. A separate audited,
+retrospective Bitcoin application finds no evaluation-window switches by the
+four-hour adaptive selector: its \PrimaryFixedReturn\% return equals the fixed
+EMA 50/200 baseline. Hourly and daily adaptive differences have negative point
+estimates and broad approximate intervals. The contribution is a reproducible
+diagnosis of information loss and invalid shortcuts, together with a negative
+trading result. No new general theorem or demonstrated adaptive market edge is
+claimed.
+\end{abstract}
+\input{sections/introduction}
+\input{sections/methods}
+\input{sections/experiments}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/declarations}
+\input{references}
+\clearpage
+\appendix
+\input{sections/supplement}
+\end{document}

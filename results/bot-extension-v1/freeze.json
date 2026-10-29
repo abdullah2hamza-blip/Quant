@@ -1,0 +1,744 @@
+{
+  "kind": "post_protocol_bot_extension_freeze",
+  "created_at": "2026-10-23T19:20:33.586689+00:00",
+  "attempt_id": "bd9e8d5b-101d-4d89-a47e-9e7f941ff0f0",
+  "spec": {
+    "schema_version": 1,
+    "study_id": "post-protocol-bot-extension-v1",
+    "status": "exploratory_after_outcome_inspection_no_strategy_selection",
+    "protocol": "docs/publication/bot-extension-protocol-2026-10-23.md",
+    "base_config": "configs/research/btc-trend.toml",
+    "input_csv": "data/btc-1d-through-2026-10-20.csv",
+    "input_audit": "docs/publication/data-audit-1d-v1.json",
+    "bot_directory": "bots/btc_trend_bot",
+    "prehistory_start": "2017-09-01",
+    "score_start": "2025-01-01",
+    "score_end": "2026-10-20",
+    "interval": "1d",
+    "initial_equity": 1.0,
+    "ema_pair": [
+      9,
+      34
+    ],
+    "sma_windows": [
+      40,
+      50,
+      60,
+      80,
+      100,
+      150
+    ],
+    "volatility_targets": [
+      0.2,
+      0.4
+    ],
+    "volatility_window": 30,
+    "annualization": 365,
+    "warmup": 334,
+    "band": 0.1,
+    "maximum_exposure": 1.0,
+    "costs_bps": [
+      0,
+      10,
+      25,
+      50,
+      100
+    ],
+    "base_cost_bps": 25,
+    "books": [
+      "sma_20",
+      "ema_20",
+      "sma_40",
+      "ema_40",
+      "cash",
+      "buy_hold",
+      "volatility_20",
+      "volatility_40"
+    ],
+    "bootstrap": {
+      "draws": 5000,
+      "block_days": [
+        15,
+        30,
+        60
+      ],
+      "seed": 20261023,
+      "confidence": 0.95
+    }
+  },
+  "spec_sha256": "218f5e72a2ff94d8f666137830bd9dbc3f0e826b3507a33e02e7e1f06d1225ac",
+  "guard": {
+    "configs/research/bot-extension-study-v1.json": "218f5e72a2ff94d8f666137830bd9dbc3f0e826b3507a33e02e7e1f06d1225ac",
+    "configs/research/btc-trend.toml": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+    "docs/publication/bot-extension-protocol-2026-10-23.md": "2930565786c88526962d86fe78441932388cbcdec01f8a7d42a5c54a36f6d713",
+    "scripts/bot_extension_study.py": "e10a0e5f235ac0bab998993077bade4cc1f905d2c28315d1679d733ba2d720e2",
+    "src/quant/__init__.py": "278ff9e15bd3747171df252ea5b1e87a46e3f0ee40587f6f3220619a251a89f7",
+    "src/quant/config.py": "32a3bd499679047e32e20198db74466e608d5cd4a8a2ac408a9cd21892f41ec8",
+    "src/quant/data.py": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
+    "src/quant/engine.py": "dab857df55fd6940befb052d119b503c319d9bcf5e9874e1eeee23ba39e87203",
+    "src/quant/ledger.py": "363ae0cc244c298d9672a29aaf40f896e668e5925da766323bd18d8d205c007d",
+    "src/quant/stats.py": "3882f56f4c8090875f33d5b7725524a701ba6f13a6bbad43590ab60523445497"
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "source_snapshot": "sources.zip",
+  "source_snapshot_sha256": "39deba48da8e66818c05334584075225a58d015b7099c977eaecf27fb5620691",
+  "snapshot_members": {
+    ".python-version": {
+      "sha256": "3ce16e94590543a327d3e5ae412e663206e0ed1b46628ed3dd5ad29caa1ff5ac",
+      "bytes": 7
+    },
+    "README.md": {
+      "sha256": "2e2c3603c29627f3899e771a1f1ed21a0b609f6ce18c49de8664d3655a65eab3",
+      "bytes": 6033
+    },
+    "configs/research/bot-extension-study-v1.json": {
+      "sha256": "218f5e72a2ff94d8f666137830bd9dbc3f0e826b3507a33e02e7e1f06d1225ac",
+      "bytes": 1044
+    },
+    "configs/research/btc-trend.toml": {
+      "sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+      "bytes": 1635
+    },
+    "docs/publication/bot-extension-protocol-2026-10-23.md": {
+      "sha256": "2930565786c88526962d86fe78441932388cbcdec01f8a7d42a5c54a36f6d713",
+      "bytes": 2847
+    },
+    "evidence/delivered/bot/.gitignore": {
+      "sha256": "25f4a46c50d3a0b9da1a213e56fa0cb5187cd75a7abef745aeb7ff45bf7008e6",
+      "bytes": 97
+    },
+    "evidence/delivered/bot/.python-version": {
+      "sha256": "3ce16e94590543a327d3e5ae412e663206e0ed1b46628ed3dd5ad29caa1ff5ac",
+      "bytes": 7
+    },
+    "evidence/delivered/bot/API-SOURCES.md": {
+      "sha256": "2be3285e7b563a5bb60e080eea0a8803651e90185026abc023e26a0020c06043",
+      "bytes": 1439
+    },
+    "evidence/delivered/bot/MIGRATION.md": {
+      "sha256": "e4bb93f6d7e2d02212b879dcf28455e5bd5524ef6ef1c797a91630e957913902",
+      "bytes": 5584
+    },
+    "evidence/delivered/bot/README.md": {
+      "sha256": "2b0bfc32290ee5f7f947b9ea7f404449b97f0efdf0f69c9f1265b702560b0ca0",
+      "bytes": 9684
+    },
+    "evidence/delivered/bot/bot_core.py": {
+      "sha256": "d4627662a3b9102fa0451ff7a3494b57eca23645d6e07f6ebb61d4f8ae397e9a",
+      "bytes": 13029
+    },
+    "evidence/delivered/bot/bot_io.py": {
+      "sha256": "c2754a288cb15bd1c79c9ab41e56ca092c796aa51ad3070f4184cbf64ab553bb",
+      "bytes": 13092
+    },
+    "evidence/delivered/bot/bot_runtime.py": {
+      "sha256": "8943f850c5488cbf7542d25b629e1715556699d7c3b6046fe4032b3d22b86cca",
+      "bytes": 13921
+    },
+    "evidence/delivered/bot/config/legacy_daily.json": {
+      "sha256": "cbe91d65e0e9803569c0fd90eeef6fa1f182eebb0d2a4283c66ff3793e28af00",
+      "bytes": 396
+    },
+    "evidence/delivered/bot/config/paper.toml": {
+      "sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+      "bytes": 1635
+    },
+    "evidence/delivered/bot/legacy/original-v2.zip": {
+      "sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+      "bytes": 23440
+    },
+    "evidence/delivered/bot/legacy_daily.py": {
+      "sha256": "d4a47e4b5a889e8fb0c564fe8632eaf4a12ff70bb802faebba68d4a35556069f",
+      "bytes": 6423
+    },
+    "evidence/delivered/bot/mr_bot.py": {
+      "sha256": "776950d0421f523d680cbe4c35afd71fe7d2dac236749e9e3e7f6b8ea9c3be8d",
+      "bytes": 291
+    },
+    "evidence/delivered/bot/paper-origin.json": {
+      "sha256": "3981024ac7b7bd75210b121ad276503f222aa4a845243cfd265ba0258b603905",
+      "bytes": 2514
+    },
+    "evidence/delivered/bot/paper_engine/__init__.py": {
+      "sha256": "706d69f87a396e9d01120aee7176854ef1cd29fb537fc80cf00f602be5efaf7f",
+      "bytes": 75
+    },
+    "evidence/delivered/bot/paper_engine/config.py": {
+      "sha256": "32a3bd499679047e32e20198db74466e608d5cd4a8a2ac408a9cd21892f41ec8",
+      "bytes": 8719
+    },
+    "evidence/delivered/bot/paper_engine/data.py": {
+      "sha256": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
+      "bytes": 14479
+    },
+    "evidence/delivered/bot/paper_engine/engine.py": {
+      "sha256": "dab857df55fd6940befb052d119b503c319d9bcf5e9874e1eeee23ba39e87203",
+      "bytes": 12344
+    },
+    "evidence/delivered/bot/paper_engine/stats.py": {
+      "sha256": "3882f56f4c8090875f33d5b7725524a701ba6f13a6bbad43590ab60523445497",
+      "bytes": 14997
+    },
+    "evidence/delivered/bot/pyproject.toml": {
+      "sha256": "3feaa407a311d840c4cb4284696a98ee7ad5bd4696149627d1d5bee2f1c75b59",
+      "bytes": 329
+    },
+    "evidence/delivered/bot/requirements.txt": {
+      "sha256": "528fcc42b77399b86ce3a6aa30d0f798e7a603e799678274d031fc5ebaaa8954",
+      "bytes": 82
+    },
+    "evidence/delivered/bot/research/EXPERIMENT_LEDGER.md": {
+      "sha256": "33518fccf54752b5beff5ed34ed3a3a2084bf145ba0f4ff625c2ed4792b126fd",
+      "bytes": 1392
+    },
+    "evidence/delivered/bot/research/PREREGISTRATION.md": {
+      "sha256": "05ed4e0e47b7e1a9c65fdd43a4daedc780a366ea4ba5fa982da495637cc3e7f6",
+      "bytes": 1383
+    },
+    "evidence/delivered/bot/research/RESULTS.md": {
+      "sha256": "8c078a0ba382cfd96a98f517236670e841c1066bb65035f54ab2e8501a69d7f8",
+      "bytes": 3813
+    },
+    "evidence/delivered/bot/research/checks.py": {
+      "sha256": "5faeae1ad9b5fa901955b92fa026450578ea7d98c35bf31230fe5b04be46803c",
+      "bytes": 502
+    },
+    "evidence/delivered/bot/research/forward_log.md": {
+      "sha256": "1569710c4da0afe2799bcac19cfcd3f5bc44449ccedc643fd75fdc5f9c6a5029",
+      "bytes": 1572
+    },
+    "evidence/delivered/bot/research/get_data.py": {
+      "sha256": "deea1400397216a7b67eacd1af829774d5d5be6a6d37302fc88fd11bf639ee38",
+      "bytes": 1156
+    },
+    "evidence/delivered/bot/research/lab.py": {
+      "sha256": "97637dc39c0033337abc3d347cadfddf2f10cab335202d5dd6dea3589e145a17",
+      "bytes": 4833
+    },
+    "evidence/delivered/bot/research/ml.py": {
+      "sha256": "19ea5aca8691ebba3ac1d0df0b8f4090a62038610584232037649af3d5d0ef92",
+      "bytes": 293
+    },
+    "evidence/delivered/bot/research/run_all.py": {
+      "sha256": "300f44ae0acd681cb481c48cdf72cb9c9c9ca9a074eec0713fd1f4daf5560ca7",
+      "bytes": 149
+    },
+    "evidence/delivered/bot/research/strategies.py": {
+      "sha256": "2332527ef5e862af4254d4a312c7a14df445c963aed8b9b8b69e8352eca1cbfe",
+      "bytes": 217
+    },
+    "evidence/delivered/bot/tests/test_adapters.py": {
+      "sha256": "15371138b20e1dc90c943ecb678fa2898a17c66e6a754b2b9e77fbe1b1c2d156",
+      "bytes": 5753
+    },
+    "evidence/delivered/bot/tests/test_bot.py": {
+      "sha256": "51e7e0b719fc0cbe0dce0435c7ec131b13efdd2e5feef0eaf31f3a0bb04d19ac",
+      "bytes": 11288
+    },
+    "evidence/delivered/bot/tests/test_legacy.py": {
+      "sha256": "75b30cd1dc101806fcdef388edec1e24eb2f9af18f3eefa3ede0268e921cda00",
+      "bytes": 5773
+    },
+    "evidence/delivered/bot/trend_bot.py": {
+      "sha256": "7d94c25c0dc8bb64db6d9dfa71c12386f1e8635a4e3b07affc72d6b5373037de",
+      "bytes": 4983
+    },
+    "evidence/delivered/bot/uv.lock": {
+      "sha256": "3cb6e9270c59dcba4a166b5e90450b570ece93bb1a8c601e260b800cfe38ef20",
+      "bytes": 8616
+    },
+    "evidence/delivered/bot/validation/before-after.json": {
+      "sha256": "b1794c3db82e3733cfbc8475b3c7a73da82d3fb864ce31e210f550a7e5cd9d98",
+      "bytes": 3160
+    },
+    "evidence/delivered/bot/validation/legacy-attempt.json": {
+      "sha256": "66fb7919d15b0a550f21d94db407932bd0f05c55badfbcbe5463d3ce4b03ac22",
+      "bytes": 606
+    },
+    "evidence/delivered/bot/validation/legacy-report.json": {
+      "sha256": "79c135ca281bf02680f2b7f6cc00d7c86d16ce042d49853f9956ac2879a190e1",
+      "bytes": 120811
+    },
+    "evidence/delivered/bot/validation/legacy-signal.json": {
+      "sha256": "f2f2e88ff3fe124fe9af8399bae40e986e5ff4a650c8c8eb1513c4ea3c0106ae",
+      "bytes": 775
+    },
+    "evidence/delivered/bot/validation/legacy-trades.json": {
+      "sha256": "13327552cb199c7f899311b8acca42e13d6cea2780500437550d1ce1bed59c33",
+      "bytes": 60691
+    },
+    "evidence/delivered/bot/validation/offline-restart.json": {
+      "sha256": "2b16c2ac01f82df50dcf3f9d826e2302f79eb1743389ba4300aae3cda4b339ae",
+      "bytes": 4330
+    },
+    "evidence/delivered/bot/validation/paper-parity.json": {
+      "sha256": "685e844642647ae8b4977f1d967bcd6ec90eedb5dbff59ff343680af18b6dfea",
+      "bytes": 2986
+    },
+    "evidence/delivered/bot/validation/public-data.json": {
+      "sha256": "89ed0d2689ff734befe061e8fedbc4d10ac9b13b2231d61b0e989a77b0661718",
+      "bytes": 1292
+    },
+    "evidence/delivered/bot/validation/quality.json": {
+      "sha256": "13e08d8755b32fe4602bb8223cf7f20cfb1ad692e8c83c06a66b50134f600fcb",
+      "bytes": 13591
+    },
+    "evidence/delivered/bot/validation/tests.txt": {
+      "sha256": "350f6b89613f376c2f0cb622e5f6ef37365593f5f257bbcdbc99fb8784eed3bc",
+      "bytes": 101
+    },
+    "evidence/delivered/installation.json": {
+      "sha256": "5dbc4b0c857824e137f6c73860bf37f937445914fd99619a1a1ca3490b2b25e2",
+      "bytes": 14442
+    },
+    "evidence/delivered/installed-replay/attempt.json": {
+      "sha256": "6247f62316248cd7181fc444c47e2a7ac7e661bce9f952ec24a6dd2fda1e2c04",
+      "bytes": 606
+    },
+    "evidence/delivered/installed-replay/report.json": {
+      "sha256": "7c0dc34a5d66a9ba4e92d24b53df8797077c9589d971d04def7b1acb7663e50a",
+      "bytes": 120825
+    },
+    "evidence/delivered/installed-replay/selections.json": {
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "bytes": 4
+    },
+    "evidence/delivered/installed-replay/trades.json": {
+      "sha256": "13327552cb199c7f899311b8acca42e13d6cea2780500437550d1ce1bed59c33",
+      "bytes": 60691
+    },
+    "evidence/delivered/installed-tests.txt": {
+      "sha256": "7bed897c721607032fc50d305d3146d2f2e85f07588915c948a2fb5c4a197c91",
+      "bytes": 101
+    },
+    "evidence/delivered/previous-installation.json": {
+      "sha256": "5fa7a4939604d4c3a04ce32f18995a1836341087a83b58b4fc2cd2b9561bd0bf",
+      "bytes": 8419
+    },
+    "pyproject.toml": {
+      "sha256": "c5bb14eaed8c1bd3d357ebb0cd1151086d82b01570b1bd17aa9c91db20cc067f",
+      "bytes": 624
+    },
+    "scripts/bot_extension_study.py": {
+      "sha256": "e10a0e5f235ac0bab998993077bade4cc1f905d2c28315d1679d733ba2d720e2",
+      "bytes": 38085
+    },
+    "src/quant/__init__.py": {
+      "sha256": "278ff9e15bd3747171df252ea5b1e87a46e3f0ee40587f6f3220619a251a89f7",
+      "bytes": 92
+    },
+    "src/quant/config.py": {
+      "sha256": "32a3bd499679047e32e20198db74466e608d5cd4a8a2ac408a9cd21892f41ec8",
+      "bytes": 8719
+    },
+    "src/quant/data.py": {
+      "sha256": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
+      "bytes": 14479
+    },
+    "src/quant/engine.py": {
+      "sha256": "dab857df55fd6940befb052d119b503c319d9bcf5e9874e1eeee23ba39e87203",
+      "bytes": 12344
+    },
+    "src/quant/ledger.py": {
+      "sha256": "363ae0cc244c298d9672a29aaf40f896e668e5925da766323bd18d8d205c007d",
+      "bytes": 3309
+    },
+    "src/quant/stats.py": {
+      "sha256": "3882f56f4c8090875f33d5b7725524a701ba6f13a6bbad43590ab60523445497",
+      "bytes": 14997
+    },
+    "tests/test_bot_extension.py": {
+      "sha256": "d6b2a388a09d17dce67f42bd9bafdffd88f6f78cd318d0ca27f29a0fc77bbe37",
+      "bytes": 12610
+    },
+    "uv.lock": {
+      "sha256": "6a75a7a1b1760178786ee3055719fbae3bb12ab84a6ff14e4b2f66b6ee755e49",
+      "bytes": 116294
+    }
+  },
+  "input": {
+    "path": "data/btc-1d-through-2026-10-20.csv",
+    "sha256": "56ab80047fbac8705dd99677dd74e3a946af33de79072b9ef49e042e249dda25",
+    "bytes": 343556,
+    "manifest_sha256": "a78fdee98158fa0b271eb3d749fec217e4fb84caf415d89d52dc291fd244498f",
+    "distribution": "Vendor CSV excluded; full replay requires exact separately restored bytes"
+  },
+  "delivered": {
+    "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+    "installed_inventory_entries_verified_before_freeze": 51,
+    "preserved_non_seed_payloads": 47,
+    "vendor_seed_inventory_not_distributed": {
+      "data/btc-1d.csv": {
+        "sha256": "56ab80047fbac8705dd99677dd74e3a946af33de79072b9ef49e042e249dda25",
+        "bytes": 343556
+      },
+      "data/btc-1d.manifest.json": {
+        "sha256": "a78fdee98158fa0b271eb3d749fec217e4fb84caf415d89d52dc291fd244498f",
+        "bytes": 55059
+      },
+      "data/btc-4h.csv": {
+        "sha256": "5eea975ec9aa32b88579a99d05ac9e722fd3fe9aa7024ae78350618a8333c78d",
+        "bytes": 2085571
+      },
+      "data/btc-4h.manifest.json": {
+        "sha256": "ebc379f88f04f08bd50e865fc191823a18e82fb5658c807988f01a1d8c438dc5",
+        "bytes": 63522
+      }
+    },
+    "original_archive_sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+    "legacy_metrics_by_cost": {
+      "25": {
+        "bars": 658,
+        "start": "2025-01-01T00:00:00+00:00",
+        "end": "2026-10-20T23:59:59.999000+00:00",
+        "total_return": 0.11878399817929419,
+        "cagr": 0.06424125671852633,
+        "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+        "mean_log_return": 0.0001705811239805249,
+        "annualized_mean_log_return": 0.06226211025289159,
+        "annualized_volatility": 0.21840912156763606,
+        "descriptive_sharpe": 0.3936153956268701,
+        "regular_grid_statistics_available": true,
+        "maximum_drawdown": -0.2516628506306685,
+        "time_in_market": 0.6519756838905775,
+        "mean_exposure": 0.45765744050749957,
+        "turnover": 26.71387447678888,
+        "trade_count": 101,
+        "costs_in_start_nav_units": 0.06685407658424561,
+        "ending_exposure": 0.8531526332950333,
+        "estimated_exit_adjusted_return": 0.11639776439395666,
+        "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+        "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+      },
+      "0": {
+        "bars": 658,
+        "start": "2025-01-01T00:00:00+00:00",
+        "end": "2026-10-20T23:59:59.999000+00:00",
+        "total_return": 0.19608970618575983,
+        "cagr": 0.10442550693691982,
+        "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+        "mean_log_return": 0.0002721241001333317,
+        "annualized_mean_log_return": 0.09932529654866606,
+        "annualized_volatility": 0.21842763013092562,
+        "descriptive_sharpe": 0.563313631328279,
+        "regular_grid_statistics_available": true,
+        "maximum_drawdown": -0.21589575877195988,
+        "time_in_market": 0.6519756838905775,
+        "mean_exposure": 0.45765744050749957,
+        "turnover": 26.726259651782847,
+        "trade_count": 101,
+        "costs_in_start_nav_units": 0.0,
+        "ending_exposure": 0.8531526332950332,
+        "estimated_exit_adjusted_return": 0.19608970618575983,
+        "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+        "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+      },
+      "10": {
+        "bars": 658,
+        "start": "2025-01-01T00:00:00+00:00",
+        "end": "2026-10-20T23:59:59.999000+00:00",
+        "total_return": 0.16454618357931894,
+        "cagr": 0.08817282146650608,
+        "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+        "mean_log_return": 0.00023150679199767922,
+        "annualized_mean_log_return": 0.08449997907915291,
+        "annualized_volatility": 0.21840355931968589,
+        "descriptive_sharpe": 0.495456664186587,
+        "regular_grid_statistics_available": true,
+        "maximum_drawdown": -0.23040271163568327,
+        "time_in_market": 0.6519756838905775,
+        "mean_exposure": 0.45765744050749957,
+        "turnover": 26.721293279265915,
+        "trade_count": 101,
+        "costs_in_start_nav_units": 0.02727201856109947,
+        "ending_exposure": 0.8531526332950334,
+        "estimated_exit_adjusted_return": 0.1635526479362046,
+        "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+        "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+      },
+      "50": {
+        "bars": 658,
+        "start": "2025-01-01T00:00:00+00:00",
+        "end": "2026-10-20T23:59:59.999000+00:00",
+        "total_return": 0.046474986904938564,
+        "cagr": 0.025519248276529034,
+        "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+        "mean_log_return": 6.903854247833639e-05,
+        "annualized_mean_log_return": 0.025199068004592783,
+        "annualized_volatility": 0.21852923780555372,
+        "descriptive_sharpe": 0.2239030165555851,
+        "regular_grid_statistics_available": true,
+        "maximum_drawdown": -0.28675423044076964,
+        "time_in_market": 0.6519756838905775,
+        "mean_exposure": 0.45765744050749957,
+        "turnover": 26.7015916161983,
+        "trade_count": 101,
+        "costs_in_start_nav_units": 0.12944029257090708,
+        "ending_exposure": 0.8531526332950334,
+        "estimated_exit_adjusted_return": 0.04201097245116192,
+        "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+        "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+      },
+      "100": {
+        "bars": 658,
+        "start": "2025-01-01T00:00:00+00:00",
+        "end": "2026-10-20T23:59:59.999000+00:00",
+        "total_return": -0.08442664193957095,
+        "cagr": -0.04775049028522791,
+        "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+        "mean_log_return": -0.0001340498314899728,
+        "annualized_mean_log_return": -0.04892818849384008,
+        "annualized_volatility": 0.21918241445226985,
+        "descriptive_sharpe": -0.11428527785898898,
+        "regular_grid_statistics_available": true,
+        "maximum_drawdown": -0.3525130061998756,
+        "time_in_market": 0.6519756838905775,
+        "mean_exposure": 0.45765744050749957,
+        "turnover": 26.677331306078578,
+        "trade_count": 101,
+        "costs_in_start_nav_units": 0.24288374722248587,
+        "ending_exposure": 0.8531526332950335,
+        "estimated_exit_adjusted_return": -0.09223788015361134,
+        "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+        "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+      }
+    },
+    "legacy_report_sha256": "79c135ca281bf02680f2b7f6cc00d7c86d16ce042d49853f9956ac2879a190e1",
+    "scope": "Preserved delivered .15-band/150-warmup SMA; separate from the matched .10-band/334-warmup extension"
+  },
+  "preserved_inputs": {
+    "delivered/bot/.gitignore": {
+      "sha256": "25f4a46c50d3a0b9da1a213e56fa0cb5187cd75a7abef745aeb7ff45bf7008e6",
+      "bytes": 97
+    },
+    "delivered/bot/.python-version": {
+      "sha256": "3ce16e94590543a327d3e5ae412e663206e0ed1b46628ed3dd5ad29caa1ff5ac",
+      "bytes": 7
+    },
+    "delivered/bot/API-SOURCES.md": {
+      "sha256": "2be3285e7b563a5bb60e080eea0a8803651e90185026abc023e26a0020c06043",
+      "bytes": 1439
+    },
+    "delivered/bot/bot_core.py": {
+      "sha256": "d4627662a3b9102fa0451ff7a3494b57eca23645d6e07f6ebb61d4f8ae397e9a",
+      "bytes": 13029
+    },
+    "delivered/bot/bot_io.py": {
+      "sha256": "c2754a288cb15bd1c79c9ab41e56ca092c796aa51ad3070f4184cbf64ab553bb",
+      "bytes": 13092
+    },
+    "delivered/bot/bot_runtime.py": {
+      "sha256": "8943f850c5488cbf7542d25b629e1715556699d7c3b6046fe4032b3d22b86cca",
+      "bytes": 13921
+    },
+    "delivered/bot/config/legacy_daily.json": {
+      "sha256": "cbe91d65e0e9803569c0fd90eeef6fa1f182eebb0d2a4283c66ff3793e28af00",
+      "bytes": 396
+    },
+    "delivered/bot/config/paper.toml": {
+      "sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+      "bytes": 1635
+    },
+    "delivered/bot/legacy/original-v2.zip": {
+      "sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+      "bytes": 23440
+    },
+    "delivered/bot/legacy_daily.py": {
+      "sha256": "d4a47e4b5a889e8fb0c564fe8632eaf4a12ff70bb802faebba68d4a35556069f",
+      "bytes": 6423
+    },
+    "delivered/bot/MIGRATION.md": {
+      "sha256": "e4bb93f6d7e2d02212b879dcf28455e5bd5524ef6ef1c797a91630e957913902",
+      "bytes": 5584
+    },
+    "delivered/bot/mr_bot.py": {
+      "sha256": "776950d0421f523d680cbe4c35afd71fe7d2dac236749e9e3e7f6b8ea9c3be8d",
+      "bytes": 291
+    },
+    "delivered/bot/paper-origin.json": {
+      "sha256": "3981024ac7b7bd75210b121ad276503f222aa4a845243cfd265ba0258b603905",
+      "bytes": 2514
+    },
+    "delivered/bot/paper_engine/__init__.py": {
+      "sha256": "706d69f87a396e9d01120aee7176854ef1cd29fb537fc80cf00f602be5efaf7f",
+      "bytes": 75
+    },
+    "delivered/bot/paper_engine/config.py": {
+      "sha256": "32a3bd499679047e32e20198db74466e608d5cd4a8a2ac408a9cd21892f41ec8",
+      "bytes": 8719
+    },
+    "delivered/bot/paper_engine/data.py": {
+      "sha256": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
+      "bytes": 14479
+    },
+    "delivered/bot/paper_engine/engine.py": {
+      "sha256": "dab857df55fd6940befb052d119b503c319d9bcf5e9874e1eeee23ba39e87203",
+      "bytes": 12344
+    },
+    "delivered/bot/paper_engine/stats.py": {
+      "sha256": "3882f56f4c8090875f33d5b7725524a701ba6f13a6bbad43590ab60523445497",
+      "bytes": 14997
+    },
+    "delivered/bot/pyproject.toml": {
+      "sha256": "3feaa407a311d840c4cb4284696a98ee7ad5bd4696149627d1d5bee2f1c75b59",
+      "bytes": 329
+    },
+    "delivered/bot/README.md": {
+      "sha256": "2b0bfc32290ee5f7f947b9ea7f404449b97f0efdf0f69c9f1265b702560b0ca0",
+      "bytes": 9684
+    },
+    "delivered/bot/requirements.txt": {
+      "sha256": "528fcc42b77399b86ce3a6aa30d0f798e7a603e799678274d031fc5ebaaa8954",
+      "bytes": 82
+    },
+    "delivered/bot/research/checks.py": {
+      "sha256": "5faeae1ad9b5fa901955b92fa026450578ea7d98c35bf31230fe5b04be46803c",
+      "bytes": 502
+    },
+    "delivered/bot/research/EXPERIMENT_LEDGER.md": {
+      "sha256": "33518fccf54752b5beff5ed34ed3a3a2084bf145ba0f4ff625c2ed4792b126fd",
+      "bytes": 1392
+    },
+    "delivered/bot/research/forward_log.md": {
+      "sha256": "1569710c4da0afe2799bcac19cfcd3f5bc44449ccedc643fd75fdc5f9c6a5029",
+      "bytes": 1572
+    },
+    "delivered/bot/research/get_data.py": {
+      "sha256": "deea1400397216a7b67eacd1af829774d5d5be6a6d37302fc88fd11bf639ee38",
+      "bytes": 1156
+    },
+    "delivered/bot/research/lab.py": {
+      "sha256": "97637dc39c0033337abc3d347cadfddf2f10cab335202d5dd6dea3589e145a17",
+      "bytes": 4833
+    },
+    "delivered/bot/research/ml.py": {
+      "sha256": "19ea5aca8691ebba3ac1d0df0b8f4090a62038610584232037649af3d5d0ef92",
+      "bytes": 293
+    },
+    "delivered/bot/research/PREREGISTRATION.md": {
+      "sha256": "05ed4e0e47b7e1a9c65fdd43a4daedc780a366ea4ba5fa982da495637cc3e7f6",
+      "bytes": 1383
+    },
+    "delivered/bot/research/RESULTS.md": {
+      "sha256": "8c078a0ba382cfd96a98f517236670e841c1066bb65035f54ab2e8501a69d7f8",
+      "bytes": 3813
+    },
+    "delivered/bot/research/run_all.py": {
+      "sha256": "300f44ae0acd681cb481c48cdf72cb9c9c9ca9a074eec0713fd1f4daf5560ca7",
+      "bytes": 149
+    },
+    "delivered/bot/research/strategies.py": {
+      "sha256": "2332527ef5e862af4254d4a312c7a14df445c963aed8b9b8b69e8352eca1cbfe",
+      "bytes": 217
+    },
+    "delivered/bot/tests/test_adapters.py": {
+      "sha256": "15371138b20e1dc90c943ecb678fa2898a17c66e6a754b2b9e77fbe1b1c2d156",
+      "bytes": 5753
+    },
+    "delivered/bot/tests/test_bot.py": {
+      "sha256": "51e7e0b719fc0cbe0dce0435c7ec131b13efdd2e5feef0eaf31f3a0bb04d19ac",
+      "bytes": 11288
+    },
+    "delivered/bot/tests/test_legacy.py": {
+      "sha256": "75b30cd1dc101806fcdef388edec1e24eb2f9af18f3eefa3ede0268e921cda00",
+      "bytes": 5773
+    },
+    "delivered/bot/trend_bot.py": {
+      "sha256": "7d94c25c0dc8bb64db6d9dfa71c12386f1e8635a4e3b07affc72d6b5373037de",
+      "bytes": 4983
+    },
+    "delivered/bot/uv.lock": {
+      "sha256": "3cb6e9270c59dcba4a166b5e90450b570ece93bb1a8c601e260b800cfe38ef20",
+      "bytes": 8616
+    },
+    "delivered/bot/validation/before-after.json": {
+      "sha256": "b1794c3db82e3733cfbc8475b3c7a73da82d3fb864ce31e210f550a7e5cd9d98",
+      "bytes": 3160
+    },
+    "delivered/bot/validation/legacy-attempt.json": {
+      "sha256": "66fb7919d15b0a550f21d94db407932bd0f05c55badfbcbe5463d3ce4b03ac22",
+      "bytes": 606
+    },
+    "delivered/bot/validation/legacy-paths.npz": {
+      "sha256": "d735e4432b0f18c24219a5ca231d4c68478620ce71f0a27f45c7a3f24c2a63ca",
+      "bytes": 195778
+    },
+    "delivered/bot/validation/legacy-report.json": {
+      "sha256": "79c135ca281bf02680f2b7f6cc00d7c86d16ce042d49853f9956ac2879a190e1",
+      "bytes": 120811
+    },
+    "delivered/bot/validation/legacy-signal.json": {
+      "sha256": "f2f2e88ff3fe124fe9af8399bae40e986e5ff4a650c8c8eb1513c4ea3c0106ae",
+      "bytes": 775
+    },
+    "delivered/bot/validation/legacy-trades.json": {
+      "sha256": "13327552cb199c7f899311b8acca42e13d6cea2780500437550d1ce1bed59c33",
+      "bytes": 60691
+    },
+    "delivered/bot/validation/offline-restart.json": {
+      "sha256": "2b16c2ac01f82df50dcf3f9d826e2302f79eb1743389ba4300aae3cda4b339ae",
+      "bytes": 4330
+    },
+    "delivered/bot/validation/paper-parity.json": {
+      "sha256": "685e844642647ae8b4977f1d967bcd6ec90eedb5dbff59ff343680af18b6dfea",
+      "bytes": 2986
+    },
+    "delivered/bot/validation/public-data.json": {
+      "sha256": "89ed0d2689ff734befe061e8fedbc4d10ac9b13b2231d61b0e989a77b0661718",
+      "bytes": 1292
+    },
+    "delivered/bot/validation/quality.json": {
+      "sha256": "13e08d8755b32fe4602bb8223cf7f20cfb1ad692e8c83c06a66b50134f600fcb",
+      "bytes": 13591
+    },
+    "delivered/bot/validation/tests.txt": {
+      "sha256": "350f6b89613f376c2f0cb622e5f6ef37365593f5f257bbcdbc99fb8784eed3bc",
+      "bytes": 101
+    },
+    "delivered/installation.json": {
+      "sha256": "5dbc4b0c857824e137f6c73860bf37f937445914fd99619a1a1ca3490b2b25e2",
+      "bytes": 14442
+    },
+    "delivered/installed-replay/attempt.json": {
+      "sha256": "6247f62316248cd7181fc444c47e2a7ac7e661bce9f952ec24a6dd2fda1e2c04",
+      "bytes": 606
+    },
+    "delivered/installed-replay/paths.npz": {
+      "sha256": "d735e4432b0f18c24219a5ca231d4c68478620ce71f0a27f45c7a3f24c2a63ca",
+      "bytes": 195778
+    },
+    "delivered/installed-replay/report.json": {
+      "sha256": "7c0dc34a5d66a9ba4e92d24b53df8797077c9589d971d04def7b1acb7663e50a",
+      "bytes": 120825
+    },
+    "delivered/installed-replay/selections.json": {
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "bytes": 4
+    },
+    "delivered/installed-replay/trades.json": {
+      "sha256": "13327552cb199c7f899311b8acca42e13d6cea2780500437550d1ce1bed59c33",
+      "bytes": 60691
+    },
+    "delivered/installed-tests.txt": {
+      "sha256": "7bed897c721607032fc50d305d3146d2f2e85f07588915c948a2fb5c4a197c91",
+      "bytes": 101
+    },
+    "delivered/previous-installation.json": {
+      "sha256": "5fa7a4939604d4c3a04ce32f18995a1836341087a83b58b4fc2cd2b9561bd0bf",
+      "bytes": 8419
+    },
+    "inputs/daily-audit.json": {
+      "sha256": "4d3010c83d81ede6d77e36cef06d54fcbc997e2c3ed2828d602864c1e73cbdc1",
+      "bytes": 18908
+    },
+    "inputs/daily.manifest.json": {
+      "sha256": "a78fdee98158fa0b271eb3d749fec217e4fb84caf415d89d52dc291fd244498f",
+      "bytes": 55059
+    }
+  },
+  "scope": "Post-outcome exploratory matched settings; no fresh holdout, causal alpha, multiplicity-adjusted/sequential inference or future-profitability claim",
+  "freeze_sha256": "375ad58a93bfd9ac17da30da08ecd68cb0cd842bf20027b3ffe792392d81089e"
+}

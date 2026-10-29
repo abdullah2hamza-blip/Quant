@@ -1,0 +1,64 @@
+{
+  "status": "completed",
+  "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+  "cases": [
+    {
+      "id": "binance_primary_4h",
+      "policy_cost_paths": 45,
+      "arrays_exact": 272,
+      "all_metrics_initial_states_selections_and_base_trades_exact": true,
+      "bootstrap_intervals_exact": true,
+      "reference_report_sha256": "bd4c8f03777c9524738290b21d713a5f9315d723dc24b65998b45271ee7aa539",
+      "replay_report_sha256": "16a9e783e420d54c104e80a90adc1d73fca8c522156368adf78445ebcf713c44"
+    },
+    {
+      "id": "binance_matched_4h",
+      "policy_cost_paths": 45,
+      "arrays_exact": 272,
+      "all_metrics_initial_states_selections_and_base_trades_exact": true,
+      "bootstrap_intervals_exact": true,
+      "reference_report_sha256": "94f8b037d2559fef3b811a1dbb83b6a150528a808bfad524a29fe46fd7464368",
+      "replay_report_sha256": "93b9bfed5509686761fc4c6960ab6616adfa359d38918720e7093791c38ad0cd"
+    },
+    {
+      "id": "binance_matched_1h",
+      "policy_cost_paths": 45,
+      "arrays_exact": 272,
+      "all_metrics_initial_states_selections_and_base_trades_exact": true,
+      "bootstrap_intervals_exact": true,
+      "reference_report_sha256": "4bcadb6f25e247ffcc8eedf80c3d10340573be945a1c015e2e922f4aaf8c3683",
+      "replay_report_sha256": "dccea11a7ef137dd3c6b9bc1faa9269736d6e7bfee1895a49a46084e306cabd7"
+    },
+    {
+      "id": "binance_matched_1d",
+      "policy_cost_paths": 45,
+      "arrays_exact": 272,
+      "all_metrics_initial_states_selections_and_base_trades_exact": true,
+      "bootstrap_intervals_exact": true,
+      "reference_report_sha256": "f84f1fb62aebf1827d44ca9b53b68a8ed8a49ee14a3c34857f146c0c99555141",
+      "replay_report_sha256": "fe45586c7e789522d8e89600b4f5ecb98f5d7474f3b13c558a39441f8305ac94"
+    },
+    {
+      "id": "bitstamp_primary_4h",
+      "policy_cost_paths": 45,
+      "arrays_exact": 272,
+      "all_metrics_initial_states_selections_and_base_trades_exact": true,
+      "bootstrap_intervals_exact": true,
+      "reference_report_sha256": "f11beea7fd4008559413697478f078a7093fd5fb897a933e0586e40869137112",
+      "replay_report_sha256": "510968f9bd69bfcbe574fde0eb12488ab1a3767057f65ca3ab9fe2672bab05eb"
+    },
+    {
+      "id": "bitstamp_matched_4h",
+      "policy_cost_paths": 45,
+      "arrays_exact": 272,
+      "all_metrics_initial_states_selections_and_base_trades_exact": true,
+      "bootstrap_intervals_exact": true,
+      "reference_report_sha256": "b5bc814342824dc6c7ec58e586026120791a420860fd3ee281d8b1a7974020bd",
+      "replay_report_sha256": "90aee10c2a7e765b8d96b2952f4d6b818760acc9a6f31504eef60986d0225409"
+    }
+  ],
+  "scope": "Retrospective implementation parity, not a new holdout or trading-edge demonstration",
+  "total_policy_cost_paths": 270,
+  "total_arrays_exact": 1632,
+  "conclusion": "Implementation matches the paper; no adaptive edge or future profitability established"
+}

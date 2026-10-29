@@ -1,0 +1,19 @@
+{
+  "id": "b477dff8-2d0a-485b-821e-3a9e29431283",
+  "created": "2026-10-23T19:20:55.492586+00:00",
+  "finished": "2026-10-23T19:21:17.475255+00:00",
+  "kind": "bot_extension_study",
+  "phase": "post_outcome_exploratory",
+  "status": "completed",
+  "config_hash": "",
+  "code_hash": "e10a0e5f235ac0bab998993077bade4cc1f905d2c28315d1679d733ba2d720e2",
+  "data_prefix_hash": "",
+  "details": {
+    "collection": "results\\bot-extension-v1",
+    "scope": "Post-outcome exploratory matched settings; no fresh holdout, causal alpha, multiplicity-adjusted/sequential inference or future-profitability claim",
+    "outcome": {
+      "registry_sha256": "36e058d341ad1ba31192b86dec45e43fa7884e0c0ecab09172ae3eef8cf6c828",
+      "collection": "C:\\Users\\Abdul\\Documents\\Quant\\results\\bot-extension-v1"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "scope": "Retrospective before/after diagnosis2025-01-01 through2026-10-20. Same Binance native daily data and daily close grid,25bps matched cost;30bps legacy-default sensitivity. Not a new holdout or strategy selection.",
+  "legacy_execution": "Exact supplied target_weight,needs_trade and backtest functions extracted from immutable original ZIP; separate corrected loop uses the reviewed self-financing trade solver. The explicit as-supplied loop reproduces its NAV exactly.",
+  "runtime": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "data_sha256": "56ab80047fbac8705dd99677dd74e3a946af33de79072b9ef49e042e249dda25",
+  "legacy_source_sha256": "deb11586daa14ad21e45594b26af2ba205a81d0844a40d4fb2596b73e5ee3f8d",
+  "legacy_results": {
+    "25": {
+      "as_supplied": {
+        "total_return": 0.1412788620240737,
+        "annualized_mean_log_return": 0.07330478190180229,
+        "daily_sampled_maximum_drawdown": -0.24722764586706347,
+        "daily_descriptive_sharpe": 0.441534922789855,
+        "scored_days": 658,
+        "trades_in_window": 99,
+        "mean_daily_exposure": 0.4620027797160025,
+        "negative_cash_bars_full_history": 306
+      },
+      "fee_corrected_no_borrowing": {
+        "total_return": 0.13657657783384214,
+        "annualized_mean_log_return": 0.07101454558320956,
+        "daily_sampled_maximum_drawdown": -0.24713144265919873,
+        "daily_descriptive_sharpe": 0.4311952449374215,
+        "scored_days": 658,
+        "trades_in_window": 99,
+        "mean_daily_exposure": 0.46209730422658873,
+        "negative_cash_bars_full_history": 0
+      }
+    },
+    "30": {
+      "as_supplied": {
+        "total_return": 0.12610235715129825,
+        "annualized_mean_log_return": 0.06587885494667468,
+        "daily_sampled_maximum_drawdown": -0.2541012457028583,
+        "daily_descriptive_sharpe": 0.4078979575661845,
+        "scored_days": 658,
+        "trades_in_window": 99,
+        "mean_daily_exposure": 0.4620626956822313,
+        "negative_cash_bars_full_history": 306
+      },
+      "fee_corrected_no_borrowing": {
+        "total_return": 0.12143225681233272,
+        "annualized_mean_log_return": 0.063573608218877,
+        "daily_sampled_maximum_drawdown": -0.25398103347477496,
+        "daily_descriptive_sharpe": 0.3975132029654706,
+        "scored_days": 658,
+        "trades_in_window": 99,
+        "mean_daily_exposure": 0.46209730422658873,
+        "negative_cash_bars_full_history": 0
+      }
+    }
+  },
+  "paper_fixed_25bps_daily_valuation": {
+    "total_return": 0.026067288605934102,
+    "annualized_mean_log_return": 0.014274566462996427,
+    "daily_sampled_maximum_drawdown": -0.19984063243985206,
+    "daily_descriptive_sharpe": 0.17191542218940145,
+    "scored_days": 658,
+    "paper_full4h_maximum_drawdown": -0.20050057451967473,
+    "trades_in_window": 31
+  },
+  "economic_interpretation": "Different signals, risk targets and timing change behavior. These inspected outcomes establish neither future profitability nor a universal improvement. Legacy cash borrowing is an accounting defect, not valid spot exposure."
+}

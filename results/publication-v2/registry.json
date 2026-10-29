@@ -1,0 +1,16 @@
+{
+  "kind": "followup_v2_result_collection",
+  "created_at": "2026-10-22T05:58:52.333322+00:00",
+  "collection_attempt": "d108b9d6-b48d-4cc4-9aeb-599463421070",
+  "followup": "study",
+  "followup_run_id": "545c451d-dbf7-4fbe-93a5-3dee8723a61b",
+  "cases": 25,
+  "manifest_sha256": "59c559adeea988d93b251be38af4c312512bc898b003bd3c26da58352eeea970",
+  "source_freezes": {
+    "followup": "source-snapshots/followup-freeze-v2.json"
+  },
+  "ledger_json_sha256": "8866b4c633365ade5eae3029f2636fcb48dbc4e0fac3eb08076ab53d2afb0735",
+  "ledger_sqlite_sha256": "be3699c76f173e694edbbb60a529a64fb8f7b6d42496449cbf435ebf47c6ed14",
+  "ledger_snapshot_timing": "Consistent pre-finalization snapshot; this collection's own row is still started. Terminal collection receipt is in the live ledger.",
+  "limits": "Mechanical summary/integrity validation; separate independent outcome review and full replay still required"
+}

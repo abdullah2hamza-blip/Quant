@@ -1,0 +1,172 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Validity and discarded shared structure}
+
+All 24 registered cases completed at the substantive 4,000-world scale. The
+largest observed joint-linear true-null family rejection rate among the 23
+valid-model cases is \MaxValidJointFWER\%, below the nominal 5\% ceiling.
+This checks the implemented model; the proof remains conditional on
+Section~\ref{sec:methods}. No calibration-envelope failure was observed in
+those cases. Zero out of 4,000 has a Wilson upper limit of \ZeroWilsonUpper\%
+within each case, not zero failure probability or simultaneous coverage across
+cases. No stored crossing-inclusion violation was recorded.
+
+Figure~\ref{fig:power} compares matched methods on the same worlds. At effect
+0.05 and equal turnover, joint first-stream power is \EqualPowerJoint\%
+[\EqualJointLower\%, \EqualJointUpper\%], versus \EqualPowerSeparate\%
+[\EqualSeparateLower\%, \EqualSeparateUpper\%] for separate bounds.
+The paired improvement is \EqualPowerGain\ percentage points
+[\EqualGainLower, \EqualGainUpper], using a Wilson interval for the joint-only
+rejection event. Joint and known-cost oracle results coincide because the
+common coefficient cancels exactly.
+
+At half overlap, joint/separate powers are \HalfPowerJoint\%/\HalfPowerSeparate\%.
+At zero reference turnover their proxies coincide. At effect 0.02, even perfect
+cancellation gives only 7.325\% joint power; at effect 0.005 it is 0.475\%.
+With 512 initial calibration observations, half-overlap joint/separate powers
+rise to 74.925\%/18.425\%. Both calibration quality and uncertainty geometry
+matter. These scale-dependent results do not demonstrate generally powerful
+strategy discovery or estimate real trading fees.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{generated/simulation-power.png}
+\caption{Overlap/effect comparison with 95\% Wilson intervals over independent
+worlds. Methods within a case use paired data. Plugin is unguaranteed. Lines
+connect three evaluated points; overlap cases use separate seeds.}\label{fig:power}
+\end{figure}
+
+The invalid symmetric-upper rule gives \UpperBothFWER\% false family rejection
+[\UpperNullLower\%, \UpperNullUpper\%] when the reference trades more
+(Figure~\ref{fig:validity}). A conservative cost convention for each portfolio
+is therefore not necessarily conservative for their difference. Under the
+explicitly invalid cost-shift law, every world's envelope eventually fails
+and plugin false rejection is \PluginDriftFWER\%
+[\PluginDriftLower\%, \PluginDriftUpper\%]. Low joint rejection in that
+particular violation case does not restore its missing stationarity guarantee.
+
+All four Hoeffding, fixed-time and peeked controls have zero rejections in every
+case. Their support bound and the chosen signal/noise scale are too conservative
+to provide an informative empirical optional-stopping comparison. These results
+do not demonstrate peeking inflation, and absence of observed inflation does
+not validate peeking. Appendix~\ref{app:counterexamples} addresses separate
+invalidity mechanisms exactly, without substituting a favorable new simulation.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{generated/simulation-validity.png}
+\caption{Selected null diagnostics; the supplement retains every method/case.
+The final row violates stationary calibration. Upper both and Plugin have no
+asserted guarantee. Zero estimates retain nonzero Wilson upper bounds. The
+dashed line is the declared 5\% family level.}\label{fig:validity}
+\end{figure}
+
+\subsection{Timing, utility and computation}
+
+Equal-turnover joint restricted first-alternative detection time is 298.3
+calendar steps versus 799.9 for separate bounds. The paired mean paper-utility
+difference is 24.946 synthetic units [24.650,25.242], an approximate normal
+Monte Carlo interval. This reflects the registered allocation rule and effect,
+not dollars, compounded wealth, actual execution quality or general optimality
+(Figure~\ref{fig:utility}).
+
+Delay reduces matured labels from 800 to 160 and calibration opportunities,
+so the lower power does not isolate delay alone. Birth cases change the family
+from ten streams to five, give the first birth a larger allowance (0.02 versus
+0.004), and stagger observation counts. Higher first-stream power cannot be
+attributed solely to adaptation or prescreening. Within-case joint/separate
+contrasts remain paired.
+
+Case runtimes sum to 2,715.6 seconds with concurrent local work; this is a
+recorded-host observation, not a controlled speed benchmark. Mixture-array
+bytes are reported separately from whole-process peak memory, which was not
+measured. Saved worlds support independent truth-mask, crossing-time, summary
+and activation checks. Per-trial latent trajectories require the frozen
+generator and seed; they are not stored in the final world arrays.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{generated/simulation-delay-utility.png}
+\caption{Effect-0.05 diagnostics. Time is first any-alternative discovery from
+origin, horizon-censored; Figure~\ref{fig:power} reports first-stream power.
+Approximate Monte Carlo intervals are omitted for degenerate samples.
+Between-case comparisons change several design factors.}\label{fig:utility}
+\end{figure}
+
+\input{sections/followup-results}
+
+\subsection{No demonstrated adaptive Bitcoin edge}
+
+The primary four-hour period has 3,948 scored candles, no missing scored
+intervals and no feature pauses. The selector makes no switches. Its full
+Binance history has 27 decisions, all retaining EMA 50/200. Fixed/adaptive raw
+paths are exactly identical, with the same \PrimaryFixedReturn\% primary
+return (Table~\ref{tab:market}). The ensemble returns \PrimaryEnsembleReturn\%.
+These point estimates do not establish adjusted superiority over the controls.
+
+\begin{table}[tbp]\centering\small
+\input{generated/market-primary-table}
+\caption{Primary retrospective four-hour policies at 25 bps per side. Exposure
+is average closing weight; turnover sums absolute traded notional divided by
+pre-trade wealth. Holdings are inherited and terminal holdings marked.}
+\label{tab:market}
+\end{table}
+
+Bitstamp has two pre-window switches and different inherited wealth, but no
+scored-window switches. Its rebased paths agree to floating-point precision.
+Differences around $10^{-16}$ produce some raw cost-grid sign changes; these
+are not economic break-even costs. A post-outcome note preserves raw artifacts
+and marks per-bar differences within $10^{-12}$ as numerical identity.
+Binance's zero bootstrap interval and Bitstamp's roundoff intervals resample
+an identical historical difference, not a known zero future advantage.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{generated/market-primary-paths.png}
+\caption{Primary rebased wealth and drawdown at assumed 25 bps. Adaptive and
+fixed lines coincide. Passive and risk-controlled books have different
+exposures; no line represents verified historical fills.}\label{fig:marketpaths}
+\end{figure}
+
+On the common 243-day window, hourly and daily adaptive annualized mean-log
+differences are $-9.653\%$ and $-6.681\%$ at base cost. The hourly approximate
+30-day interval is $[-32.175\%,2.610\%]$; the daily interval is
+$[-22.419\%,5.042\%]$.
+Both span losses and gains, including the 2\% materiality threshold. Neither
+material gain nor stable loss is established. There are two hourly and three
+daily switches. These are dependent market observations, not independent
+replications or evidence of a universally best timeframe.
+
+There are only 8.1 nominal 30-day blocks in this 243-day window. This does not
+validate stability or finite-sample coverage. A post-outcome deterministic
+diagnostic in Table~\ref{tab:blockedges} shows the finite-sample edge weighting
+of the specified non-circular resampler: its expected resampled mean differs
+from the observed mean. These are not new intervals, and no better-looking
+correction replaces the registered percentile results.
+
+\begin{table}[tbp]\centering\small
+\input{generated/market-diagnostics/edge-table}
+\caption{Primary 25 bps matched-window mean log differences, annualized linearly.
+The expected resample averages exactly over all possible block starts, including
+the final truncated block. Nominal block count is not an independent sample size.}
+\label{tab:blockedges}
+\end{table}
+
+All five costs leave four-hour comparisons identical and hourly/daily point
+estimates negative. Neither nonidentical case has a cost-grid sign-change
+bracket. The hourly deficit shrinks slightly at larger costs, illustrating why
+reference costs must enter the paired contrast. Direct fee-drag differences
+are small relative to the hourly/daily price/holdings differences; this is
+accounting description, not causal attribution. All cost/control outcomes are
+retained in the supplement.
+
+\begin{table}[tbp]\centering\small
+\input{generated/market-comparisons-table}
+\caption{Base-cost paired results. $\dagger$ denotes historical numerical
+identity, not zero future uncertainty. Other intervals are approximate,
+retrospective and unadjusted.}\label{tab:pairedmarket}
+\end{table}
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{generated/market-paired-intervals.png}
+\caption{All six prespecified application cases. Diamonds mark historical
+identity. Intervals are not sequential or research-selection-adjusted evidence.
+The dashed line is annual log materiality 0.02.}\label{fig:pairedmarket}
+\end{figure}

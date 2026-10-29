@@ -1,0 +1,2168 @@
+{
+  "schema_version": 3,
+  "policy": "legacy_daily",
+  "settings": {
+    "source": "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot\\config\\legacy_daily.json",
+    "sha256": "cbe91d65e0e9803569c0fd90eeef6fa1f182eebb0d2a4283c66ff3793e28af00",
+    "symbol": "BTCUSDT",
+    "interval": "1d",
+    "fast": 9,
+    "slow": 34,
+    "warmup": 150,
+    "initial_equity": 1.0,
+    "vol_target": 0.4,
+    "vol_window": 30,
+    "annualization": 365,
+    "max_weight": 1.0,
+    "band": 0.15,
+    "base_cost": 25.0,
+    "costs": [
+      10.0,
+      25.0,
+      50.0,
+      100.0
+    ],
+    "pairs": [
+      [
+        5,
+        17
+      ],
+      [
+        9,
+        34
+      ],
+      [
+        17,
+        67
+      ]
+    ],
+    "selection_interval": 30,
+    "trailing": 730,
+    "min_history": 150,
+    "initial_pair": [
+      9,
+      34
+    ],
+    "dev_start": "2017-09-01",
+    "dev_end": "2022-12-31",
+    "selection_start": "2023-01-01",
+    "selection_end": "2024-12-31",
+    "reserved_start": "2025-01-01",
+    "reserved_end": "2026-10-20"
+  },
+  "strategy_config": {
+    "schema_version": 1,
+    "strategy": "legacy_daily",
+    "interval": "1d",
+    "length_days": [
+      40,
+      50,
+      60,
+      80,
+      100,
+      150
+    ],
+    "volatility_target": 0.4,
+    "volatility_lookback": 30,
+    "warmup_bars": 150,
+    "rebalance_weight_band": 0.15,
+    "maximum_exposure": 1.0,
+    "base_cost_bps": 25.0,
+    "status": "Exploratory corrected legacy alternative; not a registered paper strategy or fresh confirmation"
+  },
+  "source": {
+    "verified_modules": 4,
+    "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+    "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "audit": {
+    "bars": 3337,
+    "interval": "1d",
+    "first_open": "2017-09-01T00:00:00+00:00",
+    "last_close": "2026-10-20T23:59:59.999000+00:00",
+    "gaps": [],
+    "missing_bars": 0,
+    "zero_volume_bars": 0,
+    "large_close_return_bars": 4,
+    "gap_policy": "carry_and_freeze",
+    "as_of": "2026-10-22T21:41:31.568000+00:00"
+  },
+  "data": {
+    "schema_version": 1,
+    "symbol": "BTCUSDT",
+    "instrument": "spot",
+    "provider": "binance-public-data",
+    "retrieved_at": "2026-10-22T02:56:32.395598+00:00",
+    "requested_start": "2017-09-01",
+    "requested_end": "2026-10-20",
+    "sources": [
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2017-09.zip",
+        "sha256": "c4bc3912fdb4b2c2de57080b58e4912e2e3b1a95c92319f6b93b6fe433a7d8b0",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2017-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2017-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2017-10.zip",
+        "sha256": "30aefbcc8dda4810360a7973e51e48dc610369e266dd6e4f0e55a58a31324e8d",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2017-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2017-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2017-11.zip",
+        "sha256": "4e434af9451501eb144826ca919cfcfea8a21de47257c47edd18f8d68fa362f5",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2017-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2017-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2017-12.zip",
+        "sha256": "45bf1c515b1108668b6bf10f7af323585f30cdf68e096cb71e6e3bb6aa0e9cb4",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2017-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2017-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-01.zip",
+        "sha256": "0e4810cc35a40c0ed0314dbffd9ae0fae7b14721a46a493d686120556e1a1f75",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-02.zip",
+        "sha256": "037b2a4846cde6fb748aeb556e9dd84d964c1418097b979a2a4063fa3e9321e3",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-03.zip",
+        "sha256": "b950843522c5933b14bd41786b735ff329d8bc9ad9f1044b396fc0f2b4502b3a",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-04.zip",
+        "sha256": "4c785201412d4e19acdb00095f1eca6512694bd4a009eb025fdf320a3d17a799",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-05.zip",
+        "sha256": "5fe73fb39b58af85095e9426e4b48438a30f2c8aa30662cafe4036437ba431fe",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-06.zip",
+        "sha256": "9cd929f61b53ef27850b51824f3ae9bfbd32500398f60c8248d2502c8cc272d6",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-07.zip",
+        "sha256": "d1a387dc6b141c2b651fc591247923c4aba79d04e604d9b9ac898c4484a323f6",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-08.zip",
+        "sha256": "dc7607655efcc6a6abeaa012c2b9c25b49f1bcd44662978ce679402fbfb91494",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-09.zip",
+        "sha256": "67306134323d0bdd11fe31af648552083d9f850a1689fcd8078bde392b5f0ec0",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-10.zip",
+        "sha256": "50483687294e6aa225ded362010a0cd6deef013c36413f2b15ebe887ae8324bd",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-11.zip",
+        "sha256": "1765dea3f7e23349d6c5f225b9c0b8a5bb11c924bc8847d53b8965769cf83013",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-12.zip",
+        "sha256": "5fccaa5d3e0fd00ba8592d5c3dce5bf64b41ae3f24c8b309e9329f1582417dfc",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2018-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2018-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-01.zip",
+        "sha256": "445904985d35f847c5c0cb4dc582c10e07967aaa6a424ee30373194b2f815519",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-02.zip",
+        "sha256": "9bcdcbc003cce89ba5917367cd617bdd5abf17e427e4f7625b62f9ab9cc7439c",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-03.zip",
+        "sha256": "385bd09eea4a950b5a509cc2dac8812b5945d4b7edc180a26e43287a5812a7b4",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-04.zip",
+        "sha256": "73774cf609ff32f08ca86e999f72aa6451cf76aaf55dc51a4c7922f20c805bd3",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-05.zip",
+        "sha256": "924f9b192e6817ebc627581d826b1272747e1d36e2725a805e616558a231919e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-06.zip",
+        "sha256": "a027352795179a3255ecf05cf3be4f8030e836deee0dc6a5f14ebdc173b345e2",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-07.zip",
+        "sha256": "52afd0bad5ac94a8cfec04d8922e2ec19806783c3a905d4e1149246561c4a331",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-08.zip",
+        "sha256": "b33dc2c6b606598d8daa5db45d60b568b42d2d4ec33b8f4cd9303da1ee6a58c4",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-09.zip",
+        "sha256": "9d1d72fb97ea4324615b096af10a78c0511ba99569e729e483acd983fd2d0677",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-10.zip",
+        "sha256": "f117e45966cefc57a57ba5c9296bee5b989b125b145bca5459da7201c7191db7",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-11.zip",
+        "sha256": "d8e85503c78a4e8a0289046607f3a9e2b304d511812167ad97b3be82923df39e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-12.zip",
+        "sha256": "1d0cf3ae0ab25953a733b51cc84c21b4685089ed86f278ad9fc7ea3acdd4be17",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2019-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2019-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-01.zip",
+        "sha256": "b77d84cc335299783f64e6ef845ffbab6cc6198a2c396cc1c2c6f8dd1a9db5a5",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-02.zip",
+        "sha256": "808ebfc66e77113d4d5f4ead3a5e0eab4404b62548fa786b07830a4d73972152",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-03.zip",
+        "sha256": "26a062af0efb4dbba71fa3db7a041629ee7cc4cf636ed13a98bf90f8fe0e1d0d",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-04.zip",
+        "sha256": "bf4674f7aaf5baafea9e1d73c95344558b381dfe0c117110a156a0d64d8d5cf5",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-05.zip",
+        "sha256": "7ae5d56d12ce599fbceac80ae04bde51c7421b39f22f924f1f46a53e560a1f75",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-06.zip",
+        "sha256": "19e9ffb7c77e0b8c7bc17d6c47fdc52eb50fcb61ac8d94d32b9c13eb17c700d6",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-07.zip",
+        "sha256": "76fab627ce54ba1457c63e3906e2afd3162cf053283709672fb3eb676b3dde3b",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-08.zip",
+        "sha256": "ff20895a43680f991fa26ee2c9b34376c17487404d57a22f088af8c7ed1fd9ec",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-09.zip",
+        "sha256": "d6f9590a181d58a992e6a3ce2346a4dbc96ecf5310c12df66c57be4818bfc28a",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-10.zip",
+        "sha256": "e240ecb14f1120af34290ed9c7e8937e7cd8a80f0d0bbc88a924f7e520e78cec",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-11.zip",
+        "sha256": "4a7b8bd36409c7ae92916489621e298d750e5dda7be5b7389dc814dffb16a29e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-12.zip",
+        "sha256": "77e2c7fa9a940828b3f36f7212f6def777acfc1402d173bdfad958d2e37ea469",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2020-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-01.zip",
+        "sha256": "6ff53d94f600e2a208882bfd5c00e2133cff8f07e57b7f373af29f85f86e0284",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-02.zip",
+        "sha256": "f18254dc4a70f396494be83a6081cfafd1935aaef42aef5a12f18b0244edeb27",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-03.zip",
+        "sha256": "f43e48b5efc8e0b06e0520b91aad4e5668844c766933c0c5cf403115dba03303",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-04.zip",
+        "sha256": "3dd852f06608173dec98b7210f6a38728ef221f08717b362b4f3f09436e0a5fe",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-05.zip",
+        "sha256": "3122e1ebaa1376937d479964563dced19f850636a700bb7cb97d7872ea8c8f28",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-06.zip",
+        "sha256": "9875e11e890f75ef6eb0188ef7f952e5c0ba6919bd6d72d3da4d6847b84c5ccf",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-07.zip",
+        "sha256": "636f588a6abb568f977aea3ae798f34ced4135f2f96fbc1493a2f9ab54a844eb",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-08.zip",
+        "sha256": "68612e3fb74c184f97e4d3b2e061dd3743156401a6813ab897014b0b35caedd7",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-09.zip",
+        "sha256": "9f6535a0fe8a417b0909d230e4a02f6a9933eb23c770f54c9f6bf140e8d02257",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-10.zip",
+        "sha256": "ba50ff3dab5726ca8b9fa26065fe3a8f612aed4baa978ecdd9d39647cd108684",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-11.zip",
+        "sha256": "64162d8ec11458e9d02f49d8569e47765517852bcf0a908cd4d71211e3912e62",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-12.zip",
+        "sha256": "6231b57d3a3b71fb76a1a34078a01a01275a59870857bf60408ccd3ba4618e75",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2021-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-01.zip",
+        "sha256": "a4a2e0432a8f0b42e2da71ac26599b2e6385b579ca4feba692a95cb897decdcd",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-02.zip",
+        "sha256": "faffa5eadb9ebf0b32742773777596d0dbf3f282e94a16dd05cf1eb7b53a3763",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-03.zip",
+        "sha256": "452129b478585b18931f728f89daed9d2a19d4824b932af7a099366efd4db639",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-04.zip",
+        "sha256": "70413f67212d012ebfd600a6ebf20c03a9c8311bf764ab6d21d1bfd2d21d1b19",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-05.zip",
+        "sha256": "53eee1be2d5b461dabc67645ad706610b0465d8bbacd5f9cd99fc790c68f18f5",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-06.zip",
+        "sha256": "dd5047ce33c16231bcb01f534951a709937bbfe0c0667c61f20f188cf9b94de4",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-07.zip",
+        "sha256": "216567f1a8bc1dbeaada097f7eddff12dafde177c16b26507c762a613a57eb5f",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-08.zip",
+        "sha256": "fc8bd69e95141afb6f83c5a4450c3f6b49c4a1cb16e42d90eb960c3ffa9e766e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-09.zip",
+        "sha256": "68a8357e23277ebd98842fd88d492b012d53dd578b5061cafb8c070c440b235e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-10.zip",
+        "sha256": "5b086535cba596ef1b465f247a26385b4ccfd12673a76f225e2dd9e00dddadfd",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-11.zip",
+        "sha256": "142202b226078f54342c4a1d74c8c6081a98c655d7d6f6fba06314f9c101e2d9",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-12.zip",
+        "sha256": "aff24746afa9a3dbd355dd3462bcef80e59e96ed9aa55f79007532f9e07991bf",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2022-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-01.zip",
+        "sha256": "a9fd53b75add7cc42fb4779a545811606260f79810f3826215d6ebecda11bb36",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-02.zip",
+        "sha256": "13df1e3633f15be3eeba4768d0cc323ef221191002657b53936a6d0fb5e6556f",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-03.zip",
+        "sha256": "1cb1209700ec74fa4592048de2e4ea4a38ab2bd622dfe03f1d6195c249501381",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-04.zip",
+        "sha256": "999e86be73731ebc347c6ada94abceb5e291b65e7f1b4df2ce390af1aa2a4a08",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-05.zip",
+        "sha256": "c343e4689784c29f83d25147a096dd44b6ae5c1063c909f8adda82b56414469d",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-06.zip",
+        "sha256": "634919565c55a29729543d730927ca4b547c0e52d118a38de730f37fdd7617ef",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-07.zip",
+        "sha256": "32363d37de02e6ad8d334ac332c685f8cdf5684733a9f2cfbca40e15e591396b",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-08.zip",
+        "sha256": "8c5e47bfe3f0b0273534379e8ba5c93e69c84d67e8b9a03f293d6621bead2a5f",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-09.zip",
+        "sha256": "2fe68ecad48d6927a9280d89700e991cb6481dc2767698c785f2b2d1c0b14744",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-10.zip",
+        "sha256": "358b83bf0c2a5d5390a4bc4d4ae14fa9df0f56139642ad996c0df0f7bc712400",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-11.zip",
+        "sha256": "fac9823cac7bf56a3a6038c3b79417e949b00c172939e62000451c8c25edd7c1",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-12.zip",
+        "sha256": "056dad65795c9264ef90ee668a4c245e8fec73ebcbb272d28f5596c389913979",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2023-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-01.zip",
+        "sha256": "474c1ce6fbb09e42cfc7231fee249aecc58af2fb5918570ffeba37998926b4a4",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-02.zip",
+        "sha256": "4dae0b3d6b8ea59e39e6493b7964040c52459ea7b0a50b9c2793dcbfae53800d",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-03.zip",
+        "sha256": "f7cd4fcafe79d1fac0c830d5fe152f7b3b9100e7c97e40352188766388af0ae0",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-04.zip",
+        "sha256": "b4a8542c33e5251fb53f8a3352dd4e6f3cde4ac25f2c24935db8089aa1a2c3a0",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-05.zip",
+        "sha256": "0175f696039b9e30f06c6398d218c99e577661ac30424869c648fe9770507248",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-06.zip",
+        "sha256": "8a0f6416c2a83cfa15ba26c688d716fdafe35bb1748dd244f0550e8b2f7e38f7",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-07.zip",
+        "sha256": "9a2963ef6541b4d7630eff8df7b2eaee48ece33180af03c34b0bf92675692899",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-08.zip",
+        "sha256": "df41fe3260920b85da86855b4880f34618982e689081317d3d63b9b3bbcb1d53",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-09.zip",
+        "sha256": "89e459b2a8f4b138dc742d9358c0084fcabf719d40468e156c3149a3635f3359",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-10.zip",
+        "sha256": "d442a5f158d45d9ff7b1584b35023a4161cf915a3857f5e71a2a2e6aa68c69c5",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-11.zip",
+        "sha256": "b197219d9e8b5e933226e1cd24fe2b7bfc3a2e8a3e74e6f7dc08a48f314da8c3",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-12.zip",
+        "sha256": "82ec90210f492694b9d01722f97f579108ee787968b8485b53d736ea735700da",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2024-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-01.zip",
+        "sha256": "3a3eb1b723d944deb4dbef5ae361bbe39340a17fe987fe22e397ef03dca268d2",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-02.zip",
+        "sha256": "27cfde08c9eb8e3801fb049e3be351a3e50ab46abd8553c24023fa98ea5e919e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-03.zip",
+        "sha256": "5874e405f55c46f040de1a8ea9daae583dc12b5bcaef6078b21aae9c627cedcc",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-04.zip",
+        "sha256": "8068a571425857cb0f5f71f75e733d3bc1e731362a09f84f835bbea6e087aeb2",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-05.zip",
+        "sha256": "2b87aa0c63641ba1e954855bcfed96d7fc4eb21efe7936f354ff74e8e06cfcea",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-06.zip",
+        "sha256": "dc4bbe2c75f04372b909febe8e6b379b053f88423d78cdb3ad8b0be3a66d6ede",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-07.zip",
+        "sha256": "1ea64a346f6be0aaf455eb1ce107e6d38367164d97d0dd3719b9f9bb239796f4",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-08.zip",
+        "sha256": "6720b573210cfbb98765f4a0de6826033d203fda42a6c8364455144b703ceace",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-09.zip",
+        "sha256": "9934e6d98a90139039bb070a90ba409ff1832ad80116920adcf088090ce4c996",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-10.zip",
+        "sha256": "3597639a18f343c768e374157e8bd08dd046bb33693495ff4e13380abac1260e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-11.zip",
+        "sha256": "9eded1225f9e3f3d4f127fad46111eb403553c1125cf6d11995e69d91d037290",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-12.zip",
+        "sha256": "b12a106198f3be3ba5916195f75c1c6d34d8e5302ab77b8fd7c4b1b58b6144f4",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2025-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-01.zip",
+        "sha256": "b7775ddec3ddd3edafc6ad5abcc94d6ab8b8f063a0911d8a3f3daae6a8bbad2e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-02.zip",
+        "sha256": "f8806308002477a1a28d6cc55ec9ea7bd91bfd4b44c04500d9fc4aec50fd9464",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-03.zip",
+        "sha256": "b81fb1942f9653564f355e3bd62dc06e0552d1c64bc966f7dce5a9c1f8780c47",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-04.zip",
+        "sha256": "1f7da05da9f9a8f30945bde41872ca649c61d6e6e324e916f4c3cbafa0a9276a",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-05.zip",
+        "sha256": "978936e8f1f80b570248f8d4478d6fe08d94b98bc1c7d372feb27573ff466cde",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-06.zip",
+        "sha256": "7020d4d850a875b93f0b0fa6df4a4c36ab615273e2ab03f9e896852330dad77e",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-07.zip",
+        "sha256": "74ddc3e39aae9445b9f9dae00d53fe2ce6ff503ee469417e207a8f5970bad11a",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-08.zip",
+        "sha256": "fd8374a811ac7d3f4144d9c857c4f10796402c178316a25ed0c2f0ca6e16a8c1",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-09.zip",
+        "sha256": "4944279ced64d3b1822c7c535043f2bbf41bc97d9000b8d857753352c1949769",
+        "checksum_url": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-01.zip",
+        "sha256": "544d2565f54cb6347dde9c65301ecd6a5bc9128a95deacad1b86d0d36ca6c1cc",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-01.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-01.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-02.zip",
+        "sha256": "97f00f9530c1ee2f091bb0fd157c2097e676cb4882c568490b2fed9d17d048da",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-02.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-02.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-03.zip",
+        "sha256": "4fad26c8ad8e581d66200b523a7b0fc723571cfe6c760f30f16497eb920a5d1b",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-03.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-03.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-04.zip",
+        "sha256": "7fbfe9a84ad5d0c2936b7cb489ea09f620e0813033a7d40043dd989f614175e1",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-04.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-04.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-05.zip",
+        "sha256": "af132ef68300bdb34acbdab1aec6d44d8b0f54d9e6f64f5f11f6b252f67a7ec7",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-05.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-05.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-06.zip",
+        "sha256": "a9bfe3f7405ad80ca56d0719faf533dd66a405f7cea562b5afeb4ab220ae6982",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-06.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-06.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-07.zip",
+        "sha256": "0ddcb0b01671d17e7ee9956fdb19f594f408e6b6b60c632fc29ac4c9dddf05b8",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-07.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-07.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-08.zip",
+        "sha256": "0478666aeb380f07ada5c94b667188b6d622c3e7c376b42960c0504484965ad9",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-08.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-08.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-09.zip",
+        "sha256": "abc8f686e5559268bd4fd8cdac4b478f9c0810fe26944fa582282becb33ee2f4",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-09.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-09.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-10.zip",
+        "sha256": "7980c0fc7d3e7ef67fc5b9abb0b6dce5668b8cbf76c4828616aa1c315498a5fa",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-10.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-10.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-11.zip",
+        "sha256": "6d01694528255af58912b5d72b48bcd0ad70e44afa625960af0bd407efe7ac84",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-11.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-11.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-12.zip",
+        "sha256": "6f116c20200f77a156f93710d4c96c007594634c6771e71741a9dbd9f4fc995b",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-12.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-12.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-13.zip",
+        "sha256": "bee3a7d79cb4be4049a9b5dd5ef85c518ebb5e7b711d8fe13216d8ea550b2525",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-13.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-13.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-14.zip",
+        "sha256": "f6b81a85f0cb71e819e848459be1204d1a68857608f8a4789b0f53a4b4af1bc1",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-14.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-14.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-15.zip",
+        "sha256": "0861fcb0775f75f1af7b5b875e272098cf7650d3a8689d6f368c2382cd4a33be",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-15.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-15.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-16.zip",
+        "sha256": "a45767513118a5736df58561dd3e4ff01e44144f18e78ee8731b215cfa59b385",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-16.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-16.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-17.zip",
+        "sha256": "431913f651322f4e8054f75fd23abfad9defb7cb0214c2a531a76f984802dbad",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-17.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-17.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-18.zip",
+        "sha256": "29e500f7e5cfa3fc4a97f88ab56d16be5db9a79e170b678c356262721f6bfd36",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-18.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-18.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-19.zip",
+        "sha256": "50742ef26e59bf3fc771e7de72d8e91001bb4b399abdfb6ed8dca1f6a7c7a903",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-19.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-19.zip"
+      },
+      {
+        "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-20.zip",
+        "sha256": "f1177f718234b1a8837bf0272b23e641e4927434949859d362d3ce5996b2aac5",
+        "checksum_url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-20.zip.CHECKSUM",
+        "cache_path": "C:\\Users\\Abdul\\Documents\\Quant\\data\\raw\\BTCUSDT-1d-2026-10-20.zip"
+      }
+    ],
+    "audit": {
+      "bars": 3337,
+      "interval": "1d",
+      "first_open": "2017-09-01T00:00:00+00:00",
+      "last_close": "2026-10-20T23:59:59.999000+00:00",
+      "gaps": [],
+      "missing_bars": 0,
+      "zero_volume_bars": 0,
+      "large_close_return_bars": 4,
+      "gap_policy": "carry_and_freeze",
+      "as_of": "2026-10-22T02:56:32.379000+00:00"
+    },
+    "quarantine_enabled": true,
+    "quarantined_rows": [],
+    "revision_policy": "immutable local snapshot; checksums are integrity evidence, not proof of point-in-time availability",
+    "interval": "1d",
+    "csv_sha256": "56ab80047fbac8705dd99677dd74e3a946af33de79072b9ef49e042e249dda25",
+    "local_path": "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot\\data\\btc-1d.csv"
+  },
+  "case_id": "legacy_daily_exploratory",
+  "score_start": "2025-01-01T00:00:00+00:00",
+  "score_end": "2026-10-20T23:59:59.999000+00:00",
+  "scored_bars": 658,
+  "scenarios": {
+    "25": {
+      "metrics": {
+        "legacy_daily": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.11878399817929419,
+          "cagr": 0.06424125671852633,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0001705811239805249,
+          "annualized_mean_log_return": 0.06226211025289159,
+          "annualized_volatility": 0.21840912156763606,
+          "descriptive_sharpe": 0.3936153956268701,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.2516628506306685,
+          "time_in_market": 0.6519756838905775,
+          "mean_exposure": 0.45765744050749957,
+          "turnover": 26.71387447678888,
+          "trade_count": 101,
+          "costs_in_start_nav_units": 0.06685407658424561,
+          "ending_exposure": 0.8531526332950333,
+          "estimated_exit_adjusted_return": 0.11639776439395666,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "paper_ema_daily_reference": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.02491531594428742,
+          "cagr": -0.013898408015264197,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.834491841071218e-05,
+          "annualized_mean_log_return": -0.013995895219909944,
+          "annualized_volatility": 0.1439331121593865,
+          "descriptive_sharpe": -0.02537343338182839,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.22443852339548553,
+          "time_in_market": 0.4848024316109423,
+          "mean_exposure": 0.27783961566616233,
+          "turnover": 15.234551750828519,
+          "trade_count": 35,
+          "costs_in_start_nav_units": 0.03681480089596365,
+          "ending_exposure": 0.6253508797164509,
+          "estimated_exit_adjusted_return": -0.026439741106718095,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.1127196075916902,
+          "cagr": -0.06418761527140536,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.00018175415414271797,
+          "annualized_mean_log_return": -0.06634026626209205,
+          "annualized_volatility": 0.4310813726616866,
+          "descriptive_sharpe": 0.06139654627149659,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5297176591351063,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.11493780857271108,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "legacy_volatility_target": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.1520130532947156,
+          "cagr": -0.08740798253033237,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.0002505927604026289,
+          "annualized_mean_log_return": -0.09146635754695955,
+          "annualized_volatility": 0.37570604197623875,
+          "descriptive_sharpe": -0.05486926620968112,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5168249724687428,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.8960728837502171,
+          "turnover": 1.8468830470006532,
+          "trade_count": 9,
+          "costs_in_start_nav_units": 0.003729226504544647,
+          "ending_exposure": 0.9609431153957165,
+          "estimated_exit_adjusted_return": -0.15405022134067037,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "initial_state": {
+        "legacy_daily": {
+          "nav": 11.568385877192634,
+          "cash": 3.31223530182015,
+          "coins": 8.822935982914939e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "paper_ema_daily_reference": {
+          "nav": 5.123752469856217,
+          "cash": 5.123752469856217,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 7.857157933452682,
+          "cash": 0.0,
+          "coins": 8.396552463722196e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "legacy_volatility_target": {
+          "nav": 6.364248183442785,
+          "cash": 0.5742281049248305,
+          "coins": 6.187505427158625e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "legacy_minus_daily_ema": {
+        "annualized_mean_log_difference": 0.07625800547280136,
+        "cumulative_log_difference": 0.1374733358934337,
+        "materiality_annual_log": 0.02,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 30,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0002089260423912366,
+            "mean_difference_ci": [
+              -0.00032193252985798326,
+              0.0006302121233060068
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.07625800547280136,
+            "annualized_mean_difference_ci": [
+              -0.11750537339816389,
+              0.2300274250066925
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 15,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0002089260423912366,
+            "mean_difference_ci": [
+              -0.00031132465199840793,
+              0.0006651533773451818
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.07625800547280136,
+            "annualized_mean_difference_ci": [
+              -0.1136334979794189,
+              0.24278098273099136
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 60,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0002089260423912366,
+            "mean_difference_ci": [
+              -0.0002894972773602715,
+              0.0006363255951180591
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.07625800547280136,
+            "annualized_mean_difference_ci": [
+              -0.1056665062364991,
+              0.23225884221809157
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "realized_paths_numerically_identical": false,
+        "inference_status": "Approximate retrospective, unadjusted dependent-data intervals; no anytime guarantee",
+        "future_profitability_established": false,
+        "primary_lower_exceeds_materiality": false
+      }
+    },
+    "0": {
+      "metrics": {
+        "legacy_daily": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.19608970618575983,
+          "cagr": 0.10442550693691982,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0002721241001333317,
+          "annualized_mean_log_return": 0.09932529654866606,
+          "annualized_volatility": 0.21842763013092562,
+          "descriptive_sharpe": 0.563313631328279,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.21589575877195988,
+          "time_in_market": 0.6519756838905775,
+          "mean_exposure": 0.45765744050749957,
+          "turnover": 26.726259651782847,
+          "trade_count": 101,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.8531526332950332,
+          "estimated_exit_adjusted_return": 0.19608970618575983,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "paper_ema_daily_reference": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.012965697392309794,
+          "cagr": 0.00717158476639422,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 1.9578058201619584e-05,
+          "annualized_mean_log_return": 0.007145991243591148,
+          "annualized_volatility": 0.14405494304606464,
+          "descriptive_sharpe": 0.12152296485230146,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.20583746426173588,
+          "time_in_market": 0.4848024316109423,
+          "mean_exposure": 0.27783961566616233,
+          "turnover": 15.245778773134953,
+          "trade_count": 35,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.6253508797164508,
+          "estimated_exit_adjusted_return": 0.012965697392309794,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11271960759169031,
+          "cagr": -0.06418761527140542,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.0001817541541427179,
+          "annualized_mean_log_return": -0.06634026626209204,
+          "annualized_volatility": 0.43108137266168667,
+          "descriptive_sharpe": 0.061396546271496585,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5297176591351062,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.11271960759169031,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "legacy_volatility_target": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.14808756386973732,
+          "cagr": -0.08506698241108883,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.00024357375673173098,
+          "annualized_mean_log_return": -0.08890442120708181,
+          "annualized_volatility": 0.37585464277433217,
+          "descriptive_sharpe": -0.047891533808617937,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5151565243233704,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.8960728837502173,
+          "turnover": 1.8474691334268418,
+          "trade_count": 9,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.9609431153957166,
+          "estimated_exit_adjusted_return": -0.14808756386973732,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "initial_state": {
+        "legacy_daily": {
+          "nav": 13.79347092787859,
+          "cash": 3.9493168560380525,
+          "coins": 0.0001051995604838905,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "paper_ema_daily_reference": {
+          "nav": 5.52195134621949,
+          "cash": 5.52195134621949,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 7.876800828286314,
+          "cash": 0.0,
+          "coins": 8.417543844881501e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "legacy_volatility_target": {
+          "nav": 6.623685596527077,
+          "cash": 0.5976364085874004,
+          "coins": 6.439737954111819e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "legacy_minus_daily_ema": {
+        "annualized_mean_log_difference": 0.09217930530507412,
+        "cumulative_log_difference": 0.16617529559106514,
+        "materiality_annual_log": 0.02,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 30,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0002525460419317099,
+            "mean_difference_ci": [
+              -0.0002626983355767933,
+              0.0006639632055406535
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.09217930530507412,
+            "annualized_mean_difference_ci": [
+              -0.09588489248552956,
+              0.2423465700223385
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 15,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0002525460419317099,
+            "mean_difference_ci": [
+              -0.0002532310962911272,
+              0.0007031312616787113
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.09217930530507412,
+            "annualized_mean_difference_ci": [
+              -0.09242935014626141,
+              0.25664291051272964
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 60,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0002525460419317099,
+            "mean_difference_ci": [
+              -0.00023163823195532083,
+              0.0006809004380440371
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.09217930530507412,
+            "annualized_mean_difference_ci": [
+              -0.08454795466369211,
+              0.24852865988607356
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "realized_paths_numerically_identical": false,
+        "inference_status": "Approximate retrospective, unadjusted dependent-data intervals; no anytime guarantee",
+        "future_profitability_established": false,
+        "primary_lower_exceeds_materiality": false
+      }
+    },
+    "10": {
+      "metrics": {
+        "legacy_daily": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.16454618357931894,
+          "cagr": 0.08817282146650608,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.00023150679199767922,
+          "annualized_mean_log_return": 0.08449997907915291,
+          "annualized_volatility": 0.21840355931968589,
+          "descriptive_sharpe": 0.495456664186587,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.23040271163568327,
+          "time_in_market": 0.6519756838905775,
+          "mean_exposure": 0.45765744050749957,
+          "turnover": 26.721293279265915,
+          "trade_count": 101,
+          "costs_in_start_nav_units": 0.02727201856109947,
+          "ending_exposure": 0.8531526332950334,
+          "estimated_exit_adjusted_return": 0.1635526479362046,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "paper_ema_daily_reference": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.0023604417860195737,
+          "cagr": -0.0013100525101097681,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -3.5915380249049053e-06,
+          "annualized_mean_log_return": -0.0013109113790902905,
+          "annualized_volatility": 0.14398210089050606,
+          "descriptive_sharpe": 0.06277867677543619,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.2122249407623129,
+          "time_in_market": 0.4848024316109423,
+          "mean_exposure": 0.27783961566616233,
+          "turnover": 15.241282978116516,
+          "trade_count": 35,
+          "costs_in_start_nav_units": 0.014891123617646981,
+          "ending_exposure": 0.6253508797164508,
+          "estimated_exit_adjusted_return": -0.0029843165613886447,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11271960759169031,
+          "cagr": -0.06418761527140542,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.00018175415414272238,
+          "annualized_mean_log_return": -0.06634026626209368,
+          "annualized_volatility": 0.4310813726616866,
+          "descriptive_sharpe": 0.06139654627149288,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5297176591351062,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.11360688798409868,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "legacy_volatility_target": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.14965996851235586,
+          "cagr": -0.08600412186640942,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.00024638141709266287,
+          "annualized_mean_log_return": -0.08992921723882194,
+          "annualized_volatility": 0.3757947529274992,
+          "descriptive_sharpe": -0.050682519046581415,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5158245989275685,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.8960728837502173,
+          "turnover": 1.8472330669908572,
+          "trade_count": 9,
+          "costs_in_start_nav_units": 0.0014936656248865975,
+          "ending_exposure": 0.9609431153957166,
+          "estimated_exit_adjusted_return": -0.15047709691135924,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "initial_state": {
+        "legacy_daily": {
+          "nav": 12.856218652529618,
+          "cash": 3.680964805364973,
+          "coins": 9.805135768962816e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "paper_ema_daily_reference": {
+          "nav": 5.359089963348265,
+          "cash": 5.359089963348265,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 7.868931896389926,
+          "cash": 0.0,
+          "coins": 8.409134710171332e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "legacy_volatility_target": {
+          "nav": 6.518663235321368,
+          "cash": 0.5881605381135273,
+          "coins": 6.337632189031205e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "legacy_minus_daily_ema": {
+        "annualized_mean_log_difference": 0.08581089045824292,
+        "cumulative_log_difference": 0.15469470115485984,
+        "materiality_annual_log": 0.02,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 30,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.00023509833002258334,
+            "mean_difference_ci": [
+              -0.0002866922345754448,
+              0.0006510606577501782
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.08581089045824292,
+            "annualized_mean_difference_ci": [
+              -0.10464266562003735,
+              0.23763714007881503
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 15,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.00023509833002258334,
+            "mean_difference_ci": [
+              -0.00027479023301157056,
+              0.0006869599675567829
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.08581089045824292,
+            "annualized_mean_difference_ci": [
+              -0.10029843504922326,
+              0.25074038815822575
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 60,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.00023509833002258334,
+            "mean_difference_ci": [
+              -0.00025419063166173984,
+              0.0006599696079967192
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.08581089045824292,
+            "annualized_mean_difference_ci": [
+              -0.09277958055653504,
+              0.24088890691880252
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "realized_paths_numerically_identical": false,
+        "inference_status": "Approximate retrospective, unadjusted dependent-data intervals; no anytime guarantee",
+        "future_profitability_established": false,
+        "primary_lower_exceeds_materiality": false
+      }
+    },
+    "50": {
+      "metrics": {
+        "legacy_daily": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.046474986904938564,
+          "cagr": 0.025519248276529034,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 6.903854247833639e-05,
+          "annualized_mean_log_return": 0.025199068004592783,
+          "annualized_volatility": 0.21852923780555372,
+          "descriptive_sharpe": 0.2239030165555851,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.28675423044076964,
+          "time_in_market": 0.6519756838905775,
+          "mean_exposure": 0.45765744050749957,
+          "turnover": 26.7015916161983,
+          "trade_count": 101,
+          "costs_in_start_nav_units": 0.12944029257090708,
+          "ending_exposure": 0.8531526332950334,
+          "estimated_exit_adjusted_return": 0.04201097245116192,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "paper_ema_daily_reference": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.06137776071150858,
+          "cagr": -0.03452649632359517,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -9.62647139755032e-05,
+          "annualized_mean_log_return": -0.03513662060105867,
+          "annualized_volatility": 0.14401184059861977,
+          "descriptive_sharpe": -0.17206189626199508,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.24437835545268238,
+          "time_in_market": 0.4848024316109423,
+          "mean_exposure": 0.27783961566616233,
+          "turnover": 15.22336618367478,
+          "trade_count": 35,
+          "costs_in_start_nav_units": 0.07228030153890994,
+          "ending_exposure": 0.6253508797164509,
+          "estimated_exit_adjusted_return": -0.06431260192681088,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.11271960759169031,
+          "cagr": -0.06418761527140542,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.0001817541541427166,
+          "annualized_mean_log_return": -0.06634026626209157,
+          "annualized_volatility": 0.43108137266168667,
+          "descriptive_sharpe": 0.06139654627149787,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5297176591351062,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.11715600955373184,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "legacy_volatility_target": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.15592022900795333,
+          "cagr": -0.08974285786392754,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.0002576113578405129,
+          "annualized_mean_log_return": -0.09402814561178721,
+          "annualized_volatility": 0.3755611882578392,
+          "descriptive_sharpe": -0.06184786694823779,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5184876561703972,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.8960728837502171,
+          "turnover": 1.8463105394057233,
+          "trade_count": 9,
+          "costs_in_start_nav_units": 0.00744207994539757,
+          "ending_exposure": 0.9609431153957164,
+          "estimated_exit_adjusted_return": -0.15997579223185143,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "initial_state": {
+        "legacy_daily": {
+          "nav": 9.702229824137845,
+          "cash": 2.777921524319029,
+          "coins": 7.399662626975738e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "paper_ema_daily_reference": {
+          "nav": 4.754245204331912,
+          "cash": 4.754245204331912,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 7.837612764463995,
+          "cash": 0.0,
+          "coins": 8.375665517295028e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "legacy_volatility_target": {
+          "nav": 6.114984321027498,
+          "cash": 0.5517377319514207,
+          "coins": 5.945163919248608e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "legacy_minus_daily_ema": {
+        "annualized_mean_log_difference": 0.0603356886056523,
+        "cumulative_log_difference": 0.10876954274662798,
+        "materiality_annual_log": 0.02,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 30,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0001653032564538419,
+            "mean_difference_ci": [
+              -0.0003857531994373834,
+              0.0005897792213638648
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.0603356886056523,
+            "annualized_mean_difference_ci": [
+              -0.14079991779464493,
+              0.21526941579781064
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 15,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0001653032564538419,
+            "mean_difference_ci": [
+              -0.0003692754171799294,
+              0.0006316175464898939
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.0603356886056523,
+            "annualized_mean_difference_ci": [
+              -0.13478552727067422,
+              0.23054040446881127
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 60,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 0.0001653032564538419,
+            "mean_difference_ci": [
+              -0.00034684689089715254,
+              0.000597731131292086
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.0603356886056523,
+            "annualized_mean_difference_ci": [
+              -0.12659911517746067,
+              0.2181718629216114
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "realized_paths_numerically_identical": false,
+        "inference_status": "Approximate retrospective, unadjusted dependent-data intervals; no anytime guarantee",
+        "future_profitability_established": false,
+        "primary_lower_exceeds_materiality": false
+      }
+    },
+    "100": {
+      "metrics": {
+        "legacy_daily": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.08442664193957095,
+          "cagr": -0.04775049028522791,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.0001340498314899728,
+          "annualized_mean_log_return": -0.04892818849384008,
+          "annualized_volatility": 0.21918241445226985,
+          "descriptive_sharpe": -0.11428527785898898,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.3525130061998756,
+          "time_in_market": 0.6519756838905775,
+          "mean_exposure": 0.45765744050749957,
+          "turnover": 26.677331306078578,
+          "trade_count": 101,
+          "costs_in_start_nav_units": 0.24288374722248587,
+          "ending_exposure": 0.8531526332950335,
+          "estimated_exit_adjusted_return": -0.09223788015361134,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "paper_ema_daily_reference": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.13025858386862565,
+          "cagr": -0.07449443338571315,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.00021209625281226236,
+          "annualized_mean_log_return": -0.07741513227647576,
+          "annualized_volatility": 0.14476535315474667,
+          "descriptive_sharpe": -0.4624022194444412,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.2827450979907722,
+          "time_in_market": 0.4848024316109423,
+          "mean_exposure": 0.27783961566616233,
+          "turnover": 15.201118702598013,
+          "trade_count": 35,
+          "costs_in_start_nav_units": 0.1393619098348751,
+          "ending_exposure": 0.6253508797164508,
+          "estimated_exit_adjusted_return": -0.13569751946566144,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "cash": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": 0.0,
+          "cagr": 0.0,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": 0.0,
+          "annualized_mean_log_return": 0.0,
+          "annualized_volatility": 0.0,
+          "descriptive_sharpe": null,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": 0.0,
+          "time_in_market": 0.0,
+          "mean_exposure": 0.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 0.0,
+          "estimated_exit_adjusted_return": 0.0,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "buy_hold": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.1127196075916902,
+          "cagr": -0.06418761527140536,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.00018175415414271965,
+          "annualized_mean_log_return": -0.06634026626209268,
+          "annualized_volatility": 0.43108137266168656,
+          "descriptive_sharpe": 0.06139654627149518,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5297176591351062,
+          "time_in_market": 1.0,
+          "mean_exposure": 1.0,
+          "turnover": 0.0,
+          "trade_count": 0,
+          "costs_in_start_nav_units": 0.0,
+          "ending_exposure": 1.0,
+          "estimated_exit_adjusted_return": -0.12159241151577327,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        },
+        "legacy_volatility_target": {
+          "bars": 658,
+          "start": "2025-01-01T00:00:00+00:00",
+          "end": "2026-10-20T23:59:59.999000+00:00",
+          "total_return": -0.16368033358958378,
+          "cagr": -0.09439450911311273,
+          "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+          "mean_log_return": -0.0002716479679263317,
+          "annualized_mean_log_return": -0.09915150829311108,
+          "annualized_volatility": 0.3752827310950922,
+          "descriptive_sharpe": -0.07580745007231256,
+          "regular_grid_statistics_available": true,
+          "maximum_drawdown": -0.5217959539921718,
+          "time_in_market": 1.0,
+          "mean_exposure": 0.8960728837502171,
+          "turnover": 1.8452061128789667,
+          "trade_count": 9,
+          "costs_in_start_nav_units": 0.014819302069461917,
+          "ending_exposure": 0.9609431153957165,
+          "estimated_exit_adjusted_return": -0.171716889846655,
+          "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+          "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+        }
+      },
+      "initial_state": {
+        "legacy_daily": {
+          "nav": 6.824410474692313,
+          "cash": 1.9539504930373701,
+          "coins": 5.204817454961682e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "paper_ema_daily_reference": {
+          "nav": 4.0931859012308465,
+          "cash": 4.0931859012308465,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "cash": {
+          "nav": 1.0,
+          "cash": 1.0,
+          "coins": 0.0,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "buy_hold": {
+          "nav": 7.798812701273579,
+          "cash": 0.0,
+          "coins": 8.334201826615349e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        },
+        "legacy_volatility_target": {
+          "nav": 5.645377146561925,
+          "cash": 0.5093664054286714,
+          "coins": 5.4885982956455225e-05,
+          "valuation_time": "2024-12-31T23:59:59.999000+00:00"
+        }
+      },
+      "legacy_minus_daily_ema": {
+        "annualized_mean_log_difference": 0.02848694378263656,
+        "cumulative_log_difference": 0.051354545230068105,
+        "materiality_annual_log": 0.02,
+        "bootstrap_by_block_days": {
+          "30": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 30,
+            "effective_block_count": 21.933333333333334,
+            "blocks_per_draw": 22,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 7.804642132229195e-05,
+            "mean_difference_ci": [
+              -0.000511046823790759,
+              0.0005189977269436826
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.02848694378263656,
+            "annualized_mean_difference_ci": [
+              -0.18653209068362706,
+              0.18943417033444418
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "15": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 15,
+            "effective_block_count": 43.86666666666667,
+            "blocks_per_draw": 44,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 7.804642132229195e-05,
+            "mean_difference_ci": [
+              -0.0004978998875438673,
+              0.0005685454080029935
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.02848694378263656,
+            "annualized_mean_difference_ci": [
+              -0.18173345895351156,
+              0.20751907392109264
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          },
+          "60": {
+            "available": true,
+            "method": "non-circular moving-block percentile bootstrap",
+            "observations": 658,
+            "block_length": 60,
+            "effective_block_count": 10.966666666666667,
+            "blocks_per_draw": 11,
+            "draws": 5000,
+            "seed": 20261022,
+            "confidence_level": 0.95,
+            "mean_difference": 7.804642132229195e-05,
+            "mean_difference_ci": [
+              -0.000471624707598233,
+              0.000526346168924568
+            ],
+            "annualization": 365.0,
+            "annualized_mean_difference": 0.02848694378263656,
+            "annualized_mean_difference_ci": [
+              -0.17214301827335504,
+              0.19211635165746732
+            ],
+            "caveats": [
+              "Inputs must be paired over identical observation intervals.",
+              "Approximate inference assumes an adequately stable weakly dependent process.",
+              "Block length is prespecified; check sensitivity without selecting the best interval.",
+              "Effective block count is a heuristic, not a proven independent sample size.",
+              "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+              "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+            ]
+          }
+        },
+        "realized_paths_numerically_identical": false,
+        "inference_status": "Approximate retrospective, unadjusted dependent-data intervals; no anytime guarantee",
+        "future_profitability_established": false,
+        "primary_lower_exceeds_materiality": false
+      }
+    }
+  },
+  "interpretation": "Exploratory legacy SMA alternative with corrected execution. Not a paper-registered strategy or fresh holdout. Future profitability unproven.",
+  "execution_differences_from_supplied_v2": [
+    "All150 daily candles required at inception and after gaps",
+    "Band checked against opening valuation, not prior close",
+    "Exact post-fee weights; no cash borrowing"
+  ],
+  "comparison_scope": "Daily EMA control is the paper clock-scaled9/34 rule at20% risk; it is not the native4h reference. Risk targets differ."
+}

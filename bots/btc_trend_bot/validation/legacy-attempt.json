@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-22T21:37:41.450320+00:00",
+  "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+  "finished_at": "2026-10-22T21:37:43.064949+00:00",
+  "outputs": {
+    "paths.npz": "d735e4432b0f18c24219a5ca231d4c68478620ce71f0a27f45c7a3f24c2a63ca",
+    "report.json": "79c135ca281bf02680f2b7f6cc00d7c86d16ce042d49853f9956ac2879a190e1",
+    "selections.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "trades.json": "13327552cb199c7f899311b8acca42e13d6cea2780500437550d1ce1bed59c33"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "observable_filtration_only": {
+    "latent_values": [
+      0.052631578947368425,
+      -1.0
+    ],
+    "probabilities": [
+      0.95,
+      0.05
+    ],
+    "observable_conditional_mean": 0.0,
+    "constant_observed_lower_proxy": 0.052631578947368425,
+    "simultaneous_domination_probability": 0.95,
+    "observed_crossing_probability": 1.0,
+    "crossing_after_steps": 116,
+    "nominal_alpha_plus_delta": 0.1,
+    "failure": "Past latent utilities reveal the persistent hidden state; an observable-filtration null is insufficient for latent-wealth domination."
+  },
+  "symmetric_upper_cost": {
+    "gross_difference": -0.1,
+    "true_theta": 0.1,
+    "candidate_turnover": 0.0,
+    "reference_turnover": 1.0,
+    "latent_net_difference": 0.0,
+    "valid_joint_proxy": -0.1,
+    "invalid_symmetric_upper_proxy": 0.1,
+    "failure": "An upper cost for the benchmark is optimistic for candidate-minus-benchmark utility."
+  },
+  "pointwise_envelopes": {
+    "pointwise_coverage": 0.99,
+    "steps": 800,
+    "probability_of_any_independent_envelope_failure": 0.9996777776371197,
+    "latent_utility": 0.0,
+    "observed_proxy": "one on an independent envelope failure, zero otherwise",
+    "stake": 0.8,
+    "alpha": 0.05,
+    "failures_required_for_rejection": 6,
+    "exact_false_rejection_probability_by_horizon": 0.810143551899295,
+    "failure": "Pointwise coverage cannot be charged once as simultaneous coverage."
+  },
+  "peeked_delayed_outcomes": {
+    "null_increment_values": [
+      -0.5,
+      0.5
+    ],
+    "probabilities": [
+      0.5,
+      0.5
+    ],
+    "invalid_stake_rule": "stake .5 after seeing a positive increment, zero after seeing a negative increment",
+    "expected_one_step_factor": 1.125,
+    "failure": "A bet chosen using the unmatured/current outcome is not predictable."
+  },
+  "reused_prescreen": {
+    "independent_null_labels_per_search": 10,
+    "original_label_mean": 0.0,
+    "selected_max_label_mean": 0.998046875,
+    "stake": 0.8,
+    "expected_invalid_one_step_factor": 1.7984375,
+    "searches": 6,
+    "alpha": 0.05,
+    "false_rejection_probability_lower_bound": 0.9941549115019317,
+    "failure": "Select the maximum after observing each batch of null labels, then reuse that selected label as fresh evidence. On all-positive-selected batches the wealth crosses the stated threshold."
+  }
+}

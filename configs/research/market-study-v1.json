@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "study_id": "btc-market-v1",
+  "config": "configs/research/btc-trend.toml",
+  "materiality_annual_log": 0.02,
+  "base_cost_bps": 25,
+  "costs_bps": [25, 0, 10, 50, 100],
+  "bootstrap": {"draws": 5000, "block_days": [30, 15, 60], "seed": 20261022, "confidence": 0.95},
+  "cases": [
+    {"id": "binance_primary_4h", "data": "data/btc-4h-through-2026-10-20.csv", "independent_audit": "docs/publication/data-audit-v1.json", "interval": "4h", "symbol": "BTCUSDT", "provider": "binance-public-data", "start": "2025-01-01", "end": "2026-10-20", "role": "primary"},
+    {"id": "binance_matched_4h", "data": "data/btc-4h-through-2026-10-20.csv", "independent_audit": "docs/publication/data-audit-v1.json", "interval": "4h", "symbol": "BTCUSDT", "provider": "binance-public-data", "start": "2026-02-20", "end": "2026-10-20", "role": "timeframe_robustness"},
+    {"id": "binance_matched_1h", "data": "data/btc-1h-through-2026-10-20.csv", "independent_audit": "docs/publication/data-audit-1h-v1.json", "interval": "1h", "symbol": "BTCUSDT", "provider": "binance-public-data", "start": "2026-02-20", "end": "2026-10-20", "role": "timeframe_robustness"},
+    {"id": "binance_matched_1d", "data": "data/btc-1d-through-2026-10-20.csv", "independent_audit": "docs/publication/data-audit-1d-v1.json", "interval": "1d", "symbol": "BTCUSDT", "provider": "binance-public-data", "start": "2026-02-20", "end": "2026-10-20", "role": "timeframe_robustness"},
+    {"id": "bitstamp_primary_4h", "data": "data/btc-bitstamp-4h-through-2026-10-20.csv", "independent_audit": "docs/publication/data-audit-bitstamp-4h-v1.json", "interval": "4h", "symbol": "BTCUSD", "provider": "bitstamp-public-ohlc", "start": "2025-01-01", "end": "2026-10-20", "role": "venue_robustness"},
+    {"id": "bitstamp_matched_4h", "data": "data/btc-bitstamp-4h-through-2026-10-20.csv", "independent_audit": "docs/publication/data-audit-bitstamp-4h-v1.json", "interval": "4h", "symbol": "BTCUSD", "provider": "bitstamp-public-ohlc", "start": "2026-02-20", "end": "2026-10-20", "role": "venue_robustness"}
+  ]
+}

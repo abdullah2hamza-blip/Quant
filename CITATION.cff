@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using this research software."
+type: software
+title: "Quant: paired-cost sequential validation and Bitcoin trend diagnostics"
+authors:
+  - family-names: Hamza
+    given-names: Abdullah
+    affiliation: Independent Researcher
+    email: abdullah2hamza@gmail.com
+repository-code: "https://github.com/abdullah2hamza-blip/Quant"
+version: 1.0.0
+license: MIT
+preferred-citation:
+  type: report
+  title: "Cost Uncertainty in Sequential Strategy Validation: A Diagnostic Study with Adaptive Bitcoin Trend Following"
+  authors:
+    - family-names: Hamza
+      given-names: Abdullah
+      affiliation: Independent Researcher
+  year: 2026
+  url: "https://github.com/abdullah2hamza-blip/Quant/releases/tag/v1.0.0"
+  version: 1.0.0
+  notes: "Technical report; no DOI, external peer review or journal acceptance claimed. Original text CC BY4.0, with third-party market-material exceptions in LICENSE-PAPER.md."

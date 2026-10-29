@@ -1,2 +1,4 @@
 def main() -> None:
-    print("Hello from quant!")
+    from .cli import main as cli_main
+
+    raise SystemExit(cli_main())

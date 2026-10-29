@@ -1,0 +1,90 @@
+\section{Introduction}
+
+An adaptive trading rule can appear attractive for several different reasons:
+it may select useful information, change its market exposure, trade less, or
+benefit from an optimistic execution assumption. Repeatedly checking its
+performance introduces another distinction: an attractive historical difference
+does not automatically constitute valid sequential evidence. This study examines
+those distinctions for a small, transparent family of Bitcoin trend rules.
+
+The statistical question concerns a paired utility difference after economic
+materiality and uncertain costs. If strategy and reference pay a defensibly
+shared mean cost, bounding their costs separately discards information. If the
+reference trades more, charging both sides the same upper cost can instead
+produce an optimistic difference. A valid analysis must distinguish those
+geometric effects from the choice of evidence process, uncertainty about the
+cost model, and the trading performance itself.
+
+Our contribution is a diagnostic experimental study, not a new general theory
+of betting or robust optimization. One frozen study diagnoses shared-cost
+geometry; a second isolates evidence form, volatility adaptation and preservation
+of a common cost parameter across time. We implement matched constructions,
+audit explicit failure cases, and preserve independent-world outcomes and all
+research attempts. A separate retrospective Bitcoin application uses exact
+self-financing books, inherited holdings, matched dates, simple controls and
+assumed-cost sensitivities. The bounded synthetic guarantee is not transferred
+to market P\&L. This separation makes favorable and unfavorable findings equally
+interpretable.
+
+Our first experiment asks how much evidence is discarded when a paired
+comparison ignores a defensibly shared cost coefficient. For example, if both
+turnovers equal one and the coefficient lies in $[0,0.2]$, the paired cost
+difference is exactly zero, whereas separate portfolio bounds subtract $0.2$
+from the lower utility difference. This is an elementary identity; the
+experiment measures its consequences for finite-horizon detection and false
+discoveries. Our second experiment asks how much further evidence is lost by
+minimizing each period independently when the unknown coefficient is actually
+constant across time. It compares matched local and whole-history constructions
+and separates this operation from changing the betting rule. A final Bitcoin
+case study examines what the implemented trading comparison establishes when
+those synthetic calibration assumptions are unavailable. It is an application
+audit, not a transfer of the synthetic guarantee to market returns.
+
+\subsection{Related work and scope of the contribution}
+
+Choe and Ramdas \citep{choe2024} develop sequential paired forecast comparisons,
+including an average conditional-score null. Arnold et al.
+\citep{arnold2026} study sequential model confidence sets. Bounded betting and
+time-uniform concentration are established tools
+\citep{waudby2024,howard2021}; online e-value procedures already address multiple
+testing \citep{xu2024,tian2021}. Our chosen error criterion is family-wise error,
+not false discovery rate. Neither criterion repairs an invalid input process.
+\citet{li2026} project simultaneous uncertainty regions onto a constrained
+conformal-pipeline optimizer. Their coverage-feasibility target differs from
+our paired execution-cost utility contrast; broad uncertainty-set selection
+language is therefore not itself a novelty claim here.
+
+Financial sequential validation also has close predecessors.
+\citet{jiao2026} compare risk forecasts with e-backtests. The indexed abstracts
+of \citet{liu2026} and \citet{stephan2026} describe, respectively, sequential
+factor-alpha testing and Bayesian economic activation of alpha signals. Their
+full SSRN manuscripts were inaccessible in this review, so we make no detailed
+theorem comparison or priority claim against them.
+
+Whole-history nuisance profiling is already present in universal inference
+\citep{wasserman2020}; composite e-processes may be useful even when a common
+nonnegative supermartingale construction is powerless
+\citep{ramdas2022}. Consequently, preserving one cost parameter across time is
+not by itself a new principle. Worst-case linear cost contrasts are elementary
+robust counterparts \citep{bental1998}. Our comparison isolates the consequences
+of applying these established ideas correctly or incorrectly.
+
+Fixed-sample time-series comparisons already address model search and data reuse,
+including White's Reality Check \citep{white2000} and the model confidence set
+of \citet{hansen2011}. Our bounded sequential experiment uses a different
+conditional information model; the market application does not implement
+those procedures or claim selection-adjusted superiority.
+
+Crypto trend-following comparisons with trading costs predate this study
+\citep{le2023}. \citet{bysik2026} evaluate hourly Bitcoin machine-learning
+strategies with walk-forward selection, cost-aware execution and dependent-data
+resampling. We do not claim that adding costs, Bitcoin, or a chronological
+evaluation is a novel method. Our application instead makes the connection
+between validity assumptions, data outages, simple adaptation controls and
+exact cost accounting explicit. Cross-venue observations remain observations
+of the same asset.
+
+The nearest-work register records inspected passages and access limitations.
+It does not certify exhaustive priority. In particular, no claim of a first
+sequential trading test, first cost-aware Bitcoin strategy, or newly discovered
+profitable trading opportunity is made.

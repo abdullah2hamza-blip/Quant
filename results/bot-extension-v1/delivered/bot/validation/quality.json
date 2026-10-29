@@ -1,0 +1,283 @@
+{
+  "created_at": "2026-10-22T21:40:22.801408+00:00",
+  "source": {
+    "verified_modules": 4,
+    "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+    "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "engineering_status": "Working-copy tests, exact paper replay, both-policy offline restart and actual public-data reads pass. Original-folder tests are separately receipted in installation.json.",
+  "default_policy": "fixed",
+  "alternative_policy": "legacy_daily",
+  "tests": {
+    "passed": 50,
+    "runtime": "Python3.13.7; NumPy2.5.4; pytest9.1.1",
+    "log": "tests.txt",
+    "log_sha256": "350f6b89613f376c2f0cb622e5f6ef37365593f5f257bbcdbc99fb8784eed3bc"
+  },
+  "paper_parity": {
+    "receipt": "paper-parity.json",
+    "sha256": "685e844642647ae8b4977f1d967bcd6ec90eedb5dbff59ff343680af18b6dfea",
+    "cases": 6,
+    "policy_cost_paths": 270,
+    "arrays_exact": 1632,
+    "all_metrics_initial_states_selections_base_trades_and_bootstrap_intervals_exact": true,
+    "scope": "Same historical data and outcomes; no new independent trading evidence"
+  },
+  "publication_anchors_unchanged": {
+    "root_research_code": "fdc97b74b20924195a12fa7652ab96c4ef27752922c2e5fdd2d50c4a7a663069",
+    "registry": "dd8f573a1c8af69f14ea777a5d6516cdae7f6110fb39c2040a565fb91c5c0c8a",
+    "paper_pdf": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803"
+  },
+  "paper_primary_at_25bps": {
+    "fixed": {
+      "bars": 3948,
+      "start": "2025-01-01T00:00:00+00:00",
+      "end": "2026-10-20T23:59:59.999000+00:00",
+      "total_return": 0.026067288605934102,
+      "cagr": 0.01437693459378113,
+      "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+      "mean_log_return": 6.518066878080975e-06,
+      "annualized_mean_log_return": 0.014274566462997336,
+      "annualized_volatility": 0.1341827358147889,
+      "descriptive_sharpe": 0.17344387514678322,
+      "regular_grid_statistics_available": true,
+      "maximum_drawdown": -0.20050057451967473,
+      "time_in_market": 0.4830293819655522,
+      "mean_exposure": 0.26810791476312773,
+      "turnover": 13.536126879545286,
+      "trade_count": 31,
+      "costs_in_start_nav_units": 0.033424144548104294,
+      "ending_exposure": 0.5751001576590171,
+      "estimated_exit_adjusted_return": 0.024592059957318835,
+      "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+      "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+    },
+    "adaptive": {
+      "bars": 3948,
+      "start": "2025-01-01T00:00:00+00:00",
+      "end": "2026-10-20T23:59:59.999000+00:00",
+      "total_return": 0.026067288605934102,
+      "cagr": 0.01437693459378113,
+      "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+      "mean_log_return": 6.518066878080975e-06,
+      "annualized_mean_log_return": 0.014274566462997336,
+      "annualized_volatility": 0.1341827358147889,
+      "descriptive_sharpe": 0.17344387514678322,
+      "regular_grid_statistics_available": true,
+      "maximum_drawdown": -0.20050057451967473,
+      "time_in_market": 0.4830293819655522,
+      "mean_exposure": 0.26810791476312773,
+      "turnover": 13.536126879545286,
+      "trade_count": 31,
+      "costs_in_start_nav_units": 0.033424144548104294,
+      "ending_exposure": 0.5751001576590171,
+      "estimated_exit_adjusted_return": 0.024592059957318835,
+      "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+      "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+    },
+    "buy_hold": {
+      "bars": 3948,
+      "start": "2025-01-01T00:00:00+00:00",
+      "end": "2026-10-20T23:59:59.999000+00:00",
+      "total_return": -0.11271960759169031,
+      "cagr": -0.06418761527140542,
+      "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+      "mean_log_return": -3.0292359023786748e-05,
+      "annualized_mean_log_return": -0.06634026626209298,
+      "annualized_volatility": 0.42786879347687046,
+      "descriptive_sharpe": 0.058804666527752465,
+      "regular_grid_statistics_available": true,
+      "maximum_drawdown": -0.5344740218167796,
+      "time_in_market": 1.0,
+      "mean_exposure": 1.0,
+      "turnover": 0.0,
+      "trade_count": 0,
+      "costs_in_start_nav_units": 0.0,
+      "ending_exposure": 1.0,
+      "estimated_exit_adjusted_return": -0.11493780857271119,
+      "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+      "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+    }
+  },
+  "legacy_daily_at_25bps": {
+    "bars": 658,
+    "start": "2025-01-01T00:00:00+00:00",
+    "end": "2026-10-20T23:59:59.999000+00:00",
+    "total_return": 0.11878399817929419,
+    "cagr": 0.06424125671852633,
+    "cagr_caveat": "unavailable below 30 days or for numerical overflow; otherwise elapsed-calendar-time annualization",
+    "mean_log_return": 0.0001705811239805249,
+    "annualized_mean_log_return": 0.06226211025289159,
+    "annualized_volatility": 0.21840912156763606,
+    "descriptive_sharpe": 0.3936153956268701,
+    "regular_grid_statistics_available": true,
+    "maximum_drawdown": -0.2516628506306685,
+    "time_in_market": 0.6519756838905775,
+    "mean_exposure": 0.45765744050749957,
+    "turnover": 26.71387447678888,
+    "trade_count": 101,
+    "costs_in_start_nav_units": 0.06685407658424561,
+    "ending_exposure": 0.8531526332950333,
+    "estimated_exit_adjusted_return": 0.11639776439395666,
+    "scoring_convention": "continuous strategy; inherited holdings; returns rebased at prior close; terminal holdings marked, not force-filled",
+    "sharpe_caveat": "descriptive annualization; no IID or selection-adjusted inference"
+  },
+  "legacy_daily_cost_sensitivity": {
+    "25": 0.11878399817929419,
+    "0": 0.19608970618575983,
+    "10": 0.16454618357931894,
+    "50": 0.046474986904938564,
+    "100": -0.08442664193957095
+  },
+  "legacy_contrast": {
+    "annualized_mean_log_difference": 0.07625800547280136,
+    "cumulative_log_difference": 0.1374733358934337,
+    "materiality_annual_log": 0.02,
+    "bootstrap_by_block_days": {
+      "30": {
+        "available": true,
+        "method": "non-circular moving-block percentile bootstrap",
+        "observations": 658,
+        "block_length": 30,
+        "effective_block_count": 21.933333333333334,
+        "blocks_per_draw": 22,
+        "draws": 5000,
+        "seed": 20261022,
+        "confidence_level": 0.95,
+        "mean_difference": 0.0002089260423912366,
+        "mean_difference_ci": [
+          -0.00032193252985798326,
+          0.0006302121233060068
+        ],
+        "annualization": 365.0,
+        "annualized_mean_difference": 0.07625800547280136,
+        "annualized_mean_difference_ci": [
+          -0.11750537339816389,
+          0.2300274250066925
+        ],
+        "caveats": [
+          "Inputs must be paired over identical observation intervals.",
+          "Approximate inference assumes an adequately stable weakly dependent process.",
+          "Block length is prespecified; check sensitivity without selecting the best interval.",
+          "Effective block count is a heuristic, not a proven independent sample size.",
+          "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+          "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+        ]
+      },
+      "15": {
+        "available": true,
+        "method": "non-circular moving-block percentile bootstrap",
+        "observations": 658,
+        "block_length": 15,
+        "effective_block_count": 43.86666666666667,
+        "blocks_per_draw": 44,
+        "draws": 5000,
+        "seed": 20261022,
+        "confidence_level": 0.95,
+        "mean_difference": 0.0002089260423912366,
+        "mean_difference_ci": [
+          -0.00031132465199840793,
+          0.0006651533773451818
+        ],
+        "annualization": 365.0,
+        "annualized_mean_difference": 0.07625800547280136,
+        "annualized_mean_difference_ci": [
+          -0.1136334979794189,
+          0.24278098273099136
+        ],
+        "caveats": [
+          "Inputs must be paired over identical observation intervals.",
+          "Approximate inference assumes an adequately stable weakly dependent process.",
+          "Block length is prespecified; check sensitivity without selecting the best interval.",
+          "Effective block count is a heuristic, not a proven independent sample size.",
+          "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+          "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+        ]
+      },
+      "60": {
+        "available": true,
+        "method": "non-circular moving-block percentile bootstrap",
+        "observations": 658,
+        "block_length": 60,
+        "effective_block_count": 10.966666666666667,
+        "blocks_per_draw": 11,
+        "draws": 5000,
+        "seed": 20261022,
+        "confidence_level": 0.95,
+        "mean_difference": 0.0002089260423912366,
+        "mean_difference_ci": [
+          -0.0002894972773602715,
+          0.0006363255951180591
+        ],
+        "annualization": 365.0,
+        "annualized_mean_difference": 0.07625800547280136,
+        "annualized_mean_difference_ci": [
+          -0.1056665062364991,
+          0.23225884221809157
+        ],
+        "caveats": [
+          "Inputs must be paired over identical observation intervals.",
+          "Approximate inference assumes an adequately stable weakly dependent process.",
+          "Block length is prespecified; check sensitivity without selecting the best interval.",
+          "Effective block count is a heuristic, not a proven independent sample size.",
+          "Not anytime-valid, not multiplicity-adjusted, and not valid under arbitrary regime drift.",
+          "Annualized mean is a linear scaling of the supplied differences, not CAGR."
+        ]
+      }
+    },
+    "realized_paths_numerically_identical": false,
+    "inference_status": "Approximate retrospective, unadjusted dependent-data intervals; no anytime guarantee",
+    "future_profitability_established": false,
+    "primary_lower_exceeds_materiality": false
+  },
+  "legacy_execution_corrections": [
+    "All150 daily candles required at inception and after gaps",
+    "Band checked against opening valuation, not prior close",
+    "Exact post-fee weights; no cash borrowing",
+    "Shared entry and complete-exit band bypass rules"
+  ],
+  "economic_verdict": "No demonstrated adaptive edge or established future profitability. Corrected legacy_daily is an explicitly exploratory alternative on already inspected data, with unequal risk versus EMA and cost-sensitive performance.",
+  "receipts": {
+    "offline-restart.json": {
+      "sha256": "2b16c2ac01f82df50dcf3f9d826e2302f79eb1743389ba4300aae3cda4b339ae"
+    },
+    "public-data.json": {
+      "sha256": "89ed0d2689ff734befe061e8fedbc4d10ac9b13b2231d61b0e989a77b0661718"
+    },
+    "legacy-report.json": {
+      "sha256": "79c135ca281bf02680f2b7f6cc00d7c86d16ce042d49853f9956ac2879a190e1"
+    },
+    "legacy-paths.npz": {
+      "sha256": "d735e4432b0f18c24219a5ca231d4c68478620ce71f0a27f45c7a3f24c2a63ca"
+    },
+    "legacy-trades.json": {
+      "sha256": "13327552cb199c7f899311b8acca42e13d6cea2780500437550d1ce1bed59c33"
+    },
+    "legacy-attempt.json": {
+      "sha256": "66fb7919d15b0a550f21d94db407932bd0f05c55badfbcbe5463d3ce4b03ac22"
+    },
+    "legacy-signal.json": {
+      "sha256": "f2f2e88ff3fe124fe9af8399bae40e986e5ff4a650c8c8eb1513c4ea3c0106ae"
+    },
+    "before-after.json": {
+      "sha256": "b1794c3db82e3733cfbc8475b3c7a73da82d3fb864ce31e210f550a7e5cd9d98"
+    }
+  },
+  "execution_quality_scope": "Replay assumes next-open fills. Online simulation uses current public prices and modeled costs. Broker contract tests use mocks. Authenticated paper/testnet order integration is unperformed because credentials were absent.",
+  "limitations": [
+    "No production endpoint or live-money trade was used.",
+    "No actual authenticated broker fill has been tested.",
+    "Late decisions are skipped; fresh simulation starts in cash rather than inheriting research holdings.",
+    "Network failures exit nonzero with durable intents; external supervision and manual ambiguous-order reconciliation remain required.",
+    "Gaps restart warmup and carry inventory; they do not force liquidation.",
+    "Daily-close drawdowns omit intraday excursions; frequencies and risk targets differ.",
+    "Hosted Windows/Linux CI is configured but not remotely executed.",
+    "Forward profitability, real costs, capacity and future drawdowns remain unproven."
+  ],
+  "original_backup": {
+    "path": "../legacy/original-v2.zip",
+    "sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9"
+  }
+}

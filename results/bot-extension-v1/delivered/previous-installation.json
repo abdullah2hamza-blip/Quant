@@ -1,0 +1,230 @@
+{
+  "finished_at": "2026-10-22T21:20:04.204776+00:00",
+  "status": "completed",
+  "original_folder": "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot",
+  "working_copy": "C:\\Users\\Abdul\\Documents\\Quant\\bots\\btc_trend_bot",
+  "files_installed": 40,
+  "inventory": {
+    ".gitignore": {
+      "sha256": "25f4a46c50d3a0b9da1a213e56fa0cb5187cd75a7abef745aeb7ff45bf7008e6",
+      "bytes": 97
+    },
+    ".python-version": {
+      "sha256": "3ce16e94590543a327d3e5ae412e663206e0ed1b46628ed3dd5ad29caa1ff5ac",
+      "bytes": 7
+    },
+    "API-SOURCES.md": {
+      "sha256": "2be3285e7b563a5bb60e080eea0a8803651e90185026abc023e26a0020c06043",
+      "bytes": 1439
+    },
+    "bot_core.py": {
+      "sha256": "51c382efba8b7aaa854838ff753a328fac6ad55562d860689574f9b51e0efa0c",
+      "bytes": 12867
+    },
+    "bot_io.py": {
+      "sha256": "c2754a288cb15bd1c79c9ab41e56ca092c796aa51ad3070f4184cbf64ab553bb",
+      "bytes": 13092
+    },
+    "bot_runtime.py": {
+      "sha256": "4c68022d480ce8c1b9195e45fc9f6ce34f790704c0f32192aada5f46adab3159",
+      "bytes": 13887
+    },
+    "config/paper.toml": {
+      "sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+      "bytes": 1635
+    },
+    "data/btc-4h.csv": {
+      "sha256": "5eea975ec9aa32b88579a99d05ac9e722fd3fe9aa7024ae78350618a8333c78d",
+      "bytes": 2085571
+    },
+    "data/btc-4h.manifest.json": {
+      "sha256": "ebc379f88f04f08bd50e865fc191823a18e82fb5658c807988f01a1d8c438dc5",
+      "bytes": 63522
+    },
+    "legacy/original-v2.zip": {
+      "sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+      "bytes": 23440
+    },
+    "MIGRATION.md": {
+      "sha256": "e53678a0ec810e3e423fae4f22dc18045bae8b587dacb74797dcfea8917624f9",
+      "bytes": 4249
+    },
+    "mr_bot.py": {
+      "sha256": "776950d0421f523d680cbe4c35afd71fe7d2dac236749e9e3e7f6b8ea9c3be8d",
+      "bytes": 291
+    },
+    "paper-origin.json": {
+      "sha256": "3981024ac7b7bd75210b121ad276503f222aa4a845243cfd265ba0258b603905",
+      "bytes": 2514
+    },
+    "paper_engine/__init__.py": {
+      "sha256": "706d69f87a396e9d01120aee7176854ef1cd29fb537fc80cf00f602be5efaf7f",
+      "bytes": 75
+    },
+    "paper_engine/config.py": {
+      "sha256": "32a3bd499679047e32e20198db74466e608d5cd4a8a2ac408a9cd21892f41ec8",
+      "bytes": 8719
+    },
+    "paper_engine/data.py": {
+      "sha256": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
+      "bytes": 14479
+    },
+    "paper_engine/engine.py": {
+      "sha256": "dab857df55fd6940befb052d119b503c319d9bcf5e9874e1eeee23ba39e87203",
+      "bytes": 12344
+    },
+    "paper_engine/stats.py": {
+      "sha256": "3882f56f4c8090875f33d5b7725524a701ba6f13a6bbad43590ab60523445497",
+      "bytes": 14997
+    },
+    "pyproject.toml": {
+      "sha256": "3feaa407a311d840c4cb4284696a98ee7ad5bd4696149627d1d5bee2f1c75b59",
+      "bytes": 329
+    },
+    "README.md": {
+      "sha256": "14059be3a509752e6d43180b63327ffff9c8bc1c8cf26d6efcb73c7be67e232f",
+      "bytes": 6515
+    },
+    "requirements.txt": {
+      "sha256": "528fcc42b77399b86ce3a6aa30d0f798e7a603e799678274d031fc5ebaaa8954",
+      "bytes": 82
+    },
+    "research/checks.py": {
+      "sha256": "0ce73cbcb12f476b34105effad13edb5a53192932b5f2e02d8d26ab05b242f3f",
+      "bytes": 410
+    },
+    "research/EXPERIMENT_LEDGER.md": {
+      "sha256": "33518fccf54752b5beff5ed34ed3a3a2084bf145ba0f4ff625c2ed4792b126fd",
+      "bytes": 1392
+    },
+    "research/forward_log.md": {
+      "sha256": "1569710c4da0afe2799bcac19cfcd3f5bc44449ccedc643fd75fdc5f9c6a5029",
+      "bytes": 1572
+    },
+    "research/get_data.py": {
+      "sha256": "e2807f3dd91a664b06b76e25b163cfe39903e00073596d7d90b528170786e9e3",
+      "bytes": 1030
+    },
+    "research/lab.py": {
+      "sha256": "97637dc39c0033337abc3d347cadfddf2f10cab335202d5dd6dea3589e145a17",
+      "bytes": 4833
+    },
+    "research/ml.py": {
+      "sha256": "19ea5aca8691ebba3ac1d0df0b8f4090a62038610584232037649af3d5d0ef92",
+      "bytes": 293
+    },
+    "research/PREREGISTRATION.md": {
+      "sha256": "05ed4e0e47b7e1a9c65fdd43a4daedc780a366ea4ba5fa982da495637cc3e7f6",
+      "bytes": 1383
+    },
+    "research/RESULTS.md": {
+      "sha256": "8c078a0ba382cfd96a98f517236670e841c1066bb65035f54ab2e8501a69d7f8",
+      "bytes": 3813
+    },
+    "research/run_all.py": {
+      "sha256": "300f44ae0acd681cb481c48cdf72cb9c9c9ca9a074eec0713fd1f4daf5560ca7",
+      "bytes": 149
+    },
+    "research/strategies.py": {
+      "sha256": "2332527ef5e862af4254d4a312c7a14df445c963aed8b9b8b69e8352eca1cbfe",
+      "bytes": 217
+    },
+    "tests/test_adapters.py": {
+      "sha256": "15371138b20e1dc90c943ecb678fa2898a17c66e6a754b2b9e77fbe1b1c2d156",
+      "bytes": 5753
+    },
+    "tests/test_bot.py": {
+      "sha256": "6ab440c87fef4b9e90bc3f6277c0790153d39a1e9a8b90d4d25031347f66a013",
+      "bytes": 10615
+    },
+    "trend_bot.py": {
+      "sha256": "d64554ad5aaa059d56e0b0afecf6f4287f847af96b1e3ab1916b0fa4e3c9f897",
+      "bytes": 3821
+    },
+    "uv.lock": {
+      "sha256": "3cb6e9270c59dcba4a166b5e90450b570ece93bb1a8c601e260b800cfe38ef20",
+      "bytes": 8616
+    },
+    "validation/offline-restart.json": {
+      "sha256": "13640aedb8eae87c01275a2d975469c01b549cc78dd9cbca9c73c976144ae930",
+      "bytes": 1351
+    },
+    "validation/paper-parity.json": {
+      "sha256": "4b27f7cbbfc738cf5b0e2e4093bc51adabe86955034df2d4d79f3aa5fb84f6bd",
+      "bytes": 2986
+    },
+    "validation/public-data.json": {
+      "sha256": "b7f1e3adc8f756e610335d2486ae4541831815b87356efde777d5f67db1f5242",
+      "bytes": 614
+    },
+    "validation/quality.json": {
+      "sha256": "59a917430a22d303724d40bb0bab08d80fb9059e906f711c7d08325996a9dbef",
+      "bytes": 6527
+    },
+    "validation/tests.txt": {
+      "sha256": "5b946a7a403e0cbe22b1b72536088ea4cb4334b7326888253601aee71460eba5",
+      "bytes": 101
+    }
+  },
+  "import_origins": [
+    "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot\\bot_core.py",
+    "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot\\paper_engine\\engine.py"
+  ],
+  "doctor": {
+    "verified_modules": 4,
+    "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+    "source_fingerprint": "d28cec1b40e8db1aa5fd46c562ed2f06ee459849148131d3ed1fd670b7f4e64b",
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "policy": "fixed",
+    "instrument": "unlevered BTC spot",
+    "paper_matches": true,
+    "data_exists": true,
+    "adaptive_edge_established": false,
+    "execution": "local simulated or broker paper/testnet only; no production endpoint"
+  },
+  "copied_source_tests": {
+    "passed": 42,
+    "log": "C:\\Users\\Abdul\\Documents\\Quant\\runs\\bot-tests-installed-v3.txt",
+    "log_sha256": "93fd34d0d1a6e858e6a3ed4b87221e9057f5dbc8806053c03c9d4050debb29ba"
+  },
+  "copied_offline_first_cycle": {
+    "decision_time_ms": 1792540799999,
+    "observed_at_ms": 1792540800100,
+    "policy": "fixed",
+    "execution_model": "current observable paper/testnet price; not a historical next-open fill",
+    "signal": {
+      "ready": true,
+      "target": 0.611129251074704,
+      "policy": "fixed",
+      "selected_pair": [
+        50,
+        200
+      ],
+      "decision_time_ms": 1792540799999,
+      "earliest_execution_ms": 1792540800000,
+      "selector_history_ready": true,
+      "selection_count": 0,
+      "risk_weight": 0.611129251074704
+    },
+    "price": 80000.0,
+    "cash_before": 10000.0,
+    "coins_before": 0.0,
+    "equity_before": 10000.0,
+    "target": 0.611129251074704,
+    "status": "simulated_fill",
+    "signed_notional": 6101.969780192416,
+    "assumed_cost": 15.25492445048104,
+    "cash_after": 3882.775295357103,
+    "coins_after": 0.0762746222524052,
+    "equity_after": 9984.74507554952,
+    "cost_bps": 25.0,
+    "target_weight_after_cost": 0.611129251074704
+  },
+  "copied_offline_restart": {
+    "status": "duplicate_skipped",
+    "decision_time_ms": 1792540799999
+  },
+  "original_backup_sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+  "scope": "Actual copied-source testing with the isolated working-copy interpreter and locked dependencies; no authenticated broker order or funded trade."
+}

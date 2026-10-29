@@ -1,0 +1,70 @@
+\clearpage
+\section{Post-protocol audit of the subsequently supplied daily bot}
+\label{app:botextension}
+
+The original separate bot became available on 22 October 2026, after the frozen
+EMA study and its initial manuscript had completed. It was a native daily
+40/50/60/80/100/150-day SMA vote with 40\% volatility targeting, 30 log returns
+and a 0.15 weight band. It is not the four-hour adaptive EMA selector studied
+above. The latter's negative result therefore does not test the original
+SMA algorithm or verify its supplied performance claims. The original 14-file
+source archive and its hashes are retained.
+
+The delivered correction, named \texttt{legacy\_daily}, retains that SMA vote
+and risk target but requires 150 continuous candles, resets after gaps, checks
+resizing at executable opening valuation, uses shared entry/full-exit rules,
+and solves exact post-fee weights without borrowing cash. These corrections
+differ from a fee-only repair of the old close-trigger loop. The paper EMA
+strategy remains the operational default for protocol consistency; that choice
+is not a claim that it maximizes future returns.
+
+On the already inspected 1 January 2025 through 20 October 2026 window, the delivered
+daily variant returned \BotDeliveredReturn\% at assumed 25 bps per side, with
+\BotDeliveredDrawdown\% maximum drawdown sampled at daily closes. Its 100 bps
+return was \BotDeliveredHighCostReturn\%. These are corrected-implementation
+outcomes, not validation of the old performance claims. Daily-close drawdowns
+omit intraday excursions and are not the same measurements as four-hour
+drawdowns. No authenticated broker fills or prospective profitability test
+are supplied by this comparison.
+
+\subsection{A dated exploratory matched-settings contrast}
+
+After those outcomes had been inspected, a new protocol was frozen on 23 October.
+It compares the fixed SMA vote and fixed EMA 9/34 at each target 20\% and 40\%,
+using identical native daily rows, 30-return volatility, a 0.10 opening-weight
+band, 334-bar contiguous feature warm-up, unit exposure cap, prior-close signals,
+next-open accounting and inherited prewindow positions. The EMA 9/34 pair is the
+paper's upward clock conversion of 50/200; the 334-bar gate is applied to both
+signals. These common-setting SMA variants differ from the delivered 0.15-band,
+150-bar variant and must not replace its result. Both share the same valid
+feature history at the scoring boundary; no selector is fitted or ranked.
+
+The eight books are the four signal/target combinations, cash, buy-and-hold and
+volatility-only controls at both targets. Every book is rerun at 0/10/25/50/100 bps.
+In the tables, suffixes \texttt{20} and \texttt{40} denote target percentages;
+\texttt{volatility} denotes the signal-free risk-target control.
+Tables~\ref{tab:botextensionmetrics}--\ref{tab:botextensionpaired} retain the
+40 paths and ten within-target cost contrasts; companion CSVs retain all
+metrics and 15/30/60-day approximate paired intervals from 5,000 draws. Source,
+protocol, input and result hashes, source ZIP, failed/completed attempts and
+exact archived-source replay are recorded separately from the registered
+six market cases. Replaying them creates no new independent observations.
+
+At 25 bps the 20\%-target SMA/EMA returns are \BotSmaTwentyReturn\% and
+\BotEmaTwentyReturn\%; at 40\% they are \BotSmaFortyReturn\% and
+\BotEmaFortyReturn\%. The corresponding annualized mean-log contrasts are
+\BotTwentyContrast\% [\BotTwentyContrastLower\%,\BotTwentyContrastUpper\%]
+and \BotFortyContrast\% [\BotFortyContrastLower\%,\BotFortyContrastUpper\%]
+using 30-day blocks. Both intervals include zero. Matching target parameters
+does not equalize realized risk or exposure, as the controls show; this is a
+signal contrast at matched settings, not causal alpha. Its post-outcome design,
+unadjusted intervals and reused history do not establish a winning variant,
+fresh-holdout confirmation or future profitability. No strategy is selected
+from these outcomes.
+
+\clearpage
+\begingroup\footnotesize
+\setlength{\LTpre}{4pt}
+\setlength{\LTpost}{4pt}
+\input{generated/bot-extension/table}
+\endgroup

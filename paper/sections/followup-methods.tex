@@ -1,0 +1,106 @@
+\subsection{Variance-adaptive comparators and one coefficient across time}
+\label{sec:followup-methods}
+
+The follow-up uses established alternatives to the inactive Hoeffding
+comparators. Normalize the bounded utilities to $B=1$ and write
+$A_i=G_i-m_i$, so that $D_i(\vartheta)=A_i-d_i\vartheta$.
+For predictable $\gamma_i\in[-1,1]$, fixed $0\leq\lambda<1/2$ and
+\[
+ \psi(\lambda)=\frac{-\log(1-2\lambda)-2\lambda}{4},
+ \qquad
+ f_i(\vartheta;\lambda)=\lambda D_i(\vartheta)
+             -\psi(\lambda)\{D_i(\vartheta)-\gamma_i\}^2,
+\]
+the true-parameter exponential has the empirical-Bernstein domination of
+\citet{choe2024}. The centered process
+\[
+ N_n(\lambda)=\exp\!\left\{\sum_{i=1}^n
+ [\lambda(D_i-\mu_i)-\psi(\lambda)(D_i-\gamma_i)^2]\right\}
+\]
+is a test supermartingale. Indeed, $D_i-\gamma_i\geq-2$ and the bounded-score
+inequality gives
+$\exp\{\lambda(D_i-\gamma_i)-\psi(\lambda)(D_i-\gamma_i)^2\}
+\leq1+\lambda(D_i-\gamma_i)$.
+After conditional expectation and multiplication by
+$\exp\{\lambda(\gamma_i-\mu_i)\}$, the right side is
+$e^{-s}(1+s)\leq1$, where $s=\lambda(\mu_i-\gamma_i)>-1$.
+Under \eqref{eq:weak}, the uncentered true-parameter product is no larger
+than $N_n$. Fixed mixtures therefore retain prefix-weak validity.
+
+The factor is not monotone in utility. For the local robust construction,
+minimize $f_i$ over the entire joint utility interval induced by the cost set,
+or over the larger separate interval
+\[
+ [A_i-q^A_i u_i+q^R_i\ell_i,
+   A_i-q^A_i\ell_i+q^R_i u_i].
+\]
+Concavity makes the minimum the smaller endpoint value. Simply substituting a
+lower utility into an empirical-Bernstein factor can be optimistic.
+
+Let $C_n=[\ell_n,u_n]$ be the nonempty running intersection of calibration
+intervals available when label $n$ was issued. The componentwise coherent
+profile is
+\begin{equation}
+ W_n^{\rm coh}=\sum_k\pi_k
+ \exp\!\left\{\inf_{\vartheta\in C_n}
+                  \sum_{i=1}^n f_i(\vartheta;\lambda_k)\right\}.
+ \label{eq:coherent}
+\end{equation}
+The parameter remains the same throughout each historical product. This is
+the established composite-inference principle, specialized to the paired
+cost model \citep{wasserman2020,ramdas2022}. On simultaneous coverage,
+each profiled component is at most its value at the true coefficient and
+thus its latent dominating process. The event-inclusion proof of
+Proposition~\ref{prop:composition} applies with the same additive coverage
+budget. It does not condition on coverage or assert that the observed profile
+itself is a supermartingale.
+
+The sum of log factors is a concave quadratic in $\vartheta$. Retain
+\[
+ S_A=\sum A_i,\quad S_d=\sum d_i,\quad
+ Q_{AA}=\sum(A_i-\gamma_i)^2,\quad
+ Q_{Ad}=\sum(A_i-\gamma_i)d_i,\quad Q_{dd}=\sum d_i^2.
+\]
+Then evaluate
+\[
+ \lambda(S_A-\vartheta S_d)
+ -\psi(\lambda)(Q_{AA}-2\vartheta Q_{Ad}+\vartheta^2 Q_{dd})
+\]
+at the two current endpoints and take the smaller value for each component.
+These five sums have constant state in the number of labels. Minimizing the
+whole mixture only at endpoints would need an additional shape argument and
+is not the implemented procedure.
+
+For a matched local construction, $C_n\subseteq C_i$ implies
+\[
+ \inf_{\vartheta\in C_n}\sum_{i=1}^n f_i(\vartheta;\lambda)
+ \geq\sum_{i=1}^n\inf_{\vartheta\in C_i}f_i(\vartheta;\lambda).
+\]
+Exponentiating and mixing gives coherent evidence at least local joint
+evidence. Local joint evidence likewise dominates the matched separate
+interval construction. These are comparisons within the same evidence form,
+centers and grid. They do not order different test families or subsequent
+deployment utility. Empty cost intersections permanently suppress new
+cost-based crossings, rather than being assigned infinite evidence; prior
+discoveries and their specified paper allocation are retained.
+
+The additional adaptive linear comparator is a declared one-sided aGRAPA
+specialization \citep[Appendix B.3]{waudby2024}:
+\[
+ \lambda_i=\clip\!\left(
+       \frac{\sum_{r<i}x_r}{\sum_{r<i}x_r^2},0,0.8\right).
+\]
+Its initial stake is 0.1; a later zero denominator gives stake zero. Each
+oracle/joint/separate variant fits its own past utilities. Predictability
+and bounded stakes give strong conditional-null validity by the ordinary
+linear-factor argument, with latent domination for cost proxies. Arbitrary
+adaptive stakes do not inherit the prefix-weak proof. For example, 400
+deterministic utilities $-0.06$ followed by 400 utilities $+0.06$ satisfy every
+prefix-weak null. Stakes zero in the first half and 0.8 in the second produce
+wealth $(1+0.8\cdot0.06)^{400}>250$. No joint/oracle pathwise ordering is
+claimed for separately refitted stakes.
+
+Within a case, the family error bound is applied separately to each
+comparator's ten streams.
+Pooling discoveries across all comparator methods, or choosing a favorable
+method after viewing the comparison, does not inherit a 5\% family-wise bound.

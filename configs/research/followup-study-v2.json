@@ -1,0 +1,243 @@
+{
+  "schema_version": 2,
+  "study_id": "variance-and-coherence-v2",
+  "worlds": 4000,
+  "steps": 800,
+  "hypotheses": 10,
+  "seed": 20261023,
+  "alpha": 0.05,
+  "delta": 0.01,
+  "bound": 1,
+  "true_cost": 0.08,
+  "cost_cap": 0.2,
+  "initial_calibration": 32,
+  "materiality": 0.01,
+  "linear_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "eb_grid": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "methods": [
+    "oracle_linear",
+    "joint_linear",
+    "separate_linear",
+    "oracle_agrapa",
+    "joint_agrapa",
+    "separate_agrapa",
+    "oracle_eb",
+    "joint_local_eb",
+    "separate_local_eb",
+    "joint_coherent_eb"
+  ],
+  "cases": [
+    {
+      "id": "vhigh_static_initial_positive_e0",
+      "effect": 0,
+      "turnover_pattern": "positive",
+      "cost_information": "static_initial",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_static_initial_positive_e2",
+      "effect": 0.02,
+      "turnover_pattern": "positive",
+      "cost_information": "static_initial",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_static_initial_positive_e5",
+      "effect": 0.05,
+      "turnover_pattern": "positive",
+      "cost_information": "static_initial",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_static_initial_alternating_e0",
+      "effect": 0,
+      "turnover_pattern": "alternating",
+      "cost_information": "static_initial",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_static_initial_alternating_e2",
+      "effect": 0.02,
+      "turnover_pattern": "alternating",
+      "cost_information": "static_initial",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_static_initial_alternating_e5",
+      "effect": 0.05,
+      "turnover_pattern": "alternating",
+      "cost_information": "static_initial",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_contracting_positive_e0",
+      "effect": 0,
+      "turnover_pattern": "positive",
+      "cost_information": "contracting",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_contracting_positive_e2",
+      "effect": 0.02,
+      "turnover_pattern": "positive",
+      "cost_information": "contracting",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_contracting_positive_e5",
+      "effect": 0.05,
+      "turnover_pattern": "positive",
+      "cost_information": "contracting",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_contracting_alternating_e0",
+      "effect": 0,
+      "turnover_pattern": "alternating",
+      "cost_information": "contracting",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_contracting_alternating_e2",
+      "effect": 0.02,
+      "turnover_pattern": "alternating",
+      "cost_information": "contracting",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vhigh_contracting_alternating_e5",
+      "effect": 0.05,
+      "turnover_pattern": "alternating",
+      "cost_information": "contracting",
+      "volatility_scale": 1,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_static_initial_positive_e0",
+      "effect": 0,
+      "turnover_pattern": "positive",
+      "cost_information": "static_initial",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_static_initial_positive_e2",
+      "effect": 0.02,
+      "turnover_pattern": "positive",
+      "cost_information": "static_initial",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_static_initial_positive_e5",
+      "effect": 0.05,
+      "turnover_pattern": "positive",
+      "cost_information": "static_initial",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_static_initial_alternating_e0",
+      "effect": 0,
+      "turnover_pattern": "alternating",
+      "cost_information": "static_initial",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_static_initial_alternating_e2",
+      "effect": 0.02,
+      "turnover_pattern": "alternating",
+      "cost_information": "static_initial",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_static_initial_alternating_e5",
+      "effect": 0.05,
+      "turnover_pattern": "alternating",
+      "cost_information": "static_initial",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_contracting_positive_e0",
+      "effect": 0,
+      "turnover_pattern": "positive",
+      "cost_information": "contracting",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_contracting_positive_e2",
+      "effect": 0.02,
+      "turnover_pattern": "positive",
+      "cost_information": "contracting",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_contracting_positive_e5",
+      "effect": 0.05,
+      "turnover_pattern": "positive",
+      "cost_information": "contracting",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_contracting_alternating_e0",
+      "effect": 0,
+      "turnover_pattern": "alternating",
+      "cost_information": "contracting",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_contracting_alternating_e2",
+      "effect": 0.02,
+      "turnover_pattern": "alternating",
+      "cost_information": "contracting",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "vlow_contracting_alternating_e5",
+      "effect": 0.05,
+      "turnover_pattern": "alternating",
+      "cost_information": "contracting",
+      "volatility_scale": 0.4,
+      "prefix_weak": false
+    },
+    {
+      "id": "prefix_weak_diagnostic",
+      "effect": 0,
+      "turnover_pattern": "positive",
+      "cost_information": "contracting",
+      "volatility_scale": 1,
+      "prefix_weak": true
+    }
+  ]
+}

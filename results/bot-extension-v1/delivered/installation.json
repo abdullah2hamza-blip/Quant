@@ -1,0 +1,383 @@
+{
+  "status": "completed",
+  "finished_at": "2026-10-22T21:41:33.291634+00:00",
+  "original_folder": "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot",
+  "working_copy": "C:\\Users\\Abdul\\Documents\\Quant\\bots\\btc_trend_bot",
+  "source": {
+    "verified_modules": 4,
+    "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+    "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+    "python": "3.13.7",
+    "numpy": "2.5.4"
+  },
+  "previous_installation_receipt": "C:\\Users\\Abdul\\Documents\\Quant\\output\\bot-migration\\bot-v3-installation.json",
+  "previous_installation_sha256": "5fa7a4939604d4c3a04ce32f18995a1836341087a83b58b4fc2cd2b9561bd0bf",
+  "files_installed": 51,
+  "inventory": {
+    ".gitignore": {
+      "sha256": "25f4a46c50d3a0b9da1a213e56fa0cb5187cd75a7abef745aeb7ff45bf7008e6",
+      "bytes": 97
+    },
+    ".python-version": {
+      "sha256": "3ce16e94590543a327d3e5ae412e663206e0ed1b46628ed3dd5ad29caa1ff5ac",
+      "bytes": 7
+    },
+    "API-SOURCES.md": {
+      "sha256": "2be3285e7b563a5bb60e080eea0a8803651e90185026abc023e26a0020c06043",
+      "bytes": 1439
+    },
+    "bot_core.py": {
+      "sha256": "d4627662a3b9102fa0451ff7a3494b57eca23645d6e07f6ebb61d4f8ae397e9a",
+      "bytes": 13029
+    },
+    "bot_io.py": {
+      "sha256": "c2754a288cb15bd1c79c9ab41e56ca092c796aa51ad3070f4184cbf64ab553bb",
+      "bytes": 13092
+    },
+    "bot_runtime.py": {
+      "sha256": "8943f850c5488cbf7542d25b629e1715556699d7c3b6046fe4032b3d22b86cca",
+      "bytes": 13921
+    },
+    "config/legacy_daily.json": {
+      "sha256": "cbe91d65e0e9803569c0fd90eeef6fa1f182eebb0d2a4283c66ff3793e28af00",
+      "bytes": 396
+    },
+    "config/paper.toml": {
+      "sha256": "df0360d92222ef6b6ce15185e55cc4d2c6bb7f4ef845967d7cde70c71a54d5bb",
+      "bytes": 1635
+    },
+    "data/btc-1d.csv": {
+      "sha256": "56ab80047fbac8705dd99677dd74e3a946af33de79072b9ef49e042e249dda25",
+      "bytes": 343556
+    },
+    "data/btc-1d.manifest.json": {
+      "sha256": "a78fdee98158fa0b271eb3d749fec217e4fb84caf415d89d52dc291fd244498f",
+      "bytes": 55059
+    },
+    "data/btc-4h.csv": {
+      "sha256": "5eea975ec9aa32b88579a99d05ac9e722fd3fe9aa7024ae78350618a8333c78d",
+      "bytes": 2085571
+    },
+    "data/btc-4h.manifest.json": {
+      "sha256": "ebc379f88f04f08bd50e865fc191823a18e82fb5658c807988f01a1d8c438dc5",
+      "bytes": 63522
+    },
+    "legacy/original-v2.zip": {
+      "sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+      "bytes": 23440
+    },
+    "legacy_daily.py": {
+      "sha256": "d4a47e4b5a889e8fb0c564fe8632eaf4a12ff70bb802faebba68d4a35556069f",
+      "bytes": 6423
+    },
+    "MIGRATION.md": {
+      "sha256": "e4bb93f6d7e2d02212b879dcf28455e5bd5524ef6ef1c797a91630e957913902",
+      "bytes": 5584
+    },
+    "mr_bot.py": {
+      "sha256": "776950d0421f523d680cbe4c35afd71fe7d2dac236749e9e3e7f6b8ea9c3be8d",
+      "bytes": 291
+    },
+    "paper-origin.json": {
+      "sha256": "3981024ac7b7bd75210b121ad276503f222aa4a845243cfd265ba0258b603905",
+      "bytes": 2514
+    },
+    "paper_engine/__init__.py": {
+      "sha256": "706d69f87a396e9d01120aee7176854ef1cd29fb537fc80cf00f602be5efaf7f",
+      "bytes": 75
+    },
+    "paper_engine/config.py": {
+      "sha256": "32a3bd499679047e32e20198db74466e608d5cd4a8a2ac408a9cd21892f41ec8",
+      "bytes": 8719
+    },
+    "paper_engine/data.py": {
+      "sha256": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
+      "bytes": 14479
+    },
+    "paper_engine/engine.py": {
+      "sha256": "dab857df55fd6940befb052d119b503c319d9bcf5e9874e1eeee23ba39e87203",
+      "bytes": 12344
+    },
+    "paper_engine/stats.py": {
+      "sha256": "3882f56f4c8090875f33d5b7725524a701ba6f13a6bbad43590ab60523445497",
+      "bytes": 14997
+    },
+    "pyproject.toml": {
+      "sha256": "3feaa407a311d840c4cb4284696a98ee7ad5bd4696149627d1d5bee2f1c75b59",
+      "bytes": 329
+    },
+    "README.md": {
+      "sha256": "2b0bfc32290ee5f7f947b9ea7f404449b97f0efdf0f69c9f1265b702560b0ca0",
+      "bytes": 9684
+    },
+    "requirements.txt": {
+      "sha256": "528fcc42b77399b86ce3a6aa30d0f798e7a603e799678274d031fc5ebaaa8954",
+      "bytes": 82
+    },
+    "research/checks.py": {
+      "sha256": "5faeae1ad9b5fa901955b92fa026450578ea7d98c35bf31230fe5b04be46803c",
+      "bytes": 502
+    },
+    "research/EXPERIMENT_LEDGER.md": {
+      "sha256": "33518fccf54752b5beff5ed34ed3a3a2084bf145ba0f4ff625c2ed4792b126fd",
+      "bytes": 1392
+    },
+    "research/forward_log.md": {
+      "sha256": "1569710c4da0afe2799bcac19cfcd3f5bc44449ccedc643fd75fdc5f9c6a5029",
+      "bytes": 1572
+    },
+    "research/get_data.py": {
+      "sha256": "deea1400397216a7b67eacd1af829774d5d5be6a6d37302fc88fd11bf639ee38",
+      "bytes": 1156
+    },
+    "research/lab.py": {
+      "sha256": "97637dc39c0033337abc3d347cadfddf2f10cab335202d5dd6dea3589e145a17",
+      "bytes": 4833
+    },
+    "research/ml.py": {
+      "sha256": "19ea5aca8691ebba3ac1d0df0b8f4090a62038610584232037649af3d5d0ef92",
+      "bytes": 293
+    },
+    "research/PREREGISTRATION.md": {
+      "sha256": "05ed4e0e47b7e1a9c65fdd43a4daedc780a366ea4ba5fa982da495637cc3e7f6",
+      "bytes": 1383
+    },
+    "research/RESULTS.md": {
+      "sha256": "8c078a0ba382cfd96a98f517236670e841c1066bb65035f54ab2e8501a69d7f8",
+      "bytes": 3813
+    },
+    "research/run_all.py": {
+      "sha256": "300f44ae0acd681cb481c48cdf72cb9c9c9ca9a074eec0713fd1f4daf5560ca7",
+      "bytes": 149
+    },
+    "research/strategies.py": {
+      "sha256": "2332527ef5e862af4254d4a312c7a14df445c963aed8b9b8b69e8352eca1cbfe",
+      "bytes": 217
+    },
+    "tests/test_adapters.py": {
+      "sha256": "15371138b20e1dc90c943ecb678fa2898a17c66e6a754b2b9e77fbe1b1c2d156",
+      "bytes": 5753
+    },
+    "tests/test_bot.py": {
+      "sha256": "51e7e0b719fc0cbe0dce0435c7ec131b13efdd2e5feef0eaf31f3a0bb04d19ac",
+      "bytes": 11288
+    },
+    "tests/test_legacy.py": {
+      "sha256": "75b30cd1dc101806fcdef388edec1e24eb2f9af18f3eefa3ede0268e921cda00",
+      "bytes": 5773
+    },
+    "trend_bot.py": {
+      "sha256": "7d94c25c0dc8bb64db6d9dfa71c12386f1e8635a4e3b07affc72d6b5373037de",
+      "bytes": 4983
+    },
+    "uv.lock": {
+      "sha256": "3cb6e9270c59dcba4a166b5e90450b570ece93bb1a8c601e260b800cfe38ef20",
+      "bytes": 8616
+    },
+    "validation/before-after.json": {
+      "sha256": "b1794c3db82e3733cfbc8475b3c7a73da82d3fb864ce31e210f550a7e5cd9d98",
+      "bytes": 3160
+    },
+    "validation/legacy-attempt.json": {
+      "sha256": "66fb7919d15b0a550f21d94db407932bd0f05c55badfbcbe5463d3ce4b03ac22",
+      "bytes": 606
+    },
+    "validation/legacy-paths.npz": {
+      "sha256": "d735e4432b0f18c24219a5ca231d4c68478620ce71f0a27f45c7a3f24c2a63ca",
+      "bytes": 195778
+    },
+    "validation/legacy-report.json": {
+      "sha256": "79c135ca281bf02680f2b7f6cc00d7c86d16ce042d49853f9956ac2879a190e1",
+      "bytes": 120811
+    },
+    "validation/legacy-signal.json": {
+      "sha256": "f2f2e88ff3fe124fe9af8399bae40e986e5ff4a650c8c8eb1513c4ea3c0106ae",
+      "bytes": 775
+    },
+    "validation/legacy-trades.json": {
+      "sha256": "13327552cb199c7f899311b8acca42e13d6cea2780500437550d1ce1bed59c33",
+      "bytes": 60691
+    },
+    "validation/offline-restart.json": {
+      "sha256": "2b16c2ac01f82df50dcf3f9d826e2302f79eb1743389ba4300aae3cda4b339ae",
+      "bytes": 4330
+    },
+    "validation/paper-parity.json": {
+      "sha256": "685e844642647ae8b4977f1d967bcd6ec90eedb5dbff59ff343680af18b6dfea",
+      "bytes": 2986
+    },
+    "validation/public-data.json": {
+      "sha256": "89ed0d2689ff734befe061e8fedbc4d10ac9b13b2231d61b0e989a77b0661718",
+      "bytes": 1292
+    },
+    "validation/quality.json": {
+      "sha256": "13e08d8755b32fe4602bb8223cf7f20cfb1ad692e8c83c06a66b50134f600fcb",
+      "bytes": 13591
+    },
+    "validation/tests.txt": {
+      "sha256": "350f6b89613f376c2f0cb622e5f6ef37365593f5f257bbcdbc99fb8784eed3bc",
+      "bytes": 101
+    }
+  },
+  "import_origins": [
+    "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot\\bot_core.py",
+    "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot\\legacy_daily.py",
+    "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot\\paper_engine\\engine.py"
+  ],
+  "installed_environment": "C:\\Users\\Abdul\\Downloads\\btc_trend_bot_full\\btc_trend_bot\\.venv\\Scripts\\python.exe",
+  "installed_tests": {
+    "passed": 50,
+    "log": "C:\\Users\\Abdul\\Documents\\Quant\\runs\\bot-tests-installed-final-v5.txt",
+    "log_sha256": "7bed897c721607032fc50d305d3146d2f2e85f07588915c948a2fb5c4a197c91"
+  },
+  "policy_checks": {
+    "fixed": {
+      "doctor": {
+        "verified_modules": 4,
+        "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+        "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+        "python": "3.13.7",
+        "numpy": "2.5.4",
+        "policy": "fixed",
+        "instrument": "unlevered BTC spot",
+        "paper_matches": true,
+        "data_exists": true,
+        "adaptive_edge_established": false,
+        "execution": "local simulated or broker paper/testnet only; no production endpoint"
+      },
+      "signal": {
+        "ready": true,
+        "target": 0.611129251074704,
+        "policy": "fixed",
+        "selected_pair": [
+          50,
+          200
+        ],
+        "decision_time_ms": 1792540799999,
+        "earliest_execution_ms": 1792540800000,
+        "selector_history_ready": true,
+        "selection_count": 0,
+        "risk_weight": 0.611129251074704
+      },
+      "offline_first_cycle": {
+        "decision_time_ms": 1792540799999,
+        "observed_at_ms": 1792540800100,
+        "policy": "fixed",
+        "execution_model": "current observable paper/testnet price; not a historical next-open fill",
+        "signal": {
+          "ready": true,
+          "target": 0.611129251074704,
+          "policy": "fixed",
+          "selected_pair": [
+            50,
+            200
+          ],
+          "decision_time_ms": 1792540799999,
+          "earliest_execution_ms": 1792540800000,
+          "selector_history_ready": true,
+          "selection_count": 0,
+          "risk_weight": 0.611129251074704
+        },
+        "price": 80000.0,
+        "cash_before": 10000.0,
+        "coins_before": 0.0,
+        "equity_before": 10000.0,
+        "target": 0.611129251074704,
+        "status": "simulated_fill",
+        "signed_notional": 6101.969780192416,
+        "assumed_cost": 15.25492445048104,
+        "cash_after": 3882.775295357103,
+        "coins_after": 0.0762746222524052,
+        "equity_after": 9984.74507554952,
+        "cost_bps": 25.0,
+        "target_weight_after_cost": 0.611129251074704
+      },
+      "offline_restart": {
+        "status": "duplicate_skipped",
+        "decision_time_ms": 1792540799999
+      },
+      "full_5000_draw_replay_matches_working_copy": true,
+      "arrays_exact": 272,
+      "replay_output": "C:\\Users\\Abdul\\Documents\\Quant\\runs\\bot-installed-replay-final-v5\\fixed",
+      "report_sha256": "0d87959602608da49649fa5748b4e0a85818ba30684651eebd77b8d449f093f5"
+    },
+    "legacy_daily": {
+      "doctor": {
+        "verified_modules": 4,
+        "paper_pdf_sha256": "2b73baba986080ad8aa18c8214cbbf095f8413bdc49063e6fb207c05488dc803",
+        "source_fingerprint": "da012ec386155945985a2b095b8c317a7a06ffa7ad5430a8c31d14e78e8f50ed",
+        "python": "3.13.7",
+        "numpy": "2.5.4",
+        "policy": "legacy_daily",
+        "instrument": "unlevered BTC spot",
+        "paper_matches": false,
+        "data_exists": true,
+        "adaptive_edge_established": false,
+        "execution": "local simulated or broker paper/testnet only; no production endpoint"
+      },
+      "signal": {
+        "ready": true,
+        "policy": "legacy_daily",
+        "target": 1.0,
+        "risk_weight": 1.0,
+        "length_days": [
+          40,
+          50,
+          60,
+          80,
+          100,
+          150
+        ],
+        "decision_time_ms": 1792540799999,
+        "earliest_execution_ms": 1792540800000,
+        "research_status": "exploratory corrected legacy alternative"
+      },
+      "offline_first_cycle": {
+        "decision_time_ms": 1792540799999,
+        "observed_at_ms": 1792540800100,
+        "policy": "legacy_daily",
+        "execution_model": "current observable paper/testnet price; not a historical next-open fill",
+        "signal": {
+          "ready": true,
+          "policy": "legacy_daily",
+          "target": 1.0,
+          "risk_weight": 1.0,
+          "length_days": [
+            40,
+            50,
+            60,
+            80,
+            100,
+            150
+          ],
+          "decision_time_ms": 1792540799999,
+          "earliest_execution_ms": 1792540800000,
+          "research_status": "exploratory corrected legacy alternative"
+        },
+        "price": 80000.0,
+        "cash_before": 10000.0,
+        "coins_before": 0.0,
+        "equity_before": 10000.0,
+        "target": 1.0,
+        "status": "simulated_fill",
+        "signed_notional": 9975.062344139651,
+        "assumed_cost": 24.93765586034913,
+        "cash_after": 0.0,
+        "coins_after": 0.12468827930174564,
+        "equity_after": 9975.062344139651,
+        "cost_bps": 25.0,
+        "target_weight_after_cost": 1.0
+      },
+      "offline_restart": {
+        "status": "duplicate_skipped",
+        "decision_time_ms": 1792540799999
+      },
+      "full_5000_draw_replay_matches_working_copy": true,
+      "arrays_exact": 152,
+      "replay_output": "C:\\Users\\Abdul\\Documents\\Quant\\runs\\bot-installed-replay-final-v5\\legacy_daily",
+      "report_sha256": "7c0dc34a5d66a9ba4e92d24b53df8797077c9589d971d04def7b1acb7663e50a"
+    }
+  },
+  "original_backup_sha256": "e274d1a5606c8566219a5052a0ef03454bac1e5e220775d0f47cac7ca33983d9",
+  "scope": "Actual installed-source tests, doctor, signal, offline first cycle/restart and full historical replays in the target folder own locked environment. No authenticated broker order or future trading-edge claim."
+}

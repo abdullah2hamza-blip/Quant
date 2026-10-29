@@ -1,0 +1,70 @@
+\subsection{Evidence form and temporal coherence experiment (v2)}
+\label{sec:followup-design}
+
+After all v1 outcomes and the market study were inspected, a separate v2
+protocol was written, independently reviewed and frozen before its substantive
+run. The inactive Hoeffding comparators and fixed-sign turnover contrasts in
+v1 motivated the follow-up. Its specification is not a retroactive amendment
+to the baseline or a new market holdout.
+
+The 24-cell factorial crosses effect $a\in\{0,0.02,0.05\}$, volatility scale
+$v\in\{1,0.4\}$, positive versus alternating turnover difference, and static
+initial versus contracting cost information. Every case has 4,000 worlds,
+800 non-overlapping labels and ten simultaneous streams; only stream zero
+receives a positive effect. The separate prefix-weak diagnostic gives every
+stream conditional mean $-0.06$ for 400 labels and $+0.06$ for 400 labels.
+All streams in that diagnostic are prefix-weak nulls; adaptive-bet methods are
+explicitly labeled unsupported for that null.
+
+Use the v1 common/idiosyncratic fair-sign construction, multiplied by $v$.
+Turnovers are $(q^A,q^R)=(0.8,0.4)$; alternating cases swap them every 20
+labels, beginning with positive difference. Generate
+$D_{j,t}=a_j+v\sigma_t(0.6S_t+0.4I_{j,t})$ and
+$G_{j,t}=D_{j,t}+d_t\theta+m$, with $\theta=0.08$, $m=0.01$.
+The deterministic support bound, including all separate-cost endpoints, is
+at most $0.65+0.06+0.4\cdot0.08+0.8\cdot0.2=0.902<1$.
+The recorded sample maximum is only a diagnostic of this bound.
+
+Initialize calibration with 32 independent observations equal to 0.2 with
+probability 0.4 and zero otherwise. Static cases retain the initial interval.
+Contracting cases intersect all successive intervals, with one new sample
+revealed after each evidence update. The last post-horizon sample cannot
+affect a test; its conflict flag is recorded separately. The inherited
+$k^{-2}$ calibration spending is conservative: querying only $k\geq32$ gives
+union bound $\delta(6/\pi^2)\sum_{k\geq32}k^{-2}\simeq0.000193$, below the
+unchanged reserved 0.01. This design does not optimize calibration efficiency.
+
+The ten comparators comprise three fixed linear mixtures and three aGRAPA
+variants, each with oracle, joint and separate costs; oracle EB, local joint EB
+and local separate EB; and the coherent joint EB profile.
+The equally weighted fixed grids are
+\[
+ \Lambda_{\rm linear}=\{0.05,0.1,0.2,0.4,0.8\},\qquad
+ \Lambda_{\rm EB}=\{0.025,0.05,0.1,0.2,0.4\},
+\]
+with $c=2$ for EB.
+The shared predictable EB center is the mean of prior observed plugin
+utilities, clipped to $[-1,1]$, initially zero. Each past plugin value uses
+the coefficient sample mean available when its label was issued; old centers
+are never refitted. Cost-information comparisons also change center quality
+and adaptive stakes, so only matched within-cell profiling comparisons isolate
+that operation cleanly.
+
+Each method receives the same 0.04 test budget over its ten streams, reserving
+0.01 for the shared cost event. Oracle thresholds remain matched. The three
+primary descriptive contrasts are joint aGRAPA minus joint fixed linear,
+coherent EB minus joint local EB, and joint local EB minus separate local EB
+at effect 0.05. Every cell, including zero and weak effects, is retained.
+There is no prespecified universal ordering between base method families.
+
+Separate outcome and calibration random streams use seed 20261023 and align
+innovations by world index across factorial cells. Worlds are independent;
+streams and factorial cells are not independent replications. Report Wilson
+intervals for binary events and paired world-level normal Monte Carlo
+intervals for signed differences, horizon-censored time and additive
+materiality-adjusted utility. They are estimation summaries, not simultaneous
+discovery guarantees. Activation begins only on the label after first
+discovery, with the lowest index breaking ties. Runtime and named persistent
+state bytes are recorded; neither is a controlled hardware benchmark or
+process peak-memory measurement. This is a bounded diagnostic experiment,
+not a calibrated Bitcoin execution or return model.
