@@ -1,6 +1,4 @@
 {
-  "schema_version": 1,
-  "profile": "research-release-v5",
   "created_at": "2026-10-29T03:43:32.601548+00:00",
   "files": {
     ".gitattributes": {
@@ -36,8 +34,8 @@
       "sha256": "bd397130ba9d419c2b01f8ec10ba3b04b6f031e1de22fd6287a8296f8da96de2"
     },
     "README.md": {
-      "bytes": 5418,
-      "sha256": "06fc94b243d51c9ab030101e306560869571696224737d118f79a7c594372403"
+      "bytes": 6466,
+      "sha256": "89561661cebd6830b52c9ff3981af9d2aaf02206201725484aab62e91179c9ed"
     },
     "THIRD_PARTY.md": {
       "bytes": 2031,
@@ -272,8 +270,8 @@
       "sha256": "3ed9b8ca4e24429d4360002b2952b38e7c22af189513c200843590f3481dd648"
     },
     "docs/KAGGLE.md": {
-      "bytes": 8491,
-      "sha256": "8351b3ec0b52f592ca9217638bf599e5689c9230e530de6a76b8752e1f96aca0"
+      "bytes": 5858,
+      "sha256": "fbd3a3bcdf754167eda1c5163b23de5b38d49d843e57426712bde6544787091c"
     },
     "docs/publication/CLAIM-EVIDENCE.md": {
       "bytes": 24524,
@@ -304,8 +302,8 @@
       "sha256": "5f71dc25772d231feace4a5cf494c8a46595a10cd3f26bbdd5033be83c4e2923"
     },
     "docs/publication/STATUS.md": {
-      "bytes": 2169,
-      "sha256": "101430ff64278adc7b97140d8c13fe759f354f7fc57942655f07b552e7e1c538"
+      "bytes": 3822,
+      "sha256": "6965dcec4995728f156235dbebba61f56c30d8934fbbf0ba6f5781b9284b7fd0"
     },
     "docs/publication/SUBMIT.md": {
       "bytes": 5925,
@@ -347,9 +345,21 @@
       "bytes": 1298,
       "sha256": "3a30bf6f871841a94773baa0b7e274f67d23e411b35ed5972fb1b7e88f7f86a3"
     },
+    "kaggle/APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "kaggle/HOSTED-REVIEW.md": {
+      "bytes": 1590,
+      "sha256": "8e9b9e8159ee7dc56d80c58f674e0d50b8be54a10259e2c3486b0ca036ccc30c"
+    },
     "kaggle/README.md": {
       "bytes": 632,
       "sha256": "a9d2619c51e6d3e2a1655b22450de2d4d2c7fb95d928bf976ef226c6d4b6ee3a"
+    },
+    "kaggle/hosted_review.ipynb": {
+      "bytes": 32728,
+      "sha256": "c5127f8f60f60478c5dad9615f74319f3874fcd4aabb6e552fb3ad5b06025d31"
     },
     "kaggle/prepare_metadata.py": {
       "bytes": 15102,
@@ -1660,15 +1670,17 @@
       "sha256": "06916bb7de2e07b12c797cc8df1c146bc39262380f9d04df877a6d119c703fbc"
     }
   },
-  "scientific_registries": {
-    "results/publication-v1/registry.json": "dd8f573a1c8af69f14ea777a5d6516cdae7f6110fb39c2040a565fb91c5c0c8a",
-    "results/publication-v2/registry.json": "e869065cd00ffedbd9e5d10684ff6238d950713bbecec140a27723e222490c5a",
-    "results/bot-extension-v1/registry.json": "36e058d341ad1ba31192b86dec45e43fa7884e0c0ecab09172ae3eef8cf6c828"
-  },
   "paper": {
-    "sha256": "8007c06a91d871f9605868d7ca941d93b119762fed00fde58dd1cb59cebe694f",
-    "pages": 35
+    "pages": 35,
+    "sha256": "8007c06a91d871f9605868d7ca941d93b119762fed00fde58dd1cb59cebe694f"
   },
+  "profile": "research-release-v5",
   "rights": "Original software MIT; original prose/synthetic displays CC BY4.0; market-material exceptions in THIRD_PARTY.md.",
+  "schema_version": 1,
+  "scientific_registries": {
+    "results/bot-extension-v1/registry.json": "36e058d341ad1ba31192b86dec45e43fa7884e0c0ecab09172ae3eef8cf6c828",
+    "results/publication-v1/registry.json": "dd8f573a1c8af69f14ea777a5d6516cdae7f6110fb39c2040a565fb91c5c0c8a",
+    "results/publication-v2/registry.json": "e869065cd00ffedbd9e5d10684ff6238d950713bbecec140a27723e222490c5a"
+  },
   "scope": "Prepared local release; no upload, hosted CI, hosted notebook execution or new scientific evidence asserted."
 }

@@ -1,109 +1,79 @@
-# Kaggle technical report and saved-results review
+# Public Kaggle saved-results review
 
-The Kaggle entry point is an **offline review of preserved results**. It verifies
-the public release manifest, reads recorded scientific CSVs, checks the primary
-fixed/adaptive saved paths, and plots those saved records. It does not generate
-new synthetic worlds, download vendor candles, audit raw inputs, place orders
-or rerun the frozen numerical study. Historical path identity is not a claim
-about future uncertainty or profitability.
+Use the [research dataset, Version 2](https://www.kaggle.com/datasets/abdullah2hamza/quant-cost-aware-bitcoin-research)
+and [public notebook, tested Version 2](https://www.kaggle.com/code/abdullah2hamza/quant-bitcoin-synthetic-evidence-release-audit?scriptVersionId=363526570).
+Owner: abdullah2hamza. Source release: [v1.0.1](https://github.com/abdullah2hamza-blip/Quant/releases/tag/v1.0.1),
+commit 7f847ff354e6cadb1c46fe9e0cb4d122842f4ed2. Final notebook source is
+`kaggle/hosted_review.ipynb`; its original code/text/synthetic displays are the
+separately authorized Apache-2.0 wrapper. The embedded viewer's MIT notice is
+retained. The mixed-rights dataset uses Other, retaining original MIT/CC BY 4.0
+and Binance-derived CC BY-NC-SA4.0/provider-term exceptions. The paper remains
+CC BY 4.0, subject to its stated component exceptions.
 
-The intended owner is `abdullah2hamza`, as supplied by the author. The technical
-report is being prepared as public release v1.0.1; final asset URLs, versions,
-public visibility and completed hosted execution are not yet established by
-this guide. The existing GitHub identity is `abdullah2hamza-blip/Quant`.
+## Run on Kaggle
 
-## Local verification first
+Copy/edit the public notebook or import `kaggle/hosted_review.ipynb`. Attach
+Dataset Version 2 with Add Input, keep Internet off and accelerator None, then
+Save & Run All in a fresh session. No dependency installation, broker account or
+credentials are needed. The input selector requires exactly one
+`quant-research-release-v5.zip.bin`. This is the exact canonical ZIP with SHA-256
+`95333cb8f4d81daefc82c9d08e97eeeb191808091a528d67128023123cfba429`.
+Python zipfile reads it without renaming; rename a downloaded copy to `.zip`
+for a desktop archive tool. Ordinary ZIP uploads recursively expanded the nested
+source capsules on Kaggle and correctly failed the first private integrity check.
 
-Use a new output directory on each run. From the repository root:
+The unchanged embedded viewer verifies 414 inventory entries and registry anchors,
+reads saved 216/250/270/40-row study tables and checks the primary fixed/adaptive
+path identity in temporary scratch. The wrapper then removes scratch and leaves
+exactly five files in `/kaggle/working/quant-synthetic-review`: baseline.csv,
+followup.csv, saved-baseline-power.png, ATTRIBUTION.md and review-summary.json.
+Use the notebook Output tab for downloads. Market files/plots and the manuscript
+are accessed through the separately licensed dataset/GitHub assets, rather than
+being redistributed as Apache notebook outputs. Earlier full-output audit
+versions remain private in a separate notebook.
+
+The tested public Version 2 (script 363526570) ran all three cells in 36.8 seconds.
+Actual runtime: Python 3.13.15, NumPy 2.1.3, Matplotlib 3.10.0, CPU, Internet off.
+The pinned Kaggle container is
+`gcr.io/kaggle-images/python@sha256:17b2fc7f27c25c6c2fd4230ec8e66097ab2b89fc88e1e4d6f338b72e1ee0bc3e`.
+Future copied sessions may use a different environment; the receipt reports the
+observed versions. This review does not generate fresh worlds, acquire candles,
+audit raw inputs or rerun the full numerical experiments. Matching recorded
+scientific Python 3.13.7/NumPy 2.5.4 alone would not establish an exact replay.
+
+## Local full-output review
+
+The original local launcher and base notebook remain available for inspection
+under their original terms. From a locked research environment:
 
 ```sh
 uv run --locked python scripts/kaggle_review.py --archive output/release-v5/quant-research-release-v5.zip --output runs/kaggle-local-review
 ```
 
-The `--archive` path is the actual newly prepared public release ZIP, not the
-superseded submission/private replication archive. An already extracted release
-with its `PUBLICATION-RELEASE.json` can instead be passed with `--root`.
-The output must be outside that source directory. Without either option, the
-launcher discovers exactly one attached release under `--input-root`, default
-`/kaggle/input`; multiple candidates require an explicit choice.
+Download the research ZIP from the GitHub Release first, or pass an extracted
+release using `--root`. Choose a new output directory outside the source on each
+run. `QUANT_REVIEW_ARCHIVE`, `QUANT_REVIEW_ROOT`, `QUANT_REVIEW_INPUT_ROOT` and
+`QUANT_REVIEW_OUTPUT` can select explicit paths. The original launcher emits
+mixed-rights market displays as well as synthetic displays, so those full-output
+versions were not published as Apache notebooks. `kaggle/prepare_metadata.py`
+retains the original private staging workflow and performs no authentication or
+upload; the separately versioned hosted wrapper is the final public entry point.
 
-Output includes `review-summary.json`, two saved-result plots, copied scientific
-CSV tables and attribution. The receipt records the actual Python, NumPy and
-Matplotlib versions, the source archive/manifest hashes and scientific registry
-anchors. It always says that a fresh numerical replay was not performed.
+The launcher checks inventory hashes, bounds sizes, and rejects unsafe paths,
+case aliases, symlinks, encrypted archives and prefix collisions. It leaves
+inputs unchanged. Integrity hashes are not a digital publisher signature.
+`transport-provenance.json` in Dataset V2 records the earlier transport/private
+wrapper at creation; final public wrapper identity and hosted/access checks are
+in the GitHub Release's `publication-verification.json` and `SHA256SUMS`.
 
-The frozen studies used Python 3.13.7 and NumPy 2.5.4. A different installed
-runtime may inspect saved results, with that difference recorded. The optional
-`--require-recorded-runtime` rejects mismatched key versions; matching them is
-only a necessary runtime check, not evidence that a replay ran. Exact replay
-also needs the locked dependencies, archived source and permitted exact inputs;
-use [the full reproduction guide](publication/REPRODUCE.md).
+## Research, limits and citation
 
-## Kaggle UI route
-
-The current task authorizes the Kaggle release after checks pass. The staging
-helper itself performs no authentication, upload or hosted execution. Inspect
-the signed-in owner and existing project assets first; version the matching
-asset rather than creating a duplicate. Stage privately where practical and
-record the exact final public dataset/notebook versions after execution.
-
-1. Create or update the matching Kaggle Dataset with the prepared public release ZIP. Keep its
-   byte identity. Include the accompanying `THIRD_PARTY.md`, `LICENSE-PAPER.md`
-   and attribution text. Select **Other** for the mixed-rights dataset license
-   and put the component rights in its description; do not label the whole
-   collection MIT, CC0 or unrestricted commercial data.
-2. Create/import a notebook using `kaggle/review_saved_results.ipynb`. Attach
-   that dataset through Add Input. Keep Internet and GPU disabled.
-3. Run all cells. The notebook embeds the exact launcher, so it does not depend
-   on a neighboring Python file being uploaded with the notebook. It finds the
-   attached release or accepts explicit `ARCHIVE`/`ROOT` settings in its first
-   code cell. Write output beneath `/kaggle/working`, not the attached input.
-4. Start a fresh hosted run, monitor it to completion and inspect the actual
-   logs, hash/runtime/scope receipt and figures. Quick Save or an upload alone
-   is not successful execution. Confirm that the public notebook is the tested
-   version and that unauthenticated readers can access its required inputs.
-
-The notebook defaults to `/kaggle/working/quant-review`. Choose a new output
-name when rerunning in the same session. The explicit paths can also be provided
-through `QUANT_REVIEW_ARCHIVE`, `QUANT_REVIEW_ROOT`, `QUANT_REVIEW_INPUT_ROOT`
-and `QUANT_REVIEW_OUTPUT`. It never reads API credentials. No account username
-is needed for the offline review or the UI-upload route.
-
-## Optional CLI metadata preparation
-
-The owner is your actual **Kaggle** account slug; it is not inferred from GitHub:
-
-```sh
-uv run --locked python kaggle/prepare_metadata.py --owner abdullah2hamza --archive output/release-v5/quant-research-release-v5.zip --output runs/kaggle-upload-candidate
-```
-
-Alternatively set the username-only `KAGGLE_USERNAME` environment variable.
-Missing/invalid ownership fails before staging. This helper creates:
-
-- `dataset/`: the research ZIP, separately readable manuscript PDF when present,
-  notices, dataset card and `dataset-metadata.json`.
-- `kernel/`: a self-contained executable notebook and `kernel-metadata.json`.
-
-The dataset metadata uses one `other` license entry with explicit component
-rights. Kernel defaults are private, CPU and offline, with the supplied dataset
-reference. Account existence/ownership is not checked remotely. Preparing these
-files does not create a Kaggle object. The official CLI's dataset-create command
-defaults to skipping subdirectories, so this staging puts the research archive
-as an explicit root payload rather than relying on an implicit recursive upload.
-The kernel-push command uploads **and runs** by default; the release workflow
-must treat it as the authorized publishing/execution action, not as metadata
-validation. The staging helper does not invoke it. Final public state and
-cross-platform links must be checked after the actual publishing steps.
-
-## Research narrative and disclosure
-
-The notebook and dataset card explain the paired-cost research question,
-synthetic and retrospective inputs, established methods, recorded findings,
-limitations and citation. The notebook links to the bundled manuscript,
-machine-readable citation and full reproduction guide from its execution
-output. The canonical repository is linked as a source location; public
-accessibility and final release URLs must be verified before they are reported
-as hosted. No DOI, journal acceptance or independent human peer review is claimed.
+The notebook explains the paired-cost/nuisance question, established methods,
+conditional simulations, negative/imprecise retrospective Bitcoin findings,
+exploratory daily-bot contrasts and component rights. It links to the manuscript,
+citation and [full reproduction instructions](publication/REPRODUCE.md).
+No new general theorem, prospective trading edge, DOI, independent human peer
+review or journal acceptance is claimed. See [STATUS.md](publication/STATUS.md).
 
 OpenAI Codex was used for literature research, experimental design, code
 preparation and testing, statistical analysis, interpretation, figure generation,
@@ -112,31 +82,11 @@ Exact model versions were not consistently recorded. The human author retains
 responsibility for the final work. Automated checks and AI-assisted reviews are
 not independent human peer review or evidence of completed human-author review.
 
-## Rights and portability
 
-Original code is MIT; original prose and synthetic displays are CC BY 4.0.
-Binance-derived market plots/results retain Binance Vision attribution,
-CC BY-NC-SA 4.0 and applicable provider terms; Bitstamp material retains its
-provider terms. No raw or normalized vendor candles are included in the public
-profile. Copying a dataset to Kaggle does not enlarge any of these grants.
+## Official platform references
 
-The launcher rejects unsafe paths, duplicate/case-aliased members, symlinks,
-encrypted ZIP entries, file/directory collisions and inventory/hash mismatches
-before extraction. It bounds declared sizes. It writes its own outputs only
-beneath the configured output directory and leaves attached sources unchanged.
-This is internal integrity checking, not a digital signature certifying an
-unknown publisher. Compare the archive digest with the author's release receipt.
-
-Kaggle's maintained image and preinstalled packages change. The official current
-Dockerfile uses Python 3.13 paths, which does not guarantee the exact frozen
-patch or NumPy version for any future notebook. The saved-results review avoids
-altering the platform interpreter or installing packages into its environment.
-
-## Official platform references checked 2026-10-28
-
+- [Notebook environments and versions](https://www.kaggle.com/docs/notebooks)
 - [Kernel metadata](https://github.com/Kaggle/kaggle-cli/blob/main/docs/kernels_metadata.md)
-- [Dataset metadata and license identifiers](https://github.com/Kaggle/kaggle-cli/blob/main/docs/datasets_metadata.md)
+- [Dataset metadata/licenses](https://github.com/Kaggle/kaggle-cli/blob/main/docs/datasets_metadata.md)
 - [Kernel commands](https://github.com/Kaggle/kaggle-cli/blob/main/docs/kernels.md)
-- [Dataset commands and directory handling](https://github.com/Kaggle/kaggle-cli/blob/main/docs/datasets.md)
-- [Kaggle notebook environment](https://www.kaggle.com/docs/notebooks)
-- [Maintained Python image](https://github.com/Kaggle/docker-python/blob/main/Dockerfile.tmpl)
+- [Dataset commands](https://github.com/Kaggle/kaggle-cli/blob/main/docs/datasets.md)
