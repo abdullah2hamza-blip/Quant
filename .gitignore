@@ -33,7 +33,7 @@ output/pdf/*.log
 output/*
 !output/pdf/
 output/pdf/*
-!output/pdf/cost-aware-bitcoin-research-v4.pdf
+!output/pdf/cost-aware-bitcoin-research-v5.pdf
 # Current public documentation is selected explicitly; historical work remains local.
 docs/*
 !docs/publication/

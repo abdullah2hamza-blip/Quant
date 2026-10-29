@@ -10,7 +10,7 @@
     "src/quant/publication.py": "327ddf07481c9af63b4dea432aca675cff4387dd33fcba997db4b2fb63bd770a",
     "src/quant/data.py": "6ae084784ebe5f18e070282cba71c08dc5f61af4d2f9ed896ed70671529d74db",
     "src/quant/ledger.py": "363ae0cc244c298d9672a29aaf40f896e668e5925da766323bd18d8d205c007d",
-    "uv.lock": "1b0f89bb018c8945a393d0f752609326d2427b5e459276e54af2bc58d24b60f4"
+    "uv.lock": "06916bb7de2e07b12c797cc8df1c146bc39262380f9d04df877a6d119c703fbc"
   },
   "display_runtime": {
     "python": "3.13.7",

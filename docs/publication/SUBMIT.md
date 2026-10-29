@@ -1,7 +1,7 @@
 # Technical report release and future submission guide
 
 Author: Abdullah Hamza, Independent Researcher, abdullah2hamza@gmail.com.
-The planned public technical-report release is v1.0.0 on the existing Quant
+The planned public technical-report release is v1.0.1 on the existing Quant
 GitHub repository and the author's Kaggle account `abdullah2hamza`. Publication
 status, final URLs, the release commit/tag and hosted execution are unverified
 until the publication record documents the actual checks. No DOI, journal
@@ -9,13 +9,13 @@ acceptance or independent human peer review is asserted by preparing these files
 
 ## Technical report assets
 
-Use the named revision `cost-aware-bitcoin-research-v4.pdf`, not the historical
+Use the named revision `cost-aware-bitcoin-research-v5.pdf`, not the historical
 anonymous 31-page PDF. The final submission folder contains:
 
-- `manuscript-source-v4.zip`: main.tex at archive root, all included sections,
+- `manuscript-source-v5.zip`: main.tex at archive root, all included sections,
   generated tables/macros/figures and the bibliography. It does not need Python
   or vendor data to compile.
-- `quant-research-release-v4.zip`: software, locks, frozen protocols/source,
+- `quant-research-release-v5.zip`: software, locks, frozen protocols/source,
   accepted results, original-bot extension and data-access manifests. It is a
   separate companion, not a substitute for the article's TeX source ZIP.
 - `submission-metadata.json`: title, plain abstract, author information and

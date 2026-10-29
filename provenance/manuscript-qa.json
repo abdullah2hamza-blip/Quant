@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "b9be16e67e8a9beb60f830a829c4b507e9f6c080fd54aa19bc9fce74e58a1116",
+  "pdf_sha256": "8007c06a91d871f9605868d7ca941d93b119762fed00fde58dd1cb59cebe694f",
   "pages_rendered": 35,
   "pages_visually_inspected": [
     1,
@@ -62,7 +62,7 @@
     "/NITCSQ+LMRoman8-Regular": true,
     "/UBBQTN+LMRoman9-Regular": true
   },
-  "render_manifest_sha256": "89bdc4a6a215ac135f19eab9e1af10ef1bebfffc270dc223488499985c9cd5ef",
+  "render_manifest_sha256": "f27790be82a408d846e9abcbf9e8e41f42cccaea9213caf4730d7724135a0d8e",
   "page_png_sha256": {
     "1": "523b47d7bc6f9e1d8841c396918db3d580de53f3c605e34d89f7ba27f63e9382",
     "2": "cd596a866e61e55b76bf406fc3beb4950c250115e54f74399271ad7d0e8016e9",
@@ -105,7 +105,8 @@
     19,
     20
   ],
-  "visual_review": "All35 final pages inspected in nine contact sheets; changed pages18-20 inspected at full resolution. No clipping, overflow, missing glyphs or overlapping elements observed. Other32 pages are raster-identical to the previous all-page review.",
+  "visual_review": "All35 final pages rendered and each raster hash exactly matches the all35 visually inspected v4 pages. No manuscript text, figure or table changed. Original final-page visual review transfers by exact pixel identity; final fonts and disclosure text separately rechecked.",
   "author_and_disclosure_text_checked": true,
-  "rebuild_report_sha256": "0a63090c85459d05d79fa86728c9d6b4613a8bb9be632ca855a47e818e4758d7"
+  "rebuild_report_sha256": "664f00b14978daac6b0e2be04bcededed536d00ef4e3f2ce29339f9bae10617c",
+  "all35_pages_raster_identical_to_reviewed_v4": true
 }

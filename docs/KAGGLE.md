@@ -8,7 +8,7 @@ or rerun the frozen numerical study. Historical path identity is not a claim
 about future uncertainty or profitability.
 
 The intended owner is `abdullah2hamza`, as supplied by the author. The technical
-report is being prepared as public release v1.0.0; final asset URLs, versions,
+report is being prepared as public release v1.0.1; final asset URLs, versions,
 public visibility and completed hosted execution are not yet established by
 this guide. The existing GitHub identity is `abdullah2hamza-blip/Quant`.
 
@@ -17,7 +17,7 @@ this guide. The existing GitHub identity is `abdullah2hamza-blip/Quant`.
 Use a new output directory on each run. From the repository root:
 
 ```sh
-uv run --locked python scripts/kaggle_review.py --archive output/release-v4/quant-research-release-v4.zip --output runs/kaggle-local-review
+uv run --locked python scripts/kaggle_review.py --archive output/release-v5/quant-research-release-v5.zip --output runs/kaggle-local-review
 ```
 
 The `--archive` path is the actual newly prepared public release ZIP, not the
@@ -74,7 +74,7 @@ is needed for the offline review or the UI-upload route.
 The owner is your actual **Kaggle** account slug; it is not inferred from GitHub:
 
 ```sh
-uv run --locked python kaggle/prepare_metadata.py --owner abdullah2hamza --archive output/release-v4/quant-research-release-v4.zip --output runs/kaggle-upload-candidate
+uv run --locked python kaggle/prepare_metadata.py --owner abdullah2hamza --archive output/release-v5/quant-research-release-v5.zip --output runs/kaggle-upload-candidate
 ```
 
 Alternatively set the username-only `KAGGLE_USERNAME` environment variable.

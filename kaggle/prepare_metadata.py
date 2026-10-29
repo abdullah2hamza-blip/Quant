@@ -13,15 +13,15 @@ import sys
 from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
-ARCHIVE_NAME = "quant-research-release-v4.zip"
+ARCHIVE_NAME = "quant-research-release-v5.zip"
 DATASET_SLUG = "quant-cost-aware-bitcoin-research"
 KERNEL_TITLE = "Quant Saved Results Research Review"
 KERNEL_SLUG = "quant-saved-results-research-review"
 REPORT_TITLE = "Cost Uncertainty in Sequential Strategy Validation: A Diagnostic Study with Adaptive Bitcoin Trend Following"
-REPORT_VERSION = "v1.0.0"
+REPORT_VERSION = "v1.0.1"
 REPOSITORY_URL = "https://github.com/abdullah2hamza-blip/Quant"
 REPRODUCTION_URL = REPOSITORY_URL + "/blob/main/docs/publication/REPRODUCE.md"
-MANUSCRIPT_PATH = "output/pdf/cost-aware-bitcoin-research-v4.pdf"
+MANUSCRIPT_PATH = "output/pdf/cost-aware-bitcoin-research-v5.pdf"
 AI_DISCLOSURE = (
     "OpenAI Codex was used for literature research, experimental design, code preparation and testing, "
     "statistical analysis, interpretation, figure generation, manuscript drafting and revision, and "

@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "profile": "research-release-v4",
-  "created_at": "2026-10-29T03:00:26.722930+00:00",
+  "profile": "research-release-v5",
+  "created_at": "2026-10-29T03:43:32.601548+00:00",
   "files": {
     ".gitattributes": {
       "bytes": 384,
       "sha256": "ce280c08599613964d149a8aa1fba08082a716247d233806b905e1e68c383b46"
     },
     ".github/workflows/bot.yml": {
-      "bytes": 846,
-      "sha256": "6851df2b42e88b40265e5296f1e471d208b77538d560f80ddf2a80c3c02a56ec"
+      "bytes": 843,
+      "sha256": "2be77ed17929194ae24e366c65fb43e965105db2a23c6d8f3cb25ed41ddbf96c"
     },
     ".github/workflows/research.yml": {
-      "bytes": 1107,
-      "sha256": "d3c984cb0dae108eccc302299e129c3e5abe057480ac27c4575631aad7128f6c"
+      "bytes": 1078,
+      "sha256": "38d0756fa67b4f103128c50129fc8b0b34a1711954b31f28190519c30d17a2fe"
     },
     ".gitignore": {
       "bytes": 1641,
-      "sha256": "b169804edf1b86128274bf35a96a44aede1599adac52e59c3001faee177da3cd"
+      "sha256": "98707309bc2d4ccc9098b21dffc3dbf9610ce3c110d5b05e01b3dfe54b18c2d3"
     },
     ".python-version": {
       "bytes": 7,
@@ -25,7 +25,7 @@
     },
     "CITATION.cff": {
       "bytes": 971,
-      "sha256": "0087e2bdd250946606f6f4007039b236fd8fb17d05d2726f60ef2a7f8eb5a9fd"
+      "sha256": "47b1b599eb37ce881b0e3827634a4993ab83a1a09cbaf78ae9291b2d47c8ddfa"
     },
     "LICENSE": {
       "bytes": 1071,
@@ -36,8 +36,8 @@
       "sha256": "bd397130ba9d419c2b01f8ec10ba3b04b6f031e1de22fd6287a8296f8da96de2"
     },
     "README.md": {
-      "bytes": 5503,
-      "sha256": "aa5b4a94fa2ded205fab71134c9d8f58b774a728d7e4efcd2be20bcb7d8eb1ed"
+      "bytes": 5418,
+      "sha256": "06fc94b243d51c9ab030101e306560869571696224737d118f79a7c594372403"
     },
     "THIRD_PARTY.md": {
       "bytes": 2031,
@@ -268,12 +268,12 @@
       "sha256": "c2e09f6175693a7dd2f29d076701a40bae8e229118f2b9837d3fe3473559d66f"
     },
     "docs/GITHUB.md": {
-      "bytes": 2786,
-      "sha256": "6228588cb586f2b447aee4fe2b24f3e2662e42efc07f33d2fee47dac450a53ee"
+      "bytes": 2840,
+      "sha256": "3ed9b8ca4e24429d4360002b2952b38e7c22af189513c200843590f3481dd648"
     },
     "docs/KAGGLE.md": {
       "bytes": 8491,
-      "sha256": "7ef291384790118b5356542033ac785816a0029f8b7444a93dc9b437a2140d8d"
+      "sha256": "8351b3ec0b52f592ca9217638bf599e5689c9230e530de6a76b8752e1f96aca0"
     },
     "docs/publication/CLAIM-EVIDENCE.md": {
       "bytes": 24524,
@@ -292,8 +292,8 @@
       "sha256": "a75212bfd2d9846934ad129d792e1a63b13689b61c901560ce8d480739a9a8eb"
     },
     "docs/publication/RELEASE-NOTES.md": {
-      "bytes": 2303,
-      "sha256": "4fffa3326fe14551414c13ff1c951a5dbad8948ec248cfebdeeea5792d72820e"
+      "bytes": 2742,
+      "sha256": "fcae60dc36211fb22bd527f75b227401eb95a39ce0956fe3744c0f0fd45b0ef6"
     },
     "docs/publication/RELEASE-REVIEW-2026-10-28.md": {
       "bytes": 3945,
@@ -304,12 +304,12 @@
       "sha256": "5f71dc25772d231feace4a5cf494c8a46595a10cd3f26bbdd5033be83c4e2923"
     },
     "docs/publication/STATUS.md": {
-      "bytes": 1776,
-      "sha256": "167d4d2b6aa5f53be06b345779362df02bce3b61444069f56d70310c4d5a7997"
+      "bytes": 2169,
+      "sha256": "101430ff64278adc7b97140d8c13fe759f354f7fc57942655f07b552e7e1c538"
     },
     "docs/publication/SUBMIT.md": {
       "bytes": 5925,
-      "sha256": "b16d566d925646aecb0a7906a4add6311edd39ed1217d32cdb555ab2c9fe731a"
+      "sha256": "6331d41e786ccbd548f800a4195900bb6db329dbb5e917ea87fe50c19abdc786"
     },
     "docs/publication/bibliography.json": {
       "bytes": 13294,
@@ -353,15 +353,15 @@
     },
     "kaggle/prepare_metadata.py": {
       "bytes": 15102,
-      "sha256": "8dee90fdfaa9350ebb3dc13940c4a53a6276f675f0a62622859ce390facf70e6"
+      "sha256": "424ebfa2184419118c6886bff47094931751f8102820d03f569e76ed7e2067e7"
     },
     "kaggle/review_saved_results.ipynb": {
       "bytes": 27578,
-      "sha256": "941874bfc0f994821ba7da3e781f629071cbe1b25693d24a1bdf784b2df9f305"
+      "sha256": "cd5739a9a189c3af765e5ae8373c1cd7f78e1e7cbe9ed450a8b548573040987a"
     },
-    "output/pdf/cost-aware-bitcoin-research-v4.pdf": {
-      "bytes": 1425656,
-      "sha256": "b9be16e67e8a9beb60f830a829c4b507e9f6c080fd54aa19bc9fce74e58a1116"
+    "output/pdf/cost-aware-bitcoin-research-v5.pdf": {
+      "bytes": 1425652,
+      "sha256": "8007c06a91d871f9605868d7ca941d93b119762fed00fde58dd1cb59cebe694f"
     },
     "paper/bibliography-manifest.json": {
       "bytes": 688,
@@ -433,7 +433,7 @@
     },
     "paper/generated/followup/traceability.json": {
       "bytes": 6596,
-      "sha256": "54a0e987663d8f1def0e91919d9e213c61c97a5643e1b62c70b096a43e6f0dc2"
+      "sha256": "41b4451f9046a804e16be1a513cd667990ee70fe1daa4ab26a3f518815569027"
     },
     "paper/generated/market-all-policies-costs.csv": {
       "bytes": 78895,
@@ -597,15 +597,15 @@
     },
     "provenance/manuscript-build.json": {
       "bytes": 4729,
-      "sha256": "49215136ef27e33e83d653cf13b1b0ade978f64b6172a8e98cc2361e23f32a2b"
+      "sha256": "fdcf9223b84b57358149b3f33391c8a9f3cc8f855425a80a89a9b200c24b03b7"
     },
     "provenance/manuscript-qa.json": {
-      "bytes": 4713,
-      "sha256": "828211505b3fab5cac2934cccfac8d65fa5bf6af695a63a560474a4e2bde80b3"
+      "bytes": 4799,
+      "sha256": "cecac38cca44f8a37b56a4afcc8a5a61df87103bd0004fcb146da2e018db7fa0"
     },
     "pyproject.toml": {
       "bytes": 624,
-      "sha256": "ca161963e27015dcb97707298d7fd275c09044190ab5ba195c8ccef0b271430b"
+      "sha256": "f54e2a14cb8c432cf2369cce96a852a4e022ec79d696644ea53182a6b1a57b61"
     },
     "results/bot-extension-v1/attempt-ledger.json": {
       "bytes": 195053,
@@ -1469,7 +1469,7 @@
     },
     "scripts/package_public_release.py": {
       "bytes": 12408,
-      "sha256": "d2371704a57bac49c293ca7a55bf0dc4129ceea44be187700542e920a5205e75"
+      "sha256": "14a7398e6f38211128b5341dcde598cd565ccf221df20aa6f86be4e85e15c006"
     },
     "scripts/package_replication.py": {
       "bytes": 15130,
@@ -1609,7 +1609,7 @@
     },
     "tests/test_kaggle_review.py": {
       "bytes": 12061,
-      "sha256": "58b186bee20e6a8c713e93fb841a33560ab8dc23b3e08b2ce49afd641648a1cf"
+      "sha256": "a388a95367bab5b748a0423b8e492e667c3cf6d015a22beae8abe8e3b1635a8f"
     },
     "tests/test_ledger.py": {
       "bytes": 5812,
@@ -1657,7 +1657,7 @@
     },
     "uv.lock": {
       "bytes": 116294,
-      "sha256": "1b0f89bb018c8945a393d0f752609326d2427b5e459276e54af2bc58d24b60f4"
+      "sha256": "06916bb7de2e07b12c797cc8df1c146bc39262380f9d04df877a6d119c703fbc"
     }
   },
   "scientific_registries": {
@@ -1666,7 +1666,7 @@
     "results/bot-extension-v1/registry.json": "36e058d341ad1ba31192b86dec45e43fa7884e0c0ecab09172ae3eef8cf6c828"
   },
   "paper": {
-    "sha256": "b9be16e67e8a9beb60f830a829c4b507e9f6c080fd54aa19bc9fce74e58a1116",
+    "sha256": "8007c06a91d871f9605868d7ca941d93b119762fed00fde58dd1cb59cebe694f",
     "pages": 35
   },
   "rights": "Original software MIT; original prose/synthetic displays CC BY4.0; market-material exceptions in THIRD_PARTY.md.",

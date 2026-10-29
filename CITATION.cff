@@ -8,7 +8,7 @@ authors:
     affiliation: Independent Researcher
     email: abdullah2hamza@gmail.com
 repository-code: "https://github.com/abdullah2hamza-blip/Quant"
-version: 1.0.0
+version: 1.0.1
 license: MIT
 preferred-citation:
   type: report
@@ -18,6 +18,6 @@ preferred-citation:
       given-names: Abdullah
       affiliation: Independent Researcher
   year: 2026
-  url: "https://github.com/abdullah2hamza-blip/Quant/releases/tag/v1.0.0"
-  version: 1.0.0
+  url: "https://github.com/abdullah2hamza-blip/Quant/releases/tag/v1.0.1"
+  version: 1.0.1
   notes: "Technical report; no DOI, external peer review or journal acceptance claimed. Original text CC BY4.0, with third-party market-material exceptions in LICENSE-PAPER.md."

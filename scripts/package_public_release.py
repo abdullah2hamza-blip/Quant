@@ -105,7 +105,7 @@ def inventory(files):
 
 
 def create(output: Path, *, rebuild: Path, qa: Path, pdf: Path, root=ROOT,
-           revision: str = 'v4') -> dict:
+           revision: str = 'v5') -> dict:
     root = Path(root)
     if not re.fullmatch(r'v[1-9][0-9]*', revision):
         raise ValueError('Revision must be a portable v-number, such as v4')
@@ -207,7 +207,7 @@ if __name__ == '__main__':
     parser.add_argument('--rebuild', type=Path, required=True)
     parser.add_argument('--qa', type=Path, required=True)
     parser.add_argument('--pdf', type=Path, required=True)
-    parser.add_argument('--revision', default='v4', help='Artifact revision, for example v4')
+    parser.add_argument('--revision', default='v5', help='Artifact revision, for example v5')
     args = parser.parse_args()
     print(json.dumps(create(args.output, rebuild=args.rebuild, qa=args.qa, pdf=args.pdf,
                             revision=args.revision), indent=2))

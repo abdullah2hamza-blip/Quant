@@ -6,13 +6,13 @@ separate operational simulation bot. The statistical constructions use
 established methods; no new general theorem or demonstrated adaptive trading
 edge is claimed.
 
-The current manuscript is [the technical report](output/pdf/cost-aware-bitcoin-research-v4.pdf).
+The current manuscript is [the technical report](output/pdf/cost-aware-bitcoin-research-v5.pdf).
 The [research overview](docs/publication/README.md),
 [reproduction guide](docs/publication/REPRODUCE.md),
 [GitHub release guide](docs/GITHUB.md), and [Kaggle guide](docs/KAGGLE.md)
 explain the scientific and platform scopes.
 
-The public technical-report release is being prepared as **v1.0.0** for the
+The public technical-report release is being prepared as **v1.0.1** for the
 existing [Quant repository](https://github.com/abdullah2hamza-blip/Quant) and
 the author's Kaggle account `abdullah2hamza`. Hosting, the final tag/commit,
 public accessibility and hosted notebook execution remain unverified until
@@ -44,13 +44,12 @@ Use Python 3.13.7 and uv 0.13.4 with the included lock:
 
 ```sh
 uv sync --locked --python 3.13.7
-uv run --locked pytest -q --basetemp=runs/pytest-local
+uv run --locked pytest -q
 uv run --locked python -m scripts.reproduce_complete_study --verify-only --output runs/verify-local
 ```
 
 These checks use saved evidence and fabricated test fixtures; vendor candles are
-not needed. The `runs` parent is created by the workflow; if invoking pytest
-first on a fresh tree, create it or omit `--basetemp`.
+not needed. Pytest uses its normal temporary directory on a fresh checkout.
 
 To rebuild the displays and paper without vendor candles:
 
